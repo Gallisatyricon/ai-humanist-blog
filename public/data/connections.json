@@ -1,0 +1,1271 @@
+{
+  "connections": [
+    {
+      "source_id": "art_007",
+      "target_id": "art_011",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.8,
+      "auto_detected": true,
+      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_030",
+      "type": "questions",
+      "strength": 0.8,
+      "auto_detected": true,
+      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_034",
+      "type": "questions",
+      "strength": 0.8,
+      "auto_detected": true,
+      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_035",
+      "type": "questions",
+      "strength": 0.8,
+      "auto_detected": true,
+      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_038",
+      "type": "questions",
+      "strength": 0.8,
+      "auto_detected": true,
+      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_039",
+      "type": "questions",
+      "strength": 0.8,
+      "auto_detected": true,
+      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_040",
+      "type": "questions",
+      "strength": 0.8,
+      "auto_detected": true,
+      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_041",
+      "type": "questions",
+      "strength": 0.8,
+      "auto_detected": true,
+      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_009",
+      "type": "similar_to",
+      "strength": 0.39999999999999997,
+      "auto_detected": true,
+      "reasoning": "Domaines liés: frugalite, green_ai"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_010",
+      "type": "similar_to",
+      "strength": 0.39999999999999997,
+      "auto_detected": true,
+      "reasoning": "Domaines liés: frugalite, green_ai"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_011",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_013",
+      "type": "similar_to",
+      "strength": 0.39999999999999997,
+      "auto_detected": true,
+      "reasoning": "Domaines liés: frugalite, green_ai"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_010",
+      "type": "similar_to",
+      "strength": 0.6,
+      "auto_detected": true,
+      "reasoning": "Domaines liés: frugalite, green_ai, society"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_011",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_013",
+      "type": "similar_to",
+      "strength": 0.39999999999999997,
+      "auto_detected": true,
+      "reasoning": "Domaines liés: frugalite, green_ai"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_011",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_013",
+      "type": "similar_to",
+      "strength": 0.39999999999999997,
+      "auto_detected": true,
+      "reasoning": "Domaines liés: frugalite, green_ai"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_013",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_014",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_030",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_034",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_035",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_036",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_039",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_040",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_041",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_013",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_030",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_032",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_033",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_034",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_035",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_037",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_038",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_039",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_040",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_041",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article questionne l'approche de l'autre"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_039",
+      "type": "similar_to",
+      "strength": 0.39999999999999997,
+      "auto_detected": true,
+      "reasoning": "Domaines liés: ethique, education"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_032",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_033",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_034",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_035",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_037",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_038",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_039",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_040",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_041",
+      "type": "questions",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article critique l'approche de l'autre"
+    },
+    {
+      "source_id": "art_032",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_032",
+      "target_id": "art_034",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_032",
+      "target_id": "art_035",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_032",
+      "target_id": "art_036",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_032",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_032",
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_032",
+      "target_id": "art_039",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_032",
+      "target_id": "art_040",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_032",
+      "target_id": "art_041",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_034",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_035",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_036",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_039",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_040",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_041",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_034",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_034",
+      "target_id": "art_039",
+      "type": "similar_to",
+      "strength": 0.39999999999999997,
+      "auto_detected": true,
+      "reasoning": "Domaines liés: ethique, regulation"
+    },
+    {
+      "source_id": "art_035",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_036",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_037",
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_037",
+      "target_id": "art_039",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_037",
+      "target_id": "art_040",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_037",
+      "target_id": "art_041",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": true,
+      "reasoning": "Un article développe l'approche de l'autre"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_041",
+      "type": "similar_to",
+      "strength": 0.39999999999999997,
+      "auto_detected": true,
+      "reasoning": "Domaines liés: ethique, bias_fairness"
+    }
+  ],
+  "generated_at": "2025-08-13T16:47:27.943Z",
+  "total_connections": 122,
+  "connection_index": {
+    "art_007": [
+      "art_011",
+      "art_012",
+      "art_029",
+      "art_030",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_034",
+      "art_035",
+      "art_037",
+      "art_038",
+      "art_039",
+      "art_040",
+      "art_041"
+    ],
+    "art_011": [
+      "art_007",
+      "art_008",
+      "art_009",
+      "art_010",
+      "art_012",
+      "art_013",
+      "art_014",
+      "art_029",
+      "art_030",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_034",
+      "art_035",
+      "art_036",
+      "art_037",
+      "art_038",
+      "art_039",
+      "art_040",
+      "art_041"
+    ],
+    "art_012": [
+      "art_007",
+      "art_008",
+      "art_009",
+      "art_010",
+      "art_011",
+      "art_013",
+      "art_014",
+      "art_029",
+      "art_030",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_034",
+      "art_035",
+      "art_036",
+      "art_037",
+      "art_038",
+      "art_039",
+      "art_040",
+      "art_041"
+    ],
+    "art_029": [
+      "art_007",
+      "art_011",
+      "art_012",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037",
+      "art_039"
+    ],
+    "art_030": [
+      "art_007",
+      "art_011",
+      "art_012",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037"
+    ],
+    "art_031": [
+      "art_007",
+      "art_008",
+      "art_009",
+      "art_010",
+      "art_011",
+      "art_012",
+      "art_013",
+      "art_014",
+      "art_029",
+      "art_030",
+      "art_032",
+      "art_033",
+      "art_034",
+      "art_035",
+      "art_036",
+      "art_037",
+      "art_038",
+      "art_039",
+      "art_040",
+      "art_041"
+    ],
+    "art_032": [
+      "art_007",
+      "art_008",
+      "art_009",
+      "art_010",
+      "art_011",
+      "art_012",
+      "art_013",
+      "art_014",
+      "art_029",
+      "art_030",
+      "art_031",
+      "art_033",
+      "art_034",
+      "art_035",
+      "art_036",
+      "art_037",
+      "art_038",
+      "art_039",
+      "art_040",
+      "art_041"
+    ],
+    "art_033": [
+      "art_007",
+      "art_008",
+      "art_009",
+      "art_010",
+      "art_011",
+      "art_012",
+      "art_013",
+      "art_014",
+      "art_029",
+      "art_030",
+      "art_031",
+      "art_032",
+      "art_034",
+      "art_035",
+      "art_036",
+      "art_037",
+      "art_038",
+      "art_039",
+      "art_040",
+      "art_041"
+    ],
+    "art_034": [
+      "art_007",
+      "art_011",
+      "art_012",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037",
+      "art_039"
+    ],
+    "art_035": [
+      "art_007",
+      "art_011",
+      "art_012",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037"
+    ],
+    "art_037": [
+      "art_007",
+      "art_008",
+      "art_009",
+      "art_010",
+      "art_011",
+      "art_012",
+      "art_013",
+      "art_014",
+      "art_029",
+      "art_030",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_034",
+      "art_035",
+      "art_036",
+      "art_038",
+      "art_039",
+      "art_040",
+      "art_041"
+    ],
+    "art_038": [
+      "art_007",
+      "art_011",
+      "art_012",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037",
+      "art_041"
+    ],
+    "art_039": [
+      "art_007",
+      "art_011",
+      "art_012",
+      "art_029",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_034",
+      "art_037"
+    ],
+    "art_040": [
+      "art_007",
+      "art_011",
+      "art_012",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037"
+    ],
+    "art_041": [
+      "art_007",
+      "art_011",
+      "art_012",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037",
+      "art_038"
+    ],
+    "art_008": [
+      "art_009",
+      "art_010",
+      "art_011",
+      "art_012",
+      "art_013",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037"
+    ],
+    "art_009": [
+      "art_008",
+      "art_010",
+      "art_011",
+      "art_012",
+      "art_013",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037"
+    ],
+    "art_010": [
+      "art_008",
+      "art_009",
+      "art_011",
+      "art_012",
+      "art_013",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037"
+    ],
+    "art_013": [
+      "art_008",
+      "art_009",
+      "art_010",
+      "art_011",
+      "art_012",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037"
+    ],
+    "art_014": [
+      "art_011",
+      "art_012",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037"
+    ],
+    "art_036": [
+      "art_011",
+      "art_012",
+      "art_031",
+      "art_032",
+      "art_033",
+      "art_037"
+    ]
+  },
+  "last_processed": {}
+}

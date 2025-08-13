@@ -1,0 +1,228 @@
+/* ========================================
+   STYLES SPÉCIFIQUES GRAPHIQUE D3.js
+   Styles CSS pour la visualisation interactive
+   ======================================== */
+
+/* ========================================
+   CONTENEUR GRAPHIQUE
+   ======================================== */
+
+.graph-container {
+  position: relative;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.graph-svg {
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: grab;
+}
+
+.graph-svg:active {
+  cursor: grabbing;
+}
+
+/* ========================================
+   ÉLÉMENTS GRAPHIQUE
+   ======================================== */
+
+/* Nœuds (articles) */
+.graph-node {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.graph-node:hover {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  stroke-width: 2px !important;
+}
+
+.graph-node.selected {
+  stroke: #1f2937 !important;
+  stroke-width: 3px !important;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
+}
+
+.graph-node.dimmed {
+  opacity: 0.3;
+  filter: grayscale(0.5);
+}
+
+/* Liens entre nœuds */
+.graph-link {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.graph-link:hover {
+  stroke-opacity: 0.9 !important;
+  stroke-width: calc(var(--stroke-width) * 1.5) !important;
+}
+
+.graph-link.highlighted {
+  stroke-opacity: 1 !important;
+  stroke-width: calc(var(--stroke-width) * 1.2) !important;
+}
+
+.graph-link.dimmed {
+  stroke-opacity: 0.2 !important;
+}
+
+/* Labels des nœuds */
+.graph-label {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  fill: #374151;
+  text-anchor: middle;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.graph-label.important {
+  font-weight: 600;
+  font-size: 11px;
+  fill: #1f2937;
+}
+
+.graph-label.dimmed {
+  opacity: 0.4;
+}
+
+/* ========================================
+   TOOLTIPS ET OVERLAYS
+   ======================================== */
+
+.graph-tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  max-width: 280px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.graph-tooltip::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.9);
+}
+
+.graph-overlay-info {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 11px;
+  line-height: 1.3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Info graphique (top-left) */
+.graph-info-panel {
+  top: 8px;
+  left: 8px;
+}
+
+/* Légende (top-right) */
+.graph-legend-panel {
+  top: 8px;
+  right: 8px;
+  min-width: 200px;
+}
+
+/* Instructions (bottom-left) */
+.graph-instructions-panel {
+  bottom: 8px;
+  left: 8px;
+}
+
+/* ========================================
+   ÉTATS INTERACTIFS
+   ======================================== */
+
+.graph-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.graph-loading::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e2e8f0;
+  border-top: 2px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.graph-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 14px;
+  text-align: center;
+}
+
+.graph-empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .graph-legend-panel {
+    position: fixed;
+    top: auto;
+    right: 16px;
+    bottom: 16px;
+    max-width: calc(100vw - 32px);
+  }
+  
+  .graph-info-panel {
+    font-size: 10px;
+  }
+  
+  .graph-tooltip {
+    max-width: calc(100vw - 32px);
+    font-size: 11px;
+  }
+}
