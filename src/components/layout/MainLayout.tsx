@@ -5,6 +5,7 @@ import { GraphView } from '@/components/navigation/GraphView'
 import { ArticleList, ArticleDetail } from '@/components/articles/ArticleCard'
 import SearchBar from '@/components/navigation/SearchBar'
 import { useTagNavigation } from '@/hooks/useTagNavigation'
+import { useEnrichedArticles } from '@/hooks/useEnrichedArticles'
 
 interface MainLayoutProps {
   selectedArticle: Article | null
@@ -20,12 +21,18 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
   const tagNavigationData = useTagNavigation()
   
   const {
-    articles,
-    filteredArticles,
+    articles: baseArticles,
+    filteredArticles: baseFilteredArticles,
     stats,
     selectArticleForFilter,
     error
   } = tagNavigationData
+
+  // Articles enrichis avec connexions
+  const { articles: enrichedArticles } = useEnrichedArticles(baseArticles)
+  
+  // Articles filtrés enrichis
+  const { articles: enrichedFilteredArticles } = useEnrichedArticles(baseFilteredArticles)
   
   // Gestion des erreurs au niveau du composant
   if (error) {
@@ -57,7 +64,9 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
   }
 
   const handleArticleDetail = (article: Article) => {
-    setShowArticleDetail(article)
+    // Trouve l'article enrichi correspondant
+    const enrichedArticle = enrichedArticles.find(a => a.id === article.id) || article
+    setShowArticleDetail(enrichedArticle)
   }
 
   const handleSearchStateChange = (isSearching: boolean, _hasResults: boolean) => {
@@ -66,8 +75,10 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
   }
 
   const handleSearchArticleSelect = (article: Article) => {
-    setShowArticleDetail(article)
-    setSelectedArticleForGraph(article)
+    // Trouve l'article enrichi correspondant
+    const enrichedArticle = enrichedArticles.find(a => a.id === article.id) || article
+    setShowArticleDetail(enrichedArticle)
+    setSelectedArticleForGraph(enrichedArticle)
   }
 
   return (
@@ -99,7 +110,7 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
               </p>
             </div>
             <SearchBar
-              articles={articles}
+              articles={enrichedArticles}
               onArticleSelect={handleSearchArticleSelect}
               onSearchStateChange={handleSearchStateChange}
               className="max-w-2xl mx-auto"
@@ -140,8 +151,8 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
             <div className="w-full overflow-x-auto">
               <div className="flex justify-center min-w-[600px]">
                 <GraphView
-                  articles={articles}
-                  filteredArticles={filteredArticles}
+                  articles={enrichedArticles}
+                  filteredArticles={enrichedFilteredArticles}
                   selectedArticle={selectedArticleForGraph}
                   onArticleSelect={handleArticleSelect}
                   width={Math.min(800, typeof window !== 'undefined' ? window.innerWidth - 100 : 800)}
@@ -153,7 +164,7 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
 
 
           {/* Articles à afficher selon les filtres - LOGIC SIMPLIFIÉE */}
-          {articles.length > 0 && (
+          {enrichedArticles.length > 0 && (
             <div className="bg-white rounded-lg shadow-sm p-6">
               {/* Affichage conditionnel direct */}
               {stats.hasFilters ? (
@@ -164,12 +175,12 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
                       🔍 Mode filtré actif
                     </span>
                   </div>
-                  {filteredArticles.length > 0 ? (
+                  {enrichedFilteredArticles.length > 0 ? (
                     <ArticleList
-                      articles={filteredArticles}
+                      articles={enrichedFilteredArticles}
                       selectedArticle={selectedArticleForGraph}
                       onArticleSelect={handleArticleDetail}
-                      title={`Articles correspondants (${filteredArticles.length})`}
+                      title={`Articles correspondants (${enrichedFilteredArticles.length})`}
                       maxDisplayed={6}
                     />
                   ) : (
@@ -189,7 +200,7 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
                     </span>
                   </div>
                   <ArticleList
-                    articles={articles}
+                    articles={enrichedArticles}
                     selectedArticle={selectedArticleForGraph}
                     onArticleSelect={handleArticleDetail}
                     title="Tous les articles"

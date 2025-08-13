@@ -24,20 +24,33 @@ export function useGraphData(
     maxNodes: options.maxNodes ?? NAVIGATION_CONFIG.MAX_NODES_DISPLAYED
   }
 
-  // Générer les connexions au chargement
+  // Charger les connexions depuis le fichier JSON
   useEffect(() => {
     if (articles.length > 0) {
       setIsGenerating(true)
-      // Simulation async pour éviter de bloquer l'UI
-      setTimeout(() => {
-        const allConnections = generateAllConnections(articles)
-        const filteredConnections = filterConnectionsByStrength(
-          allConnections, 
-          config.minConnectionStrength
-        )
-        setConnections(filteredConnections)
-        setIsGenerating(false)
-      }, 100)
+      // Charger les connexions depuis le fichier JSON généré
+      fetch('/data/connections.json')
+        .then(response => response.json())
+        .then(data => {
+          const allConnections = data.connections || []
+          const filteredConnections = filterConnectionsByStrength(
+            allConnections, 
+            config.minConnectionStrength
+          )
+          setConnections(filteredConnections)
+          setIsGenerating(false)
+        })
+        .catch(error => {
+          console.error('❌ Erreur lors du chargement des connexions:', error)
+          // Fallback : générer les connexions dynamiquement
+          const allConnections = generateAllConnections(articles)
+          const filteredConnections = filterConnectionsByStrength(
+            allConnections, 
+            config.minConnectionStrength
+          )
+          setConnections(filteredConnections)
+          setIsGenerating(false)
+        })
     }
   }, [articles, config.minConnectionStrength])
 

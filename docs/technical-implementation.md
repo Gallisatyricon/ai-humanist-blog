@@ -2,9 +2,10 @@
 
 ## Vue d'ensemble
 
-Blog de veille IA révélant les interconnexions technique-éthique via une interface graphique interactive, maintenant stabilisé avec 21 articles de production et système d'import batch.
+Blog de veille IA révélant les interconnexions technique-éthique via une interface graphique interactive, maintenant stabilisé avec 21 articles de production, système d'import batch et publié sur GitHub.
 
-**État actuel :** Production Ready - Zéro bug critique - 21 articles - 122 connexions
+**État actuel :** Production Ready - Publié sur GitHub - Zéro bug critique - 21 articles - 122 connexions  
+**Repository :** https://github.com/Gallisatyricon/ai-humanist-blog
 
 ---
 
@@ -521,13 +522,15 @@ npm run preview                         # Preview build
 - **Performance optimisée** - Index O(1), debouncing
 - **Zéro bug critique** - Application stable
 
-### 🔄 Améliorations Possibles (Phase 6)
+### 🔄 Améliorations Possibles (Phase 7)
+- **Déploiement en ligne** - GitHub Pages, Vercel ou Netlify
 - **Tests automatisés** - Jest + Testing Library
 - **Interface admin** - CRUD articles via UI
 - **Intégration n8n** - Ajout incrémental LLM
 - **Accessibilité** - ARIA, navigation clavier
 - **Mobile advanced** - Touch gestures, PWA
 - **Monitoring** - Analytics utilisateur
+- **CI/CD Pipeline** - Déploiement automatisé
 
 ---
 
@@ -540,8 +543,8 @@ npm run preview                         # Preview build
 
 ### Configuration Production
 ```bash
-# Clone + install
-git clone [repo]
+# Clone depuis GitHub
+git clone https://github.com/Gallisatyricon/ai-humanist-blog.git
 cd ai-humanist-blog
 npm install
 
@@ -554,6 +557,7 @@ npm run build
 
 # Deploy statique
 # dist/ → serveur web (Nginx, Apache, Vercel, Netlify)
+# ou GitHub Pages directement depuis le repository
 ```
 
 ### Monitoring
@@ -566,7 +570,7 @@ npm run build
 
 ## Conclusion Technique
 
-**Le blog IA Navigation Graphique est maintenant PRODUCTION READY** avec :
+**Le blog IA Navigation Graphique est maintenant PRODUCTION READY et PUBLIÉ** avec :
 
 ✅ **Stabilité absolue** - Zéro bug critique, gestion d'erreurs complète  
 ✅ **Données de qualité** - 21 articles validés, 122 connexions cohérentes  
@@ -574,5 +578,8 @@ npm run build
 ✅ **Architecture robuste** - TypeScript strict, composants modulaires  
 ✅ **Système d'import** - Batch processing pour ajouts futurs  
 ✅ **UX professionnelle** - Navigation fluide, visualisation interactive  
+✅ **Publication GitHub** - Code source accessible, collaboration possible
 
-L'application peut être déployée immédiatement pour usage réel ou démonstration client. La Phase 6 permettra d'ajouter les optimisations avancées et l'intégration n8n pour automatisation complète.
+**🌐 Repository Public :** https://github.com/Gallisatyricon/ai-humanist-blog
+
+L'application peut être déployée immédiatement pour usage réel ou démonstration client. Le code est maintenant accessible publiquement pour collaboration et amélioration continue. La Phase 7 permettra d'ajouter le déploiement en ligne et les optimisations avancées.
