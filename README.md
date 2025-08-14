@@ -10,6 +10,7 @@
 ## 🎯 Objectif
 
 Créer un blog de veille IA avec navigation exploratoire révélant les ponts interdisciplinaires entre dimension technique et réflexion humaniste.
+exemple : https://blog-ia.lecaveaudelopus.com/
 
 ## ✨ Fonctionnalités
 
