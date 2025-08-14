@@ -42,3 +42,8 @@ logs
 .cache/
 .parcel-cache/
 .vite/
+
+# Claude Code utils
+ai-humanist-blog/CLaude code errors history
+ai-humanist-blog/.claude-context.md
+

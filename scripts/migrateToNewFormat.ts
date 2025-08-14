@@ -51,8 +51,9 @@ async function migrateArticles(): Promise<void> {
       total_articles: articles.length
     }
     
-    // Sauvegarde avec backup
-    const backupPath = ARTICLES_PATH.replace('.json', '.backup.json')
+    // Sauvegarde avec backup dans data_security_backup
+    const backupDir = path.join(process.cwd(), 'public/data/data_security_backup')
+    const backupPath = path.join(backupDir, `articles.backup-${new Date().toISOString().slice(0,10).replace(/-/g,'')}.json`)
     await fs.copyFile(ARTICLES_PATH, backupPath)
     
     await fs.writeFile(
@@ -92,8 +93,9 @@ async function migrateConnections(): Promise<void> {
       last_processed: {}  // Sera rempli au fur et à mesure
     }
     
-    // Sauvegarde avec backup
-    const backupPath = CONNECTIONS_PATH.replace('.json', '.backup.json')
+    // Sauvegarde avec backup dans data_security_backup
+    const backupDir = path.join(process.cwd(), 'public/data/data_security_backup')
+    const backupPath = path.join(backupDir, `connections.backup-${new Date().toISOString().slice(0,10).replace(/-/g,'')}.json`)
     await fs.copyFile(CONNECTIONS_PATH, backupPath)
     
     await fs.writeFile(
