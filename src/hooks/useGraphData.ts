@@ -129,14 +129,25 @@ function generateOverviewGraph(
     radius: calculateNodeRadius(article, 0)
   }))
 
-  // Filtrer les connexions avec seuil plus élevé pour la vue d'ensemble
-  const overviewMinStrength = Math.max(config.minConnectionStrength, 0.5)
-  const links: GraphLink[] = connections
+  // FILTRAGE INTELLIGENT pour vue d'ensemble lisible
+  const overviewMinStrength = Math.max(config.minConnectionStrength, 0.7) // Seuil plus élevé
+  const eligibleConnections = connections
     .filter(conn => 
       displayedIds.has(conn.source_id) && 
       displayedIds.has(conn.target_id) &&
       conn.strength >= overviewMinStrength
     )
+    // Prioriser les connexions les plus intéressantes
+    .sort((a, b) => {
+      const typeOrder = { 'contradicts': 5, 'questions': 4, 'builds_on': 3, 'implements': 2, 'similar_to': 1 }
+      const aScore = (typeOrder[a.type] || 0) + a.strength + (a.auto_detected ? 0 : 0.2)
+      const bScore = (typeOrder[b.type] || 0) + b.strength + (b.auto_detected ? 0 : 0.2)
+      return bScore - aScore
+    })
+
+  // LIMITATION basée sur la configuration
+  const links: GraphLink[] = eligibleConnections
+    .slice(0, NAVIGATION_CONFIG.MAX_OVERVIEW_CONNECTIONS)
     .map(conn => ({
       source: conn.source_id,
       target: conn.target_id,
@@ -146,47 +157,109 @@ function generateOverviewGraph(
       reasoning: conn.reasoning
     }))
 
+  console.log(`📊 Vue d'ensemble : ${eligibleConnections.length} connexions éligibles → ${links.length} affichées`)
+
   return { nodes, links }
 }
 
-// Génération du graphique en mode focus
+// Génération du graphique en mode focus - NAVIGATION PROGRESSIVE INTELLIGENTE
 function generateFocusGraph(
   centerArticle: Article,
   allArticles: Article[],
   connections: Connection[],
   config: GraphDataOptions
 ): { nodes: GraphNode[], links: GraphLink[] } {
-  const visitedNodes = new Set<string>()
   const nodes: GraphNode[] = []
   const links: GraphLink[] = []
 
-  function addNodesRecursively(article: Article, depth: number) {
-    if (depth > config.maxDepth || visitedNodes.has(article.id) || nodes.length >= config.maxNodes) {
-      return
-    }
-    
-    visitedNodes.add(article.id)
-    nodes.push({
-      id: article.id,
-      article,
-      depth,
-      radius: calculateNodeRadius(article, depth)
+  // Ajouter le nœud central
+  nodes.push({
+    id: centerArticle.id,
+    article: centerArticle,
+    depth: 0,
+    radius: calculateNodeRadius(centerArticle, 0)
+  })
+
+  // Trouver et TRIER les connexions directes par pertinence
+  const directConnections = connections
+    .filter(conn => 
+      (conn.source_id === centerArticle.id || conn.target_id === centerArticle.id) &&
+      conn.strength >= config.minConnectionStrength
+    )
+    .sort((a, b) => {
+      // Tri par priorité : 1) Type 2) Force 3) Auto-détecté
+      const typeOrder = { 'contradicts': 5, 'questions': 4, 'builds_on': 3, 'implements': 2, 'similar_to': 1 }
+      const aScore = (typeOrder[a.type] || 0) + a.strength + (a.auto_detected ? 0 : 0.1)
+      const bScore = (typeOrder[b.type] || 0) + b.strength + (b.auto_detected ? 0 : 0.1)
+      return bScore - aScore
     })
+
+  // LIMITATION INTELLIGENTE basée sur la configuration
+  const selectedConnections = directConnections.slice(0, NAVIGATION_CONFIG.MAX_FOCUS_CONNECTIONS)
+  
+  console.log(`🔍 Article "${centerArticle.title.substring(0, 30)}..." : ${directConnections.length} connexions → ${selectedConnections.length} affichées`)
+  
+  // Ajouter les articles connectés sélectionnés
+  selectedConnections.forEach(connection => {
+    const connectedId = connection.source_id === centerArticle.id ? 
+      connection.target_id : connection.source_id
     
-    if (depth < config.maxDepth) {
-      // Trouver les connexions de cet article
-      const articleConnections = connections.filter(conn => 
-        (conn.source_id === article.id || conn.target_id === article.id) &&
-        conn.strength >= config.minConnectionStrength
-      )
+    const connectedArticle = allArticles.find(a => a.id === connectedId)
+    if (connectedArticle && !nodes.some(n => n.id === connectedId)) {
+      // Ajouter le nœud connecté
+      nodes.push({
+        id: connectedArticle.id,
+        article: connectedArticle,
+        depth: 1,
+        radius: calculateNodeRadius(connectedArticle, 1)
+      })
+    }
+
+    // Ajouter le lien
+    links.push({
+      source: connection.source_id,
+      target: connection.target_id,
+      type: connection.type,
+      strength: connection.strength,
+      auto_detected: connection.auto_detected,
+      reasoning: connection.reasoning
+    })
+  })
+
+  // NIVEAU 2 : Ajouter quelques connexions secondaires pour les nœuds les plus pertinents
+  if (config.maxDepth >= 2 && nodes.length <= 6) {
+    const level1Nodes = nodes.filter(n => n.depth === 1)
+    
+    // Prendre les 2-3 nœuds niveau 1 les plus forts
+    const topLevel1Nodes = level1Nodes
+      .sort((a, b) => b.radius - a.radius) // Tri par importance (radius)
+      .slice(0, Math.min(3, level1Nodes.length))
+    
+    topLevel1Nodes.forEach(node1 => {
+      const level2Connections = connections
+        .filter(conn => 
+          (conn.source_id === node1.id || conn.target_id === node1.id) &&
+          conn.strength >= config.minConnectionStrength + 0.1 && // Seuil plus élevé pour niveau 2
+          !nodes.some(n => n.id === (conn.source_id === node1.id ? conn.target_id : conn.source_id))
+        )
+        .sort((a, b) => b.strength - a.strength)
+        .slice(0, 2) // Maximum 2 connexions niveau 2 par nœud niveau 1
       
-      articleConnections.forEach(connection => {
-        const connectedId = connection.source_id === article.id ? 
+      level2Connections.forEach(connection => {
+        const connectedId = connection.source_id === node1.id ? 
           connection.target_id : connection.source_id
         
         const connectedArticle = allArticles.find(a => a.id === connectedId)
-        if (connectedArticle && !visitedNodes.has(connectedId)) {
-          // Ajouter le lien
+        if (connectedArticle && nodes.length < config.maxNodes) {
+          // Ajouter le nœud niveau 2
+          nodes.push({
+            id: connectedArticle.id,
+            article: connectedArticle,
+            depth: 2,
+            radius: calculateNodeRadius(connectedArticle, 2)
+          })
+
+          // Ajouter le lien niveau 2
           links.push({
             source: connection.source_id,
             target: connection.target_id,
@@ -195,32 +268,11 @@ function generateFocusGraph(
             auto_detected: connection.auto_detected,
             reasoning: connection.reasoning
           })
-          
-          // Continuer récursivement
-          addNodesRecursively(connectedArticle, depth + 1)
-        } else if (connectedArticle && visitedNodes.has(connectedId)) {
-          // Ajouter le lien même si le nœud existe déjà
-          const existingLink = links.find(link => 
-            (link.source === connection.source_id && link.target === connection.target_id) ||
-            (link.source === connection.target_id && link.target === connection.source_id)
-          )
-          
-          if (!existingLink) {
-            links.push({
-              source: connection.source_id,
-              target: connection.target_id,
-              type: connection.type,
-              strength: connection.strength,
-              auto_detected: connection.auto_detected,
-              reasoning: connection.reasoning
-            })
-          }
         }
       })
-    }
+    })
   }
   
-  addNodesRecursively(centerArticle, 0)
   return { nodes, links }
 }
 

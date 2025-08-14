@@ -4,3939 +4,3611 @@
       "source_id": "art_007",
       "target_id": "art_011",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ frugalite"
     },
     {
       "source_id": "art_007",
       "target_id": "art_012",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_007",
       "target_id": "art_029",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_030",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_007",
-      "target_id": "art_031",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_032",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_033",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_034",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_035",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_037",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_038",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_039",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_040",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_041",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_007",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "builds_on",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_007",
       "target_id": "art_066",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ frugalite"
     },
     {
       "source_id": "art_007",
       "target_id": "art_069",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ ethique"
     },
     {
       "source_id": "art_007",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_007",
-      "target_id": "art_056",
+      "target_id": "art_058",
       "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: technique, reasoning"
-    },
-    {
-      "source_id": "art_007",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_007",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_007",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_008",
-      "target_id": "art_009",
-      "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: frugalite, green_ai"
-    },
-    {
-      "source_id": "art_008",
-      "target_id": "art_010",
-      "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: frugalite, green_ai"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: technique"
     },
     {
       "source_id": "art_008",
       "target_id": "art_011",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "contradicts",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Opposition détectée entre frugalite et frugalite"
     },
     {
       "source_id": "art_008",
       "target_id": "art_012",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_008",
-      "target_id": "art_013",
-      "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: frugalite, green_ai"
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
     },
     {
       "source_id": "art_008",
-      "target_id": "art_031",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "target_id": "art_030",
+      "type": "contradicts",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Opposition détectée entre frugalite et ethique"
     },
     {
       "source_id": "art_008",
       "target_id": "art_032",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
     },
     {
       "source_id": "art_008",
       "target_id": "art_033",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
     },
     {
       "source_id": "art_008",
       "target_id": "art_037",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
     },
     {
       "source_id": "art_008",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
     },
     {
       "source_id": "art_008",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_008",
       "target_id": "art_068",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_008",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: frugalite"
     },
     {
       "source_id": "art_008",
       "target_id": "art_056",
-      "type": "similar_to",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Concepts partagés: outils similaires"
+      "type": "implements",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Implémentation ou application pratique détectée"
     },
     {
       "source_id": "art_008",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_008",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_008",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
     },
     {
       "source_id": "art_009",
       "target_id": "art_010",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: frugalite"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_011",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: frugalite"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_030",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_068",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: frugalite"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_011",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: frugalite"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_030",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_068",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: frugalite"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_013",
+      "type": "implements",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Implémentation ou application pratique détectée"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_014",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ usage_professionnel"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_030",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_034",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_035",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_036",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ usage_professionnel"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_039",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_040",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_041",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_051",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_052",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ philosophie"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_053",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ philosophie"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_055",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ philosophie"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_066",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_067",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ usage_professionnel"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_068",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: frugalite"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_069",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_070",
+      "type": "questions",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_057",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_059",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_060",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_061",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ recherche"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_062",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_063",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_064",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ recherche"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_013",
+      "type": "questions",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_030",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_032",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_033",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_034",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_035",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_037",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_038",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_039",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_040",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_041",
+      "type": "questions",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_051",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_052",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_053",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_055",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_066",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_067",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_068",
+      "type": "questions",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_069",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_070",
+      "type": "questions",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_056",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_057",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_058",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_059",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_060",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_061",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_062",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_063",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_064",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_029",
+      "type": "implements",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Implémentation ou application pratique détectée"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_030",
+      "type": "implements",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Implémentation ou application pratique détectée"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_032",
+      "type": "implements",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Implémentation ou application pratique détectée"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_033",
+      "type": "implements",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Implémentation ou application pratique détectée"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_037",
+      "type": "implements",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Implémentation ou application pratique détectée"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_038",
+      "type": "implements",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Implémentation ou application pratique détectée"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_068",
+      "type": "implements",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Implémentation ou application pratique détectée"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_058",
+      "type": "implements",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Implémentation ou application pratique détectée"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_030",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_068",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ frugalite"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ technique"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_030",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_032",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_033",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_034",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_035",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_036",
+      "type": "builds_on",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ usage_professionnel"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_037",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_038",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_039",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_040",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_041",
       "type": "similar_to",
       "strength": 0.6,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: frugalite, green_ai, society"
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
-      "source_id": "art_009",
-      "target_id": "art_011",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_012",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_013",
-      "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: frugalite, green_ai"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_031",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_032",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_033",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
+      "source_id": "art_029",
       "target_id": "art_051",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
-      "source_id": "art_009",
-      "target_id": "art_054",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_068",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_009",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_011",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_012",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_013",
-      "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: frugalite, green_ai"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_031",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_032",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_033",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_054",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_068",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_010",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_012",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_013",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_014",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_029",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_030",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_031",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_032",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_033",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_034",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_035",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_036",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_038",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_039",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_040",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_041",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_052",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_053",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_055",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_066",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_067",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ usage_professionnel"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_069",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_056",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_057",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_058",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_060",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_061",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
-      "source_id": "art_011",
+      "source_id": "art_029",
       "target_id": "art_064",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
     },
     {
-      "source_id": "art_012",
-      "target_id": "art_013",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_014",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_029",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_030",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
+      "source_id": "art_030",
       "target_id": "art_031",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
-      "source_id": "art_012",
+      "source_id": "art_030",
       "target_id": "art_032",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
-      "source_id": "art_012",
+      "source_id": "art_030",
       "target_id": "art_033",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
-      "source_id": "art_012",
+      "source_id": "art_030",
       "target_id": "art_034",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
-      "source_id": "art_012",
+      "source_id": "art_030",
       "target_id": "art_035",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
-      "source_id": "art_012",
+      "source_id": "art_030",
       "target_id": "art_036",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "builds_on",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ usage_professionnel"
     },
     {
-      "source_id": "art_012",
+      "source_id": "art_030",
       "target_id": "art_037",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
-      "source_id": "art_012",
+      "source_id": "art_030",
       "target_id": "art_038",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
-      "source_id": "art_012",
-      "target_id": "art_039",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_040",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_041",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_052",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_053",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_054",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_055",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_066",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_067",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_068",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_069",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_061",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_012",
-      "target_id": "art_064",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_031",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_032",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_033",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_054",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_068",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_013",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_031",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_032",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_033",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_054",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_068",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_014",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_031",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_032",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_033",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
+      "source_id": "art_030",
       "target_id": "art_039",
       "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: ethique, education"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_054",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_068",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_029",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_030",
-      "target_id": "art_031",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "target_id": "art_040",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_030",
-      "target_id": "art_032",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_030",
-      "target_id": "art_033",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
-    },
-    {
-      "source_id": "art_030",
-      "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "target_id": "art_041",
+      "type": "similar_to",
+      "strength": 0.6,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_030",
       "target_id": "art_051",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_052",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_053",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
       "source_id": "art_030",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_055",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_066",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_067",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ usage_professionnel"
     },
     {
       "source_id": "art_030",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_069",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_030",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_030",
       "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_030",
       "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_030",
       "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_030",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_030",
       "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_061",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
     },
     {
       "source_id": "art_030",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_030",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_064",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
     },
     {
       "source_id": "art_031",
       "target_id": "art_032",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_033",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_034",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_035",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_036",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.6,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_037",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_038",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_039",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_040",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_041",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_052",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_053",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_055",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_066",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_067",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.6,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_068",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_069",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_056",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_058",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_031",
       "target_id": "art_061",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_031",
-      "target_id": "art_064",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_032",
       "target_id": "art_033",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_034",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_035",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_036",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ usage_professionnel"
     },
     {
       "source_id": "art_032",
       "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_038",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_039",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_040",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_041",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.6,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_051",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_032",
       "target_id": "art_052",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
       "source_id": "art_032",
       "target_id": "art_053",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
       "source_id": "art_032",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_032",
       "target_id": "art_055",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
       "source_id": "art_032",
       "target_id": "art_066",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_067",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ usage_professionnel"
     },
     {
       "source_id": "art_032",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
     },
     {
       "source_id": "art_032",
       "target_id": "art_069",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_032",
       "target_id": "art_056",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_057",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_058",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_032",
       "target_id": "art_060",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_032",
       "target_id": "art_061",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
     },
     {
       "source_id": "art_032",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_032",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_032",
       "target_id": "art_064",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
     },
     {
       "source_id": "art_033",
       "target_id": "art_034",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_035",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_036",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ usage_professionnel"
     },
     {
       "source_id": "art_033",
       "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_038",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_039",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_040",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_041",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.6,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_051",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_033",
       "target_id": "art_052",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
       "source_id": "art_033",
       "target_id": "art_053",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
       "source_id": "art_033",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_033",
       "target_id": "art_055",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
       "source_id": "art_033",
       "target_id": "art_066",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_067",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ usage_professionnel"
     },
     {
       "source_id": "art_033",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
     },
     {
       "source_id": "art_033",
       "target_id": "art_069",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_033",
       "target_id": "art_056",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_057",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_058",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_033",
       "target_id": "art_060",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_033",
       "target_id": "art_061",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
     },
     {
       "source_id": "art_033",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_033",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_033",
       "target_id": "art_064",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
     },
     {
       "source_id": "art_034",
       "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_034",
-      "target_id": "art_039",
+      "target_id": "art_038",
       "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: ethique, regulation"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_034",
       "target_id": "art_051",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_034",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_034",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_034",
-      "target_id": "art_069",
-      "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: ethique, policy"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
     },
     {
       "source_id": "art_034",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_034",
       "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_034",
       "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_034",
       "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_034",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_034",
       "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_034",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_034",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_035",
       "target_id": "art_037",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_035",
+      "target_id": "art_038",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_035",
       "target_id": "art_051",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_035",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_035",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
     },
     {
       "source_id": "art_035",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_035",
       "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_035",
       "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_035",
       "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_035",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_035",
       "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_035",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_035",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_036",
       "target_id": "art_037",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ ethique"
+    },
+    {
+      "source_id": "art_036",
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ ethique"
     },
     {
       "source_id": "art_036",
       "target_id": "art_051",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_036",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_036",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ frugalite"
     },
     {
       "source_id": "art_036",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_036",
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ technique"
     },
     {
       "source_id": "art_036",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_036",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_036",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_037",
       "target_id": "art_038",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_037",
       "target_id": "art_039",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_037",
       "target_id": "art_040",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_037",
       "target_id": "art_041",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.6,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_037",
       "target_id": "art_051",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_037",
       "target_id": "art_052",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
       "source_id": "art_037",
       "target_id": "art_053",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
       "source_id": "art_037",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_037",
       "target_id": "art_055",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
       "source_id": "art_037",
       "target_id": "art_066",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_037",
       "target_id": "art_067",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ usage_professionnel"
     },
     {
       "source_id": "art_037",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
     },
     {
       "source_id": "art_037",
       "target_id": "art_069",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_037",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_037",
       "target_id": "art_056",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_037",
       "target_id": "art_057",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_037",
       "target_id": "art_058",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_037",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_037",
       "target_id": "art_060",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_037",
       "target_id": "art_061",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
     },
     {
       "source_id": "art_037",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_037",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_037",
       "target_id": "art_064",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article développe l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_039",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_040",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_038",
       "target_id": "art_041",
       "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: ethique, bias_fairness"
+      "strength": 0.6,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
     },
     {
       "source_id": "art_038",
       "target_id": "art_051",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_038",
-      "target_id": "art_054",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_038",
-      "target_id": "art_068",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_038",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_038",
-      "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_038",
-      "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_038",
-      "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_038",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_038",
-      "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_038",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_038",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_054",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_068",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_039",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_054",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_068",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_040",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_051",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_054",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_068",
-      "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_041",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
       "target_id": "art_052",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
-      "source_id": "art_051",
+      "source_id": "art_038",
       "target_id": "art_053",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
-      "source_id": "art_051",
+      "source_id": "art_038",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
-      "source_id": "art_051",
+      "source_id": "art_038",
       "target_id": "art_055",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ philosophie"
     },
     {
-      "source_id": "art_051",
+      "source_id": "art_038",
       "target_id": "art_066",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_067",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_068",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_069",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_061",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_051",
-      "target_id": "art_064",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_052",
-      "target_id": "art_053",
       "type": "similar_to",
-      "strength": 0.39999999999999997,
-      "auto_detected": true,
-      "reasoning": "Domaines liés: philosophie, consciousness"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_067",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ usage_professionnel"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_068",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_069",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: ethique"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_070",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_057",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_059",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_060",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_061",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_062",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_063",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_064",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ recherche"
+    },
+    {
+      "source_id": "art_039",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_039",
+      "target_id": "art_068",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
+    },
+    {
+      "source_id": "art_039",
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_039",
+      "target_id": "art_057",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_039",
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_039",
+      "target_id": "art_059",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_039",
+      "target_id": "art_060",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_040",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_040",
+      "target_id": "art_068",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
+    },
+    {
+      "source_id": "art_040",
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_040",
+      "target_id": "art_057",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_040",
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_040",
+      "target_id": "art_059",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_040",
+      "target_id": "art_060",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_041",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_041",
+      "target_id": "art_068",
+      "type": "builds_on",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
+    },
+    {
+      "source_id": "art_041",
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_041",
+      "target_id": "art_057",
+      "type": "builds_on",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_041",
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_041",
+      "target_id": "art_059",
+      "type": "questions",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_041",
+      "target_id": "art_060",
+      "type": "builds_on",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_067",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_068",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_069",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_056",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_058",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_061",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_052",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_052",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: philosophie ↔ frugalite"
     },
     {
       "source_id": "art_052",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_052",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_052",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_052",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: philosophie ↔ technique"
     },
     {
       "source_id": "art_053",
       "target_id": "art_054",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_053",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: philosophie ↔ frugalite"
     },
     {
       "source_id": "art_053",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_053",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_053",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_053",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: philosophie ↔ technique"
     },
     {
       "source_id": "art_054",
       "target_id": "art_055",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_066",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_067",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_068",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_069",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_056",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_057",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_058",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_060",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_061",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_054",
       "target_id": "art_064",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_055",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: philosophie ↔ frugalite"
     },
     {
       "source_id": "art_055",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_055",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_055",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_055",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: philosophie ↔ technique"
     },
     {
       "source_id": "art_066",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
-    },
-    {
-      "source_id": "art_066",
-      "target_id": "art_070",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ frugalite"
     },
     {
       "source_id": "art_066",
       "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_066",
       "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_066",
       "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_066",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_066",
       "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
-    },
-    {
-      "source_id": "art_066",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_066",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_067",
       "target_id": "art_068",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ frugalite"
     },
     {
       "source_id": "art_067",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_067",
+      "target_id": "art_058",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: usage_professionnel ↔ technique"
     },
     {
       "source_id": "art_067",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_067",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_067",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_068",
       "target_id": "art_069",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ ethique"
     },
     {
       "source_id": "art_068",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_068",
       "target_id": "art_056",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
     },
     {
       "source_id": "art_068",
       "target_id": "art_057",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
     },
     {
       "source_id": "art_068",
       "target_id": "art_058",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
     },
     {
       "source_id": "art_068",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_068",
       "target_id": "art_060",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ technique"
     },
     {
       "source_id": "art_068",
       "target_id": "art_061",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ recherche"
     },
     {
       "source_id": "art_068",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_068",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_068",
       "target_id": "art_064",
       "type": "builds_on",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article optimise l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: frugalite ↔ recherche"
     },
     {
       "source_id": "art_069",
       "target_id": "art_070",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_069",
       "target_id": "art_056",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_069",
       "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_069",
       "target_id": "art_058",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_069",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_069",
       "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.8,
-      "auto_detected": true,
-      "reasoning": "Connexion directe entre innovation technique et réflexion éthique"
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: ethique ↔ technique"
     },
     {
       "source_id": "art_069",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_069",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_070",
       "target_id": "art_056",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_070",
-      "target_id": "art_057",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_070",
       "target_id": "art_058",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_070",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_070",
-      "target_id": "art_060",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_070",
       "target_id": "art_061",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
-      "source_id": "art_070",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_070",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_070",
-      "target_id": "art_064",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "source_id": "art_056",
+      "target_id": "art_058",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: technique"
     },
     {
       "source_id": "art_056",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_056",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_056",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_057",
-      "target_id": "art_059",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_057",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_057",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "target_id": "art_058",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: technique"
     },
     {
       "source_id": "art_058",
       "target_id": "art_059",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_058",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_058",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_059",
       "target_id": "art_060",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Articles du même domaine: technique"
+    },
+    {
+      "source_id": "art_058",
+      "target_id": "art_061",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ recherche"
+    },
+    {
+      "source_id": "art_058",
+      "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_058",
+      "target_id": "art_063",
+      "type": "questions",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
+    },
+    {
+      "source_id": "art_058",
+      "target_id": "art_064",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Pont interdisciplinaire: technique ↔ recherche"
     },
     {
       "source_id": "art_059",
       "target_id": "art_061",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_059",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_059",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_059",
-      "target_id": "art_064",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article critique l'approche de l'autre"
-    },
-    {
-      "source_id": "art_060",
-      "target_id": "art_062",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_060",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_061",
       "target_id": "art_062",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     },
     {
       "source_id": "art_061",
       "target_id": "art_063",
       "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_062",
-      "target_id": "art_063",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_062",
-      "target_id": "art_064",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
-    },
-    {
-      "source_id": "art_063",
-      "target_id": "art_064",
-      "type": "questions",
-      "strength": 0.9,
-      "auto_detected": true,
-      "reasoning": "Un article questionne l'approche de l'autre"
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Questionnement critique détecté dans le contenu"
     }
   ],
-  "generated_at": "2025-08-13T22:34:30.623Z",
-  "total_connections": 492
+  "generated_at": "2025-08-14T00:37:05.310Z",
+  "total_connections": 450,
+  "generation_method": "hybrid_llm_plus_autodetect",
+  "type_distribution": {
+    "builds_on": 193,
+    "questions": 177,
+    "similar_to": 68,
+    "contradicts": 2,
+    "implements": 10
+  }
 }

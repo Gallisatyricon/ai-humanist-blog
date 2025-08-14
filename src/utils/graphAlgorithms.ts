@@ -5,183 +5,352 @@ function intersection<T>(arr1: T[], arr2: T[]): T[] {
   return arr1.filter(value => arr2.includes(value))
 }
 
+/**
+ * ALGORITHME INTELLIGENT MULTI-CRITÈRES DE DÉTECTION DE CONNEXIONS
+ * Basé sur les meilleures pratiques 2024-2025 et la richesse des métadonnées
+ */
 export function detectConnections(articleA: Article, articleB: Article): Connection | null {
-  let strength = 0
-  let type: Connection['type'] = 'similar_to'
-  let reasoning = ''
-  
-  // 1. Similarité par concepts
+  // === 1. ANALYSE DES CONCEPTS ET OUTILS ===
   const sharedConcepts = intersection(
     articleA.concepts.map(c => c.id),
     articleB.concepts.map(c => c.id)
   )
-  const conceptSimilarity = sharedConcepts.length / 
-    Math.max(articleA.concepts.length, articleB.concepts.length, 1)
-  
-  // 2. Outils communs
   const sharedTools = intersection(
     articleA.tools_mentioned.map(t => t.id),
     articleB.tools_mentioned.map(t => t.id)
   )
-  const toolSimilarity = sharedTools.length / 
-    Math.max(articleA.tools_mentioned.length, articleB.tools_mentioned.length, 1)
   
-  // 3. Domaines partagés
+  // === 2. ANALYSE DES DOMAINES ===
   const allDomainsA = [articleA.primary_domain, ...articleA.secondary_domains]
   const allDomainsB = [articleB.primary_domain, ...articleB.secondary_domains]
   const sharedDomains = intersection(allDomainsA, allDomainsB)
-  const domainSimilarity = sharedDomains.length / Math.max(allDomainsA.length, allDomainsB.length)
+  const isDifferentPrimaryDomains = articleA.primary_domain !== articleB.primary_domain
   
-  // 4. Détection de contradiction (controverses opposées)
-  const controversyOpposition = detectControversyOpposition(articleA, articleB)
+  // === 3. ANALYSE TEXTUELLE SÉMANTIQUE ===
+  const textualAnalysis = analyzeTextualRelationship(articleA, articleB)
   
-  // 5. Référence directe (dans summary/perspective)
-  const directReference = detectDirectReference(articleA, articleB)
+  // === 4. ANALYSE DE CONTROVERSE ===
+  const controversyAnalysis = analyzeControversyRelationship(articleA, articleB)
   
-  // 6. Détection pont technique-éthique
-  const bridgeConnection = detectTechEthicsBridge(articleA, articleB)
+  // === 5. CALCUL MULTI-CRITÈRES DE LA FORCE ===
+  let baseStrength = 0
+  let relationshipType: Connection['type'] = 'similar_to'
+  let reasoning = ''
   
-  // Calcul score final
-  if (directReference.found) {
-    strength = 0.9
-    type = directReference.type
-    reasoning = directReference.context
-  } else if (bridgeConnection.isBridge) {
-    strength = 0.8
-    type = 'questions'
-    reasoning = bridgeConnection.reasoning
-  } else if (controversyOpposition.detected) {
-    strength = 0.7
-    type = 'contradicts'
-    reasoning = controversyOpposition.explanation
-  } else if (conceptSimilarity > 0.4 || toolSimilarity > 0.3) {
-    strength = Math.max(conceptSimilarity, toolSimilarity) * 0.8
-    type = 'similar_to'
-    reasoning = `Concepts partagés: ${sharedConcepts.length > 0 ? sharedConcepts.join(', ') : 'outils similaires'}`
-  } else if (domainSimilarity > 0.3) {
-    strength = domainSimilarity * 0.6
-    type = 'similar_to'
-    reasoning = `Domaines liés: ${sharedDomains.join(', ')}`
+  // PRIORITÉ 1 : Références directes détectées dans le texte
+  if (textualAnalysis.hasDirectReference) {
+    baseStrength = 0.85
+    relationshipType = textualAnalysis.type
+    reasoning = textualAnalysis.reasoning
+  }
+  // PRIORITÉ 2 : Opposition de controverse 
+  else if (controversyAnalysis.isControversial) {
+    baseStrength = 0.75
+    relationshipType = 'contradicts'
+    reasoning = controversyAnalysis.reasoning
+  }
+  // PRIORITÉ 3 : Pont interdisciplinaire (cœur du projet)
+  else if (isDifferentPrimaryDomains && (sharedConcepts.length > 0 || sharedTools.length > 0)) {
+    baseStrength = calculateBridgeStrength(articleA, articleB, sharedConcepts, sharedTools, sharedDomains)
+    relationshipType = determineBridgeType(articleA, articleB, textualAnalysis)
+    reasoning = `Pont ${articleA.primary_domain} ↔ ${articleB.primary_domain}: ${sharedConcepts.concat(sharedTools).join(', ')}`
+  }
+  // PRIORITÉ 4 : Similarité dans même domaine ou domaines secondaires partagés
+  else if (sharedConcepts.length > 0 || sharedTools.length > 0 || sharedDomains.length >= 2) {
+    baseStrength = calculateSimilarityStrength(articleA, articleB, sharedConcepts, sharedTools, sharedDomains)
+    relationshipType = 'similar_to'
+    
+    if (sharedDomains.length >= 2 && sharedConcepts.length === 0 && sharedTools.length === 0) {
+      reasoning = `Domaines partagés: ${sharedDomains.join(', ')}`
+    } else {
+      reasoning = `Similarité: ${sharedConcepts.concat(sharedTools).slice(0, 3).join(', ')}`
+    }
   }
   
-  // Seuil de pertinence
-  if (strength < 0.3) return null
+  // === 6. PONDÉRATION ADAPTATIVE ===
+  const finalStrength = applyAdaptiveWeighting(baseStrength, articleA, articleB, {
+    sharedConcepts,
+    sharedTools,
+    sharedDomains,
+    complexity: Math.abs(getComplexityScore(articleA.complexity_level) - getComplexityScore(articleB.complexity_level)),
+    temporalDistance: calculateTemporalDistance(articleA.date, articleB.date),
+    interestAlignment: Math.abs(articleA.interest_level - articleB.interest_level)
+  })
+  
+  // === 7. SEUIL DE PERTINENCE ADAPTATIF ===
+  // Plus tolérant pour capturer plus de connexions pertinentes
+  const threshold = isDifferentPrimaryDomains ? 0.35 : 0.42 // Abaissé pour plus de connexions
+  
+  if (finalStrength < threshold) return null
   
   return {
     source_id: articleA.id,
     target_id: articleB.id,
-    type,
-    strength,
+    type: relationshipType,
+    strength: Math.min(finalStrength, 0.95),
     auto_detected: true,
     reasoning
   }
 }
 
-function detectDirectReference(articleA: Article, articleB: Article): {
-  found: boolean
+// ========================================================================
+// FONCTIONS D'ANALYSE SPÉCIALISÉES
+// ========================================================================
+
+/**
+ * Analyse textuelle sémantique avancée utilisant les summary et perspective
+ */
+function analyzeTextualRelationship(articleA: Article, articleB: Article): {
+  hasDirectReference: boolean
   type: Connection['type']
-  context: string
+  reasoning: string
 } {
   const textA = `${articleA.summary} ${articleA.perspective}`.toLowerCase()
   const textB = `${articleB.summary} ${articleB.perspective}`.toLowerCase()
   
-  // Recherche de mots-clés d'implémentation
-  const implementKeywords = ['implémente', 'utilise', 'applique', 'se base sur', 'emploie']
-  const questionKeywords = ['questionne', 'remet en cause', 'critique', 'conteste']
-  const buildKeywords = ['étend', 'améliore', 'optimise', 'développe']
+  // Mots-clés contextuels sophistiqués
+  const implementsPatterns = [
+    /implémente?\s+.*(?:concept|approche|méthode)/,
+    /utilise?\s+.*(?:algorithme|technique|outil)/,
+    /applique?\s+.*(?:principe|méthode)/,
+    /se\s+base\s+sur.*(?:travaux|recherche|approche)/
+  ]
   
-  for (const keyword of implementKeywords) {
-    if (textA.includes(keyword) && articleA.tools_mentioned.some(tool => 
-        textB.includes(tool.name.toLowerCase()))) {
-      return {
-        found: true,
-        type: 'implements',
-        context: `Article A ${keyword} des outils mentionnés dans B`
+  const questionsPatterns = [
+    /(?:questionne|remet\s+en\s+cause|critique).*(?:approche|méthode|principe)/,
+    /(?:soulève|interroge).*(?:questions?|problème)/,
+    /(?:défie|conteste).*(?:paradigme|vision)/
+  ]
+  
+  const buildsPatterns = [
+    /(?:étend|développe|améliore).*(?:approche|méthode)/,
+    /(?:s'appuie\s+sur|enrichit).*(?:travaux|recherche)/,
+    /(?:complète|renforce).*(?:analyse|perspective)/
+  ]
+  
+  // Détection contextuelle avec outils/concepts partagés
+  const hasSharedElements = articleA.concepts.some(c => 
+    textB.includes(c.name.toLowerCase()) || textB.includes(c.id)
+  ) || articleA.tools_mentioned.some(t => 
+    textB.includes(t.name.toLowerCase())
+  )
+  
+  if (hasSharedElements) {
+    for (const pattern of implementsPatterns) {
+      if (pattern.test(textA) || pattern.test(textB)) {
+        return {
+          hasDirectReference: true,
+          type: 'implements',
+          reasoning: 'Implémentation détectée avec éléments partagés'
+        }
+      }
+    }
+    
+    for (const pattern of questionsPatterns) {
+      if (pattern.test(textA) || pattern.test(textB)) {
+        return {
+          hasDirectReference: true,
+          type: 'questions',
+          reasoning: 'Questionnement critique détecté'
+        }
+      }
+    }
+    
+    for (const pattern of buildsPatterns) {
+      if (pattern.test(textA) || pattern.test(textB)) {
+        return {
+          hasDirectReference: true,
+          type: 'builds_on',
+          reasoning: 'Extension/amélioration détectée'
+        }
       }
     }
   }
   
-  for (const keyword of questionKeywords) {
-    if (textA.includes(keyword) || textB.includes(keyword)) {
-      return {
-        found: true,
-        type: 'questions',
-        context: `Un article ${keyword} l'approche de l'autre`
-      }
-    }
-  }
-  
-  for (const keyword of buildKeywords) {
-    if (textA.includes(keyword) || textB.includes(keyword)) {
-      return {
-        found: true,
-        type: 'builds_on',
-        context: `Un article ${keyword} l'approche de l'autre`
-      }
-    }
-  }
-  
-  return { found: false, type: 'similar_to', context: '' }
+  return { hasDirectReference: false, type: 'similar_to', reasoning: '' }
 }
 
-function detectControversyOpposition(articleA: Article, articleB: Article): {
-  detected: boolean
-  explanation: string
-} {
-  // Chercher des concepts avec niveaux de controverse opposés
-  const highControversyA = articleA.concepts.filter(c => c.controversy_level >= 2)
-  const highControversyB = articleB.concepts.filter(c => c.controversy_level >= 2)
-  
-  if (highControversyA.length > 0 && highControversyB.length > 0) {
-    // Vérifier si les perspectives sont opposées
-    const textA = articleA.perspective.toLowerCase()
-    const textB = articleB.perspective.toLowerCase()
-    
-    const positiveWords = ['avancée', 'opportunité', 'prometteur', 'bénéfique']
-    const negativeWords = ['risque', 'danger', 'problème', 'inquiétude', 'urgent']
-    
-    const aIsPositive = positiveWords.some(word => textA.includes(word))
-    const aIsNegative = negativeWords.some(word => textA.includes(word))
-    const bIsPositive = positiveWords.some(word => textB.includes(word))
-    const bIsNegative = negativeWords.some(word => textB.includes(word))
-    
-    if ((aIsPositive && bIsNegative) || (aIsNegative && bIsPositive)) {
-      return {
-        detected: true,
-        explanation: 'Perspectives opposées sur des concepts controversés'
-      }
-    }
-  }
-  
-  return { detected: false, explanation: '' }
-}
-
-function detectTechEthicsBridge(articleA: Article, articleB: Article): {
-  isBridge: boolean
+/**
+ * Analyse des oppositions de controverse
+ */
+function analyzeControversyRelationship(articleA: Article, articleB: Article): {
+  isControversial: boolean
   reasoning: string
 } {
-  // Vérifier si un article est technique et l'autre éthique
-  const isBridge = (articleA.primary_domain === 'technique' && articleB.primary_domain === 'ethique') ||
-                   (articleA.primary_domain === 'ethique' && articleB.primary_domain === 'technique')
+  // Chercher des concepts controversés opposés
+  const controversialA = articleA.concepts.filter(c => c.controversy_level >= 2)
+  const controversialB = articleB.concepts.filter(c => c.controversy_level >= 2)
   
-  if (isBridge) {
-    // Chercher des domaines secondaires communs
-    const sharedSecondary = intersection(articleA.secondary_domains, articleB.secondary_domains)
+  if (controversialA.length > 0 && controversialB.length > 0) {
+    const perspectiveA = articleA.perspective.toLowerCase()
+    const perspectiveB = articleB.perspective.toLowerCase()
     
-    if (sharedSecondary.length > 0) {
+    // Indicateurs de positions opposées
+    const positiveIndicators = ['opportunité', 'prometteur', 'bénéfique', 'avancée', 'potentiel']
+    const negativeIndicators = ['risque', 'danger', 'problème', 'inquiétude', 'limite', 'défi']
+    
+    const aPositive = positiveIndicators.some(word => perspectiveA.includes(word))
+    const aNegative = negativeIndicators.some(word => perspectiveA.includes(word))
+    const bPositive = positiveIndicators.some(word => perspectiveB.includes(word))
+    const bNegative = negativeIndicators.some(word => perspectiveB.includes(word))
+    
+    if ((aPositive && bNegative) || (aNegative && bPositive)) {
       return {
-        isBridge: true,
-        reasoning: `Pont technique-éthique via: ${sharedSecondary.join(', ')}`
+        isControversial: true,
+        reasoning: `Opposition sur concepts controversés: ${controversialA.concat(controversialB).map(c => c.name).join(', ')}`
       }
-    }
-    
-    return {
-      isBridge: true,
-      reasoning: 'Connexion directe entre innovation technique et réflexion éthique'
     }
   }
   
-  return { isBridge: false, reasoning: '' }
+  return { isControversial: false, reasoning: '' }
+}
+
+/**
+ * Calcul de la force des ponts interdisciplinaires (cœur du projet)
+ */
+function calculateBridgeStrength(
+  articleA: Article, 
+  articleB: Article, 
+  sharedConcepts: string[], 
+  sharedTools: string[], 
+  sharedDomains: string[]
+): number {
+  let strength = 0.5 // Base pour ponts interdisciplinaires
+  
+  // Bonus pour éléments partagés (plus important pour ponts)
+  strength += sharedConcepts.length * 0.15
+  strength += sharedTools.length * 0.1
+  strength += sharedDomains.length * 0.1
+  
+  // Bonus spécial pour ponts technique ↔ éthique (cœur du projet)
+  if ((articleA.primary_domain === 'technique' && articleB.primary_domain === 'ethique') ||
+      (articleA.primary_domain === 'ethique' && articleB.primary_domain === 'technique')) {
+    strength += 0.15
+  }
+  
+  // Bonus pour articles à fort intérêt éditorial
+  const avgInterest = (articleA.interest_level + articleB.interest_level) / 2
+  if (avgInterest >= 4) strength += 0.1
+  
+  return Math.min(strength, 0.9)
+}
+
+/**
+ * Détermination du type de pont interdisciplinaire
+ */
+function determineBridgeType(articleA: Article, articleB: Article, textualAnalysis: any): Connection['type'] {
+  // Si analyse textuelle a trouvé quelque chose, utiliser cela
+  if (textualAnalysis.hasDirectReference) {
+    return textualAnalysis.type
+  }
+  
+  // Sinon, logique basée sur domaines
+  const techToEthic = articleA.primary_domain === 'technique' && articleB.primary_domain === 'ethique'
+  const ethicToTech = articleA.primary_domain === 'ethique' && articleB.primary_domain === 'technique'
+  
+  if (techToEthic || ethicToTech) {
+    return 'builds_on' // Les ponts technique-éthique construisent généralement l'un sur l'autre
+  }
+  
+  return 'similar_to'
+}
+
+/**
+ * Calcul de similarité dans le même domaine
+ */
+function calculateSimilarityStrength(
+  articleA: Article, 
+  articleB: Article, 
+  sharedConcepts: string[], 
+  sharedTools: string[], 
+  sharedDomains: string[]
+): number {
+  let strength = 0.35 // Base réduite pour plus de flexibilité
+  
+  // Calcul basé sur ratios de Jaccard pondérés
+  const conceptJaccard = sharedConcepts.length > 0 ? 
+    sharedConcepts.length / (articleA.concepts.length + articleB.concepts.length - sharedConcepts.length) : 0
+  const toolJaccard = sharedTools.length > 0 ? 
+    sharedTools.length / (articleA.tools_mentioned.length + articleB.tools_mentioned.length - sharedTools.length) : 0
+  
+  strength += conceptJaccard * 0.35
+  strength += toolJaccard * 0.25
+  
+  // Plus généreux avec les domaines partagés
+  if (sharedDomains.length >= 2) {
+    strength += 0.2 // Bonus significatif pour 2+ domaines partagés
+  } else if (sharedDomains.length === 1) {
+    strength += 0.1 // Bonus modéré pour 1 domaine partagé
+  }
+  
+  return Math.min(strength, 0.8)
+}
+
+/**
+ * Pondération adaptative basée sur métadonnées
+ */
+function applyAdaptiveWeighting(
+  baseStrength: number, 
+  articleA: Article, 
+  articleB: Article, 
+  factors: {
+    sharedConcepts: string[]
+    sharedTools: string[]
+    sharedDomains: string[]
+    complexity: number
+    temporalDistance: number
+    interestAlignment: number
+  }
+): number {
+  let adjustedStrength = baseStrength
+  
+  // Bonus pour articles récents ensemble (synergie temporelle)
+  if (factors.temporalDistance < 6) { // moins de 6 mois
+    adjustedStrength += 0.05
+  }
+  
+  // Léger malus pour articles trop différents en complexité
+  if (factors.complexity > 1) { // différence > 1 niveau
+    adjustedStrength *= 0.95
+  }
+  
+  // Bonus pour alignement d'intérêt éditorial
+  if (factors.interestAlignment <= 1 && (articleA.interest_level >= 4 || articleB.interest_level >= 4)) {
+    adjustedStrength += 0.05
+  }
+  
+  // Malus pour articles avec peu de métadonnées (qualité moindre)
+  const avgMetadataRichness = (
+    (articleA.concepts.length + articleB.concepts.length) +
+    (articleA.tools_mentioned.length + articleB.tools_mentioned.length) +
+    (articleA.secondary_domains.length + articleB.secondary_domains.length)
+  ) / 6
+  
+  if (avgMetadataRichness < 2) {
+    adjustedStrength *= 0.9
+  }
+  
+  return Math.max(0, Math.min(adjustedStrength, 0.95))
+}
+
+// ========================================================================
+// FONCTIONS UTILITAIRES
+// ========================================================================
+
+function getComplexityScore(level: string): number {
+  switch (level) {
+    case 'beginner': return 1
+    case 'intermediate': return 2
+    case 'advanced': return 3
+    default: return 2
+  }
+}
+
+function calculateTemporalDistance(dateA: string, dateB: string): number {
+  const a = new Date(dateA)
+  const b = new Date(dateB)
+  const diffInMonths = Math.abs((a.getTime() - b.getTime()) / (1000 * 60 * 60 * 24 * 30))
+  return Math.round(diffInMonths)
 }
 
 // Génération automatique de toutes les connexions
@@ -193,14 +362,8 @@ export function generateAllConnections(articles: Article[]): Connection[] {
       const connection = detectConnections(articles[i], articles[j])
       if (connection) {
         connections.push(connection)
-        // Ajouter la connexion inverse si elle fait sens
-        if (connection.type === 'similar_to') {
-          connections.push({
-            ...connection,
-            source_id: connection.target_id,
-            target_id: connection.source_id
-          })
-        }
+        // Ne plus ajouter automatiquement les connexions bidirectionnelles
+        // pour éviter l'explosion du nombre de connexions
       }
     }
   }

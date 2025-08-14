@@ -1,0 +1,30 @@
+{
+  "connections": [
+    {
+      "source_id": "art_008",
+      "target_id": "art_009",
+      "type": "similar_to",
+      "strength": 0.8,
+      "auto_detected": false,
+      "reasoning": "Deux articles sur l'IA frugale et l'énergie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_010",
+      "type": "builds_on",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Paradoxe énergétique vs intensité carbone"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_010",
+      "type": "similar_to",
+      "strength": 0.6,
+      "auto_detected": false,
+      "reasoning": "Énergie propre et efficacité"
+    }
+  ],
+  "generated_at": "2025-08-14T00:20:00.000Z",
+  "total_connections": 3
+}

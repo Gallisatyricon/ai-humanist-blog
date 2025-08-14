@@ -1,20 +1,24 @@
 import { PrimaryDomain } from '@/data/schema'
 
 export const NAVIGATION_CONFIG = {
-  // Limitation profondeur
+  // Limitation profondeur - Navigation progressive
   MAX_GRAPH_DEPTH: 2,
-  MAX_NODES_DISPLAYED: 50,
+  MAX_NODES_DISPLAYED: 20, // Réduit pour meilleure lisibilité
   
-  // Seuils de qualité
-  MIN_CONNECTION_STRENGTH: 0.3,
-  MIN_CENTRALITY_FOR_HUB: 0.6,
+  // Seuils de qualité relevés pour éviter surcharge
+  MIN_CONNECTION_STRENGTH: 0.6, // Augmenté de 0.3 à 0.6
+  MIN_CENTRALITY_FOR_HUB: 0.7,
+  
+  // Limites pour navigation progressive
+  MAX_FOCUS_CONNECTIONS: 8,     // Maximum connexions directes en mode focus
+  MAX_OVERVIEW_CONNECTIONS: 35, // Maximum connexions en vue d'ensemble
   
   // Interface
   ANIMATION_DURATION: 300,
   NODE_SIZES: {
-    central: 20,
-    primary: 15,
-    secondary: 10
+    central: 24,    // Augmenté pour plus de visibilité
+    primary: 18,    // Augmenté
+    secondary: 12   // Augmenté
   }
 }
 

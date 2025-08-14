@@ -1,12 +1,15 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "CommonJS",
     "target": "ES2020",
     "moduleResolution": "node",
     "allowImportingTsExtensions": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "noEmit": false,
-    "outDir": "./dist/scripts"
+    "outDir": "./dist/scripts",
+    "strict": false
   },
   "include": ["scripts/**/*", "src/**/*"],
   "exclude": ["node_modules"]
