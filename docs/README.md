@@ -150,7 +150,7 @@ npx tsx scripts/validateData.ts
 - **[TECHNICAL.md](TECHNICAL.md)** - Architecture système détaillée
 - **[TEMPLATES.md](TEMPLATES.md)** - Formats JSON pour intégrations
 - **[DEPLOYMENT.md](DEPLOYMENT.md)** - Guide déploiement production
-- **[PROGRESS.md](PROGRESS.md)** - Journal complet des évolutions
+- **[PROGRESS.md](progress.md)** - Journal complet des évolutions
 
 ## 🎯 Prochaines Étapes
 
