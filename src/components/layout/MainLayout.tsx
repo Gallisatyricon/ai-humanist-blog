@@ -181,7 +181,8 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
                       selectedArticle={selectedArticleForGraph}
                       onArticleSelect={handleArticleDetail}
                       title={`Articles correspondants (${enrichedFilteredArticles.length})`}
-                      maxDisplayed={6}
+                      initialDisplayed={enrichedFilteredArticles.length <= 24 ? enrichedFilteredArticles.length : 12}
+                      incrementSize={12}
                     />
                   ) : (
                     <div className="text-center py-8 text-gray-500">
@@ -204,7 +205,8 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
                     selectedArticle={selectedArticleForGraph}
                     onArticleSelect={handleArticleDetail}
                     title="Tous les articles"
-                    maxDisplayed={6}
+                    initialDisplayed={12}
+                    incrementSize={enrichedArticles.length > 100 ? 20 : 12}
                   />
                 </>
               )}

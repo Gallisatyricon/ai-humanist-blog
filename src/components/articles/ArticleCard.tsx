@@ -1,6 +1,7 @@
 import React from 'react'
 import { Article } from '@/data/schema'
 import { DOMAIN_COLORS, DOMAIN_LABELS, COMPLEXITY_LABELS, SOURCE_LABELS } from '@/config/navigation'
+import { useVirtualizedList } from '@/hooks/useVirtualizedList'
 
 interface ArticleCardProps {
   article: Article
@@ -174,7 +175,8 @@ interface ArticleListProps {
   selectedArticle?: Article | null
   onArticleSelect?: (article: Article) => void
   title?: string
-  maxDisplayed?: number
+  initialDisplayed?: number
+  incrementSize?: number
 }
 
 export const ArticleList: React.FC<ArticleListProps> = ({
@@ -182,9 +184,16 @@ export const ArticleList: React.FC<ArticleListProps> = ({
   selectedArticle,
   onArticleSelect,
   title = "Articles",
-  maxDisplayed = 6
+  initialDisplayed = 12, // Augmenté de 6 à 12 pour plus de contenu initial
+  incrementSize = 12 // Taille des incréments
 }) => {
-  const displayedArticles = articles.slice(0, maxDisplayed)
+  // Hook de virtualisation optimisée
+  const [listState, listActions] = useVirtualizedList({
+    items: articles,
+    initialPageSize: initialDisplayed,
+    incrementSize,
+    virtualThreshold: 100 // Active la virtualisation pour >100 articles
+  })
   
   if (articles.length === 0) {
     return (
@@ -195,17 +204,31 @@ export const ArticleList: React.FC<ArticleListProps> = ({
     )
   }
 
+  const handleShowLess = () => {
+    listActions.showLess()
+    // Smooth scroll vers le début de la liste
+    document.querySelector('[data-article-list]')?.scrollIntoView({ 
+      behavior: 'smooth', 
+      block: 'start' 
+    })
+  }
+
   return (
-    <div className="space-y-4">
+    <div className="space-y-4" data-article-list>
       <div className="flex items-center justify-between">
         <h3 className="text-lg font-medium text-gray-800">{title}</h3>
-        <span className="text-sm text-gray-500">
-          {displayedArticles.length} sur {articles.length}
-        </span>
+        <div className="flex items-center gap-2 text-sm text-gray-500">
+          <span>{listState.displayedCount} sur {listState.totalCount}</span>
+          {listState.shouldVirtualize && (
+            <span className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-xs font-medium">
+              🚀 Mode optimisé
+            </span>
+          )}
+        </div>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {displayedArticles.map((article) => (
+        {listState.displayedItems.map((article) => (
           <ArticleCard
             key={article.id}
             article={article}
@@ -215,11 +238,77 @@ export const ArticleList: React.FC<ArticleListProps> = ({
         ))}
       </div>
       
-      {articles.length > maxDisplayed && (
-        <div className="text-center">
-          <p className="text-sm text-gray-500">
-            ... et {articles.length - maxDisplayed} articles de plus
-          </p>
+      {/* Pagination intelligente optimisée */}
+      {(listState.canLoadMore || listState.displayedCount > initialDisplayed) && (
+        <div className="flex flex-col items-center space-y-3 pt-4 border-t border-gray-100">
+          {listState.canLoadMore && (
+            <div className="flex flex-col sm:flex-row items-center gap-3">
+              <button
+                onClick={listActions.loadMore}
+                className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg 
+                           hover:bg-blue-700 transition-colors duration-200 font-medium
+                           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+                           shadow-sm hover:shadow-md"
+              >
+                <span>📖</span>
+                <span>Voir {listState.nextIncrement} articles de plus</span>
+                <span className="text-blue-200">({listState.remainingCount} restants)</span>
+              </button>
+              
+              {/* Bouton "Tout afficher" adaptatif */}
+              {listState.remainingCount <= 24 && !listState.shouldVirtualize && (
+                <button
+                  onClick={listActions.showAll}
+                  className="px-4 py-2 text-blue-600 hover:text-blue-800 
+                           hover:bg-blue-50 rounded-lg transition-colors duration-200
+                           text-sm font-medium border border-blue-200 hover:border-blue-300"
+                >
+                  Tout afficher ({listState.totalCount})
+                </button>
+              )}
+              
+              {/* Message pour grandes collections */}
+              {listState.shouldVirtualize && (
+                <div className="text-xs text-gray-500 max-w-xs text-center">
+                  💡 Chargement progressif activé pour optimiser les performances
+                </div>
+              )}
+            </div>
+          )}
+          
+          {listState.displayedCount > initialDisplayed && (
+            <button
+              onClick={handleShowLess}
+              className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-gray-800 
+                         hover:bg-gray-50 rounded-lg transition-colors duration-200 text-sm
+                         focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
+            >
+              <span>⬆️</span>
+              <span>Réduire à {initialDisplayed} articles</span>
+            </button>
+          )}
+          
+          {/* Indicateur de progression visuel amélioré */}
+          {listState.totalCount > initialDisplayed && (
+            <div className="w-full max-w-xs">
+              <div className="flex justify-between text-xs text-gray-500 mb-1">
+                <span>Articles affichés</span>
+                <span>{Math.round(listState.loadProgress)}%</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden">
+                <div 
+                  className="bg-gradient-to-r from-blue-500 to-blue-600 h-1.5 rounded-full 
+                             transition-all duration-500 ease-out"
+                  style={{ width: `${listState.loadProgress}%` }}
+                />
+              </div>
+              {listState.shouldVirtualize && (
+                <div className="text-xs text-center text-gray-400 mt-1">
+                  Performance optimisée • {listState.totalCount} articles
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
     </div>

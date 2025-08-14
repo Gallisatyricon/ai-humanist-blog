@@ -3601,7 +3601,7 @@
       "reasoning": "Questionnement critique détecté dans le contenu"
     }
   ],
-  "generated_at": "2025-08-14T00:37:05.310Z",
+  "generated_at": "2025-08-14T17:46:41.389Z",
   "total_connections": 450,
   "generation_method": "hybrid_llm_plus_autodetect",
   "type_distribution": {

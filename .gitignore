@@ -46,4 +46,5 @@ logs
 # Claude Code utils
 CLaude code errors history/
 .claude-context.md
+DEPLOYMENT.md
 

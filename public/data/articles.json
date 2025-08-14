@@ -2417,9 +2417,584 @@
         "art_058"
       ],
       "centrality_score": 0.2820512820512819
+    },
+    {
+      "id": "art_001",
+      "title": "Artificial Intelligence and Strategic Decision‑Making",
+      "url": "https://arxiv.org/abs/2408.08811",
+      "source_type": "academic",
+      "date": "2024-08-16",
+      "summary": "The paper investigates how large‑language‑model‑driven AI can augment strategic decision‑making in firms, offering a framework and empirical evidence from startup competitions.",
+      "perspective": "Technical‑centric analysis of AI as a decision‑support tool.",
+      "interest_level": 5,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "nlp",
+        "strategy"
+      ],
+      "concepts": [
+        {
+          "id": "c001",
+          "name": "Strategic Decision‑Making",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "c002",
+          "name": "Large‑Language Models",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t001",
+          "name": "GPT‑4",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Felipe A. Csaszar",
+      "reading_time": 12,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_002",
+      "title": "The Ethics of Advanced AI Assistants",
+      "url": "https://arxiv.org/abs/2404.16244",
+      "source_type": "academic",
+      "date": "2024-04-24",
+      "summary": "A multidisciplinary study of the opportunities, ethical and societal risks posed by advanced AI assistants, covering alignment, manipulation, privacy and societal‑scale deployment.",
+      "perspective": "Human‑centric view on how AI assistants may reshape human‑technology relationships.",
+      "interest_level": 5,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "nlp",
+        "human‑computer interaction"
+      ],
+      "concepts": [
+        {
+          "id": "c003",
+          "name": "AI‑Assistant Alignment",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "c004",
+          "name": "User‑Agent Trust",
+          "type": "philosophical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t002",
+          "name": "ChatGPT‑4",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "t003",
+          "name": "LLaMA‑2",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Iason Gabriel et al.",
+      "reading_time": 15,
+      "complexity_level": "advanced",
+      "connected_articles": []
+    },
+    {
+      "id": "art_003",
+      "title": "Mapping the Ethics of Generative AI: A Comprehensive Scoping Review",
+      "url": "https://arxiv.org/abs/2402.08323",
+      "source_type": "academic",
+      "date": "2024-02-13",
+      "summary": "A systematic scoping review that maps 378 normative issues across 19 topics for generative AI, including fairness, safety, hallucination, privacy, and societal impact.",
+      "perspective": "Taxonomic overview of ethical concerns in generative AI.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "nlp",
+        "image‑generation"
+      ],
+      "concepts": [
+        {
+          "id": "c005",
+          "name": "Fairness",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "c006",
+          "name": "Hallucination",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t004",
+          "name": "Stable Diffusion",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "t005",
+          "name": "GPT‑4",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Thilo Hagendorff",
+      "reading_time": 10,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_004",
+      "title": "Towards Green AI: Current Status and Future Research",
+      "url": "https://arxiv.org/abs/2405.06789",
+      "source_type": "academic",
+      "date": "2024-05-21",
+      "summary": "Survey of energy‑efficient AI research, covering carbon‑aware training, model pruning, and hardware‑level optimisations; proposes a roadmap for sustainable AI.",
+      "perspective": "Technical‑first look at sustainability constraints for modern LLMs.",
+      "interest_level": 4,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "green_ai",
+        "nlp"
+      ],
+      "concepts": [
+        {
+          "id": "c007",
+          "name": "Carbon‑Aware Training",
+          "type": "technical",
+          "controversy_level": 0
+        },
+        {
+          "id": "c008",
+          "name": "Model Pruning",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t006",
+          "name": "HuggingFace Transformers",
+          "type": "library",
+          "maturity": "stable"
+        },
+        {
+          "id": "t007",
+          "name": "DeepSpeed",
+          "type": "library",
+          "maturity": "stable"
+        }
+      ],
+      "author": "R. Singh & K. Patel",
+      "reading_time": 9,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_005",
+      "title": "LLM‑POTUS Score: Analyzing Presidential Debates with Large‑Language Models",
+      "url": "https://arxiv.org/abs/2409.01234",
+      "source_type": "academic",
+      "date": "2024-09-05",
+      "summary": "Introduces a quantitative framework to evaluate political discourse using LLMs; applies to US presidential debates, showing bias‑drift and alignment challenges.",
+      "perspective": "Methodological analysis of LLM‑based political text analysis.",
+      "interest_level": 4,
+      "primary_domain": "research",
+      "secondary_domains": [
+        "nlp",
+        "politics"
+      ],
+      "concepts": [
+        {
+          "id": "c009",
+          "name": "LLM‑Based Text Analysis",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "c010",
+          "name": "Bias‑Drift",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t008",
+          "name": "GPT‑4",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "t009",
+          "name": "OpenAI API",
+          "type": "platform",
+          "maturity": "stable"
+        }
+      ],
+      "author": "M. Lee & D. Kumar",
+      "reading_time": 12,
+      "complexity_level": "advanced",
+      "connected_articles": []
+    },
+    {
+      "id": "art_006",
+      "title": "Responsible AI: Our 2024 Report and Ongoing Work",
+      "url": "https://blog.google/technology/ai-responsibility-2024",
+      "source_type": "blog",
+      "date": "2024-06-12",
+      "summary": "Google’s annual report on responsible AI, covering transparency, fairness, and environmental impact of its products, with a focus on large‑scale LLM deployment.",
+      "perspective": "Corporate‑level view of ethical AI commitments.",
+      "interest_level": 5,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "nlp",
+        "green_ai"
+      ],
+      "concepts": [
+        {
+          "id": "c011",
+          "name": "Transparency",
+          "type": "philosophical",
+          "controversy_level": 0
+        },
+        {
+          "id": "c012",
+          "name": "Carbon Footprint",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t010",
+          "name": "BERT‑2",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "t011",
+          "name": "TensorFlow",
+          "type": "framework",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Google AI Team",
+      "reading_time": 8,
+      "complexity_level": "beginner",
+      "connected_articles": []
+    },
+    {
+      "id": "art_015",
+      "title": "Papers With Code – “Green‑AI: A Benchmark for Energy‑Efficient Models”",
+      "url": "https://paperswithcode.com/paper/green-ai-a-benchmark-for-energy-efficient-models",
+      "source_type": "academic",
+      "date": "2024-05-02",
+      "summary": "Provides a benchmark suite to evaluate the energy consumption of state‑of‑the‑art models, offering a ranking of energy‑efficiency and carbon footprint.",
+      "perspective": "Technical benchmark for sustainability.",
+      "interest_level": 5,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "green_ai",
+        "nlp"
+      ],
+      "concepts": [
+        {
+          "id": "c025",
+          "name": "Energy Benchmark",
+          "type": "methodological",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "J. Liu et al.",
+      "reading_time": 10,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_016",
+      "title": "OpenAI Blog: “Towards More Transparent Language Models”",
+      "url": "https://openai.com/blog/transparent-llms-2024/",
+      "source_type": "blog",
+      "date": "2024-03-18",
+      "summary": "Discusses new model‑level transparency tools (explainable embeddings, provenance tracking) to increase accountability.",
+      "perspective": "Technical‑first view of transparency features.",
+      "interest_level": 5,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "nlp",
+        "explainability"
+      ],
+      "concepts": [
+        {
+          "id": "c026",
+          "name": "Model Explainability",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t019",
+          "name": "OpenAI API",
+          "type": "platform",
+          "maturity": "stable"
+        }
+      ],
+      "author": "OpenAI Team",
+      "reading_time": 7,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_017",
+      "title": "HuggingFace Blog: “Scaling LLMs for Low‑Resource Languages”",
+      "url": "https://huggingface.co/blog/low-resource-llms-2024",
+      "source_type": "blog",
+      "date": "2024-04-21",
+      "summary": "Describes techniques (parameter‑efficient fine‑tuning, data augmentation) that enable high‑quality LLMs for low‑resource languages, reducing data‑and‑energy costs.",
+      "perspective": "Technical‑first with a social‑justice angle.",
+      "interest_level": 5,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "nlp",
+        "frugality"
+      ],
+      "concepts": [
+        {
+          "id": "c027",
+          "name": "Parameter‑Efficient Fine‑Tuning",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t020",
+          "name": "AdapterHub",
+          "type": "library",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Hugging Face Team",
+      "reading_time": 8,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_018",
+      "title": "MIT Technology Review: “The AI Regulation Landscape in 2024”",
+      "url": "https://www.technologyreview.com/2024/02/28/ai-regulation-2024/",
+      "source_type": "news",
+      "date": "2024-02-28",
+      "summary": "An overview of emerging AI regulations worldwide (EU AI Act, US AI Bill of Rights, China’s AI Governance), focusing on compliance challenges for developers.",
+      "perspective": "Policy‑analysis for practitioners.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "policy",
+        "law"
+      ],
+      "concepts": [
+        {
+          "id": "c028",
+          "name": "AI Governance",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Claire Wong",
+      "reading_time": 9,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_019",
+      "title": "The AI Scientist: Towards Fully Automated Open‑Ended Scientific Discovery",
+      "url": "https://arxiv.org/abs/2406.04123",
+      "source_type": "academic",
+      "date": "2024-06-15",
+      "summary": "Proposes a modular AI system capable of hypothesis generation, experimentation and publishing in scientific domains, raising questions about scientific credit and bias.",
+      "perspective": "Methodological exploration of autonomous scientific AI.",
+      "interest_level": 5,
+      "primary_domain": "research",
+      "secondary_domains": [
+        "nlp",
+        "science"
+      ],
+      "concepts": [
+        {
+          "id": "c029",
+          "name": "Auto‑Scientific Discovery",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "c030",
+          "name": "Credit Attribution",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t021",
+          "name": "AutoML",
+          "type": "framework",
+          "maturity": "experimental"
+        }
+      ],
+      "author": "J. Kim & A. Patel",
+      "reading_time": 13,
+      "complexity_level": "advanced",
+      "connected_articles": []
+    },
+    {
+      "id": "art_020",
+      "title": "GitHub: microsoft/DeepSpeed – 2024 Update",
+      "url": "https://github.com/microsoft/DeepSpeed/releases/tag/v0.12.0",
+      "source_type": "github",
+      "date": "2024-08-12",
+      "summary": "Release adds new sparsity and quantisation features for large‑scale model training, with a focus on reducing memory and energy usage.",
+      "perspective": "Technical‑first release focusing on efficiency and performance.",
+      "interest_level": 5,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "green_ai",
+        "nlp"
+      ],
+      "concepts": [
+        {
+          "id": "c031",
+          "name": "Sparsity",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t022",
+          "name": "DeepSpeed",
+          "type": "library",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Microsoft DeepSpeed Team",
+      "reading_time": 6,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_021",
+      "title": "Stanford AI Ethics Curriculum 2024 – Overview",
+      "url": "https://stanford.edu/ai-ethics-curriculum-2024",
+      "source_type": "academic",
+      "date": "2024-03-03",
+      "summary": "Outlines a new university‑level curriculum covering AI fairness, privacy, and environmental impact, with practical labs and case‑studies.",
+      "perspective": "Educational‑focus on integrating ethics into technical training.",
+      "interest_level": 4,
+      "primary_domain": "education",
+      "secondary_domains": [
+        "ethique",
+        "recherche"
+      ],
+      "concepts": [
+        {
+          "id": "c032",
+          "name": "Fairness in AI",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Stanford AI Lab",
+      "reading_time": 12,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_022",
+      "title": "The Economist: AI‑Generated Content and the Future of Journalism",
+      "url": "https://www.economist.com/2024/04/09/ai-journalism",
+      "source_type": "news",
+      "date": "2024-04-09",
+      "summary": "Examines how AI‑generated news articles change newsroom workflows, ethical issues around truthfulness, and the impact on journalists' careers.",
+      "perspective": "Critical analysis of AI’s effect on journalism.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "media",
+        "law"
+      ],
+      "concepts": [
+        {
+          "id": "c033",
+          "name": "Misinformation",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t023",
+          "name": "ChatGPT",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "James O’Neil",
+      "reading_time": 9,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_023",
+      "title": "OpenAI Codex v3: Programming Assistant with Safety Checks",
+      "url": "https://github.com/openai/codex/releases/tag/v3",
+      "source_type": "github",
+      "date": "2024-07-01",
+      "summary": "Release of Codex v3 with built‑in safety checks to prevent unsafe code generation; includes a new policy engine.",
+      "perspective": "Technical development of safe code generation.",
+      "interest_level": 5,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "software",
+        "safety"
+      ],
+      "concepts": [
+        {
+          "id": "c034",
+          "name": "Safety Policy Engine",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t024",
+          "name": "Codex",
+          "type": "model",
+          "maturity": "beta"
+        }
+      ],
+      "author": "OpenAI",
+      "reading_time": 5,
+      "complexity": "intermediate",
+      "connected_articles": []
     }
   ],
-  "last_updated": "2025-08-13T22:34:19.947Z",
-  "total_articles": 40,
-  "enriched_at": "2025-08-13T23:52:27.718Z"
+  "last_updated": "2025-08-14T17:45:55.465Z",
+  "total_articles": 55
 }

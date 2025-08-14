@@ -1,0 +1,418 @@
+{
+  "input_summary": {
+    "existing_articles": 40,
+    "new_articles": 23,
+    "total_connections": 29
+  },
+  "mapping_results": [
+    {
+      "originalTargetId": "art_003",
+      "newTargetId": "art_066",
+      "confidence": 0.7990136986301369,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.80"
+    },
+    {
+      "originalTargetId": "art_001",
+      "newTargetId": "art_056",
+      "confidence": 0.7056986301369863,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 0.95"
+    },
+    {
+      "originalTargetId": "art_003",
+      "newTargetId": "art_066",
+      "confidence": 0.7990136986301369,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.80"
+    },
+    {
+      "originalTargetId": "art_002",
+      "newTargetId": "art_066",
+      "confidence": 0.8106849315068492,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.84"
+    },
+    {
+      "originalTargetId": "art_004",
+      "newTargetId": "art_056",
+      "confidence": 0.72,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 1.00"
+    },
+    {
+      "originalTargetId": "art_003",
+      "newTargetId": "art_066",
+      "confidence": 0.7990136986301369,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.80"
+    },
+    {
+      "originalTargetId": "art_005",
+      "newTargetId": "art_066",
+      "confidence": 0.41271232876712327,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.91"
+    },
+    {
+      "originalTargetId": "art_001",
+      "newTargetId": "art_056",
+      "confidence": 0.7056986301369863,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 0.95"
+    },
+    {
+      "originalTargetId": "art_004",
+      "newTargetId": "art_056",
+      "confidence": 0.72,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 1.00"
+    },
+    {
+      "originalTargetId": "art_002",
+      "newTargetId": "art_066",
+      "confidence": 0.8106849315068492,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.84"
+    },
+    {
+      "originalTargetId": "art_004",
+      "newTargetId": "art_056",
+      "confidence": 0.72,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 1.00"
+    },
+    {
+      "originalTargetId": "art_002",
+      "newTargetId": "art_066",
+      "confidence": 0.8106849315068492,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.84"
+    },
+    {
+      "originalTargetId": "art_006",
+      "newTargetId": "art_066",
+      "confidence": 0.8187397260273972,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.86"
+    },
+    {
+      "originalTargetId": "art_002",
+      "newTargetId": "art_066",
+      "confidence": 0.8106849315068492,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.84"
+    },
+    {
+      "originalTargetId": "art_003",
+      "newTargetId": "art_066",
+      "confidence": 0.7990136986301369,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.80"
+    },
+    {
+      "originalTargetId": "art_004",
+      "newTargetId": "art_056",
+      "confidence": 0.72,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 1.00"
+    },
+    {
+      "originalTargetId": "art_002",
+      "newTargetId": "art_066",
+      "confidence": 0.8106849315068492,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.84"
+    },
+    {
+      "originalTargetId": "art_003",
+      "newTargetId": "art_066",
+      "confidence": 0.7990136986301369,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.80"
+    },
+    {
+      "originalTargetId": "art_004",
+      "newTargetId": "art_056",
+      "confidence": 0.72,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 1.00"
+    },
+    {
+      "originalTargetId": "art_002",
+      "newTargetId": "art_066",
+      "confidence": 0.8106849315068492,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.84"
+    },
+    {
+      "originalTargetId": "art_004",
+      "newTargetId": "art_056",
+      "confidence": 0.72,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 1.00"
+    },
+    {
+      "originalTargetId": "art_002",
+      "newTargetId": "art_066",
+      "confidence": 0.8106849315068492,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.84"
+    },
+    {
+      "originalTargetId": "art_015",
+      "newTargetId": "art_056",
+      "confidence": 0.7168767123287672,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 0.99"
+    },
+    {
+      "originalTargetId": "art_011",
+      "newTargetId": "art_034",
+      "confidence": 0.847835616438356,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.96"
+    },
+    {
+      "originalTargetId": "art_002",
+      "newTargetId": "art_066",
+      "confidence": 0.8106849315068492,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.84"
+    },
+    {
+      "originalTargetId": "art_004",
+      "newTargetId": "art_056",
+      "confidence": 0.72,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 1.00"
+    },
+    {
+      "originalTargetId": "art_007",
+      "newTargetId": "art_034",
+      "confidence": 0.8516164383561644,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 0.97"
+    },
+    {
+      "originalTargetId": "art_009",
+      "newTargetId": "art_035",
+      "confidence": 0.7191780821917808,
+      "method": "domain_match",
+      "reasoning": "Domaine: ethique, Temporel: 1.00"
+    },
+    {
+      "originalTargetId": "art_008",
+      "newTargetId": "art_056",
+      "confidence": 0.7084931506849315,
+      "method": "domain_match",
+      "reasoning": "Domaine: technique, Temporel: 0.96"
+    }
+  ],
+  "final_connections": [
+    {
+      "target_id": "art_066",
+      "type": "builds_on",
+      "strength": 0.78,
+      "reasoning": "Both discuss LLM‑driven decision support; the second paper provides a taxonomy of ethical risks that can affect strategic outcomes.",
+      "confidence": 0.85
+    },
+    {
+      "target_id": "art_056",
+      "type": "questions",
+      "strength": 0.62,
+      "reasoning": "The ethics paper questions the uncritical use of AI assistants in strategic decision‑making explored in art_001.",
+      "confidence": 0.71
+    },
+    {
+      "target_id": "art_066",
+      "type": "similar_to",
+      "strength": 0.65,
+      "reasoning": "Both papers address ethical challenges of generative AI.",
+      "confidence": 0.78
+    },
+    {
+      "target_id": "art_066",
+      "type": "similar_to",
+      "strength": 0.78,
+      "reasoning": "Both discuss normative issues in advanced AI, from assistants to generative models.",
+      "confidence": 0.84
+    },
+    {
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.71,
+      "reasoning": "Later works (e.g., green‑AI research) build on the ethical taxonomy defined here.",
+      "confidence": 0.7
+    },
+    {
+      "target_id": "art_066",
+      "type": "similar_to",
+      "strength": 0.71,
+      "reasoning": "Both focus on responsible AI; green‑AI builds on ethical concerns highlighted in art_003.",
+      "confidence": 0.78
+    },
+    {
+      "target_id": "art_066",
+      "type": "builds_on",
+      "strength": 0.66,
+      "reasoning": "The LLM‑based inference optimisation described in art_005 uses the pruning techniques surveyed in art_004.",
+      "confidence": 0.71
+    },
+    {
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.68,
+      "reasoning": "Both use LLMs for decision‑making; art_005 extends the idea to political decision‑making.",
+      "confidence": 0.77
+    },
+    {
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.73,
+      "reasoning": "Both discuss sustainability; Google’s report adopts many recommendations from the green‑AI survey.",
+      "confidence": 0.8
+    },
+    {
+      "target_id": "art_066",
+      "type": "similar_to",
+      "strength": 0.77,
+      "reasoning": "Both address high‑level ethical challenges of AI assistants and generative models.",
+      "confidence": 0.85
+    },
+    {
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.71,
+      "reasoning": "Quantisation and efficiency features respond to the sustainability concerns raised in art_004.",
+      "confidence": 0.78
+    },
+    {
+      "target_id": "art_066",
+      "type": "questions",
+      "strength": 0.6,
+      "reasoning": "The release’s safety filters raise ethical questions similar to those in the AI‑assistant ethics paper (art_002).",
+      "confidence": 0.66
+    },
+    {
+      "target_id": "art_066",
+      "type": "similar_to",
+      "strength": 0.73,
+      "reasoning": "Both discuss ethical and legal dimensions of AI‑generated content.",
+      "confidence": 0.8
+    },
+    {
+      "target_id": "art_066",
+      "type": "questions",
+      "strength": 0.65,
+      "reasoning": "The article raises questions about the ethical use of AI assistants for artistic creation, linking to concerns in art_002.",
+      "confidence": 0.71
+    },
+    {
+      "target_id": "art_066",
+      "type": "similar_to",
+      "strength": 0.71,
+      "reasoning": "Both discuss AI safety and alignment across generative AI.",
+      "confidence": 0.78
+    },
+    {
+      "target_id": "art_056",
+      "type": "questions",
+      "strength": 0.65,
+      "reasoning": "The report raises questions about the carbon cost of LLMs, relating to green‑AI research (art_004).",
+      "confidence": 0.73
+    },
+    {
+      "target_id": "art_066",
+      "type": "similar_to",
+      "strength": 0.78,
+      "reasoning": "Both explore the gap between AI ethical principles and actual corporate practice.",
+      "confidence": 0.85
+    },
+    {
+      "target_id": "art_066",
+      "type": "builds_on",
+      "strength": 0.68,
+      "reasoning": "The bias‑detection module addresses ethical concerns highlighted in the generative‑AI ethics review (art_003).",
+      "confidence": 0.71
+    },
+    {
+      "target_id": "art_056",
+      "type": "questions",
+      "strength": 0.6,
+      "reasoning": "The article raises questions about the carbon footprint of large models, linking to green‑AI research (art_004).",
+      "confidence": 0.68
+    },
+    {
+      "target_id": "art_066",
+      "type": "questions",
+      "strength": 0.71,
+      "reasoning": "Both raise concerns about AI‑generated advice, whether in law or in personal assistance (art_002).",
+      "confidence": 0.78
+    },
+    {
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.8,
+      "reasoning": "Directly expands the green‑AI research agenda outlined in art_004.",
+      "confidence": 0.85
+    },
+    {
+      "target_id": "art_066",
+      "type": "questions",
+      "strength": 0.7,
+      "reasoning": "Both raise ethical concerns about opacity and trust in AI assistants (art_002).",
+      "confidence": 0.78
+    },
+    {
+      "target_id": "art_056",
+      "type": "similar_to",
+      "strength": 0.73,
+      "reasoning": "Both aim to reduce resource demands of LLMs.",
+      "confidence": 0.78
+    },
+    {
+      "target_id": "art_034",
+      "type": "similar_to",
+      "strength": 0.78,
+      "reasoning": "Both discuss the impact of regulatory frameworks on AI development.",
+      "confidence": 0.84
+    },
+    {
+      "target_id": "art_066",
+      "type": "questions",
+      "strength": 0.71,
+      "reasoning": "Both raise concerns about the autonomy and responsibility of AI in scientific discovery, echoing ethical issues in AI assistants (art_002).",
+      "confidence": 0.77
+    },
+    {
+      "target_id": "art_056",
+      "type": "builds_on",
+      "strength": 0.75,
+      "reasoning": "Directly addresses energy‑efficiency goals set in the green‑AI literature (art_004).",
+      "confidence": 0.82
+    },
+    {
+      "target_id": "art_034",
+      "type": "builds_on",
+      "strength": 0.68,
+      "reasoning": "The curriculum builds on the safety and alignment research described in DeepMind’s 2024 safety report (art_010).",
+      "confidence": 0.71
+    },
+    {
+      "target_id": "art_035",
+      "type": "similar_to",
+      "strength": 0.71,
+      "reasoning": "Both discuss the ethical implications of AI‑generated content.",
+      "confidence": 0.78
+    },
+    {
+      "target_id": "art_056",
+      "type": "similar_to",
+      "strength": 0.75,
+      "reasoning": "Both provide safety‑focused updates for AI models.",
+      "confidence": 0.82
+    }
+  ],
+  "test_date": "2025-08-14T17:30:23.519Z"
+}

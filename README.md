@@ -16,9 +16,14 @@ Créer un blog de veille IA avec navigation exploratoire révélant les ponts in
 - 🏷️ **Navigation par tags** avec filtrage intelligent
 - 🕸️ **Visualisation graphique D3.js** des connexions entre articles  
 - 🔍 **Recherche multi-critères** temps réel
+- 📄 **Pagination dynamique** optimisée pour grandes collections
 - 🎨 **Interface responsive** avec animations fluides
 - 🤖 **Détection automatique** des connexions sémantiques
 - 📊 **Légende interactive** des types de relations
+- ⚡ **Performance optimisée** avec virtualisation automatique
+- 🧠 **Smart ID Mapping** - Résolution automatique des IDs invalides
+- 🔄 **Smart Deduplication** - Gestion intelligente des doublons
+- 📊 **450+ connexions intelligentes** avec 5 types de relations diversifiés
 
 ## 🚀 Démarrage Rapide
 
@@ -52,7 +57,11 @@ ai-humanist-blog/
 │   ├── 📁 types/                  # Types TypeScript
 │   ├── 📁 styles/                 # Styles globaux et animations
 │   └── 📁 config/                 # Configuration
-├── 📁 scripts/                    # Scripts de développement
+├── 📁 scripts/                    # Scripts Smart Processing + maintenance
+│   ├── 📄 addArticleComplete.ts       # Ajout intelligent avec Smart Processing
+│   ├── 📄 smartIdMapper.ts            # Résolution IDs invalides  
+│   ├── 📄 smartDeduplication.ts       # Gestion doublons
+│   └── 📄 batchImportArticles.ts      # Import batch production
 ├── 📁 public/                     # Assets statiques
 ├── 📁 docs/                       # Documentation projet
 └── 📁 tests/                      # Tests (à implémenter)
@@ -63,7 +72,8 @@ ai-humanist-blog/
 - **Frontend**: React 18 + TypeScript + Tailwind CSS
 - **Visualisation**: D3.js force simulation
 - **Build**: Vite + PostCSS  
-- **Données**: JSON statique avec détection automatique de connexions
+- **Données**: JSON statique avec Smart Processing (ID Mapping + Deduplication)
+- **Import**: Scripts intelligents pour intégration n8n et ajout batch
 
 ## 📊 Types de Connexions
 
@@ -81,20 +91,29 @@ ai-humanist-blog/
 | `npm run build` | Build production |
 | `npm run preview` | Aperçu build |
 | `npm run lint` | Vérification code |
-| `npm run generate-connections` | Génération connexions auto |
-| `npm run validate-data` | Validation données |
-| `npm run export-graph` | Export graphique |
+| `npm run add-complete -- --input article.json` | Ajout intelligent avec Smart Processing |
+| `npm run batch-import -- --input articles.md` | Import batch depuis fichier n8n |
+| `npx tsx scripts/testSmartMapper.ts` | Test Smart ID Mapping |
+| `npx tsx scripts/testDeduplication.ts` | Test Smart Deduplication |
 
 ## 📖 Documentation
 
-- [📋 Spécifications Techniques](./docs/technical-specs.md)
-- [🎯 Brief Projet](./docs/project-brief.md)  
-- [📈 État d'Avancement](./docs/progress.md)
-- [📝 Exemples de Contenu](./docs/content-examples.md)
+- [📋 Vue d'Ensemble](./docs/README.md) - Documentation développeur complète
+- [🔧 Spécifications Techniques](./docs/TECHNICAL.md) - Architecture système détaillée
+- [🚀 Guide de Déploiement](./docs/DEPLOYMENT.md) - Configuration production  
+- [🎨 Templates JSON](./docs/TEMPLATES.md) - Formats pour intégration n8n
+- [📈 Historique Évolutions](./docs/PROGRESS.md) - Journal complet des phases
 
 ## 🚀 Status Projet
 
-✅ **PRODUCTION-READY** - Toutes les fonctionnalités core implémentées avec UX optimisée
+✅ **PRODUCTION-READY** avec **Smart Processing Intégré**
+
+- **40 articles** avec données validées
+- **450+ connexions intelligentes** générées automatiquement
+- **Smart ID Mapping** - Résolution automatique des IDs invalides (100% réussite)
+- **Smart Deduplication** - Gestion des doublons avec fusion de métadonnées
+- **Interface graphique optimisée** - Navigation progressive D3.js
+- **Intégration n8n ready** - Workflow automatisé opérationnel
 
 ---
 

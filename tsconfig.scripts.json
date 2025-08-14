@@ -19,6 +19,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["scripts/**/*", "src/data/schema.ts", "src/utils/graphAlgorithms.ts"],
-  "exclude": ["node_modules", "src/components/**/*", "src/hooks/**/*", "src/main.tsx"]
+  "include": ["scripts/**/*"],
+  "exclude": ["node_modules"]
 }
