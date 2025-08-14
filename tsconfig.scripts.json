@@ -1,16 +1,23 @@
 {
-  "extends": "./tsconfig.json",
   "compilerOptions": {
     "module": "CommonJS",
     "target": "ES2020",
+    "lib": ["ES2020"],
+    "types": ["node"],
     "moduleResolution": "node",
     "allowImportingTsExtensions": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "noEmit": false,
     "outDir": "./dist/scripts",
-    "strict": false
+    "strict": false,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["scripts/**/*", "src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["scripts/**/*", "src/data/schema.ts", "src/utils/graphAlgorithms.ts"],
+  "exclude": ["node_modules", "src/components/**/*", "src/hooks/**/*", "src/main.tsx"]
 }

@@ -1,23 +1,16 @@
 import fs from 'fs'
 import path from 'path'
 import { generateAllConnections } from '../src/utils/graphAlgorithms'
+import { Article } from '../src/data/schema'
 
-interface Article {
-  id: string
-  title: string
-  connected_articles: string[]
-  centrality_score: number
-  [key: string]: any
-}
-
-interface Connection {
-  source_id: string
-  target_id: string
-  type: string
-  strength: number
-  auto_detected: boolean
-  reasoning: string
-}
+// interface Connection {
+//   source_id: string
+//   target_id: string
+//   type: string
+//   strength: number
+//   auto_detected: boolean
+//   reasoning: string
+// }
 
 async function enrichDataset() {
   console.log('🚀 ENRICHISSEMENT COMPLET DU DATASET')

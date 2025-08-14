@@ -65,7 +65,7 @@ async function syncConnectedArticles() {
   const centrality: Record<string, number> = {}
   
   articles.forEach(article => {
-    const directConnections = articleConnections.get(article.id) || []
+    // const directConnections = articleConnections.get(article.id) || []
     // Score basé sur le nombre et la force des connexions
     const connectionStrength = connections
       .filter(conn => conn.source_id === article.id || conn.target_id === article.id)

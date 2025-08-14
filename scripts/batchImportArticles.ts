@@ -87,7 +87,7 @@ async function parseArticlesFromMixedFile(filePath: string): Promise<NewArticleI
 
 async function addArticleToDatabase(articleData: NewArticleInput) {
   const articlesPath = path.join(process.cwd(), 'public/data/articles.json')
-  const connectionsPath = path.join(process.cwd(), 'public/data/connections.json')
+  // const connectionsPath = path.join(process.cwd(), 'public/data/connections.json')
   
   try {
     // Charger les articles existants
