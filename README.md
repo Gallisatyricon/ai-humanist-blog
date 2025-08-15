@@ -24,6 +24,9 @@ Créer un blog de veille IA avec navigation exploratoire révélant les ponts in
 - 🧠 **Smart ID Mapping** - Résolution automatique des IDs invalides
 - 🔄 **Smart Deduplication** - Gestion intelligente des doublons
 - 📊 **450+ connexions intelligentes** avec 5 types de relations diversifiés
+- ↔️ **Filtrage bi-directionnel** - Synchronisation parfaite filtres ↔ graphique
+- 🎯 **Anti-flicker tooltips** - Interactions fluides avec debouncing optimisé
+- 📐 **Espacement adaptatif** - Lisibilité automatique selon nombre d'articles (5-40)
 
 ## 🚀 Démarrage Rapide
 
@@ -106,7 +109,7 @@ ai-humanist-blog/
 
 ## 🚀 Status Projet
 
-✅ **PRODUCTION-READY** avec **Smart Processing Intégré**
+✅ **PRODUCTION-READY** avec **Phase 10 - Filtrage Bi-directionnel Optimisé**
 
 - **40 articles** avec données validées
 - **450+ connexions intelligentes** générées automatiquement
@@ -114,6 +117,8 @@ ai-humanist-blog/
 - **Smart Deduplication** - Gestion des doublons avec fusion de métadonnées
 - **Interface graphique optimisée** - Navigation progressive D3.js
 - **Intégration n8n ready** - Workflow automatisé opérationnel
+- **Filtrage bi-directionnel parfait** - Synchronisation filtres ↔ graphique jusqu'à 40 articles
+- **Expérience utilisateur professionnelle** - Anti-flicker tooltips, espacement adaptatif
 
 ---
 

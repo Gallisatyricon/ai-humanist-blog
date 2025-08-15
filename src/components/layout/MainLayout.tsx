@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Article } from '@/data/schema'
 import { TagCloud } from '@/components/navigation/TagCloud'
 import { GraphView } from '@/components/navigation/GraphView'
@@ -25,8 +25,36 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
     filteredArticles: baseFilteredArticles,
     stats,
     selectArticleForFilter,
+    selectedPrimaryTags,
+    selectedSecondaryTags, 
+    selectedComplexityLevels,
+    selectedConcepts,
     error
   } = tagNavigationData
+
+  // Synchroniser le graphe avec les changements de filtres
+  useEffect(() => {
+    // Si des filtres changent ET qu'un article est sélectionné, revenir en vue globale
+    if (selectedArticleForGraph && (
+      selectedPrimaryTags.length > 0 ||
+      selectedSecondaryTags.length > 0 ||
+      selectedComplexityLevels.length > 0 ||
+      selectedConcepts.length > 0
+    )) {
+      // Vérifier si l'article sélectionné respecte les nouveaux filtres
+      const focusArticle = selectedArticleForGraph
+      const respectsFilters = 
+        (selectedPrimaryTags.length === 0 || selectedPrimaryTags.includes(focusArticle.primary_domain)) &&
+        (selectedSecondaryTags.length === 0 || selectedSecondaryTags.some(tag => focusArticle.secondary_domains.includes(tag as any))) &&
+        (selectedComplexityLevels.length === 0 || selectedComplexityLevels.includes(focusArticle.complexity_level)) &&
+        (selectedConcepts.length === 0 || (focusArticle.concepts && focusArticle.concepts.some(concept => selectedConcepts.includes(concept.type))))
+      
+      // Si l'article focus n'est plus compatible avec les filtres, revenir en vue globale
+      if (!respectsFilters) {
+        setSelectedArticleForGraph(null)
+      }
+    }
+  }, [selectedPrimaryTags, selectedSecondaryTags, selectedComplexityLevels, selectedConcepts, selectedArticleForGraph])
 
   // Articles enrichis avec connexions
   const { articles: enrichedArticles } = useEnrichedArticles(baseArticles)
@@ -124,16 +152,18 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
             )}
           </div>
           
-          {/* Navigation par Tags */}
-          <div className="bg-white rounded-lg shadow-sm p-6">
-            <TagCloud {...tagNavigationData} />
-          </div>
-          
-          {/* Visualisation Graphique */}
-          <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-3">
-              <h3 className="text-lg font-medium">
-                Graphique des Connexions
+          {/* Layout Desktop : Filtres 33% + Graphe 67% */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            {/* Navigation par Tags - Colonne Gauche (33%) */}
+            <div className="lg:col-span-4 bg-white rounded-lg shadow-sm p-4 lg:p-6">
+              <TagCloud {...tagNavigationData} />
+            </div>
+            
+            {/* Visualisation Graphique - Colonne Droite (67%) */}
+            <div className="lg:col-span-8 bg-white p-3 sm:p-6 rounded-lg shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 sm:mb-4 gap-2 sm:gap-3">
+              <h3 className="text-base sm:text-lg font-medium text-center sm:text-left">
+                🕸️ Graphique des Connexions
               </h3>
               {selectedArticleForGraph && (
                 <button
@@ -141,27 +171,47 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
                     setSelectedArticleForGraph(null)
                     selectArticleForFilter(null)
                   }}
-                  className="text-sm text-blue-600 hover:text-blue-800 underline self-start sm:self-auto"
+                  className="text-xs sm:text-sm text-blue-600 hover:text-blue-800 underline self-center sm:self-auto px-2 py-1 sm:px-0 sm:py-0"
                 >
                   ← Retour vue globale
                 </button>
               )}
             </div>
             
-            <div className="w-full overflow-x-auto">
-              <div className="flex justify-center min-w-[600px]">
+            {/* Graph responsive avec priorité mobile */}
+            <div className="w-full">
+              <div className="flex justify-center">
                 <GraphView
                   articles={enrichedArticles}
                   filteredArticles={enrichedFilteredArticles}
                   selectedArticle={selectedArticleForGraph}
                   onArticleSelect={handleArticleSelect}
-                  width={Math.min(800, typeof window !== 'undefined' ? window.innerWidth - 100 : 800)}
-                  height={500}
+                  width={typeof window !== 'undefined' ? 
+                    window.innerWidth < 640 ? window.innerWidth - 40 : // Mobile: pleine largeur - padding
+                    window.innerWidth < 1024 ? window.innerWidth - 80 : // Tablet
+                    Math.floor((window.innerWidth * 0.67) - 120) // Desktop: 67% - marges (UX optimal)
+                    : 600
+                  }
+                  height={typeof window !== 'undefined' ? 
+                    window.innerWidth < 640 ? 400 : 
+                    window.innerWidth < 1024 ? 500 :
+                    600 // Desktop: hauteur UX optimale pour analyse graphe
+                    : 600
+                  }
                 />
               </div>
             </div>
+            
+            {/* Aide contextuelle mobile */}
+            <div className="mt-3 sm:mt-4 text-center">
+              <p className="text-xs sm:text-sm text-gray-500">
+                💡 <span className="hidden sm:inline">Cliquez sur un nœud pour explorer ses connexions • </span>
+                <span className="sm:hidden">Touchez un nœud • </span>
+                Utilisez les filtres pour affiner la vue
+              </p>
+            </div>
           </div>
-
+          </div>
 
           {/* Articles à afficher selon les filtres - LOGIC SIMPLIFIÉE */}
           {enrichedArticles.length > 0 && (

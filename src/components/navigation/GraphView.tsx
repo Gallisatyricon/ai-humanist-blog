@@ -60,12 +60,25 @@ export const GraphView: React.FC<GraphViewProps> = ({
       }
     })
 
-    // Espacement drastiquement augmenté pour résoudre la densité excessive
+    // Espacement adaptatif selon la taille d'écran et le nombre de nœuds
     const nodeCount = nodes.length
-    const baseDistance = nodeCount > 15 ? 220 : nodeCount > 8 ? 180 : 140
-    const repulsionStrength = nodeCount > 15 ? -900 : nodeCount > 8 ? -700 : -500
-    const linkStrengthMultiplier = nodeCount > 15 ? 0.1 : nodeCount > 8 ? 0.2 : 0.25
-    const collisionDistance = nodeCount > 15 ? 150 : nodeCount > 8 ? 120 : 100
+    const isMobile = width < 640
+    
+    // Paramètres adaptatifs pour lisibilité avec beaucoup de nœuds
+    const baseDistance = isMobile ?
+      (nodeCount > 20 ? 100 : nodeCount > 10 ? 80 : 70) :
+      (nodeCount > 30 ? 180 : nodeCount > 20 ? 160 : nodeCount > 10 ? 140 : 120)
+    
+    const repulsionStrength = isMobile ?
+      (nodeCount > 20 ? -400 : nodeCount > 10 ? -350 : -300) :
+      (nodeCount > 30 ? -600 : nodeCount > 20 ? -550 : nodeCount > 10 ? -500 : -400)
+    
+    const linkStrengthMultiplier = isMobile ? 0.12 : 
+      (nodeCount > 30 ? 0.08 : nodeCount > 20 ? 0.1 : nodeCount > 10 ? 0.15 : 0.2)
+    
+    const collisionDistance = isMobile ?
+      (nodeCount > 20 ? 50 : nodeCount > 10 ? 45 : 40) :
+      (nodeCount > 30 ? 80 : nodeCount > 20 ? 70 : nodeCount > 10 ? 60 : 50)
     
     // Simulation D3 avec forces plus organiques
     const simulation: Simulation<GraphNode, GraphLink> = forceSimulation(nodes)
@@ -87,9 +100,10 @@ export const GraphView: React.FC<GraphViewProps> = ({
         })
       })
       .force('boundary', () => {
-        const leftMargin = 80 // Marge gauche augmentée pour éviter débordement
-        const rightMargin = 220 // Marge droite ajustée pour la légende
-        const topBottomMargin = 80 + (nodeCount > 15 ? 20 : 0)
+        // Marges adaptatives mobile/desktop
+        const leftMargin = isMobile ? 30 : 80
+        const rightMargin = isMobile ? 30 : 220 // Pas de légende sur mobile
+        const topBottomMargin = isMobile ? 40 : (80 + (nodeCount > 15 ? 20 : 0))
         
         nodes.forEach(d => {
           if (d.x !== undefined && !isNaN(d.x)) {
@@ -199,62 +213,94 @@ export const GraphView: React.FC<GraphViewProps> = ({
     // Obtenir la sélection finale après la transition pour les interactions
     const finalNodeElements = nodeGroup.selectAll('circle')
 
-    // Interactions des nœuds - optimisées pour éviter le flicker
+    // Interactions des nœuds - ANTI-FLICKER avec debouncing
+    let tooltipTimeout: number | null = null
+    let currentTooltip: any = null
+    
     finalNodeElements
-      .on('mouseover', function(event, d) {
-        // Effet hover direct sans re-rendu complet
+      .on('mouseenter', function(event, d) {
+        // Empêcher le flickering : clearTimeout + délai court
+        if (tooltipTimeout) window.clearTimeout(tooltipTimeout)
+        
+        // Effet hover immédiat
         select(this)
           .attr('stroke', '#333')
           .attr('stroke-width', 2)
         
-        // Tooltip
-        const tooltip = svg
-          .append('g')
-          .attr('class', 'tooltip')
-          .attr('transform', `translate(${event.layerX + 10}, ${event.layerY - 10})`)
-        
-        const rect = tooltip
-          .append('rect')
-          .attr('fill', 'rgba(0,0,0,0.8)')
-          .attr('rx', 4)
-          .attr('ry', 4)
-        
-        const text = tooltip
-          .append('text')
-          .attr('fill', 'white')
-          .attr('font-size', '12px')
-          .attr('x', 8)
-          .attr('y', 16)
-        
-        text.append('tspan')
-          .attr('x', 8)
-          .attr('dy', 0)
-          .attr('font-weight', 'bold')
-          .text((d as any).article.title)
-        
-        text.append('tspan')
-          .attr('x', 8)
-          .attr('dy', 16)
-          .text(`${(d as any).article.primary_domain} • ${(d as any).article.reading_time}min`)
-        
-        text.append('tspan')
-          .attr('x', 8)
-          .attr('dy', 14)
-          .text(`Importance: ${Math.round((d as any).article.centrality_score * 100)}%`)
-        
-        // Ajuster la taille du rectangle
-        const bbox = (text.node() as any).getBBox()
-        rect
-          .attr('width', bbox.width + 16)
-          .attr('height', bbox.height + 8)
+        // Créer tooltip avec délai anti-flicker
+        tooltipTimeout = window.setTimeout(() => {
+          // Supprimer ancien tooltip
+          svg.selectAll('.tooltip').remove()
+          
+          const tooltip = svg
+            .append('g')
+            .attr('class', 'tooltip')
+            .attr('transform', `translate(${Math.min(event.layerX + 15, width - 280)}, ${Math.max(event.layerY - 60, 10)})`)
+          
+          currentTooltip = tooltip
+          
+          // Fond avec z-index visuel élevé
+          const rect = tooltip
+            .append('rect')
+            .attr('fill', 'rgba(255, 255, 255, 0.98)')
+            .attr('stroke', 'rgba(0, 0, 0, 0.15)')
+            .attr('stroke-width', 1.5)
+            .attr('rx', 8)
+            .attr('ry', 8)
+            .style('filter', 'drop-shadow(0 6px 12px rgba(0, 0, 0, 0.15))')
+          
+          const text = tooltip
+            .append('text')
+            .attr('fill', '#1F2937')
+            .attr('font-size', isMobile ? '10px' : '11px')
+            .attr('x', 12)
+            .attr('y', 16)
+          
+          // Titre condensé pour éviter débordement
+          const title = (d as any).article.title
+          const maxChars = isMobile ? 20 : 28
+          const shortTitle = title.length > maxChars ? title.substring(0, maxChars) + '...' : title
+          
+          text.append('tspan')
+            .attr('x', 12)
+            .attr('dy', 0)
+            .attr('font-weight', 'bold')
+            .attr('font-size', isMobile ? '11px' : '12px')
+            .text(shortTitle)
+          
+          text.append('tspan')
+            .attr('x', 12)
+            .attr('dy', 16)
+            .attr('fill', '#6B7280')
+            .attr('font-size', '10px')
+            .text(`${(d as any).article.primary_domain} • ${(d as any).article.reading_time}min`)
+          
+          // Ajustement rectangle
+          const bbox = (text.node() as any).getBBox()
+          rect
+            .attr('width', bbox.width + 24)
+            .attr('height', bbox.height + 16)
+        }, 100) // Délai 100ms anti-flicker
       })
-      .on('mouseout', function(_event, d) {
-        // Restaurer l'apparence originale
+      .on('mouseleave', function(_event, d) {
+        // Clear timeout pour empêcher tooltip fantôme
+        if (tooltipTimeout) {
+          window.clearTimeout(tooltipTimeout)
+          tooltipTimeout = null
+        }
+        
+        // Restaurer apparence
         select(this)
           .attr('stroke', (d as any).id === selectedArticle?.id ? '#000' : '#fff')
           .attr('stroke-width', (d as any).id === selectedArticle?.id ? 3 : 1)
         
-        svg.selectAll('.tooltip').remove()
+        // Supprimer tooltip avec délai pour éviter flicker
+        window.setTimeout(() => {
+          if (currentTooltip) {
+            svg.selectAll('.tooltip').remove()
+            currentTooltip = null
+          }
+        }, 50)
       })
       .on('click', (event, d) => {
         event.stopPropagation()
@@ -351,16 +397,23 @@ export const GraphView: React.FC<GraphViewProps> = ({
     )
   }
 
-  if (nodes.length === 0) {
+  // Graphe en attente de filtres pour éviter surcharge
+  if (nodes.length === 0 || (!selectedArticle && filteredArticles.length === articles.length)) {
     return (
       <div 
-        className="flex items-center justify-center bg-gray-50 rounded-lg"
+        className="flex items-center justify-center bg-gray-50 rounded-lg border-2 border-dashed border-gray-300"
         style={{ width, height }}
       >
-        <div className="text-center text-gray-500">
-          <div className="text-4xl mb-2">🔍</div>
-          <p>Aucun article à afficher</p>
-          <p className="text-sm">Ajustez vos filtres ou sélectionnez un domaine</p>
+        <div className="text-center text-gray-500 max-w-sm mx-auto p-4">
+          <div className="text-5xl mb-4">🎯</div>
+          <h3 className="text-lg font-medium text-gray-700 mb-2">Graphe en attente</h3>
+          <p className="text-sm leading-relaxed">
+            Sélectionnez des <strong>domaines</strong>, <strong>niveaux</strong> ou <strong>concepts</strong> 
+            pour afficher un graphe pertinent des connexions entre articles.
+          </p>
+          <div className="mt-4 text-xs text-gray-400">
+            💡 Évite la surcharge visuelle • Exploration ciblée
+          </div>
         </div>
       </div>
     )
@@ -400,12 +453,12 @@ export const GraphView: React.FC<GraphViewProps> = ({
         viewBox={`0 0 ${width} ${height}`}
       />
       
-      {/* Informations du graphique */}
-      <div className="absolute top-2 left-2 bg-white/90 backdrop-blur-sm rounded-lg p-3 text-xs">
-        <div className="flex items-center gap-4">
+      {/* Informations du graphique - responsive */}
+      <div className="absolute top-1 sm:top-2 left-1 sm:left-2 bg-white/95 backdrop-blur-sm rounded-lg p-2 sm:p-3 text-xs shadow-sm">
+        <div className={`flex items-center ${width < 640 ? 'flex-col gap-1' : 'gap-4'}`}>
           <span className="font-medium">{stats.totalNodes} articles</span>
           <span>{stats.totalLinks} connexions</span>
-          {selectedArticle && (
+          {selectedArticle && width >= 640 && (
             <span className="text-blue-600">
               Mode focus: {selectedArticle.title.substring(0, 20)}...
             </span>
@@ -413,72 +466,74 @@ export const GraphView: React.FC<GraphViewProps> = ({
         </div>
       </div>
 
-      {/* Légende des connexions - améliorée */}
-      <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-lg p-3 text-xs shadow-lg border border-gray-200">
-        <div className="text-xs font-semibold text-gray-700 mb-2">Types de connexions</div>
-        <div className="grid grid-cols-1 gap-1.5">
-          <div className="flex items-center gap-2">
-            <div 
-              className="w-4 h-1 rounded-full border"
-              style={{
-                backgroundColor: CONNECTION_COLORS.builds_on,
-                borderColor: CONNECTION_COLORS.builds_on
-              }}
-            ></div>
-            <span className="text-gray-700">S'appuie sur</span>
+      {/* Légende des connexions - masquée sur mobile, compacte sur desktop */}
+      {width >= 640 && (
+        <div className="absolute top-2 right-2 bg-white/95 backdrop-blur-sm rounded-lg p-3 text-xs shadow-lg border border-gray-200">
+          <div className="text-xs font-semibold text-gray-700 mb-2">Types de connexions</div>
+          <div className="grid grid-cols-1 gap-1.5">
+            <div className="flex items-center gap-2">
+              <div 
+                className="w-4 h-1 rounded-full border"
+                style={{
+                  backgroundColor: CONNECTION_COLORS.builds_on,
+                  borderColor: CONNECTION_COLORS.builds_on
+                }}
+              ></div>
+              <span className="text-gray-700">S'appuie sur</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div 
+                className="w-4 h-1 rounded-full border"
+                style={{
+                  backgroundColor: CONNECTION_COLORS.contradicts,
+                  borderColor: CONNECTION_COLORS.contradicts
+                }}
+              ></div>
+              <span className="text-gray-700">Contredit</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div 
+                className="w-4 h-1 rounded-full border"
+                style={{
+                  backgroundColor: CONNECTION_COLORS.implements,
+                  borderColor: CONNECTION_COLORS.implements
+                }}
+              ></div>
+              <span className="text-gray-700">Implémente</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div 
+                className="w-4 h-1 rounded-full border"
+                style={{
+                  backgroundColor: CONNECTION_COLORS.questions,
+                  borderColor: CONNECTION_COLORS.questions
+                }}
+              ></div>
+              <span className="text-gray-700">Questionne</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div 
+                className="w-4 h-1 rounded-full border"
+                style={{
+                  backgroundColor: CONNECTION_COLORS.similar_to,
+                  borderColor: CONNECTION_COLORS.similar_to
+                }}
+              ></div>
+              <span className="text-gray-700">Similaire</span>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <div 
-              className="w-4 h-1 rounded-full border"
-              style={{
-                backgroundColor: CONNECTION_COLORS.contradicts,
-                borderColor: CONNECTION_COLORS.contradicts
-              }}
-            ></div>
-            <span className="text-gray-700">Contredit</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div 
-              className="w-4 h-1 rounded-full border"
-              style={{
-                backgroundColor: CONNECTION_COLORS.implements,
-                borderColor: CONNECTION_COLORS.implements
-              }}
-            ></div>
-            <span className="text-gray-700">Implémente</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div 
-              className="w-4 h-1 rounded-full border"
-              style={{
-                backgroundColor: CONNECTION_COLORS.questions,
-                borderColor: CONNECTION_COLORS.questions
-              }}
-            ></div>
-            <span className="text-gray-700">Questionne</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div 
-              className="w-4 h-1 rounded-full border"
-              style={{
-                backgroundColor: CONNECTION_COLORS.similar_to,
-                borderColor: CONNECTION_COLORS.similar_to
-              }}
-            ></div>
-            <span className="text-gray-700">Similaire</span>
+          <div className="mt-2 pt-2 border-t border-gray-200">
+            <div className="flex items-center gap-2 text-xs text-gray-500">
+              <div className="w-4 h-0.5 bg-gray-300 border border-gray-400" style={{borderStyle: 'dashed'}}></div>
+              <span>Auto-détecté</span>
+            </div>
           </div>
         </div>
-        <div className="mt-2 pt-2 border-t border-gray-200">
-          <div className="flex items-center gap-2 text-xs text-gray-500">
-            <div className="w-4 h-0.5 bg-gray-300 border border-gray-400" style={{borderStyle: 'dashed'}}></div>
-            <span>Auto-détecté</span>
-          </div>
-        </div>
-      </div>
+      )}
 
-      {/* Instructions */}
-      <div className="absolute bottom-2 left-2 bg-white/90 backdrop-blur-sm rounded-lg p-2 text-xs text-gray-600">
-        💡 Cliquez sur un article pour explorer ses connexions
+      {/* Instructions adaptatives mobile/desktop */}
+      <div className="absolute bottom-1 sm:bottom-2 left-1 sm:left-2 bg-white/95 backdrop-blur-sm rounded-lg p-2 text-xs text-gray-600 shadow-sm">
+        💡 {width < 640 ? 'Touchez un nœud' : 'Cliquez sur un article pour explorer ses connexions'}
       </div>
     </div>
   )

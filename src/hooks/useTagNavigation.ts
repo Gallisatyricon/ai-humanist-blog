@@ -11,6 +11,8 @@ export interface TagNavigationState {
   filteredArticles: Article[]
   selectedPrimaryTags: string[]
   selectedSecondaryTags: string[]
+  selectedComplexityLevels: string[]
+  selectedConcepts: string[]
   tagWeights: Record<string, number>
   relevantSecondaryTags: SecondaryDomain[]
   isLoading: boolean
@@ -21,6 +23,8 @@ export function useTagNavigation() {
   const [articles, setArticles] = useState<Article[]>([])
   const [selectedPrimaryTags, setSelectedPrimaryTags] = useState<string[]>([])
   const [selectedSecondaryTags, setSelectedSecondaryTags] = useState<string[]>([])
+  const [selectedComplexityLevels, setSelectedComplexityLevels] = useState<string[]>([])
+  const [selectedConcepts, setSelectedConcepts] = useState<string[]>([])
   const [selectedArticleId, setSelectedArticleId] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -75,22 +79,57 @@ export function useTagNavigation() {
     }
   }, [selectedPrimaryTags, articles])
 
-  // Filtrer les articles selon les tags sélectionnés ou l'article spécifique
+  // Filtrer les articles selon les tags sélectionnés ET l'article spécifique
   const filteredArticles = useMemo(() => {
     try {
-      if (selectedArticleId) {
-        return articles.filter(article => article.id === selectedArticleId)
+      let filtered = filterArticlesByTags(articles, selectedPrimaryTags, selectedSecondaryTags)
+      
+      // Filtre par niveau de complexité
+      if (selectedComplexityLevels.length > 0) {
+        filtered = filtered.filter(article => 
+          selectedComplexityLevels.includes(article.complexity_level)
+        )
       }
-      return filterArticlesByTags(articles, selectedPrimaryTags, selectedSecondaryTags)
+      
+      // Filtre par types de concepts
+      if (selectedConcepts.length > 0) {
+        filtered = filtered.filter(article => 
+          article.concepts && article.concepts.some(concept => 
+            selectedConcepts.includes(concept.type)
+          )
+        )
+      }
+
+      // Si un article est sélectionné pour focus, ne garder que celui-ci
+      // MAIS respecter les autres filtres pour la bi-directionnalité
+      if (selectedArticleId) {
+        const focusArticle = articles.find(article => article.id === selectedArticleId)
+        if (focusArticle) {
+          // Vérifier si l'article focus respecte les filtres actifs
+          const respectsFilters = 
+            (selectedPrimaryTags.length === 0 || selectedPrimaryTags.includes(focusArticle.primary_domain)) &&
+            (selectedSecondaryTags.length === 0 || selectedSecondaryTags.some(tag => focusArticle.secondary_domains.includes(tag as any))) &&
+            (selectedComplexityLevels.length === 0 || selectedComplexityLevels.includes(focusArticle.complexity_level)) &&
+            (selectedConcepts.length === 0 || (focusArticle.concepts && focusArticle.concepts.some(concept => selectedConcepts.includes(concept.type))))
+          
+          if (respectsFilters) {
+            return [focusArticle] // Article focus compatible avec filtres
+          } else {
+            return [] // Article focus incompatible avec filtres
+          }
+        }
+      }
+      
+      return filtered
     } catch (error) {
       console.error('❌ Erreur filtrage articles:', error)
       return articles
     }
-  }, [articles, selectedPrimaryTags, selectedSecondaryTags, selectedArticleId])
+  }, [articles, selectedPrimaryTags, selectedSecondaryTags, selectedComplexityLevels, selectedConcepts, selectedArticleId])
 
   // Gestion de la sélection des tags primaires
   function onPrimaryTagSelect(tag: string) {
-    setSelectedArticleId(null) // Désactiver le filtre par article
+    setSelectedArticleId(null) // Revenir en vue globale quand on change les filtres
     setSelectedPrimaryTags(prev => {
       if (prev.includes(tag)) {
         // Désélectionner
@@ -106,7 +145,7 @@ export function useTagNavigation() {
 
   // Gestion de la sélection des tags secondaires
   function onSecondaryTagSelect(tag: string) {
-    setSelectedArticleId(null) // Désactiver le filtre par article
+    setSelectedArticleId(null) // Revenir en vue globale quand on change les filtres
     setSelectedSecondaryTags(prev => {
       if (prev.includes(tag)) {
         return prev.filter(t => t !== tag)
@@ -116,23 +155,44 @@ export function useTagNavigation() {
     })
   }
 
+  // Gestion des filtres par niveau de complexité
+  function onComplexityLevelSelect(level: string) {
+    setSelectedArticleId(null) // Revenir en vue globale quand on change les filtres
+    setSelectedComplexityLevels(prev => {
+      if (prev.includes(level)) {
+        return prev.filter(l => l !== level)
+      } else {
+        return [...prev, level]
+      }
+    })
+  }
+
+  // Gestion des filtres par types de concepts
+  function onConceptSelect(conceptType: string) {
+    setSelectedArticleId(null) // Revenir en vue globale quand on change les filtres
+    setSelectedConcepts(prev => {
+      if (prev.includes(conceptType)) {
+        return prev.filter(c => c !== conceptType)
+      } else {
+        return [...prev, conceptType]
+      }
+    })
+  }
+
   // Réinitialiser tous les filtres
   function resetFilters() {
     setSelectedPrimaryTags([])
     setSelectedSecondaryTags([])
-    setSelectedArticleId(null)
+    setSelectedComplexityLevels([])
+    setSelectedConcepts([])
+    setSelectedArticleId(null) // Revenir en vue globale
   }
 
   // Sélectionner un article spécifique (pour le graphique)
   function selectArticleForFilter(articleId: string | null) {
-    if (articleId) {
-      // Désactiver les filtres par tags et activer le filtre par article
-      setSelectedPrimaryTags([])
-      setSelectedSecondaryTags([])
-      setSelectedArticleId(articleId)
-    } else {
-      setSelectedArticleId(null)
-    }
+    // GARDONS les filtres existants pour la bi-directionnalité
+    setSelectedArticleId(articleId)
+    // Les filtres restent actifs et continuent de fonctionner
   }
 
   // Statistiques pour l'interface
@@ -142,9 +202,11 @@ export function useTagNavigation() {
       filteredCount: filteredArticles.length,
       primaryTagsCount: selectedPrimaryTags.length,
       secondaryTagsCount: selectedSecondaryTags.length,
-      hasFilters: selectedPrimaryTags.length > 0 || selectedSecondaryTags.length > 0 || selectedArticleId !== null
+      complexityLevelsCount: selectedComplexityLevels.length,
+      conceptsCount: selectedConcepts.length,
+      hasFilters: selectedPrimaryTags.length > 0 || selectedSecondaryTags.length > 0 || selectedComplexityLevels.length > 0 || selectedConcepts.length > 0 || selectedArticleId !== null
     }
-  }, [articles, filteredArticles, selectedPrimaryTags, selectedSecondaryTags, selectedArticleId])
+  }, [articles, filteredArticles, selectedPrimaryTags, selectedSecondaryTags, selectedComplexityLevels, selectedConcepts, selectedArticleId])
 
   // Suggestions de tags basées sur les articles filtrés
   const tagSuggestions = useMemo(() => {
@@ -169,6 +231,8 @@ export function useTagNavigation() {
     filteredArticles,
     selectedPrimaryTags,
     selectedSecondaryTags,
+    selectedComplexityLevels,
+    selectedConcepts,
     tagWeights,
     relevantSecondaryTags,
     isLoading,
@@ -177,8 +241,12 @@ export function useTagNavigation() {
 
   return {
     ...state,
+    selectedComplexityLevels,
+    selectedConcepts,
     onPrimaryTagSelect,
     onSecondaryTagSelect,
+    onComplexityLevelSelect,
+    onConceptSelect,
     resetFilters,
     selectArticleForFilter,
     stats,

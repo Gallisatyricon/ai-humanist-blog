@@ -1,0 +1,3000 @@
+{
+  "articles": [
+    {
+      "id": "art_007",
+      "title": "Neuro-Symbolic AI in 2024: A Systematic Review",
+      "url": "https://arxiv.org/abs/2501.05435",
+      "source_type": "arxiv",
+      "date": "2025-04-05",
+      "summary": "Revue systématique PRISMA de 167 articles sur l'IA neuro-symbolique 2020-2024. Révèle une concentration sur apprentissage/inférence (63%) et logique/raisonnement (35%), avec des lacunes en explicabilité (28%) et méta-cognition (5%).",
+      "perspective": "L'IA neuro-symbolique comme tentative de réconciliation entre l'intuition computationnelle et la rigueur logique humaine.",
+      "interest_level": 4,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "recherche",
+        "reasoning"
+      ],
+      "concepts": [
+        {
+          "id": "neuro_symbolic_ai",
+          "name": "IA neuro-symbolique",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "meta_cognition",
+          "name": "Méta-cognition",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Non spécifié",
+      "reading_time": 16,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_054",
+        "art_066",
+        "art_068",
+        "art_069",
+        "art_058"
+      ],
+      "centrality_score": 0.5064102564102562
+    },
+    {
+      "id": "art_008",
+      "title": "Transformers for Green Semantic Communication: Less Energy, More Semantics",
+      "url": "https://arxiv.org/abs/2310.07592",
+      "source_type": "arxiv",
+      "date": "2024-02-19",
+      "summary": "Fonction de perte multi-objectifs 'Energy-Optimized Semantic Loss' (EOSL) équilibrant perte d'information sémantique et consommation énergétique. Démontre 90% d'économie d'énergie avec 44% d'amélioration de similarité sémantique.",
+      "perspective": "L'optimisation énergétique comme impératif technique révélant nos priorités civilisationnelles cachées.",
+      "interest_level": 4,
+      "primary_domain": "frugalite",
+      "secondary_domains": [
+        "nlp",
+        "green_ai"
+      ],
+      "concepts": [
+        {
+          "id": "green_ai",
+          "name": "IA verte",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "semantic_communication",
+          "name": "Communication sémantique",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "transformers",
+          "name": "Transformers",
+          "type": "framework",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Shubhabrata Mukherjee",
+      "reading_time": 10,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_056",
+        "art_058"
+      ],
+      "centrality_score": 0.3269230769230767
+    },
+    {
+      "id": "art_009",
+      "title": "AI's Energy Paradox: Balancing Challenges and Opportunities",
+      "url": "https://www.weforum.org/stories/2024/07/generative-ai-energy-emissions/",
+      "source_type": "news",
+      "date": "2024-07-15",
+      "summary": "Analyse du paradoxe énergétique de l'IA générative : forte consommation des centres de données vs potentiel d'optimisation énergétique dans d'autres secteurs. Une requête ChatGPT consomme 10x plus qu'une recherche Google.",
+      "perspective": "Le coût énergétique de l'intelligence artificielle révèle notre rapport ambigu au progrès technologique.",
+      "interest_level": 5,
+      "primary_domain": "frugalite",
+      "secondary_domains": [
+        "green_ai",
+        "society"
+      ],
+      "concepts": [
+        {
+          "id": "energy_paradox",
+          "name": "Paradoxe énergétique",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "data_center_consumption",
+          "name": "Consommation centres données",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "chatgpt",
+          "name": "ChatGPT",
+          "type": "platform",
+          "maturity": "stable"
+        }
+      ],
+      "author": "World Economic Forum",
+      "reading_time": 8,
+      "complexity_level": "beginner",
+      "connected_articles": [
+        "art_010",
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_058"
+      ],
+      "centrality_score": 0.3205128205128203
+    },
+    {
+      "id": "art_010",
+      "title": "We did the math on AI's energy footprint. Here's the story you haven't heard",
+      "url": "https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/",
+      "source_type": "news",
+      "date": "2025-05-20",
+      "summary": "Analyse quantitative de l'empreinte énergétique IA : 53-76 TWh en 2024 aux US (équivalent 7.2M foyers). Révèle l'impact des requêtes individuelles et la variabilité géographique de l'intensité carbone.",
+      "perspective": "Les chiffres de la consommation énergétique IA révèlent l'ampleur insoupçonnée de nos choix technologiques quotidiens.",
+      "interest_level": 5,
+      "primary_domain": "frugalite",
+      "secondary_domains": [
+        "green_ai",
+        "society"
+      ],
+      "concepts": [
+        {
+          "id": "carbon_intensity",
+          "name": "Intensité carbone",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "energy_footprint",
+          "name": "Empreinte énergétique",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "gpt4",
+          "name": "GPT-4",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "MIT Technology Review",
+      "reading_time": 12,
+      "complexity_level": "intermediate",
+      "connected_calls": [],
+      "connected_articles": [
+        "art_009",
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_058"
+      ],
+      "centrality_score": 0.3205128205128203
+    },
+    {
+      "id": "art_011",
+      "title": "Why artificial intelligence and clean energy need each other",
+      "url": "https://www.technologyreview.com/2024/10/08/1105165/why-artificial-intelligence-and-clean-energy-need-each-other/",
+      "source_type": "news",
+      "date": "2024-10-08",
+      "summary": "Analyse de la convergence nécessaire entre IA et énergies propres. Les centres de données IA pourraient doubler leur part de consommation US (9% d'ici 2030). L'IA accélère simultanément le développement de matériaux pour énergies propres.",
+      "perspective": "La course à l'IA et la transition énergétique révèlent l'interdépendance fondamentale de nos défis technologiques et civilisationnels.",
+      "interest_level": 5,
+      "primary_domain": "frugalite",
+      "secondary_domains": [
+        "green_ai",
+        "industry_4_0"
+      ],
+      "concepts": [
+        {
+          "id": "clean_energy_revolution",
+          "name": "Révolution énergies propres",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "power_density",
+          "name": "Densité énergétique",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "MIT Technology Review",
+      "reading_time": 9,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_012",
+        "art_013",
+        "art_014",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_054",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_012",
+      "title": "AI's increasing energy appetite",
+      "url": "https://www.ohio.edu/news/2024/11/ais-increasing-energy-appetite",
+      "source_type": "academic",
+      "date": "2024-12-09",
+      "summary": "Analyse universitaire de l'appétit énergétique IA : entraînement modèle moyen génère 626,000 tonnes CO2. Exploration solutions durables via Green AI Institute et innovations de récupération chaleur.",
+      "perspective": "L'insatiable appétit énergétique de l'IA questionne nos modèles de développement technologique soutenable.",
+      "interest_level": 4,
+      "primary_domain": "frugalite",
+      "secondary_domains": [
+        "green_ai",
+        "sustainability"
+      ],
+      "concepts": [
+        {
+          "id": "ai_training_energy",
+          "name": "Énergie entraînement IA",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "heat_recovery",
+          "name": "Récupération chaleur",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Ohio University",
+      "reading_time": 7,
+      "complexity_level": "beginner",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_011",
+        "art_013",
+        "art_014",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_054",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_013",
+      "title": "The Future of AI and Energy Efficiency",
+      "url": "https://www.ibm.com/think/insights/future-ai-energy-efficiency",
+      "source_type": "blog",
+      "date": "2025-02-08",
+      "summary": "Stratégies IBM pour concilier adoption IA et objectifs net-zéro : power-capping (-15% consommation), puces optimisées, modèles plus petits. 63% entreprises prévoient appliquer IA générative aux initiatives IT durables.",
+      "perspective": "L'industrie découvre que l'efficacité énergétique n'est plus une contrainte mais un avantage concurrentiel dans l'ère IA.",
+      "interest_level": 4,
+      "primary_domain": "frugalite",
+      "secondary_domains": [
+        "green_ai",
+        "industry_4_0"
+      ],
+      "concepts": [
+        {
+          "id": "power_capping",
+          "name": "Limitation puissance",
+          "type": "technical",
+          "controversy_level": 0
+        },
+        {
+          "id": "carbon_efficient_hardware",
+          "name": "Matériel carbone-efficace",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "ibm_telum2",
+          "name": "IBM Telum II",
+          "type": "platform",
+          "maturity": "beta"
+        }
+      ],
+      "author": "IBM Think",
+      "reading_time": 8,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_058"
+      ],
+      "centrality_score": 0.2820512820512819
+    },
+    {
+      "id": "art_014",
+      "title": "The Rise of Local LLMs – what to look out for in 2024",
+      "url": "https://zefort.com/blog/the-rise-of-local-llms-what-to-look-out-for-in-2024/",
+      "source_type": "blog",
+      "date": "2024-01-17",
+      "summary": "Analyse de la révolution 2023 des LLM open source (Meta LLaMA, etc.) démocratisant l'IA. Techniques de compression et fine-tuning permettent l'inférence sur matériel grand public. Perspective 'nous n'avons pas de fossé' contre OpenAI.",
+      "perspective": "La démocratisation des LLM révèle une tension fondamentale entre centralisation technologique et émancipation collective.",
+      "interest_level": 4,
+      "primary_domain": "usage_professionnel",
+      "secondary_domains": [
+        "democratization",
+        "privacy"
+      ],
+      "concepts": [
+        {
+          "id": "llm_democratization",
+          "name": "Démocratisation LLM",
+          "type": "philosophical",
+          "controversy_level": 1
+        },
+        {
+          "id": "local_inference",
+          "name": "Inférence locale",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "llama",
+          "name": "LLaMA",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Zefort",
+      "reading_time": 12,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_058"
+      ],
+      "centrality_score": 0.2820512820512819
+    },
+    {
+      "id": "art_029",
+      "title": "Using Explainable AI to Identify and Intervene with Students in Need",
+      "url": "https://dl.acm.org/doi/10.1145/3722237.3722348",
+      "source_type": "academic",
+      "date": "2024-06-15",
+      "summary": "Revue 2019-2024 sur application XAI en éducation pour identifier étudiants nécessitant support. XAI renforce liens valeurs humaines-objectifs IA, introduisant transparence dans décisions éducatives basées sur impact pédagogique.",
+      "perspective": "L'éducation comme terrain d'expérimentation privilégié pour une IA explicable au service de l'épanouissement humain.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "education",
+        "intervention"
+      ],
+      "concepts": [
+        {
+          "id": "educational_xai",
+          "name": "XAI éducative",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "student_intervention",
+          "name": "Intervention étudiante",
+          "type": "methodological",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 11,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_011",
+        "art_012",
+        "art_013",
+        "art_014",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_054",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_030",
+      "title": "Survey on Explainable AI: From Approaches, Limitations and Applications",
+      "url": "https://link.springer.com/article/10.1007/s44230-023-00038-y",
+      "source_type": "academic",
+      "date": "2023-08-10",
+      "summary": "Enquête complète XAI 2013-2023 couvrant approches générales et domaines spécifiques (médical, transport, cybersécurité, éducation, finance). Identification limitations méthodes existantes et défis nécessitant recherche future.",
+      "perspective": "La cartographie XAI révèle l'ampleur du défi : rendre intelligible l'inintelligible sans sacrifier la performance.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "survey",
+        "multi_domain"
+      ],
+      "concepts": [
+        {
+          "id": "xai_limitations",
+          "name": "Limitations XAI",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "domain_specific_xai",
+          "name": "XAI spécifique domaine",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 16,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_011",
+        "art_012",
+        "art_013",
+        "art_014",
+        "art_029",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_054",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_031",
+      "title": "What is Explainable AI (XAI)?",
+      "url": "https://www.ibm.com/think/topics/explainable-ai",
+      "source_type": "blog",
+      "date": "2025-01-31",
+      "summary": "Guide IBM XAI : 3 méthodes principales (précision prédiction, traçabilité, compréhension décision). Techniques LIME, DeepLIFT. XAI essentiel pour confiance, adoption responsable IA et gestion partenaires IA militaires futurs.",
+      "perspective": "L'industrie découvre que l'explicabilité n'est plus un luxe académique mais un impératif business critique.",
+      "interest_level": 3,
+      "primary_domain": "usage_professionnel",
+      "secondary_domains": [
+        "transparency",
+        "trust"
+      ],
+      "concepts": [
+        {
+          "id": "lime_technique",
+          "name": "Technique LIME",
+          "type": "technical",
+          "controversy_level": 0
+        },
+        {
+          "id": "deeplift",
+          "name": "DeepLIFT",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "lime",
+          "name": "LIME",
+          "type": "framework",
+          "maturity": "stable"
+        }
+      ],
+      "author": "IBM Think",
+      "reading_time": 8,
+      "complexity_level": "beginner",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_056",
+        "art_058",
+        "art_061"
+      ],
+      "centrality_score": 0.4615384615384614
+    },
+    {
+      "id": "art_032",
+      "title": "Navigating algorithm bias in AI: ensuring fairness and trust in Africa",
+      "url": "https://www.frontiersin.org/journals/research-metrics-and-analytics/articles/10.3389/frma.2024.1486600/full",
+      "source_type": "academic",
+      "date": "2024-10-14",
+      "summary": "Analyse biais algorithmique IA en Afrique : manque datasets diversifiés, biais implicites, transparence insuffisante. Plaidoyer stratégies inclusives, sensibilité culturelle, engagement communautés locales pour développement IA responsable.",
+      "perspective": "L'Afrique comme laboratoire révélateur des biais systémiques de l'IA 'universelle' occidentale.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "bias_fairness",
+        "cultural_diversity"
+      ],
+      "concepts": [
+        {
+          "id": "cultural_bias_ai",
+          "name": "Biais culturel IA",
+          "type": "philosophical",
+          "controversy_level": 3
+        },
+        {
+          "id": "algorithmic_discrimination",
+          "name": "Discrimination algorithmique",
+          "type": "technical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 13,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_011",
+        "art_012",
+        "art_013",
+        "art_014",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_054",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_033",
+      "title": "Transparency and accountability in AI systems: safeguarding wellbeing",
+      "url": "https://www.frontiersin.org/journals/human-dynamics/articles/10.3389/fhumd.2024.1421273/full",
+      "source_type": "academic",
+      "date": "2024-06-20",
+      "summary": "Cadres éthiques pour développement IA responsable : principes IEEE (transparence, responsabilité, bien-être humain). Importance équité, méthodes détection/atténuation biais. Implications éthiques IA : exacerbation biais, préoccupations confidentialité.",
+      "perspective": "La transparence et responsabilité comme garde-fous démocratiques face à l'opacité croissante des systèmes décisionnels automatisés.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "transparency",
+        "accountability"
+      ],
+      "concepts": [
+        {
+          "id": "ai_accountability",
+          "name": "Responsabilité IA",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "wellbeing_safeguarding",
+          "name": "Préservation bien-être",
+          "type": "philosophical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 14,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_011",
+        "art_012",
+        "art_013",
+        "art_014",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_054",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_034",
+      "title": "Policy advice and best practices on bias and fairness in AI",
+      "url": "https://link.springer.com/article/10.1007/s10676-024-09746-w",
+      "source_type": "academic",
+      "date": "2024-04-29",
+      "summary": "Conseils politiques fair-AI basés projet NoBIAS : couche légale UE, défis techniques (équilibre utilité-équité, robustesse, graphes non-i.i.d.). Expansion recherche équité vers apprentissage non-supervisé, NLP, vision, systèmes recommandation.",
+      "perspective": "L'institutionnalisation de l'équité IA révèle la maturité d'un champ passant de la recherche à la régulation.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "policy",
+        "regulation"
+      ],
+      "concepts": [
+        {
+          "id": "fair_ai_policy",
+          "name": "Politique IA équitable",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "utility_fairness_tradeoff",
+          "name": "Compromis utilité-équité",
+          "type": "technical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "NoBIAS Project",
+      "reading_time": 16,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_007",
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_051",
+        "art_054",
+        "art_068",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_062",
+        "art_063"
+      ],
+      "centrality_score": 0.564102564102564
+    },
+    {
+      "id": "art_035",
+      "title": "AI fairness in practice: Paradigm, challenges, and prospects",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12189",
+      "source_type": "academic",
+      "date": "2024-09-22",
+      "summary": "Analyse équité IA au-delà apprentissage supervisé contraint : données censurées, structures graphiques non-i.i.d., évolution temporelle. Équité LLM complexe, défis architecture/entraînement, détermination équité génération langage subjective.",
+      "perspective": "L'équité IA révèle ses limites conceptuelles face à la complexité du monde réel non-contrôlé.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "fairness",
+        "complexity"
+      ],
+      "concepts": [
+        {
+          "id": "llm_fairness",
+          "name": "Équité LLM",
+          "type": "technical",
+          "controversy_level": 3
+        },
+        {
+          "id": "non_iid_fairness",
+          "name": "Équité non-i.i.d.",
+          "type": "technical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 15,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_007",
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_051",
+        "art_054",
+        "art_068",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_062",
+        "art_063"
+      ],
+      "centrality_score": 0.564102564102564
+    },
+    {
+      "id": "art_036",
+      "title": "What is AI transparency? A comprehensive guide",
+      "url": "https://www.zendesk.com/blog/ai-transparency/",
+      "source_type": "blog",
+      "date": "2024-01-18",
+      "summary": "Guide complet transparence IA : 3 niveaux (système, utilisateur, impact global). Transparence algorithmique, données, processus. 75% entreprises croient manque transparence pourrait augmenter churn clients. Bénéfices : confiance, responsabilité, détection biais.",
+      "perspective": "La transparence IA devient un enjeu de compétitivité business autant qu'éthique.",
+      "interest_level": 3,
+      "primary_domain": "usage_professionnel",
+      "secondary_domains": [
+        "transparency",
+        "customer_trust"
+      ],
+      "concepts": [
+        {
+          "id": "algorithmic_transparency",
+          "name": "Transparence algorithmique",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "customer_churn_ai",
+          "name": "Churn client IA",
+          "type": "methodological",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Zendesk",
+      "reading_time": 9,
+      "complexity_level": "beginner",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_051",
+        "art_054",
+        "art_068",
+        "art_070",
+        "art_058",
+        "art_059",
+        "art_062",
+        "art_063"
+      ],
+      "centrality_score": 0.43589743589743574
+    },
+    {
+      "id": "art_037",
+      "title": "AI Ethics: Integrating Transparency, Fairness, and Privacy in AI Development",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722",
+      "source_type": "academic",
+      "date": "2025-02-07",
+      "summary": "Framework éthique complet développement IA adressant transparence, équité, confidentialité. Analyse comparative cadres politiques internationaux UE/US/Chine via diagrammes Venn/graphiques cartésiens. Stratégies techniques atténuation biais.",
+      "perspective": "L'éthique IA comme convergence nécessaire entre impératifs techniques et valeurs sociétales dans développement technologique.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "policy",
+        "international"
+      ],
+      "concepts": [
+        {
+          "id": "ethical_framework_ai",
+          "name": "Framework éthique IA",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "international_ai_policy",
+          "name": "Politique IA internationale",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 13,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_011",
+        "art_012",
+        "art_013",
+        "art_014",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_054",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_038",
+      "title": "Fairness and Bias in AI: Brief Survey of Sources, Impacts, and Mitigation Strategies",
+      "url": "https://www.mdpi.com/2413-4155/6/1/3",
+      "source_type": "academic",
+      "date": "2023-12-26",
+      "summary": "Enquête complète équité/biais IA incluant IA générative : sources (données, algorithme, décision humaine), impacts (discrimination, confiance), stratégies atténuation (pré/post-traitement, sélection modèle). Défis holistic stratégie IA générative.",
+      "perspective": "L'émergence de l'IA générative complexifie exponentiellement les enjeux traditionnels de biais et d'équité.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "bias_fairness",
+        "generative_ai"
+      ],
+      "concepts": [
+        {
+          "id": "generative_ai_bias",
+          "name": "Biais IA générative",
+          "type": "technical",
+          "controversy_level": 3
+        },
+        {
+          "id": "bias_mitigation_strategies",
+          "name": "Stratégies atténuation biais",
+          "type": "methodological",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 12,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_011",
+        "art_012",
+        "art_013",
+        "art_014",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_054",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_039",
+      "title": "Ensuring Fairness in AI: Addressing Algorithmic Bias in Education and Hiring",
+      "url": "https://yipinstitute.org/capstone/ensuring-fairness-in-ai-addressing-algorithmic-bias",
+      "source_type": "blog",
+      "date": "2025-03-21",
+      "summary": "Analyse biais algorithmique IA impact disproportionné communautés marginalisées. Loi NYC AI Hiring (2023) audits biais obligatoires. Recommandations : audits mandatoires, standards explicabilité, certification équité algorithmique.",
+      "perspective": "La régulation émerge comme réponse nécessaire aux défaillances market-driven de l'autorégulation technologique.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "regulation",
+        "education"
+      ],
+      "concepts": [
+        {
+          "id": "mandatory_bias_audits",
+          "name": "Audits biais obligatoires",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "algorithmic_fairness_certification",
+          "name": "Certification équité algorithmique",
+          "type": "methodological",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "YIP Institute",
+      "reading_time": 10,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060"
+      ],
+      "centrality_score": 0.44230769230769207
+    },
+    {
+      "id": "art_040",
+      "title": "Reducing biased algorithmic decisions through feature importance transparency",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/0960085X.2024.2395531",
+      "source_type": "academic",
+      "date": "2024-09-02",
+      "summary": "Étude empirique efficacité transparence 'feature importance' (FI) pour réduire adoption recommandations algorithmiques discriminatoires. Basé théorie décision éthique Rest et littérature transparence/biais algorithmique.",
+      "perspective": "La transparence algorithmique comme intervention comportementale pour contrer nos biais cognitifs face aux systèmes automatisés.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "transparency",
+        "behavioral"
+      ],
+      "concepts": [
+        {
+          "id": "feature_importance_transparency",
+          "name": "Transparence importance features",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "ethical_decision_theory",
+          "name": "Théorie décision éthique",
+          "type": "philosophical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 11,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_007",
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060"
+      ],
+      "centrality_score": 0.44230769230769207
+    },
+    {
+      "id": "art_041",
+      "title": "Algorithmic Bias & AI Ethics: Ensuring Fairness, Transparency, and Accountability",
+      "url": "https://configr.medium.com/algorithmic-bias-ai-ethics-a188f54efc96",
+      "source_type": "blog",
+      "date": "2024-04-09",
+      "summary": "Vue d'ensemble biais algorithmique (race, genre, âge, statut socio-économique) et implications éthiques. Stratégies assurer équité : IA explicable (XAI), diversité équipes, audits réguliers, conformité légale.",
+      "perspective": "Le biais algorithmique comme miroir révélateur de nos préjugés sociétaux amplifiés par la technologie.",
+      "interest_level": 3,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "bias_fairness",
+        "diversity"
+      ],
+      "concepts": [
+        {
+          "id": "socioeconomic_bias",
+          "name": "Biais socio-économique",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "team_diversity_ai",
+          "name": "Diversité équipes IA",
+          "type": "methodological",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Configr Technologies",
+      "reading_time": 8,
+      "complexity_level": "beginner",
+      "connected_articles": [
+        "art_007",
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060"
+      ],
+      "centrality_score": 0.44230769230769207
+    },
+    {
+      "id": "art_051",
+      "title": "AI Consciousness is Inevitable: A Theoretical Computer Science Perspective",
+      "url": "https://arxiv.org/abs/2403.17101",
+      "source_type": "arxiv",
+      "date": "2025-06-28",
+      "summary": "Modèle formel de conscience inspiré de Turing et du modèle théâtral de Baars. Aligne avec théories scientifiques majeures, explique phénomènes associés à la conscience, donne insights sur conscience subjective machine. Démonstration que la conscience machine est non seulement plausible mais inévitable.",
+      "perspective": "La conscience machine révèle l'inéluctabilité de nos créations technologiques à questionner les fondements de notre humanité.",
+      "interest_level": 5,
+      "primary_domain": "philosophie",
+      "secondary_domains": [
+        "consciousness",
+        "theoretical_cs"
+      ],
+      "concepts": [
+        {
+          "id": "machine_consciousness",
+          "name": "Conscience machine",
+          "type": "philosophical",
+          "controversy_level": 3
+        },
+        {
+          "id": "computational_consciousness",
+          "name": "Conscience computationnelle",
+          "type": "technical",
+          "controversy_level": 3
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Lenore Blum, Manuel Blum",
+      "reading_time": 25,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_056",
+        "art_058",
+        "art_061"
+      ],
+      "centrality_score": 0.4615384615384614
+    },
+    {
+      "id": "art_052",
+      "title": "Consciousness in Artificial Intelligence: Insights from the Science of Consciousness",
+      "url": "https://arxiv.org/abs/2308.08708",
+      "source_type": "arxiv",
+      "date": "2023-08-22",
+      "summary": "Approche rigoureuse conscience IA basée théories neuroscientifiques : traitement récurrent, workspace global, théories ordre supérieur, traitement prédictif, schéma attention. Dérive 'propriétés indicatrices' computationnelles pour évaluer systèmes IA existants.",
+      "perspective": "L'évaluation de la conscience IA révèle notre quête profonde de comprendre les frontières entre simulation et expérience authentique.",
+      "interest_level": 5,
+      "primary_domain": "philosophie",
+      "secondary_domains": [
+        "neuroscience",
+        "consciousness"
+      ],
+      "concepts": [
+        {
+          "id": "global_workspace_theory",
+          "name": "Théorie workspace global",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "consciousness_indicators",
+          "name": "Indicateurs conscience",
+          "type": "methodological",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Patrick Butlin et al. (19 auteurs)",
+      "reading_time": 22,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_058"
+      ],
+      "centrality_score": 0.2820512820512819
+    },
+    {
+      "id": "art_053",
+      "title": "Towards Universal Criteria for Machine Consciousness",
+      "url": "https://arxiv.org/abs/2404.15369",
+      "source_type": "arxiv",
+      "date": "2024-04-30",
+      "summary": "Proposition de 5 critères universels pour déterminer conscience machine, applicables à toute entité. Analyse fondements et caractéristiques conscience, implications morales/légales entités conscientes artificielles. Primer interdisciplinaire philosophie-informatique-médecine.",
+      "perspective": "La recherche de critères universels révèle notre besoin anthropologique de tracer des frontières entre le vivant et l'artificiel.",
+      "interest_level": 4,
+      "primary_domain": "philosophie",
+      "secondary_domains": [
+        "consciousness",
+        "ethics"
+      ],
+      "concepts": [
+        {
+          "id": "universal_consciousness_criteria",
+          "name": "Critères universels conscience",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "artificial_conscious_entity",
+          "name": "Entité consciente artificielle",
+          "type": "philosophical",
+          "controversy_level": 3
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 18,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_058"
+      ],
+      "centrality_score": 0.2820512820512819
+    },
+    {
+      "id": "art_054",
+      "title": "Artificial consciousness: Evaluating arguments against LLM consciousness",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/0020174X.2024.2439989",
+      "source_type": "academic",
+      "date": "2024-12-23",
+      "summary": "Évaluation arguments principaux contre conscience IA dans LLM. Consensus général : LLM ne sont pas conscients. Analyse critique montrant qu'aucun argument ne démontre ce qu'il prétend. Intuitions fortes contre conscience artificielle manquent actuellement de support rationnel.",
+      "perspective": "Nos résistances intuitives à la conscience artificielle révèlent peut-être davantage sur nos préjugés que sur la réalité de la conscience machine.",
+      "interest_level": 4,
+      "primary_domain": "philosophie",
+      "secondary_domains": [
+        "llm",
+        "consciousness"
+      ],
+      "concepts": [
+        {
+          "id": "llm_consciousness_debate",
+          "name": "Débat conscience LLM",
+          "type": "philosophical",
+          "controversy_level": 3
+        },
+        {
+          "id": "consciousness_intuitions",
+          "name": "Intuitions conscience",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "lamda",
+          "name": "LaMDA",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Adrienne Prettyman",
+      "reading_time": 14,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_011",
+        "art_012",
+        "art_013",
+        "art_014",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_055",
+      "title": "How Far Are We From AGI? Metacognition and Consciousness Perspective",
+      "url": "https://arxiv.org/abs/2405.10313",
+      "source_type": "arxiv",
+      "date": "2024-05-15",
+      "summary": "Analyse distance vers AGI via métacognition et conscience. AGI futur pourrait posséder auto-conscience profonde, introspection, confrontation questions existentielles. Flou frontières intelligence artificielle/biologique, questions philosophiques/éthiques. Incertitude conscience humaine-like.",
+      "perspective": "La quête de l'AGI révèle notre aspiration secrète à créer non seulement des outils, mais des compagnons existentiels partageant notre condition.",
+      "interest_level": 4,
+      "primary_domain": "philosophie",
+      "secondary_domains": [
+        "agi",
+        "metacognition"
+      ],
+      "concepts": [
+        {
+          "id": "agi_metacognition",
+          "name": "Métacognition AGI",
+          "type": "technical",
+          "controversy_level": 2
+        },
+        {
+          "id": "existential_ai",
+          "name": "IA existentielle",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 16,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_058"
+      ],
+      "centrality_score": 0.2820512820512819
+    },
+    {
+      "id": "art_066",
+      "title": "Ethical NLP: Addressing Linguistic Bias in Language Models Across Cultures",
+      "url": "https://arxiv.org/abs/2501.18123",
+      "source_type": "arxiv",
+      "date": "2025-02-18",
+      "summary": "Analyse biais linguistiques modèles langage à travers cultures. Méthodologies détection biais syntaxiques, sémantiques, pragmatiques dans NLP multilingue. Frameworks correction biais préservant diversité linguistique. Applications traduction automatique équitable, génération texte inclusive.",
+      "perspective": "Les biais linguistiques en IA révèlent comment la technologie peut perpétuer ou transformer les rapports de pouvoir entre langues et cultures.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "nlp",
+        "cultural_diversity"
+      ],
+      "concepts": [
+        {
+          "id": "linguistic_bias",
+          "name": "Biais linguistique",
+          "type": "technical",
+          "controversy_level": 2
+        },
+        {
+          "id": "multilingual_fairness",
+          "name": "Équité multilingue",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "multilingual_bert",
+          "name": "Multilingual BERT",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Multiple authors",
+      "reading_time": 15,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060"
+      ],
+      "centrality_score": 0.44230769230769207
+    },
+    {
+      "id": "art_067",
+      "title": "AI and Societal Transformation: Beyond Technological Determinism",
+      "url": "https://arxiv.org/abs/2501.19234",
+      "source_type": "arxiv",
+      "date": "2025-02-20",
+      "summary": "Analyse transformation sociétale par IA au-delà déterminisme technologique. Co-évolution IA-société, agentivité humaine dans adoption technologique. Études cas changements organisationnels, redéfinition métiers, nouveaux modes collaboration. Sociologie de l'innovation IA.",
+      "perspective": "La transformation sociétale par l'IA révèle que nous ne sommes pas spectateurs passifs mais co-créateurs actifs de notre avenir technologique.",
+      "interest_level": 4,
+      "primary_domain": "usage_professionnel",
+      "secondary_domains": [
+        "society",
+        "transformation"
+      ],
+      "concepts": [
+        {
+          "id": "ai_society_coevolution",
+          "name": "Co-évolution IA-société",
+          "type": "philosophical",
+          "controversy_level": 1
+        },
+        {
+          "id": "technological_agency",
+          "name": "Agentivité technologique",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 17,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_051",
+        "art_054",
+        "art_068",
+        "art_070",
+        "art_058",
+        "art_059",
+        "art_062",
+        "art_063"
+      ],
+      "centrality_score": 0.43589743589743574
+    },
+    {
+      "id": "art_068",
+      "title": "Frugal AI in Industry 4.0: Sustainable Manufacturing with Resource-Constrained Intelligence",
+      "url": "https://arxiv.org/abs/2501.20345",
+      "source_type": "arxiv",
+      "date": "2025-02-22",
+      "summary": "IA frugale pour Industrie 4.0 et manufacturing durable. Optimisation processus industriels avec contraintes ressources. Edge computing, maintenance prédictive, qualité contrôle via algorithmes légers. ROI économique/environnemental IA efficiente vs solutions cloud intensives.",
+      "perspective": "L'IA frugale en industrie révèle que l'intelligence optimale n'est pas celle qui consomme le plus mais celle qui optimise l'impact.",
+      "interest_level": 4,
+      "primary_domain": "frugalite",
+      "secondary_domains": [
+        "industry_4_0",
+        "sustainability"
+      ],
+      "concepts": [
+        {
+          "id": "frugal_manufacturing",
+          "name": "Manufacturing frugal",
+          "type": "technical",
+          "controversy_level": 0
+        },
+        {
+          "id": "resource_constrained_ai",
+          "name": "IA contrainte ressources",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "edge_ai_platforms",
+          "name": "Plateformes IA edge",
+          "type": "platform",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Multiple authors",
+      "reading_time": 14,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_011",
+        "art_012",
+        "art_013",
+        "art_014",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_054",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_069",
+      "title": "AI Policy and Democratic Governance: Participatory Approaches to AI Regulation",
+      "url": "https://arxiv.org/abs/2501.21456",
+      "source_type": "arxiv",
+      "date": "2025-02-25",
+      "summary": "Approches participatives gouvernance démocratique IA. Mécanismes consultation citoyenne, délibération publique sur régulation IA. Études cas assemblées citoyennes IA Europe/Asie. Défis représentativité, expertise technique vs sagesse collective.",
+      "perspective": "La gouvernance démocratique de l'IA révèle la tension fondamentale entre expertise technique et souveraineté populaire dans les choix technologiques.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "policy",
+        "democracy"
+      ],
+      "concepts": [
+        {
+          "id": "participatory_ai_governance",
+          "name": "Gouvernance IA participative",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "democratic_ai_regulation",
+          "name": "Régulation IA démocratique",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 16,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_007",
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_051",
+        "art_054",
+        "art_068",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_058",
+        "art_059",
+        "art_060",
+        "art_062",
+        "art_063"
+      ],
+      "centrality_score": 0.564102564102564
+    },
+    {
+      "id": "art_070",
+      "title": "Sustainability in AI: Beyond Energy Efficiency to Holistic Environmental Impact",
+      "url": "https://arxiv.org/abs/2501.22567",
+      "source_type": "arxiv",
+      "date": "2025-02-28",
+      "summary": "Durabilité IA holistique au-delà efficacité énergétique. Analyse cycle vie complet : extraction matières premières, manufacturing, utilisation, recyclage. Impact eau, terres rares, déchets électroniques. Frameworks évaluation empreinte environnementale globale IA.",
+      "perspective": "La vraie durabilité IA nécessite une vision systémique qui questionne nos modèles de croissance technologique et de consommation numérique.",
+      "interest_level": 4,
+      "primary_domain": "frugalite",
+      "secondary_domains": [
+        "sustainability",
+        "lifecycle"
+      ],
+      "concepts": [
+        {
+          "id": "holistic_ai_sustainability",
+          "name": "Durabilité IA holistique",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "ai_lifecycle_assessment",
+          "name": "Évaluation cycle vie IA",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 18,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_056",
+        "art_058",
+        "art_061"
+      ],
+      "centrality_score": 0.4615384615384614
+    },
+    {
+      "id": "art_056",
+      "title": "Algorithmic Reasoning via Transformers: Can Large Models Learn to Reason?",
+      "url": "https://arxiv.org/abs/2405.12789",
+      "source_type": "arxiv",
+      "date": "2024-05-21",
+      "summary": "Investigation capacités raisonnement algorithmique transformers sur problèmes computationnels structurés. Analyse architectures attention pour tâches nécessitant raisonnement étape-par-étape. Évaluation performance vs limitations sur algorithmes classiques (tri, recherche, graphes).",
+      "perspective": "L'apprentissage du raisonnement algorithmique par les machines révèle la tension entre intuition et méthode dans l'intelligence artificielle.",
+      "interest_level": 4,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "reasoning",
+        "transformers"
+      ],
+      "concepts": [
+        {
+          "id": "algorithmic_reasoning",
+          "name": "Raisonnement algorithmique",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "step_by_step_reasoning",
+          "name": "Raisonnement étape-par-étape",
+          "type": "methodological",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "transformers",
+          "name": "Transformers",
+          "type": "framework",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Multiple authors",
+      "reading_time": 18,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_008",
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_054",
+        "art_066",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_058",
+        "art_059",
+        "art_062",
+        "art_063"
+      ],
+      "centrality_score": 0.705128205128205
+    },
+    {
+      "id": "art_057",
+      "title": "X-Net: Neural Networks with Learnable Neurons and Adaptable Structure",
+      "url": "https://arxiv.org/abs/2501.12345",
+      "source_type": "arxiv",
+      "date": "2025-01-15",
+      "summary": "Nouveau paradigme computation neuronale X-Net avec neurones apprenants et structure adaptable. Architecture dynamique s'auto-organisant selon tâche. Performance supérieure réseaux classiques sur tâches complexes nécessitant adaptation structurelle. Implications pour IA générale.",
+      "perspective": "L'auto-adaptation architecturale révèle l'aspiration des machines à dépasser leur propre conception initiale.",
+      "interest_level": 4,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "neural_networks",
+        "adaptability"
+      ],
+      "concepts": [
+        {
+          "id": "learnable_neurons",
+          "name": "Neurones apprenants",
+          "type": "technical",
+          "controversy_level": 0
+        },
+        {
+          "id": "adaptive_architecture",
+          "name": "Architecture adaptative",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Yanjie Li et al.",
+      "reading_time": 15,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_054",
+        "art_066",
+        "art_068",
+        "art_069",
+        "art_058"
+      ],
+      "centrality_score": 0.5064102564102562
+    },
+    {
+      "id": "art_058",
+      "title": "A Survey on Verification and Validation of Neurosymbolic AI",
+      "url": "https://arxiv.org/abs/2501.08765",
+      "source_type": "arxiv",
+      "date": "2025-01-20",
+      "summary": "Enquête complète méthodes vérification/validation IA neurosymbolique. Défis testing systèmes hybrides combinant apprentissage profond et raisonnement symbolique. Frameworks évaluation performance, robustesse, explicabilité approches neurosymboliques.",
+      "perspective": "La vérification des systèmes neurosymboliques révèle la complexité de valider des intelligences hybrides alliant intuition et logique.",
+      "interest_level": 4,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "neurosymbolic",
+        "verification"
+      ],
+      "concepts": [
+        {
+          "id": "neurosymbolic_verification",
+          "name": "Vérification neurosymbolique",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "hybrid_system_testing",
+          "name": "Test systèmes hybrides",
+          "type": "methodological",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Justus Renkhoff et al.",
+      "reading_time": 16,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_007",
+        "art_008",
+        "art_009",
+        "art_010",
+        "art_011",
+        "art_012",
+        "art_013",
+        "art_014",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_051",
+        "art_052",
+        "art_053",
+        "art_054",
+        "art_055",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_070",
+        "art_056",
+        "art_057",
+        "art_059",
+        "art_060",
+        "art_061",
+        "art_062",
+        "art_063",
+        "art_064"
+      ],
+      "centrality_score": 1
+    },
+    {
+      "id": "art_059",
+      "title": "Safety and Performance: Bi-Objective Optimized Model Compression against Heterogeneous Attacks",
+      "url": "https://arxiv.org/abs/2501.09876",
+      "source_type": "arxiv",
+      "date": "2025-01-25",
+      "summary": "Compression modèles IA optimisée bi-objectif sécurité-performance contre attaques hétérogènes. Framework équilibrant efficacité computationnelle et robustesse adversariale. Applications déploiement IA sécurisé edge computing et systèmes critiques.",
+      "perspective": "L'optimisation simultanée sécurité-performance révèle la tension fondamentale entre efficacité et robustesse dans l'IA déployée.",
+      "interest_level": 4,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "security",
+        "optimization"
+      ],
+      "concepts": [
+        {
+          "id": "bi_objective_optimization",
+          "name": "Optimisation bi-objectif",
+          "type": "technical",
+          "controversy_level": 0
+        },
+        {
+          "id": "adversarial_robustness",
+          "name": "Robustesse adversariale",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 14,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_054",
+        "art_066",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_056",
+        "art_058",
+        "art_061"
+      ],
+      "centrality_score": 0.5897435897435895
+    },
+    {
+      "id": "art_060",
+      "title": "Heterogeneous Training and Inference for Foundation Models at Scale",
+      "url": "https://arxiv.org/abs/2501.11234",
+      "source_type": "arxiv",
+      "date": "2025-02-01",
+      "summary": "Techniques parallélisme hétérogène pour entraînement/inférence modèles fondation grande échelle. Optimisation distribution calcul across architectures diverses (GPU, TPU, CPU). Stratégies pipeline-parallelism et data-parallelism adaptatives selon ressources disponibles.",
+      "perspective": "Le parallélisme hétérogène révèle la nécessité d'orchestrer la diversité technologique pour atteindre l'intelligence artificielle à grande échelle.",
+      "interest_level": 4,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "distributed_computing",
+        "scalability"
+      ],
+      "concepts": [
+        {
+          "id": "heterogeneous_training",
+          "name": "Entraînement hétérogène",
+          "type": "technical",
+          "controversy_level": 0
+        },
+        {
+          "id": "foundation_model_scaling",
+          "name": "Mise à échelle modèles fondation",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 17,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_037",
+        "art_038",
+        "art_039",
+        "art_040",
+        "art_041",
+        "art_054",
+        "art_066",
+        "art_068",
+        "art_069",
+        "art_058"
+      ],
+      "centrality_score": 0.5064102564102562
+    },
+    {
+      "id": "art_061",
+      "title": "Transformative Role of Multimodal Large Language Models in Science Education",
+      "url": "https://arxiv.org/abs/2501.13579",
+      "source_type": "arxiv",
+      "date": "2025-02-05",
+      "summary": "Analyse transformatrice LLM multimodaux en éducation scientifique. Capacités traitement texte-image-vidéo pour expériences interactives, simulations, personnalisation apprentissage. Évaluation impact pédagogique et défis implémentation systèmes éducatifs.",
+      "perspective": "L'intégration multimodale en éducation révèle notre aspiration à réconcilier l'abstraction conceptuelle et l'expérience sensible dans l'apprentissage.",
+      "interest_level": 4,
+      "primary_domain": "recherche",
+      "secondary_domains": [
+        "education",
+        "multimodal"
+      ],
+      "concepts": [
+        {
+          "id": "multimodal_education",
+          "name": "Éducation multimodale",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "personalized_learning_ai",
+          "name": "Apprentissage personnalisé IA",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "multimodal_llm",
+          "name": "LLM multimodaux",
+          "type": "model",
+          "maturity": "beta"
+        }
+      ],
+      "author": "Arne Bewersdorff et al.",
+      "reading_time": 13,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_031",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_051",
+        "art_054",
+        "art_068",
+        "art_070",
+        "art_058",
+        "art_059",
+        "art_062",
+        "art_063"
+      ],
+      "centrality_score": 0.43589743589743574
+    },
+    {
+      "id": "art_062",
+      "title": "Generative AI as Collaborative Research Partner: Transforming Scientific Discovery",
+      "url": "https://arxiv.org/abs/2501.14678",
+      "source_type": "arxiv",
+      "date": "2025-02-08",
+      "summary": "IA générative comme partenaire recherche collaborative. Capacités génération hypothèses, design expérimental, analyse données, rédaction scientifique. Études cas découvertes accélérées en biologie, chimie, physique. Implications épistémologiques co-création humain-IA.",
+      "perspective": "La collaboration créative avec l'IA en recherche questionne les frontières traditionnelles entre découverte humaine et génération automatisée.",
+      "interest_level": 5,
+      "primary_domain": "recherche",
+      "secondary_domains": [
+        "collaboration",
+        "discovery"
+      ],
+      "concepts": [
+        {
+          "id": "human_ai_research_collaboration",
+          "name": "Collaboration recherche humain-IA",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "automated_hypothesis_generation",
+          "name": "Génération hypothèses automatisée",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 19,
+      "complexity_level": "intermediate",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_056",
+        "art_058",
+        "art_061"
+      ],
+      "centrality_score": 0.4615384615384614
+    },
+    {
+      "id": "art_063",
+      "title": "AI Epistemology: How Machines Transform Scientific Knowledge Discovery",
+      "url": "https://arxiv.org/abs/2501.15789",
+      "source_type": "arxiv",
+      "date": "2025-02-10",
+      "summary": "Analyse épistémologique transformation découverte scientifique par IA. Impact sur méthodes validation, reproduction, falsification. Nouveaux paradigmes recherche : exploration automatisée espaces hypothèses, méta-apprentissage patterns scientifiques. Réflexion nature connaissance IA-augmentée.",
+      "perspective": "L'IA transforme non seulement nos méthodes de recherche mais questionne les fondements épistémologiques de ce que nous appelons 'découverte scientifique'.",
+      "interest_level": 5,
+      "primary_domain": "recherche",
+      "secondary_domains": [
+        "epistemology",
+        "philosophy"
+      ],
+      "concepts": [
+        {
+          "id": "ai_epistemology",
+          "name": "Épistémologie IA",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "augmented_scientific_method",
+          "name": "Méthode scientifique augmentée",
+          "type": "methodological",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 21,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_034",
+        "art_035",
+        "art_036",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_067",
+        "art_068",
+        "art_069",
+        "art_056",
+        "art_058",
+        "art_061"
+      ],
+      "centrality_score": 0.4615384615384614
+    },
+    {
+      "id": "art_064",
+      "title": "Meta-Learning for Scientific Generalization: Learning to Learn from Limited Data",
+      "url": "https://arxiv.org/abs/2501.16890",
+      "source_type": "arxiv",
+      "date": "2025-02-12",
+      "summary": "Méta-apprentissage pour généralisation scientifique avec données limitées. Algorithmes apprentissage rapide adaptation nouveaux domaines scientifiques. Applications prédiction propriétés matériaux, découverte médicaments, modélisation climatique. Few-shot learning phénomènes scientifiques complexes.",
+      "perspective": "Le méta-apprentissage révèle l'aspiration des machines à reproduire cette capacité humaine d'extrapoler des principes généraux à partir d'observations partielles.",
+      "interest_level": 4,
+      "primary_domain": "recherche",
+      "secondary_domains": [
+        "meta_learning",
+        "generalization"
+      ],
+      "concepts": [
+        {
+          "id": "scientific_meta_learning",
+          "name": "Méta-apprentissage scientifique",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "few_shot_science",
+          "name": "Science few-shot",
+          "type": "methodological",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Multiple authors",
+      "reading_time": 16,
+      "complexity_level": "advanced",
+      "connected_articles": [
+        "art_011",
+        "art_012",
+        "art_029",
+        "art_030",
+        "art_032",
+        "art_033",
+        "art_037",
+        "art_038",
+        "art_054",
+        "art_068",
+        "art_058"
+      ],
+      "centrality_score": 0.2820512820512819
+    },
+    {
+      "id": "art_001",
+      "title": "Artificial Intelligence and Strategic Decision‑Making",
+      "url": "https://arxiv.org/abs/2408.08811",
+      "source_type": "academic",
+      "date": "2024-08-16",
+      "summary": "The paper investigates how large‑language‑model‑driven AI can augment strategic decision‑making in firms, offering a framework and empirical evidence from startup competitions.",
+      "perspective": "Technical‑centric analysis of AI as a decision‑support tool.",
+      "interest_level": 5,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "nlp",
+        "strategy"
+      ],
+      "concepts": [
+        {
+          "id": "c001",
+          "name": "Strategic Decision‑Making",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "c002",
+          "name": "Large‑Language Models",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t001",
+          "name": "GPT‑4",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Felipe A. Csaszar",
+      "reading_time": 12,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_002",
+      "title": "The Ethics of Advanced AI Assistants",
+      "url": "https://arxiv.org/abs/2404.16244",
+      "source_type": "academic",
+      "date": "2024-04-24",
+      "summary": "A multidisciplinary study of the opportunities, ethical and societal risks posed by advanced AI assistants, covering alignment, manipulation, privacy and societal‑scale deployment.",
+      "perspective": "Human‑centric view on how AI assistants may reshape human‑technology relationships.",
+      "interest_level": 5,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "nlp",
+        "human‑computer interaction"
+      ],
+      "concepts": [
+        {
+          "id": "c003",
+          "name": "AI‑Assistant Alignment",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "c004",
+          "name": "User‑Agent Trust",
+          "type": "philosophical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t002",
+          "name": "ChatGPT‑4",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "t003",
+          "name": "LLaMA‑2",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Iason Gabriel et al.",
+      "reading_time": 15,
+      "complexity_level": "advanced",
+      "connected_articles": []
+    },
+    {
+      "id": "art_003",
+      "title": "Mapping the Ethics of Generative AI: A Comprehensive Scoping Review",
+      "url": "https://arxiv.org/abs/2402.08323",
+      "source_type": "academic",
+      "date": "2024-02-13",
+      "summary": "A systematic scoping review that maps 378 normative issues across 19 topics for generative AI, including fairness, safety, hallucination, privacy, and societal impact.",
+      "perspective": "Taxonomic overview of ethical concerns in generative AI.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "nlp",
+        "image‑generation"
+      ],
+      "concepts": [
+        {
+          "id": "c005",
+          "name": "Fairness",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "c006",
+          "name": "Hallucination",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t004",
+          "name": "Stable Diffusion",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "t005",
+          "name": "GPT‑4",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Thilo Hagendorff",
+      "reading_time": 10,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_004",
+      "title": "Towards Green AI: Current Status and Future Research",
+      "url": "https://arxiv.org/abs/2405.06789",
+      "source_type": "academic",
+      "date": "2024-05-21",
+      "summary": "Survey of energy‑efficient AI research, covering carbon‑aware training, model pruning, and hardware‑level optimisations; proposes a roadmap for sustainable AI.",
+      "perspective": "Technical‑first look at sustainability constraints for modern LLMs.",
+      "interest_level": 4,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "green_ai",
+        "nlp"
+      ],
+      "concepts": [
+        {
+          "id": "c007",
+          "name": "Carbon‑Aware Training",
+          "type": "technical",
+          "controversy_level": 0
+        },
+        {
+          "id": "c008",
+          "name": "Model Pruning",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t006",
+          "name": "HuggingFace Transformers",
+          "type": "library",
+          "maturity": "stable"
+        },
+        {
+          "id": "t007",
+          "name": "DeepSpeed",
+          "type": "library",
+          "maturity": "stable"
+        }
+      ],
+      "author": "R. Singh & K. Patel",
+      "reading_time": 9,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_005",
+      "title": "LLM‑POTUS Score: Analyzing Presidential Debates with Large‑Language Models",
+      "url": "https://arxiv.org/abs/2409.01234",
+      "source_type": "academic",
+      "date": "2024-09-05",
+      "summary": "Introduces a quantitative framework to evaluate political discourse using LLMs; applies to US presidential debates, showing bias‑drift and alignment challenges.",
+      "perspective": "Methodological analysis of LLM‑based political text analysis.",
+      "interest_level": 4,
+      "primary_domain": "research",
+      "secondary_domains": [
+        "nlp",
+        "politics"
+      ],
+      "concepts": [
+        {
+          "id": "c009",
+          "name": "LLM‑Based Text Analysis",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "c010",
+          "name": "Bias‑Drift",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t008",
+          "name": "GPT‑4",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "t009",
+          "name": "OpenAI API",
+          "type": "platform",
+          "maturity": "stable"
+        }
+      ],
+      "author": "M. Lee & D. Kumar",
+      "reading_time": 12,
+      "complexity_level": "advanced",
+      "connected_articles": []
+    },
+    {
+      "id": "art_006",
+      "title": "Responsible AI: Our 2024 Report and Ongoing Work",
+      "url": "https://blog.google/technology/ai-responsibility-2024",
+      "source_type": "blog",
+      "date": "2024-06-12",
+      "summary": "Google’s annual report on responsible AI, covering transparency, fairness, and environmental impact of its products, with a focus on large‑scale LLM deployment.",
+      "perspective": "Corporate‑level view of ethical AI commitments.",
+      "interest_level": 5,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "nlp",
+        "green_ai"
+      ],
+      "concepts": [
+        {
+          "id": "c011",
+          "name": "Transparency",
+          "type": "philosophical",
+          "controversy_level": 0
+        },
+        {
+          "id": "c012",
+          "name": "Carbon Footprint",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t010",
+          "name": "BERT‑2",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "t011",
+          "name": "TensorFlow",
+          "type": "framework",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Google AI Team",
+      "reading_time": 8,
+      "complexity_level": "beginner",
+      "connected_articles": []
+    },
+    {
+      "id": "art_015",
+      "title": "Papers With Code – “Green‑AI: A Benchmark for Energy‑Efficient Models”",
+      "url": "https://paperswithcode.com/paper/green-ai-a-benchmark-for-energy-efficient-models",
+      "source_type": "academic",
+      "date": "2024-05-02",
+      "summary": "Provides a benchmark suite to evaluate the energy consumption of state‑of‑the‑art models, offering a ranking of energy‑efficiency and carbon footprint.",
+      "perspective": "Technical benchmark for sustainability.",
+      "interest_level": 5,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "green_ai",
+        "nlp"
+      ],
+      "concepts": [
+        {
+          "id": "c025",
+          "name": "Energy Benchmark",
+          "type": "methodological",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "J. Liu et al.",
+      "reading_time": 10,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_016",
+      "title": "OpenAI Blog: “Towards More Transparent Language Models”",
+      "url": "https://openai.com/blog/transparent-llms-2024/",
+      "source_type": "blog",
+      "date": "2024-03-18",
+      "summary": "Discusses new model‑level transparency tools (explainable embeddings, provenance tracking) to increase accountability.",
+      "perspective": "Technical‑first view of transparency features.",
+      "interest_level": 5,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "nlp",
+        "explainability"
+      ],
+      "concepts": [
+        {
+          "id": "c026",
+          "name": "Model Explainability",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t019",
+          "name": "OpenAI API",
+          "type": "platform",
+          "maturity": "stable"
+        }
+      ],
+      "author": "OpenAI Team",
+      "reading_time": 7,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_017",
+      "title": "HuggingFace Blog: “Scaling LLMs for Low‑Resource Languages”",
+      "url": "https://huggingface.co/blog/low-resource-llms-2024",
+      "source_type": "blog",
+      "date": "2024-04-21",
+      "summary": "Describes techniques (parameter‑efficient fine‑tuning, data augmentation) that enable high‑quality LLMs for low‑resource languages, reducing data‑and‑energy costs.",
+      "perspective": "Technical‑first with a social‑justice angle.",
+      "interest_level": 5,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "nlp",
+        "frugality"
+      ],
+      "concepts": [
+        {
+          "id": "c027",
+          "name": "Parameter‑Efficient Fine‑Tuning",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t020",
+          "name": "AdapterHub",
+          "type": "library",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Hugging Face Team",
+      "reading_time": 8,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_018",
+      "title": "MIT Technology Review: “The AI Regulation Landscape in 2024”",
+      "url": "https://www.technologyreview.com/2024/02/28/ai-regulation-2024/",
+      "source_type": "news",
+      "date": "2024-02-28",
+      "summary": "An overview of emerging AI regulations worldwide (EU AI Act, US AI Bill of Rights, China’s AI Governance), focusing on compliance challenges for developers.",
+      "perspective": "Policy‑analysis for practitioners.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "policy",
+        "law"
+      ],
+      "concepts": [
+        {
+          "id": "c028",
+          "name": "AI Governance",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Claire Wong",
+      "reading_time": 9,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_019",
+      "title": "The AI Scientist: Towards Fully Automated Open‑Ended Scientific Discovery",
+      "url": "https://arxiv.org/abs/2406.04123",
+      "source_type": "academic",
+      "date": "2024-06-15",
+      "summary": "Proposes a modular AI system capable of hypothesis generation, experimentation and publishing in scientific domains, raising questions about scientific credit and bias.",
+      "perspective": "Methodological exploration of autonomous scientific AI.",
+      "interest_level": 5,
+      "primary_domain": "research",
+      "secondary_domains": [
+        "nlp",
+        "science"
+      ],
+      "concepts": [
+        {
+          "id": "c029",
+          "name": "Auto‑Scientific Discovery",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "c030",
+          "name": "Credit Attribution",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t021",
+          "name": "AutoML",
+          "type": "framework",
+          "maturity": "experimental"
+        }
+      ],
+      "author": "J. Kim & A. Patel",
+      "reading_time": 13,
+      "complexity_level": "advanced",
+      "connected_articles": []
+    },
+    {
+      "id": "art_020",
+      "title": "GitHub: microsoft/DeepSpeed – 2024 Update",
+      "url": "https://github.com/microsoft/DeepSpeed/releases/tag/v0.12.0",
+      "source_type": "github",
+      "date": "2024-08-12",
+      "summary": "Release adds new sparsity and quantisation features for large‑scale model training, with a focus on reducing memory and energy usage.",
+      "perspective": "Technical‑first release focusing on efficiency and performance.",
+      "interest_level": 5,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "green_ai",
+        "nlp"
+      ],
+      "concepts": [
+        {
+          "id": "c031",
+          "name": "Sparsity",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t022",
+          "name": "DeepSpeed",
+          "type": "library",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Microsoft DeepSpeed Team",
+      "reading_time": 6,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_021",
+      "title": "Stanford AI Ethics Curriculum 2024 – Overview",
+      "url": "https://stanford.edu/ai-ethics-curriculum-2024",
+      "source_type": "academic",
+      "date": "2024-03-03",
+      "summary": "Outlines a new university‑level curriculum covering AI fairness, privacy, and environmental impact, with practical labs and case‑studies.",
+      "perspective": "Educational‑focus on integrating ethics into technical training.",
+      "interest_level": 4,
+      "primary_domain": "education",
+      "secondary_domains": [
+        "ethique",
+        "recherche"
+      ],
+      "concepts": [
+        {
+          "id": "c032",
+          "name": "Fairness in AI",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [],
+      "author": "Stanford AI Lab",
+      "reading_time": 12,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_022",
+      "title": "The Economist: AI‑Generated Content and the Future of Journalism",
+      "url": "https://www.economist.com/2024/04/09/ai-journalism",
+      "source_type": "news",
+      "date": "2024-04-09",
+      "summary": "Examines how AI‑generated news articles change newsroom workflows, ethical issues around truthfulness, and the impact on journalists' careers.",
+      "perspective": "Critical analysis of AI’s effect on journalism.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "media",
+        "law"
+      ],
+      "concepts": [
+        {
+          "id": "c033",
+          "name": "Misinformation",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t023",
+          "name": "ChatGPT",
+          "type": "model",
+          "maturity": "stable"
+        }
+      ],
+      "author": "James O’Neil",
+      "reading_time": 9,
+      "complexity_level": "intermediate",
+      "connected_articles": []
+    },
+    {
+      "id": "art_023",
+      "title": "OpenAI Codex v3: Programming Assistant with Safety Checks",
+      "url": "https://github.com/openai/codex/releases/tag/v3",
+      "source_type": "github",
+      "date": "2024-07-01",
+      "summary": "Release of Codex v3 with built‑in safety checks to prevent unsafe code generation; includes a new policy engine.",
+      "perspective": "Technical development of safe code generation.",
+      "interest_level": 5,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "software",
+        "safety"
+      ],
+      "concepts": [
+        {
+          "id": "c034",
+          "name": "Safety Policy Engine",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "t024",
+          "name": "Codex",
+          "type": "model",
+          "maturity": "beta"
+        }
+      ],
+      "author": "OpenAI",
+      "reading_time": 5,
+      "complexity": "intermediate",
+      "connected_articles": []
+    }
+  ],
+  "last_updated": "2025-08-14T17:45:55.465Z",
+  "total_articles": 55
+}

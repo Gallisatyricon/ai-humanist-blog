@@ -43,8 +43,8 @@ export const TagBubble: React.FC<TagBubbleProps> = ({
           aria-hidden="true"
         />
         {displayLabel}
-        {weight > 0.8 && (
-          <span className="text-xs opacity-75" aria-label="Tag très important">
+        {weight > 0.25 && (
+          <span className="text-xs opacity-75" aria-label="Tag important">
             ⭐
           </span>
         )}

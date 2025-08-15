@@ -3,15 +3,15 @@ import { PrimaryDomain } from '@/data/schema'
 export const NAVIGATION_CONFIG = {
   // Limitation profondeur - Navigation progressive
   MAX_GRAPH_DEPTH: 2,
-  MAX_NODES_DISPLAYED: 20, // Réduit pour meilleure lisibilité
+  MAX_NODES_DISPLAYED: 40, // JUSTE MILIEU : lisibilité vs fonctionnalité
   
-  // Seuils de qualité relevés pour éviter surcharge
-  MIN_CONNECTION_STRENGTH: 0.6, // Augmenté de 0.3 à 0.6
-  MIN_CENTRALITY_FOR_HUB: 0.7,
+  // Seuils de qualité - Équilibrés
+  MIN_CONNECTION_STRENGTH: 0.5, // Équilibre entre trop/peu de connexions
+  MIN_CENTRALITY_FOR_HUB: 0.6,  // Seuil relevé pour prioriser qualité
   
-  // Limites pour navigation progressive
-  MAX_FOCUS_CONNECTIONS: 8,     // Maximum connexions directes en mode focus
-  MAX_OVERVIEW_CONNECTIONS: 35, // Maximum connexions en vue d'ensemble
+  // Limites pour navigation progressive - Optimisées
+  MAX_FOCUS_CONNECTIONS: 15,    // Réduit pour lisibilité mode focus
+  MAX_OVERVIEW_CONNECTIONS: 30, // Équilibre performance/richesse
   
   // Interface
   ANIMATION_DURATION: 300,

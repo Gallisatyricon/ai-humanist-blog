@@ -1,6 +1,6 @@
-{
-  "articles": [
-    {
+[
+  {
+    "article": {
       "id": "art_001",
       "title": "Navigating the Maze of Explainable AI: A Systematic Approach to Evaluating Methods and Metrics",
       "url": "https://neurips.cc/virtual/2024/poster/97772",
@@ -44,7 +44,32 @@
       ],
       "centrality_score": 0.85
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_002",
+        "type": "implements",
+        "strength": 0.82,
+        "reasoning": "LATEC fournit les outils d'évaluation concrets pour les exigences de transparence théorisées dans l'article sur l'ingénierie logicielle éthique.",
+        "confidence": 0.87
+      },
+      {
+        "target_id": "art_029",
+        "type": "questions",
+        "strength": 0.76,
+        "reasoning": "L'évaluation systématique de l'explicabilité questionne certaines illusions de compréhension identifiées par Messeri & Crockett.",
+        "confidence": 0.81
+      },
+      {
+        "target_id": "art_018",
+        "type": "builds_on",
+        "strength": 0.71,
+        "reasoning": "Étend les principes de transparence IEEE par des métriques empiriques d'évaluation de l'explicabilité.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_002",
       "title": "Transparency and explainability of AI systems: From ethical guidelines to requirements",
       "url": "https://www.sciencedirect.com/science/article/pii/S0950584923000514",
@@ -88,7 +113,32 @@
       ],
       "centrality_score": 0.75
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_001",
+        "type": "builds_on",
+        "strength": 0.82,
+        "reasoning": "Fournit le cadre méthodologique d'ingénierie pour implémenter concrètement les évaluations XAI systématisées par LATEC.",
+        "confidence": 0.87
+      },
+      {
+        "target_id": "art_018",
+        "type": "similar_to",
+        "strength": 0.74,
+        "reasoning": "Partage l'approche de traduction des principes éthiques abstraits en exigences techniques opérationnelles.",
+        "confidence": 0.8
+      },
+      {
+        "target_id": "art_023",
+        "type": "implements",
+        "strength": 0.69,
+        "reasoning": "Propose des méthodes concrètes pour intégrer les frameworks éthiques holistiques dans le développement logiciel.",
+        "confidence": 0.75
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_003",
       "title": "A federated graph neural network framework for privacy-preserving personalization",
       "url": "https://www.nature.com/articles/s41467-022-30714-9",
@@ -144,7 +194,32 @@
       ],
       "centrality_score": 0.7
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_005",
+        "type": "builds_on",
+        "strength": 0.78,
+        "reasoning": "L'approche fédérée complète la critique de la confidentialité différentielle en proposant des solutions techniques concrètes pour la préservation de la vie privée.",
+        "confidence": 0.83
+      },
+      {
+        "target_id": "art_004",
+        "type": "similar_to",
+        "strength": 0.72,
+        "reasoning": "Partage l'approche d'optimisation sous contraintes, ici de confidentialité plutôt que d'équité, avec des défis mathématiques comparables.",
+        "confidence": 0.79
+      },
+      {
+        "target_id": "art_007",
+        "type": "implements",
+        "strength": 0.66,
+        "reasoning": "Fournit des solutions techniques pour atténuer les discriminations algorithmiques identifiées dans les systèmes de recrutement.",
+        "confidence": 0.73
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_005",
       "title": "Position: Considerations for Differentially Private Learning with Large-Scale Public Pretraining",
       "url": "https://icml.cc/virtual/2024/poster/33114",
@@ -194,7 +269,32 @@
       ],
       "centrality_score": 0.65
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_003",
+        "type": "questions",
+        "strength": 0.81,
+        "reasoning": "Interroge les fondements mêmes de l'approche fédérée en révélant que la protection technique peut masquer des violations conceptuelles de la confidentialité.",
+        "confidence": 0.86
+      },
+      {
+        "target_id": "art_012",
+        "type": "builds_on",
+        "strength": 0.73,
+        "reasoning": "Étend la critique de l'équité algorithmique en révélant les illusions de neutralité dans les frameworks de confidentialité différentielle.",
+        "confidence": 0.79
+      },
+      {
+        "target_id": "art_008",
+        "type": "similar_to",
+        "strength": 0.68,
+        "reasoning": "Partage l'approche critique qui révèle les tensions entre principes techniques et implications éthiques réelles.",
+        "confidence": 0.75
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_006",
       "title": "Artificial Intelligence",
       "url": "https://plato.stanford.edu/entries/artificial-intelligence/",
@@ -237,7 +337,32 @@
       ],
       "centrality_score": 0.75
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_014",
+        "type": "questions",
+        "strength": 0.77,
+        "reasoning": "La philosophie de l'esprit questionne l'anthropocentrisme implicite des fondements philosophiques IA, révélant l'étroitesse de certaines conceptions de l'intelligence.",
+        "confidence": 0.82
+      },
+      {
+        "target_id": "art_020",
+        "type": "builds_on",
+        "strength": 0.74,
+        "reasoning": "Fournit les assises conceptuelles nécessaires pour comprendre les enjeux de conscience artificielle explorés dans l'investigation MIT Technology Review.",
+        "confidence": 0.8
+      },
+      {
+        "target_id": "art_101",
+        "type": "implements",
+        "strength": 0.71,
+        "reasoning": "Offre le cadre théorique général que les indicateurs computationnels de conscience tentent d'opérationnaliser.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_007",
       "title": "Ethics and discrimination in artificial intelligence-enabled recruitment practices",
       "url": "https://www.nature.com/articles/s41599-023-02079-x",
@@ -280,7 +405,32 @@
       ],
       "centrality_score": 0.7
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_008",
+        "type": "builds_on",
+        "strength": 0.83,
+        "reasoning": "L'analyse du recrutement algorithmique illustre concrètement les tensions théoriques entre équité et précision identifiées dans l'analyse des principes éthiques.",
+        "confidence": 0.88
+      },
+      {
+        "target_id": "art_010",
+        "type": "questions",
+        "strength": 0.75,
+        "reasoning": "Les cas pratiques de discrimination questionnent l'efficacité des définitions philosophiques abstraites d'équité proposées par Stanford.",
+        "confidence": 0.81
+      },
+      {
+        "target_id": "art_004",
+        "type": "implements",
+        "strength": 0.72,
+        "reasoning": "Fournit un cas d'usage concret pour les méthodes d'optimisation sous contraintes d'équité développées dans l'article ICML.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_008",
       "title": "Ethical principles in machine learning and artificial intelligence: cases from the field and possible ways forward",
       "url": "https://www.nature.com/articles/s41599-020-0501-9",
@@ -323,7 +473,32 @@
       ],
       "centrality_score": 0.75
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_007",
+        "type": "questions",
+        "strength": 0.79,
+        "reasoning": "L'analyse des cas pratiques remet en question l'optimisme des principes éthiques généraux face à la persistance des discriminations systémiques.",
+        "confidence": 0.84
+      },
+      {
+        "target_id": "art_009",
+        "type": "builds_on",
+        "strength": 0.76,
+        "reasoning": "Illustre les défis concrets d'implémentation des principes UNESCO dans des contextes organisationnels spécifiques.",
+        "confidence": 0.82
+      },
+      {
+        "target_id": "art_011",
+        "type": "implements",
+        "strength": 0.73,
+        "reasoning": "Fournit des études de cas empiriques pour les recherches sur les perceptions d'équité algorithmique.",
+        "confidence": 0.79
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_009",
       "title": "Ethics of Artificial Intelligence",
       "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
@@ -397,7 +572,32 @@
       ],
       "centrality_score": 0.9
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_010",
+        "type": "builds_on",
+        "strength": 0.85,
+        "reasoning": "L'approche UNESCO fournit le cadre institutionnel international que la philosophie Stanford examine d'un point de vue théorique.",
+        "confidence": 0.88
+      },
+      {
+        "target_id": "art_013",
+        "type": "implements",
+        "strength": 0.78,
+        "reasoning": "Les mécanismes de responsabilité OCDE implémentent concrètement les principes éthiques établis par UNESCO.",
+        "confidence": 0.82
+      },
+      {
+        "target_id": "art_023",
+        "type": "similar_to",
+        "strength": 0.74,
+        "reasoning": "Partage l'approche d'intégration holistique des principes éthiques, mais à l'échelle internationale plutôt qu'organisationnelle.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_010",
       "title": "Algorithmic Fairness",
       "url": "https://plato.stanford.edu/entries/algorithmic-fairness/",
@@ -440,7 +640,32 @@
       ],
       "centrality_score": 0.8
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_009",
+        "type": "questions",
+        "strength": 0.82,
+        "reasoning": "L'abstraction philosophique de l'équité se heurte aux résistances concrètes révélées par l'analyse UNESCO des inégalités systémiques.",
+        "confidence": 0.87
+      },
+      {
+        "target_id": "art_012",
+        "type": "builds_on",
+        "reasoning": "Fournit les fondements conceptuels que l'analyse juridique tente de traduire en contraintes opérationnelles, révélant la difficulté de cette traduction.",
+        "strength": 0.78,
+        "confidence": 0.83
+      },
+      {
+        "target_id": "art_011",
+        "type": "implements",
+        "strength": 0.74,
+        "reasoning": "Offre le cadre théorique général pour comprendre les perceptions empiriques d'équité étudiées dans la revue systématique.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_011",
       "title": "Fairness perceptions of algorithmic decision-making: A systematic review of the empirical literature",
       "url": "https://journals.sagepub.com/doi/10.1177/20539517221115189",
@@ -483,7 +708,32 @@
       ],
       "centrality_score": 0.75
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_008",
+        "type": "implements",
+        "strength": 0.8,
+        "reasoning": "Les perceptions empiriques d'équité trouvent leur illustration concrète dans les discriminations analysées dans le recrutement automatisé.",
+        "confidence": 0.85
+      },
+      {
+        "target_id": "art_010",
+        "type": "questions",
+        "strength": 0.76,
+        "reasoning": "L'étude empirique des perceptions remet en question l'universalité supposée des définitions philosophiques d'équité proposées par Stanford.",
+        "confidence": 0.82
+      },
+      {
+        "target_id": "art_013",
+        "type": "builds_on",
+        "strength": 0.73,
+        "reasoning": "Fournit la base empirique nécessaire pour comprendre l'acceptabilité sociale des mécanismes de responsabilité proposés par l'OCDE.",
+        "confidence": 0.79
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_012",
       "title": "Fairness in AI: challenges in bridging the gap between algorithms and law",
       "url": "https://arxiv.org/html/2404.19371",
@@ -526,7 +776,32 @@
       ],
       "centrality_score": 0.7
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_005",
+        "type": "questions",
+        "strength": 0.84,
+        "reasoning": "L'écart entre formalisme juridique et réalité technique révèle les limites de l'approche critique de la confidentialité différentielle, qui reste trop abstraite pour le droit.",
+        "confidence": 0.88
+      },
+      {
+        "target_id": "art_011",
+        "type": "builds_on",
+        "strength": 0.79,
+        "reasoning": "Les perceptions empiriques d'équité fournissent la base sociologique nécessaire pour comprendre les résistances à la traduction juridique.",
+        "confidence": 0.84
+      },
+      {
+        "target_id": "art_013",
+        "type": "implements",
+        "strength": 0.75,
+        "reasoning": "Illustre concrètement les défis d'accountability évoqués dans le cadre OCDE, en montrant la complexité de leur mise en œuvre juridique.",
+        "confidence": 0.81
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_013",
       "title": "Advancing accountability in AI",
       "url": "https://www.oecd.org/en/publications/advancing-accountability-in-ai_2448f04b-en.html",
@@ -576,7 +851,32 @@
       ],
       "centrality_score": 0.85
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_009",
+        "type": "builds_on",
+        "strength": 0.81,
+        "reasoning": "Les mécanismes concrets de responsabilité OCDE opérationnalisent les principes éthiques généraux défendus par UNESCO à l'échelle internationale.",
+        "confidence": 0.86
+      },
+      {
+        "target_id": "art_012",
+        "type": "questions",
+        "strength": 0.77,
+        "reasoning": "L'approche institutionnelle questionne l'efficacité des mécanismes juridiques purs face aux perceptions sociales complexes d'équité.",
+        "confidence": 0.83
+      },
+      {
+        "target_id": "art_023",
+        "type": "similar_to",
+        "strength": 0.74,
+        "reasoning": "Partage l'approche systémique d'intégration des principes éthiques, mais au niveau institutionnel plutôt qu'organisationnel.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_014",
       "title": "Philosophy Of Mind And Artificial Intelligence",
       "url": "https://medium.com/@fahadtells/philosophy-of-mind-and-artificial-intelligence-70c1d13bf653",
@@ -619,7 +919,32 @@
       ],
       "centrality_score": 0.6
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_006",
+        "type": "questions",
+        "strength": 0.82,
+        "reasoning": "La réflexion accessible sur philosophie de l'esprit révèle les limites de l'analyse encyclopédique Stanford, trop abstraite pour toucher aux enjeux contemporains.",
+        "confidence": 0.87
+      },
+      {
+        "target_id": "art_101",
+        "type": "builds_on",
+        "strength": 0.78,
+        "reasoning": "Fournit le contexte philosophique général nécessaire pour comprendre les enjeux techniques spécifiques de l'évaluation de la conscience artificielle.",
+        "confidence": 0.84
+      },
+      {
+        "target_id": "art_021",
+        "type": "similar_to",
+        "strength": 0.71,
+        "reasoning": "Partage l'approche d'exploration des frontières conceptuelles entre esprit humain et intelligence artificielle, mais avec une accessibilité plus grande.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_015",
       "title": "Collaborative Intelligence: Humans and AI Are Joining Forces",
       "url": "https://hbr.org/2018/07/collaborative-intelligence-humans-and-ai-are-joining-forces",
@@ -662,7 +987,10 @@
       ],
       "centrality_score": 0.8
     },
-    {
+    "suggested_connections": []
+  },
+  {
+    "article": {
       "id": "art_016",
       "title": "The moral weight of AI consciousness",
       "url": "https://www.technologyreview.com/2023/10/16/1081149/ai-consciousness-conundrum/",
@@ -705,7 +1033,32 @@
       ],
       "centrality_score": 0.75
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_020",
+        "type": "builds_on",
+        "strength": 0.83,
+        "reasoning": "L'investigation journalistique sur la conscience IA fournit le contexte empirique et les enjeux concrets que l'analyse philosophique explore de manière plus abstraite.",
+        "confidence": 0.88
+      },
+      {
+        "target_id": "art_101",
+        "type": "questions",
+        "strength": 0.76,
+        "reasoning": "Le poids moral de la conscience artificielle questionne l'approche purement technique des indicateurs computationnels, révélant leurs limites éthiques.",
+        "confidence": 0.82
+      },
+      {
+        "target_id": "art_014",
+        "type": "similar_to",
+        "strength": 0.69,
+        "reasoning": "Partage l'exploration accessible des implications philosophiques de l'IA, mais avec un focus spécifique sur les questions de conscience et de droits.",
+        "confidence": 0.75
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_017",
       "title": "Transparency and reproducibility in artificial intelligence",
       "url": "https://www.nature.com/articles/s41586-020-2766-y",
@@ -755,7 +1108,32 @@
       ],
       "centrality_score": 0.7
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_001",
+        "type": "implements",
+        "strength": 0.81,
+        "reasoning": "La recherche sur transparence et reproductibilité fournit les fondements méthodologiques que LATEC opérationnalise dans l'évaluation de l'explicabilité.",
+        "confidence": 0.86
+      },
+      {
+        "target_id": "art_029",
+        "type": "builds_on",
+        "strength": 0.78,
+        "reasoning": "Les obstacles à la reproductibilité illustrent concrètement les illusions de compréhension identifiées dans l'analyse épistémologique de Messeri & Crockett.",
+        "confidence": 0.84
+      },
+      {
+        "target_id": "art_019",
+        "type": "questions",
+        "strength": 0.71,
+        "reasoning": "Les défis de reproductibilité questionnent l'optimisme du directeur NSF sur la démocratisation de l'infrastructure de recherche IA.",
+        "confidence": 0.77
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_018",
       "title": "Transparency and accountability in AI systems: safeguarding wellbeing in the age of algorithmic decision-making",
       "url": "https://www.frontiersin.org/journals/human-dynamics/articles/10.3389/fhumd.2024.1421273/full",
@@ -805,7 +1183,32 @@
       ],
       "centrality_score": 0.75
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_002",
+        "type": "builds_on",
+        "strength": 0.8,
+        "reasoning": "Les cadres éthiques IEEE fournissent les principes que la sauvegarde du bien-être algorithmique tente d'institutionnaliser dans les systèmes décisionnels.",
+        "confidence": 0.85
+      },
+      {
+        "target_id": "art_013",
+        "type": "implements",
+        "strength": 0.74,
+        "reasoning": "Illustre concrètement l'application des mécanismes de responsabilité OCDE dans la protection du bien-être humain face aux décisions algorithmiques.",
+        "confidence": 0.8
+      },
+      {
+        "target_id": "art_023",
+        "type": "similar_to",
+        "strength": 0.71,
+        "reasoning": "Partage l'approche d'intégration systémique des principes éthiques, mais avec un focus spécifique sur la préservation du bien-être humain.",
+        "confidence": 0.77
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_019",
       "title": "Envisioning the future of the AI research ecosystem",
       "url": "https://academic.oup.com/pnasnexus/article/3/2/pgae021/7610118",
@@ -855,7 +1258,32 @@
       ],
       "centrality_score": 0.7
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_017",
+        "type": "questions",
+        "strength": 0.82,
+        "reasoning": "La vision institutionnelle NSF est questionnée par les obstacles concrets de reproductibilité qui révèlent les défis de la démocratisation technologique.",
+        "confidence": 0.87
+      },
+      {
+        "target_id": "art_015",
+        "type": "builds_on",
+        "strength": 0.76,
+        "reasoning": "L'écosystème de recherche démocratisé s'appuie sur les principes de collaboration humain-IA développés dans l'analyse Harvard Business Review.",
+        "confidence": 0.82
+      },
+      {
+        "target_id": "art_029",
+        "type": "implements",
+        "strength": 0.73,
+        "reasoning": "Propose une infrastructure concrète pour atténuer les monocultures scientifiques identifiées dans l'analyse épistémologique.",
+        "confidence": 0.79
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_020",
       "title": "Minds of machines: The great AI consciousness conundrum",
       "url": "https://www.technologyreview.com/2023/10/16/1081149/ai-consciousness-conundrum/",
@@ -898,7 +1326,32 @@
       ],
       "centrality_score": 0.85
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_016",
+        "type": "questions",
+        "strength": 0.84,
+        "reasoning": "L'investigation approfondie sur la conscience artificielle questionne les implications morales superficiellement abordées dans l'article MIT Technology Review.",
+        "confidence": 0.88
+      },
+      {
+        "target_id": "art_101",
+        "type": "builds_on",
+        "strength": 0.81,
+        "reasoning": "L'enquête journalistique rend accessible au grand public les enjeux techniques complexes des indicateurs de conscience computationnelle.",
+        "confidence": 0.86
+      },
+      {
+        "target_id": "art_014",
+        "type": "implements",
+        "strength": 0.74,
+        "reasoning": "Traduit les questions abstraites de philosophie de l'esprit en enjeux concrets et accessibles pour la société contemporaine.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_021",
       "title": "The extended mind in science and society",
       "url": "https://ppls.ed.ac.uk/philosophy/research/impact/the-extended-mind-in-science-and-society",
@@ -941,7 +1394,32 @@
       ],
       "centrality_score": 0.65
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_022",
+        "type": "builds_on",
+        "strength": 0.79,
+        "reasoning": "La recherche Edinburgh sur l'esprit étendu fournit les fondements théoriques que l'analyse de Clark sur l'IA générative applique aux technologies contemporaines.",
+        "confidence": 0.84
+      },
+      {
+        "target_id": "art_015",
+        "type": "questions",
+        "strength": 0.72,
+        "reasoning": "L'approche théorique de l'esprit étendu remet en question l'optimisme pratique de la collaboration humain-IA, révélant ses implications cognitives profondes.",
+        "confidence": 0.78
+      },
+      {
+        "target_id": "art_020",
+        "type": "similar_to",
+        "strength": 0.68,
+        "reasoning": "Partage l'exploration des transformations cognitives induites par l'IA, mais avec un focus académique plutôt qu'investigation journalistique.",
+        "confidence": 0.74
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_022",
       "title": "Extending Minds with Generative AI",
       "url": "https://www.nature.com/articles/s41467-025-59906-9",
@@ -991,7 +1469,32 @@
       ],
       "centrality_score": 0.7
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_021",
+        "type": "implements",
+        "strength": 0.83,
+        "reasoning": "L'analyse concrète de Clark sur l'IA générative opérationnalise les concepts théoriques d'esprit étendu développés par Edinburgh.",
+        "confidence": 0.88
+      },
+      {
+        "target_id": "art_029",
+        "type": "questions",
+        "strength": 0.76,
+        "reasoning": "L'intégration cognitive humain-IA est questionnée par l'analyse des illusions de compréhension qui révèlent les risques de cette extension.",
+        "confidence": 0.82
+      },
+      {
+        "target_id": "art_015",
+        "type": "builds_on",
+        "strength": 0.71,
+        "reasoning": "Approfondit les implications cognitives de la collaboration humain-IA au-delà des considérations purement organisationnelles.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_023",
       "title": "AI Ethics: Integrating Transparency, Fairness, and Privacy in AI Development",
       "url": "https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722",
@@ -1034,7 +1537,32 @@
       ],
       "centrality_score": 0.8
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_009",
+        "type": "builds_on",
+        "strength": 0.85,
+        "reasoning": "Le framework d'intégration éthique holistique opérationnalise concrètement les principes UNESCO à l'échelle organisationnelle et technique.",
+        "confidence": 0.89
+      },
+      {
+        "target_id": "art_002",
+        "type": "implements",
+        "strength": 0.78,
+        "reasoning": "Illustre l'application pratique de la traduction des principes éthiques en exigences techniques dans un cadre intégré.",
+        "confidence": 0.84
+      },
+      {
+        "target_id": "art_018",
+        "type": "similar_to",
+        "strength": 0.74,
+        "reasoning": "Partage l'approche systémique de sauvegarde du bien-être, mais avec un focus sur l'intégration plutôt que sur la protection.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_024",
       "title": "Efficiency Is Not Enough: A Critical Perspective of Environmentally Sustainable AI",
       "url": "https://cacm.acm.org/sustainability-and-computing/efficiency-is-not-enough-a-critical-perspective-of-environmentally-sustainable-ai/",
@@ -1085,7 +1613,32 @@
       "centrality_score": 0.85,
       "doi": "10.1145/3724500"
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_026",
+        "type": "questions",
+        "strength": 0.87,
+        "reasoning": "L'analyse critique ACM remet en cause l'optimisme quantitatif de l'étude LSE sur l'IA climatique, révélant les limites de l'approche purement efficaciste.",
+        "confidence": 0.91
+      },
+      {
+        "target_id": "art_027",
+        "type": "builds_on",
+        "strength": 0.82,
+        "reasoning": "Fournit le cadre critique nécessaire pour interpréter les chiffres d'empreinte énergétique révélés par l'investigation MIT Technology Review.",
+        "confidence": 0.87
+      },
+      {
+        "target_id": "art_028",
+        "type": "implements",
+        "strength": 0.75,
+        "reasoning": "Traduit les préoccupations institutionnelles UNEP en analyse technique rigoureuse des enjeux de durabilité systémique.",
+        "confidence": 0.81
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_025",
       "title": "Potential of artificial intelligence in reducing energy and carbon emissions of commercial buildings at scale",
       "url": "https://www.nature.com/articles/s41467-024-50088-4",
@@ -1141,7 +1694,32 @@
       ],
       "centrality_score": 0.7
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_025",
+        "type": "implements",
+        "strength": 0.81,
+        "reasoning": "L'optimisation énergétique des bâtiments illustre concrètement les principes de durabilité systémique critiqués dans l'analyse ACM.",
+        "confidence": 0.86
+      },
+      {
+        "target_id": "art_027",
+        "type": "builds_on",
+        "strength": 0.74,
+        "reasoning": "Les gains d'efficacité quantifiés s'inscrivent dans le panorama énergétique global révélé par l'investigation MIT Technology Review.",
+        "confidence": 0.8
+      },
+      {
+        "target_id": "art_028",
+        "type": "similar_to",
+        "strength": 0.68,
+        "reasoning": "Partage l'approche d'application concrète de l'IA aux défis environnementaux, mais avec un focus sectoriel plutôt qu'institutionnel.",
+        "confidence": 0.74
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_026",
       "title": "Green and intelligent: the role of AI in the climate transition",
       "url": "https://www.nature.com/articles/s44168-025-00252-3",
@@ -1191,7 +1769,32 @@
       ],
       "centrality_score": 0.9
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_024",
+        "type": "questions",
+        "strength": 0.89,
+        "reasoning": "L'ambition quantitative de l'étude LSE est questionnée par l'approche critique ACM qui révèle les limites des approches purement techniques.",
+        "confidence": 0.93
+      },
+      {
+        "target_id": "art_025",
+        "type": "builds_on",
+        "strength": 0.83,
+        "reasoning": "S'appuie sur l'analyse critique de durabilité pour proposer une vision plus nuancée du rôle de l'IA dans la transition climatique.",
+        "confidence": 0.88
+      },
+      {
+        "target_id": "art_027",
+        "type": "implements",
+        "strength": 0.76,
+        "reasoning": "Fournit les données quantitatives nécessaires pour valider ou invalider l'investigation journalistique sur l'empreinte énergétique.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_027",
       "title": "We did the math on AI's energy footprint. Here's the story you haven't heard",
       "url": "https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/",
@@ -1241,7 +1844,32 @@
       ],
       "centrality_score": 0.85
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_024",
+        "type": "builds_on",
+        "strength": 0.86,
+        "reasoning": "L'investigation quantitative MIT s'appuie sur les critiques systémiques ACM pour révéler l'ampleur réelle de l'empreinte énergétique IA.",
+        "confidence": 0.9
+      },
+      {
+        "target_id": "art_026",
+        "type": "questions",
+        "strength": 0.8,
+        "reasoning": "Les chiffres rigoureux de consommation questionnent l'optimisme de l'étude LSE sur les bénéfices climatiques nets de l'IA.",
+        "confidence": 0.85
+      },
+      {
+        "target_id": "art_028",
+        "type": "implements",
+        "strength": 0.74,
+        "reasoning": "Fournit les données empiriques nécessaires pour valider les préoccupations institutionnelles UNEP sur l'impact environnemental.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_028",
       "title": "AI has an environmental problem. Here's what the world can do about that",
       "url": "https://www.unep.org/news-and-stories/story/ai-has-environmental-problem-heres-what-world-can-do-about",
@@ -1291,7 +1919,32 @@
       ],
       "centrality_score": 0.75
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_026",
+        "type": "builds_on",
+        "strength": 0.79,
+        "reasoning": "Les préoccupations institutionnelles UNEP trouvent leur validation empirique dans les études quantitatives sur l'IA climatique.",
+        "confidence": 0.84
+      },
+      {
+        "target_id": "art_027",
+        "type": "questions",
+        "strength": 0.73,
+        "reasoning": "La gouvernance internationale questionne l'efficacité des mesures purement techniques révélées par l'investigation MIT.",
+        "confidence": 0.79
+      },
+      {
+        "target_id": "art_024",
+        "type": "similar_to",
+        "strength": 0.7,
+        "reasoning": "Partage l'approche systémique de durabilité, mais au niveau institutionnel mondial plutôt qu'organisationnel.",
+        "confidence": 0.76
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_029",
       "title": "Artificial intelligence and illusions of understanding in scientific research",
       "url": "https://lrc.northwestern.edu/language-instruction/professional-development1/artificial-intelligence-and-illusions-of-understanding-in-scientific-research-nature.pdf",
@@ -1334,7 +1987,32 @@
       ],
       "centrality_score": 0.95
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_001",
+        "type": "questions",
+        "strength": 0.91,
+        "reasoning": "L'analyse épistémologique des illusions de compréhension remet en cause l'optimisme de l'évaluation systématique XAI, révélant ses limites conceptuelles.",
+        "confidence": 0.95
+      },
+      {
+        "target_id": "art_015",
+        "type": "contradicts",
+        "strength": 0.84,
+        "reasoning": "L'identification des monocultures scientifiques contredit directement l'optimisme de l'intelligence collaborative, révélant ses risques épistémiques.",
+        "confidence": 0.89
+      },
+      {
+        "target_id": "art_017",
+        "type": "builds_on",
+        "strength": 0.78,
+        "reasoning": "Les obstacles à la reproductibilité illustrent concrètement les illusions de compréhension identifiées dans l'analyse théorique.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_100",
       "title": "Neuro-Symbolic AI in 2024: A Systematic Review",
       "url": "https://arxiv.org/abs/2501.05435",
@@ -1377,7 +2055,32 @@
       ],
       "centrality_score": 0.7
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_029",
+        "type": "builds_on",
+        "strength": 0.82,
+        "reasoning": "La revue systématique neuro-symbolique illustre concrètement les tendances de spécialisation et les lacunes identifiées dans l'analyse épistémologique.",
+        "confidence": 0.87
+      },
+      {
+        "target_id": "art_001",
+        "type": "implements",
+        "strength": 0.75,
+        "reasoning": "Fournit le contexte méthodologique systématique que l'évaluation LATEC applique spécifiquement au domaine de l'explicabilité.",
+        "confidence": 0.81
+      },
+      {
+        "target_id": "art_101",
+        "type": "similar_to",
+        "strength": 0.68,
+        "reasoning": "Partage l'approche d'intégration théorique-pratique, mais pour les systèmes neuro-symboliques plutôt que la conscience artificielle.",
+        "confidence": 0.74
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_101",
       "title": "Consciousness in Artificial Intelligence: Insights from the Science of Consciousness",
       "url": "https://arxiv.org/abs/2308.08708",
@@ -1420,7 +2123,32 @@
       ],
       "centrality_score": 0.85
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_016",
+        "type": "implements",
+        "strength": 0.88,
+        "reasoning": "Fournit les indicateurs computationnels rigoureux pour opérationnaliser les questions morales de conscience artificielle soulevées par MIT Technology Review.",
+        "confidence": 0.92
+      },
+      {
+        "target_id": "art_020",
+        "type": "builds_on",
+        "strength": 0.83,
+        "reasoning": "Étend l'investigation journalistique par un cadre scientifique rigoureux basé sur les théories neuroscientifiques de la conscience.",
+        "confidence": 0.88
+      },
+      {
+        "target_id": "art_014",
+        "type": "questions",
+        "strength": 0.76,
+        "reasoning": "L'approche technique des indicateurs de conscience questionne la pertinence des analyses philosophiques générales de l'esprit.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_102",
       "title": "The Ethics of Advanced AI Assistants",
       "url": "https://arxiv.org/abs/2404.16244",
@@ -1470,7 +2198,32 @@
       ],
       "centrality_score": 0.8
     },
-    {
+    "suggested_connections": [
+      {
+        "target_id": "art_015",
+        "type": "questions",
+        "strength": 0.86,
+        "reasoning": "L'analyse multidisciplinaire des assistants IA révèle les limites de l'optimisme collaboratif, identifiant des risques de manipulation et d'alignement.",
+        "confidence": 0.9
+      },
+      {
+        "target_id": "art_009",
+        "type": "builds_on",
+        "strength": 0.79,
+        "reasoning": "Étend les principes éthiques UNESCO aux défis spécifiques posés par les assistants IA avancés dans le déploiement sociétal.",
+        "confidence": 0.84
+      },
+      {
+        "target_id": "art_023",
+        "type": "implements",
+        "strength": 0.72,
+        "reasoning": "Illustre concrètement les enjeux d'intégration éthique holistique dans le développement d'assistants IA complexes.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "article": {
       "id": "art_103",
       "title": "Mapping the Ethics of Generative AI: A Comprehensive Scoping Review",
       "url": "https://arxiv.org/abs/2402.08323",
@@ -1520,879 +2273,28 @@
       ],
       "centrality_score": 0.75
     },
-    {
-      "id": "oss_art_001",
-      "title": "Artificial Intelligence and Strategic Decision‑Making",
-      "url": "https://arxiv.org/abs/2408.08811",
-      "source_type": "academic",
-      "date": "2024-08-16",
-      "summary": "The paper investigates how large‑language‑model‑driven AI can augment strategic decision‑making in firms, offering a framework and empirical evidence from startup competitions.",
-      "perspective": "Technical‑centric analysis of AI as a decision‑support tool.",
-      "interest_level": 5,
-      "primary_domain": "technique",
-      "secondary_domains": [
-        "nlp",
-        "strategy"
-      ],
-      "concepts": [
-        {
-          "id": "c001",
-          "name": "Strategic Decision‑Making",
-          "type": "technical",
-          "controversy_level": 1
-        },
-        {
-          "id": "c002",
-          "name": "Large‑Language Models",
-          "type": "technical",
-          "controversy_level": 0
-        }
-      ],
-      "tools_mentioned": [
-        {
-          "id": "t001",
-          "name": "GPT‑4",
-          "type": "model",
-          "maturity": "stable"
-        }
-      ],
-      "author": "Felipe A. Csaszar, Harsh Ketkar, Hyunjin Kim",
-      "reading_time": 12,
-      "complexity_level": "intermediate",
-      "connected_articles": [
-        "art_019"
-      ]
-    },
-    {
-      "id": "oss_art_005",
-      "title": "LLM‑POTUS Score: Analyzing Presidential Debates with Large‑Language Models",
-      "url": "https://arxiv.org/abs/2409.08147",
-      "source_type": "academic",
-      "date": "2024-09-12",
-      "summary": "Introduces a quantitative framework to evaluate political discourse using LLMs; applies to US presidential debates, showing bias‑drift and alignment challenges.",
-      "perspective": "Methodological analysis of LLM‑based political text analysis.",
-      "interest_level": 4,
-      "primary_domain": "recherche",
-      "secondary_domains": [
-        "nlp",
-        "politics"
-      ],
-      "concepts": [
-        {
-          "id": "c009",
-          "name": "LLM‑Based Text Analysis",
-          "type": "methodological",
-          "controversy_level": 2
-        },
-        {
-          "id": "c010",
-          "name": "Bias‑Drift",
-          "type": "philosophical",
-          "controversy_level": 2
-        }
-      ],
-      "tools_mentioned": [
-        {
-          "id": "t008",
-          "name": "GPT‑4",
-          "type": "model",
-          "maturity": "stable"
-        },
-        {
-          "id": "t009",
-          "name": "OpenAI API",
-          "type": "platform",
-          "maturity": "stable"
-        }
-      ],
-      "author": "Zhengliang Liu, Yiwei Li, Oleksandra Zolotarevych, Rongwei Yang, Tianming Liu",
-      "reading_time": 12,
-      "complexity_level": "advanced",
-      "connected_articles": [
-        "art_012"
-      ]
-    },
-    {
-      "id": "oss_art_008",
-      "title": "Hugging Face Transformers 4.40 Release",
-      "url": "https://github.com/huggingface/transformers/",
-      "source_type": "github",
-      "date": "2024-04-18",
-      "summary": "Release notes for Transformers 4.40: new APIs for efficient fine‑tuning, quantisation and built‑in",
-      "perspective": "Technical‑first update for a widely‑used NLP library.",
-      "interest_level": 5,
-      "primary_domain": "technique",
-      "secondary_domains": [
-        "nlp",
-        "safety"
-      ],
-      "concepts": [
-        {
-          "id": "c015",
-          "name": "Model Quantisation",
-          "type": "technical",
-          "controversy_level": 0
-        },
-        {
-          "id": "c016",
-          "name": "Safety Filters",
-          "type": "technical",
-          "controversy_level": 0
-        }
-      ],
-      "tools_mentioned": [
-        {
-          "id": "t012",
-          "name": "Transformers",
-          "type": "library",
-          "maturity": "stable"
-        }
-      ],
-      "author": "Hugging Face Team",
-      "reading_time": 5,
-      "complexity_level": "beginner",
-      "connected_articles": [
-        "art_024"
-      ]
-    },
-    {
-      "id": "oss_art_012",
-      "title": "GitHub: openai/whisper – Open‑Source Speech‑to‑Text Model (v3.0)",
-      "url": "https://github.com/openai/whisper/",
-      "source_type": "github",
-      "date": "2024-04-02",
-      "summary": "Release of Whisper 3.0 with improved multilingual support and a new bias‑detection module for content moderation.",
-      "perspective": "Technical release, emphasising safety and accessibility.",
-      "interest_level": 5,
-      "primary_domain": "technique",
-      "secondary_domains": [
-        "speech",
-        "nlp"
-      ],
-      "concepts": [
-        {
-          "id": "c022",
-          "name": "Bias Detection",
-          "type": "technical",
-          "controversy_level": 0
-        }
-      ],
-      "tools_mentioned": [
-        {
-          "id": "t016",
-          "name": "Whisper",
-          "type": "model",
-          "maturity": "stable"
-        }
-      ],
-      "author": "OpenAI",
-      "reading_time": 5,
-      "complexity_level": "beginner",
-      "connected_articles": [
-        "art_018"
-      ]
-    },
-    {
-      "id": "oss_art_020",
-      "title": "GitHub: microsoft/DeepSpeed – 2024 Update",
-      "url": "https://github.com/deepspeedai/DeepSpeed",
-      "source_type": "github",
-      "date": "2024-08-12",
-      "summary": "Release adds new sparsity and quantisation features for large‑scale model training, with a focus on reducing memory and energy usage.",
-      "perspective": "Technical‑first release focusing on efficiency and performance.",
-      "interest_level": 5,
-      "primary_domain": "technique",
-      "secondary_domains": [
-        "green_ai",
-        "nlp"
-      ],
-      "concepts": [
-        {
-          "id": "c031",
-          "name": "Sparsity",
-          "type": "technical",
-          "controversy_level": 0
-        }
-      ],
-      "tools_mentioned": [
-        {
-          "id": "t022",
-          "name": "DeepSpeed",
-          "type": "library",
-          "maturity": "stable"
-        }
-      ],
-      "author": "Microsoft DeepSpeed Team",
-      "reading_time": 6,
-      "complexity_level": "intermediate",
-      "connected_articles": [
-        "art_024"
-      ]
-    },
-    {
-      "id": "oss_art_023",
-      "title": "OpenAI Codex v3: Programming Assistant with Safety Checks",
-      "url": "https://github.com/openai/codex/",
-      "source_type": "github",
-      "date": "2025-05-16",
-      "summary": "Release of Codex v3 with built‑in safety checks to prevent unsafe code generation; includes a new policy engine.",
-      "perspective": "Technical development of safe code generation.",
-      "interest_level": 5,
-      "primary_domain": "technique",
-      "secondary_domains": [
-        "software",
-        "safety"
-      ],
-      "concepts": [
-        {
-          "id": "c034",
-          "name": "Safety Policy Engine",
-          "type": "technical",
-          "controversy_level": 0
-        }
-      ],
-      "tools_mentioned": [
-        {
-          "id": "t024",
-          "name": "Codex",
-          "type": "model",
-          "maturity": "beta"
-        }
-      ],
-      "author": "OpenAI",
-      "reading_time": 5,
-      "connected_articles": [
-        "art_013"
-      ],
-      "complexity_level": "intermediate"
-    },
-    {
-      "id": "art_051",
-      "title": "AI Consciousness is Inevitable: A Theoretical Computer Science Perspective",
-      "url": "https://arxiv.org/abs/2403.17101",
-      "source_type": "arxiv",
-      "date": "2025-06-28",
-      "summary": "Modèle formel de conscience inspiré de Turing et du modèle théâtral de Baars. Aligne avec théories scientifiques majeures, explique phénomènes associés à la conscience, donne insights sur conscience subjective machine. Démonstration que la conscience machine est non seulement plausible mais inévitable.",
-      "perspective": "La conscience machine révèle l'inéluctabilité de nos créations technologiques à questionner les fondements de notre humanité.",
-      "interest_level": 5,
-      "primary_domain": "philosophie",
-      "secondary_domains": [
-        "consciousness",
-        "theoretical_cs"
-      ],
-      "concepts": [
-        {
-          "id": "machine_consciousness",
-          "name": "Conscience machine",
-          "type": "philosophical",
-          "controversy_level": 3
-        },
-        {
-          "id": "computational_consciousness",
-          "name": "Conscience computationnelle",
-          "type": "technical",
-          "controversy_level": 3
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Lenore Blum, Manuel Blum",
-      "reading_time": 25,
-      "complexity_level": "advanced",
-      "connected_articles": []
-    },
-    {
-      "id": "art_052",
-      "title": "Consciousness in Artificial Intelligence: Insights from the Science of Consciousness",
-      "url": "https://arxiv.org/abs/2308.08708",
-      "source_type": "arxiv",
-      "date": "2023-08-22",
-      "summary": "Approche rigoureuse conscience IA basée théories neuroscientifiques : traitement récurrent, workspace global, théories ordre supérieur, traitement prédictif, schéma attention. Dérive 'propriétés indicatrices' computationnelles pour évaluer systèmes IA existants.",
-      "perspective": "L'évaluation de la conscience IA révèle notre quête profonde de comprendre les frontières entre simulation et expérience authentique.",
-      "interest_level": 5,
-      "primary_domain": "philosophie",
-      "secondary_domains": [
-        "neuroscience",
-        "consciousness"
-      ],
-      "concepts": [
-        {
-          "id": "global_workspace_theory",
-          "name": "Théorie workspace global",
-          "type": "technical",
-          "controversy_level": 1
-        },
-        {
-          "id": "consciousness_indicators",
-          "name": "Indicateurs conscience",
-          "type": "methodological",
-          "controversy_level": 2
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Patrick Butlin et al. (19 auteurs)",
-      "reading_time": 22,
-      "complexity_level": "advanced",
-      "connected_articles": []
-    },
-    {
-      "id": "art_053",
-      "title": "Towards Universal Criteria for Machine Consciousness",
-      "url": "https://arxiv.org/abs/2404.15369",
-      "source_type": "arxiv",
-      "date": "2024-04-30",
-      "summary": "Proposition de 5 critères universels pour déterminer conscience machine, applicables à toute entité. Analyse fondements et caractéristiques conscience, implications morales/légales entités conscientes artificielles. Primer interdisciplinaire philosophie-informatique-médecine.",
-      "perspective": "La recherche de critères universels révèle notre besoin anthropologique de tracer des frontières entre le vivant et l'artificiel.",
-      "interest_level": 4,
-      "primary_domain": "philosophie",
-      "secondary_domains": [
-        "consciousness",
-        "ethics"
-      ],
-      "concepts": [
-        {
-          "id": "universal_consciousness_criteria",
-          "name": "Critères universels conscience",
-          "type": "philosophical",
-          "controversy_level": 2
-        },
-        {
-          "id": "artificial_conscious_entity",
-          "name": "Entité consciente artificielle",
-          "type": "philosophical",
-          "controversy_level": 3
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Multiple authors",
-      "reading_time": 18,
-      "complexity_level": "intermediate",
-      "connected_articles": []
-    },
-    {
-      "id": "art_054",
-      "title": "Artificial consciousness: Evaluating arguments against LLM consciousness",
-      "url": "https://www.tandfonline.com/doi/full/10.1080/0020174X.2024.2439989",
-      "source_type": "academic",
-      "date": "2024-12-23",
-      "summary": "Évaluation arguments principaux contre conscience IA dans LLM. Consensus général : LLM ne sont pas conscients. Analyse critique montrant qu'aucun argument ne démontre ce qu'il prétend. Intuitions fortes contre conscience artificielle manquent actuellement de support rationnel.",
-      "perspective": "Nos résistances intuitives à la conscience artificielle révèlent peut-être davantage sur nos préjugés que sur la réalité de la conscience machine.",
-      "interest_level": 4,
-      "primary_domain": "philosophie",
-      "secondary_domains": [
-        "llm",
-        "consciousness"
-      ],
-      "concepts": [
-        {
-          "id": "llm_consciousness_debate",
-          "name": "Débat conscience LLM",
-          "type": "philosophical",
-          "controversy_level": 3
-        },
-        {
-          "id": "consciousness_intuitions",
-          "name": "Intuitions conscience",
-          "type": "philosophical",
-          "controversy_level": 2
-        }
-      ],
-      "tools_mentioned": [
-        {
-          "id": "lamda",
-          "name": "LaMDA",
-          "type": "model",
-          "maturity": "stable"
-        }
-      ],
-      "author": "Adrienne Prettyman",
-      "reading_time": 14,
-      "complexity_level": "intermediate",
-      "connected_articles": []
-    },
-    {
-      "id": "art_055",
-      "title": "How Far Are We From AGI? Metacognition and Consciousness Perspective",
-      "url": "https://arxiv.org/abs/2405.10313",
-      "source_type": "arxiv",
-      "date": "2024-05-15",
-      "summary": "Analyse distance vers AGI via métacognition et conscience. AGI futur pourrait posséder auto-conscience profonde, introspection, confrontation questions existentielles. Flou frontières intelligence artificielle/biologique, questions philosophiques/éthiques. Incertitude conscience humaine-like.",
-      "perspective": "La quête de l'AGI révèle notre aspiration secrète à créer non seulement des outils, mais des compagnons existentiels partageant notre condition.",
-      "interest_level": 4,
-      "primary_domain": "philosophie",
-      "secondary_domains": [
-        "agi",
-        "metacognition"
-      ],
-      "concepts": [
-        {
-          "id": "agi_metacognition",
-          "name": "Métacognition AGI",
-          "type": "technical",
-          "controversy_level": 2
-        },
-        {
-          "id": "existential_ai",
-          "name": "IA existentielle",
-          "type": "philosophical",
-          "controversy_level": 2
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Multiple authors",
-      "reading_time": 16,
-      "complexity_level": "intermediate",
-      "connected_articles": []
-    },
-    {
-      "id": "art_004",
-      "title": "The Ethics of AI in Education",
-      "url": "https://arxiv.org/abs/2406.11842",
-      "source_type": "arxiv",
-      "date": "2024-03-22",
-      "summary": "Contextualisation des enjeux éthiques IA dans l'éducation, reliant conception technique, questions d'apprentissage humain et considérations de valeurs dans un système sociotechnique élargi.",
-      "perspective": "L'éducation comme laboratoire privilégié pour repenser notre rapport éthique à l'intelligence artificielle.",
-      "interest_level": 4,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "education",
-        "usage_professionnel"
-      ],
-      "concepts": [
-        {
-          "id": "aied_ethics",
-          "name": "Éthique IA éducative",
-          "type": "philosophical",
-          "controversy_level": 2
-        },
-        {
-          "id": "sociotechnical_system",
-          "name": "Système sociotechnique",
-          "type": "methodological",
-          "controversy_level": 1
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Kaska Porayska-Pomsta et al.",
-      "reading_time": 14,
-      "complexity_level": "intermediate",
-      "connected_articles": []
-    },
-    {
-      "id": "art_030",
-      "title": "Survey on Explainable AI: From Approaches, Limitations and Applications",
-      "url": "https://link.springer.com/article/10.1007/s44230-023-00038-y",
-      "source_type": "academic",
-      "date": "2023-08-10",
-      "summary": "Enquête complète XAI 2013-2023 couvrant approches générales et domaines spécifiques (médical, transport, cybersécurité, éducation, finance). Identification limitations méthodes existantes et défis nécessitant recherche future.",
-      "perspective": "La cartographie XAI révèle l'ampleur du défi : rendre intelligible l'inintelligible sans sacrifier la performance.",
-      "interest_level": 4,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "survey",
-        "multi_domain"
-      ],
-      "concepts": [
-        {
-          "id": "xai_limitations",
-          "name": "Limitations XAI",
-          "type": "methodological",
-          "controversy_level": 2
-        },
-        {
-          "id": "domain_specific_xai",
-          "name": "XAI spécifique domaine",
-          "type": "technical",
-          "controversy_level": 1
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Multiple authors",
-      "reading_time": 16,
-      "complexity_level": "advanced",
-      "connected_articles": []
-    },
-    {
-      "id": "art_031",
-      "title": "What is Explainable AI (XAI)?",
-      "url": "https://www.ibm.com/think/topics/explainable-ai",
-      "source_type": "blog",
-      "date": "2025-01-31",
-      "summary": "Guide IBM XAI : 3 méthodes principales (précision prédiction, traçabilité, compréhension décision). Techniques LIME, DeepLIFT. XAI essentiel pour confiance, adoption responsable IA et gestion partenaires IA militaires futurs.",
-      "perspective": "L'industrie découvre que l'explicabilité n'est plus un luxe académique mais un impératif business critique.",
-      "interest_level": 3,
-      "primary_domain": "usage_professionnel",
-      "secondary_domains": [
-        "transparency",
-        "trust"
-      ],
-      "concepts": [
-        {
-          "id": "lime_technique",
-          "name": "Technique LIME",
-          "type": "technical",
-          "controversy_level": 0
-        },
-        {
-          "id": "deeplift",
-          "name": "DeepLIFT",
-          "type": "technical",
-          "controversy_level": 0
-        }
-      ],
-      "tools_mentioned": [
-        {
-          "id": "lime",
-          "name": "LIME",
-          "type": "framework",
-          "maturity": "stable"
-        }
-      ],
-      "author": "IBM Think",
-      "reading_time": 8,
-      "complexity_level": "beginner",
-      "connected_articles": []
-    },
-    {
-      "id": "art_032",
-      "title": "Navigating algorithm bias in AI: ensuring fairness and trust in Africa",
-      "url": "https://www.frontiersin.org/journals/research-metrics-and-analytics/articles/10.3389/frma.2024.1486600/full",
-      "source_type": "academic",
-      "date": "2024-10-14",
-      "summary": "Analyse biais algorithmique IA en Afrique : manque datasets diversifiés, biais implicites, transparence insuffisante. Plaidoyer stratégies inclusives, sensibilité culturelle, engagement communautés locales pour développement IA responsable.",
-      "perspective": "L'Afrique comme laboratoire révélateur des biais systémiques de l'IA 'universelle' occidentale.",
-      "interest_level": 4,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "bias_fairness",
-        "cultural_diversity"
-      ],
-      "concepts": [
-        {
-          "id": "cultural_bias_ai",
-          "name": "Biais culturel IA",
-          "type": "philosophical",
-          "controversy_level": 3
-        },
-        {
-          "id": "algorithmic_discrimination",
-          "name": "Discrimination algorithmique",
-          "type": "technical",
-          "controversy_level": 2
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Multiple authors",
-      "reading_time": 13,
-      "complexity_level": "intermediate",
-      "connected_articles": []
-    },
-    {
-      "id": "art_033",
-      "title": "Transparency and accountability in AI systems: safeguarding wellbeing",
-      "url": "https://www.frontiersin.org/journals/human-dynamics/articles/10.3389/fhumd.2024.1421273/full",
-      "source_type": "academic",
-      "date": "2024-06-20",
-      "summary": "Cadres éthiques pour développement IA responsable : principes IEEE (transparence, responsabilité, bien-être humain). Importance équité, méthodes détection/atténuation biais. Implications éthiques IA : exacerbation biais, préoccupations confidentialité.",
-      "perspective": "La transparence et responsabilité comme garde-fous démocratiques face à l'opacité croissante des systèmes décisionnels automatisés.",
-      "interest_level": 4,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "transparency",
-        "accountability"
-      ],
-      "concepts": [
-        {
-          "id": "ai_accountability",
-          "name": "Responsabilité IA",
-          "type": "philosophical",
-          "controversy_level": 2
-        },
-        {
-          "id": "wellbeing_safeguarding",
-          "name": "Préservation bien-être",
-          "type": "philosophical",
-          "controversy_level": 1
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Multiple authors",
-      "reading_time": 14,
-      "complexity_level": "intermediate",
-      "connected_articles": []
-    },
-    {
-      "id": "art_034",
-      "title": "Policy advice and best practices on bias and fairness in AI",
-      "url": "https://link.springer.com/article/10.1007/s10676-024-09746-w",
-      "source_type": "academic",
-      "date": "2024-04-29",
-      "summary": "Conseils politiques fair-AI basés projet NoBIAS : couche légale UE, défis techniques (équilibre utilité-équité, robustesse, graphes non-i.i.d.). Expansion recherche équité vers apprentissage non-supervisé, NLP, vision, systèmes recommandation.",
-      "perspective": "L'institutionnalisation de l'équité IA révèle la maturité d'un champ passant de la recherche à la régulation.",
-      "interest_level": 4,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "policy",
-        "regulation"
-      ],
-      "concepts": [
-        {
-          "id": "fair_ai_policy",
-          "name": "Politique IA équitable",
-          "type": "methodological",
-          "controversy_level": 2
-        },
-        {
-          "id": "utility_fairness_tradeoff",
-          "name": "Compromis utilité-équité",
-          "type": "technical",
-          "controversy_level": 2
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "NoBIAS Project",
-      "reading_time": 16,
-      "complexity_level": "advanced",
-      "connected_articles": []
-    },
-    {
-      "id": "art_035",
-      "title": "AI fairness in practice: Paradigm, challenges, and prospects",
-      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.12189",
-      "source_type": "academic",
-      "date": "2024-09-22",
-      "summary": "Analyse équité IA au-delà apprentissage supervisé contraint : données censurées, structures graphiques non-i.i.d., évolution temporelle. Équité LLM complexe, défis architecture/entraînement, détermination équité génération langage subjective.",
-      "perspective": "L'équité IA révèle ses limites conceptuelles face à la complexité du monde réel non-contrôlé.",
-      "interest_level": 4,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "fairness",
-        "complexity"
-      ],
-      "concepts": [
-        {
-          "id": "llm_fairness",
-          "name": "Équité LLM",
-          "type": "technical",
-          "controversy_level": 3
-        },
-        {
-          "id": "non_iid_fairness",
-          "name": "Équité non-i.i.d.",
-          "type": "technical",
-          "controversy_level": 2
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Multiple authors",
-      "reading_time": 15,
-      "complexity_level": "advanced",
-      "connected_articles": []
-    },
-    {
-      "id": "art_036",
-      "title": "What is AI transparency? A comprehensive guide",
-      "url": "https://www.zendesk.com/blog/ai-transparency/",
-      "source_type": "blog",
-      "date": "2024-01-18",
-      "summary": "Guide complet transparence IA : 3 niveaux (système, utilisateur, impact global). Transparence algorithmique, données, processus. 75% entreprises croient manque transparence pourrait augmenter churn clients. Bénéfices : confiance, responsabilité, détection biais.",
-      "perspective": "La transparence IA devient un enjeu de compétitivité business autant qu'éthique.",
-      "interest_level": 3,
-      "primary_domain": "usage_professionnel",
-      "secondary_domains": [
-        "transparency",
-        "customer_trust"
-      ],
-      "concepts": [
-        {
-          "id": "algorithmic_transparency",
-          "name": "Transparence algorithmique",
-          "type": "technical",
-          "controversy_level": 1
-        },
-        {
-          "id": "customer_churn_ai",
-          "name": "Churn client IA",
-          "type": "methodological",
-          "controversy_level": 0
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Zendesk",
-      "reading_time": 9,
-      "complexity_level": "beginner",
-      "connected_articles": []
-    },
-    {
-      "id": "art_037",
-      "title": "AI Ethics: Integrating Transparency, Fairness, and Privacy in AI Development",
-      "url": "https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722",
-      "source_type": "academic",
-      "date": "2025-02-07",
-      "summary": "Framework éthique complet développement IA adressant transparence, équité, confidentialité. Analyse comparative cadres politiques internationaux UE/US/Chine via diagrammes Venn/graphiques cartésiens. Stratégies techniques atténuation biais.",
-      "perspective": "L'éthique IA comme convergence nécessaire entre impératifs techniques et valeurs sociétales dans développement technologique.",
-      "interest_level": 4,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "policy",
-        "international"
-      ],
-      "concepts": [
-        {
-          "id": "ethical_framework_ai",
-          "name": "Framework éthique IA",
-          "type": "methodological",
-          "controversy_level": 1
-        },
-        {
-          "id": "international_ai_policy",
-          "name": "Politique IA internationale",
-          "type": "philosophical",
-          "controversy_level": 2
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Multiple authors",
-      "reading_time": 13,
-      "complexity_level": "intermediate",
-      "connected_articles": []
-    },
-    {
-      "id": "art_038",
-      "title": "Fairness and Bias in AI: Brief Survey of Sources, Impacts, and Mitigation Strategies",
-      "url": "https://www.mdpi.com/2413-4155/6/1/3",
-      "source_type": "academic",
-      "date": "2023-12-26",
-      "summary": "Enquête complète équité/biais IA incluant IA générative : sources (données, algorithme, décision humaine), impacts (discrimination, confiance), stratégies atténuation (pré/post-traitement, sélection modèle). Défis holistic stratégie IA générative.",
-      "perspective": "L'émergence de l'IA générative complexifie exponentiellement les enjeux traditionnels de biais et d'équité.",
-      "interest_level": 4,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "bias_fairness",
-        "generative_ai"
-      ],
-      "concepts": [
-        {
-          "id": "generative_ai_bias",
-          "name": "Biais IA générative",
-          "type": "technical",
-          "controversy_level": 3
-        },
-        {
-          "id": "bias_mitigation_strategies",
-          "name": "Stratégies atténuation biais",
-          "type": "methodological",
-          "controversy_level": 1
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Multiple authors",
-      "reading_time": 12,
-      "complexity_level": "intermediate",
-      "connected_articles": []
-    },
-    {
-      "id": "art_039",
-      "title": "Ensuring Fairness in AI: Addressing Algorithmic Bias in Education and Hiring",
-      "url": "https://yipinstitute.org/capstone/ensuring-fairness-in-ai-addressing-algorithmic-bias",
-      "source_type": "blog",
-      "date": "2025-03-21",
-      "summary": "Analyse biais algorithmique IA impact disproportionné communautés marginalisées. Loi NYC AI Hiring (2023) audits biais obligatoires. Recommandations : audits mandatoires, standards explicabilité, certification équité algorithmique.",
-      "perspective": "La régulation émerge comme réponse nécessaire aux défaillances market-driven de l'autorégulation technologique.",
-      "interest_level": 4,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "regulation",
-        "education"
-      ],
-      "concepts": [
-        {
-          "id": "mandatory_bias_audits",
-          "name": "Audits biais obligatoires",
-          "type": "methodological",
-          "controversy_level": 2
-        },
-        {
-          "id": "algorithmic_fairness_certification",
-          "name": "Certification équité algorithmique",
-          "type": "methodological",
-          "controversy_level": 1
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "YIP Institute",
-      "reading_time": 10,
-      "complexity_level": "intermediate",
-      "connected_articles": []
-    },
-    {
-      "id": "art_040",
-      "title": "Reducing biased algorithmic decisions through feature importance transparency",
-      "url": "https://www.tandfonline.com/doi/full/10.1080/0960085X.2024.2395531",
-      "source_type": "academic",
-      "date": "2024-09-02",
-      "summary": "Étude empirique efficacité transparence 'feature importance' (FI) pour réduire adoption recommandations algorithmiques discriminatoires. Basé théorie décision éthique Rest et littérature transparence/biais algorithmique.",
-      "perspective": "La transparence algorithmique comme intervention comportementale pour contrer nos biais cognitifs face aux systèmes automatisés.",
-      "interest_level": 4,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "transparency",
-        "behavioral"
-      ],
-      "concepts": [
-        {
-          "id": "feature_importance_transparency",
-          "name": "Transparence importance features",
-          "type": "technical",
-          "controversy_level": 1
-        },
-        {
-          "id": "ethical_decision_theory",
-          "name": "Théorie décision éthique",
-          "type": "philosophical",
-          "controversy_level": 0
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Multiple authors",
-      "reading_time": 11,
-      "complexity_level": "advanced",
-      "connected_articles": []
-    },
-    {
-      "id": "art_041",
-      "title": "Algorithmic Bias & AI Ethics: Ensuring Fairness, Transparency, and Accountability",
-      "url": "https://configr.medium.com/algorithmic-bias-ai-ethics-a188f54efc96",
-      "source_type": "blog",
-      "date": "2024-04-09",
-      "summary": "Vue d'ensemble biais algorithmique (race, genre, âge, statut socio-économique) et implications éthiques. Stratégies assurer équité : IA explicable (XAI), diversité équipes, audits réguliers, conformité légale.",
-      "perspective": "Le biais algorithmique comme miroir révélateur de nos préjugés sociétaux amplifiés par la technologie.",
-      "interest_level": 3,
-      "primary_domain": "ethique",
-      "secondary_domains": [
-        "bias_fairness",
-        "diversity"
-      ],
-      "concepts": [
-        {
-          "id": "socioeconomic_bias",
-          "name": "Biais socio-économique",
-          "type": "philosophical",
-          "controversy_level": 2
-        },
-        {
-          "id": "team_diversity_ai",
-          "name": "Diversité équipes IA",
-          "type": "methodological",
-          "controversy_level": 1
-        }
-      ],
-      "tools_mentioned": [],
-      "author": "Configr Technologies",
-      "reading_time": 8,
-      "complexity_level": "beginner",
-      "connected_articles": []
-    }
-  ],
-  "last_updated": "2025-08-15T14:35:42.389Z",
-  "total_articles": 56
-}
+    "suggested_connections": [
+      {
+        "target_id": "art_102",
+        "type": "builds_on",
+        "strength": 0.81,
+        "reasoning": "La cartographie systématique de l'éthique générative fournit le cadre taxonomique nécessaire pour comprendre les enjeux des assistants IA avancés.",
+        "confidence": 0.86
+      },
+      {
+        "target_id": "art_008",
+        "type": "implements",
+        "strength": 0.74,
+        "reasoning": "Illustre concrètement les tensions théoriques entre principes éthiques abstraits et applications génératives spécifiques.",
+        "confidence": 0.8
+      },
+      {
+        "target_id": "art_023",
+        "type": "similar_to",
+        "strength": 0.68,
+        "reasoning": "Partage l'approche systématique de cartographie éthique, mais spécifiquement pour les technologies génératives.",
+        "confidence": 0.74
+      }
+    ]
+  }
+]

@@ -838,6 +838,163 @@ virtualThreshold: 100
 
 ---
 
-**📈 DERNIÈRE MISE À JOUR :** 14 août 2025  
-**Serveur dev :** `http://localhost:5173`  
-**Application :** Stable et fonctionnelle avec pagination dynamique optimisée
+### ✅ Phase 10 : Filtrage Bi-directionnel Complet & Interface Utilisateur Professionnelle (TERMINÉE)
+**Statut :** 100% - Production Ready Optimisée
+
+**Contexte :** Transformation majeure de l'interface utilisateur avec ajout de nouveaux filtres avancés, résolution des problèmes de filtrage bi-directionnel et optimisations visuelles complètes pour une expérience utilisateur professionnelle.
+
+#### 🆕 **NOUVELLES FONCTIONNALITÉS MAJEURES**
+
+**1. Filtres Avancés par Complexité :**
+- **Nouveau Composant :** `src/components/navigation/ComplexityFilter.tsx`
+- **Fonctionnalités :**
+  - 3 niveaux : Débutant 🟢, Intermédiaire 🟡, Avancé 🔴
+  - Compteurs dynamiques par niveau avec badges visuels
+  - Multi-sélection avec indicateurs d'état
+  - Interface colorée avec hover states et transitions
+- **Impact :** Filtrage granulaire par niveau de difficulté technique
+
+**2. Filtres Avancés par Types de Concepts :**
+- **Nouveau Composant :** `src/components/navigation/ConceptFilter.tsx`
+- **Fonctionnalités :**
+  - 3 catégories : Techniques 🔧, Théoriques 🧠, Méthodologiques 📊
+  - Comptage intelligent des articles par type de concept
+  - Interface moderne avec badges et couleurs thématiques
+  - Logique de déduplication des concepts par article
+- **Impact :** Navigation conceptuelle avancée révélant les approches méthodologiques
+
+**3. Refonte Complète MainLayout :**
+- **Modifications Majeures dans `src/components/layout/MainLayout.tsx` :**
+  - Intégration des nouveaux filtres dans TagCloud
+  - Synchronisation bi-directionnelle focus/filtres avec `useEffect`
+  - Gestion d'état centralisée pour tous les types de filtres
+  - Logique de compatibilité article focus avec nouveaux filtres
+- **Résultat :** Interface cohérente et fonctionnelle à 100%
+
+#### 🎯 **Problèmes Critiques Résolus**
+
+**1. Filtrage Bi-directionnel Défaillant :**
+- **Problème :** Filtres (complexité, concepts, domaines) n'affectaient pas le graphique pour >8 articles
+- **Cause Racine :** Limitations de configuration trop restrictives
+- **Solution :** Réajustement complet des seuils dans `navigation.ts` :
+  ```typescript
+  MAX_NODES_DISPLAYED: 20 → 40    // +100% capacité affichage
+  MAX_FOCUS_CONNECTIONS: 8 → 15   // +87% connexions focus
+  MIN_CONNECTION_STRENGTH: 0.6 → 0.5  // -17% plus de connexions
+  ```
+
+**2. Correspondance Articles Graphique Dysfonctionnelle :**
+- **Problème :** "12 articles sélectionnés mais 6 dans le graphique"
+- **Cause :** Logique restrictive dans `generateOverviewGraph` (seuls les hubs affichés)
+- **Solution :** Logique simplifiée pour afficher TOUS les articles filtrés jusqu'à la limite
+
+**3. Retour Vue Globale en Mode Focus :**
+- **Problème :** Changement de filtres en mode focus gardait la vue article (flash sans changement)
+- **Solution :** Implémentation de `setSelectedArticleId(null)` dans TOUS les handlers de filtres
+- **Synchronisation :** `useEffect` dans MainLayout pour compatibilité des filtres avec l'article focus
+
+#### 🎨 **Améliorations Visuelles Majeures**
+
+**1. Anti-Flicker des Tooltips :**
+- **Problème :** Tooltips clignotants près des nœuds/connexions
+- **Solution :** Debouncing 100ms avec `window.setTimeout/clearTimeout` + mouseenter/mouseleave optimisés
+- **Fix TypeScript :** Remplacement `NodeJS.Timeout` → `number` pour compatibilité navigateur
+- **Résultat :** Tooltips stables et fluides
+
+**2. Lisibilité Adaptative des Graphiques :**
+- **Problème :** Nœuds illisibles avec >20 articles
+- **Solution :** Paramètres adaptatifs selon le nombre de nœuds :
+  ```typescript
+  // Espacement adaptatif mobile/desktop
+  baseDistance: nodeCount > 20 ? 180 : nodeCount > 10 ? 140 : 120
+  repulsionStrength: nodeCount > 30 ? -600 : -400  
+  linkStrength: nodeCount > 30 ? 0.08 : 0.2
+  collisionDistance: nodeCount > 20 ? 80 : 60
+  ```
+
+**3. Configuration "Juste Milieu" Équilibrée :**
+- **Objectif :** Balance performance vs fonctionnalité vs lisibilité
+- **Résultat :** Configuration optimisée pour tous les volumes d'articles (5-40)
+
+#### 🔧 **Modifications Techniques Complètes**
+
+**Fichiers Nouveaux Créés :**
+- ✅ `src/components/navigation/ComplexityFilter.tsx` - Filtrage par niveau de complexité
+- ✅ `src/components/navigation/ConceptFilter.tsx` - Filtrage par types de concepts
+
+**Fichiers Principaux Modifiés :**
+- ✅ `src/config/navigation.ts` - Seuils réajustés + ajout COMPLEXITY_LABELS
+- ✅ `src/hooks/useGraphData.ts` - Logic simplifiée generateOverviewGraph (`const` vs `let`)
+- ✅ `src/hooks/useTagNavigation.ts` - Reset selectedArticleId sur TOUS changements filtres
+- ✅ `src/components/layout/MainLayout.tsx` - **REFONTE COMPLÈTE** :
+  - Intégration nouveaux filtres dans TagCloud
+  - Synchronisation focus/filtres avec useEffect 
+  - Import useEffect ajouté
+- ✅ `src/components/navigation/GraphView.tsx` - **OPTIMISATIONS MAJEURES** :
+  - Anti-flicker tooltips avec `window.setTimeout`
+  - Espacement adaptatif selon nodeCount
+  - Fix TypeScript timeout management
+- ✅ `src/components/navigation/TagCloud.tsx` - Intégration ComplexityFilter + ConceptFilter
+
+#### 📊 **Tests de Validation Utilisateur Étendus**
+
+**Scénarios Testés avec Succès :**
+1. ✅ **>8 articles** : Filtrage bi-directionnel opérationnel avec TOUS les filtres
+2. ✅ **>30 articles** : Affichage jusqu'à 40 articles avec lisibilité maintenue
+3. ✅ **Mode focus + changement filtres** : Retour automatique vue globale
+4. ✅ **Tooltips complexes** : Plus de flickering, interactions fluides
+5. ✅ **Nouveaux filtres complexité/concepts** : Synchronisation parfaite avec graphique
+6. ✅ **Multi-sélection filtres** : Combinaison domaines + complexité + concepts
+7. ✅ **Responsive mobile** : Paramètres adaptatifs pour tous nouveaux composants
+
+#### 🎯 **Impact Utilisateur Final**
+
+**Avant Phase 10 :**
+- Filtres limités aux domaines primaires/secondaires
+- Filtres dysfonctionnels pour >8 articles
+- Graphique illisible avec beaucoup de nœuds
+- Tooltips clignotants perturbants
+- Mode focus avec filtres incohérent
+- Pas de filtrage par complexité ou concepts
+
+**Après Phase 10 Complète :**
+- ✅ **Filtrage Multi-dimensionnel** : Domaines + Complexité + Concepts synchronisés
+- ✅ **Bi-directionnalité parfaite** : Tous filtres ↔ Graphique synchronisés jusqu'à 40 articles
+- ✅ **Interface professionnelle** : 5 composants de filtrage avec UI cohérente
+- ✅ **Lisibilité optimale** : Espacement adaptatif intelligent
+- ✅ **Interaction fluide** : Tooltips stables, navigation intuitive  
+- ✅ **Cohérence focus/filtres** : Retour automatique vue globale pour TOUS les filtres
+- ✅ **Performance maintenue** : Gestion jusqu'à 40 articles sans dégradation
+- ✅ **Accessibilité** : ARIA, hover states, transitions fluides
+
+#### 🏆 **Architecture Finale "Production Ready"**
+```typescript
+// Configuration optimisée
+export const NAVIGATION_CONFIG = {
+  MAX_NODES_DISPLAYED: 40,        // JUSTE MILIEU : fonctionnalité vs lisibilité
+  MIN_CONNECTION_STRENGTH: 0.5,   // Équilibre connexions
+  MAX_FOCUS_CONNECTIONS: 15,      // Lisibilité mode focus
+  MAX_OVERVIEW_CONNECTIONS: 30,   // Équilibre performance/richesse
+}
+
+// Nouveaux labels de complexité
+export const COMPLEXITY_LABELS = {
+  beginner: 'Débutant',
+  intermediate: 'Intermédiaire', 
+  advanced: 'Avancé'
+}
+```
+
+**Nouveaux Types de Filtres Disponibles :**
+1. **Domaines Primaires** (6) - technique, éthique, usage_professionnel, etc.
+2. **Domaines Secondaires** (17) - NLP, computer_vision, bias_fairness, etc.
+3. **Niveaux de Complexité** (3) - débutant, intermédiaire, avancé
+4. **Types de Concepts** (3) - techniques, théoriques, méthodologiques
+
+**Status :** ✅ **PHASE 10 TERMINÉE** - Interface utilisateur professionnelle complète avec filtrage multi-dimensionnel bi-directionnel
+
+---
+
+**📈 DERNIÈRE MISE À JOUR :** 15 août 2025  
+**Serveur dev :** `http://localhost:5179`  
+**Application :** Production Ready avec filtrage bi-directionnel optimal et améliorations visuelles complètes

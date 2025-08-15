@@ -56,11 +56,17 @@ export function useGraphData(
 
   // Données du graphique principal
   const graphData = useMemo(() => {
+    const articlesToUse = filteredArticles.length > 0 ? filteredArticles : articles
+    
     if (!centerArticle) {
       // Mode overview : afficher les articles filtrés
-      return generateOverviewGraph(filteredArticles.length > 0 ? filteredArticles : articles, connections, config)
+      return generateOverviewGraph(articlesToUse, connections, config)
     } else {
-      // Mode focus : graphique centré sur un article
+      // Mode focus : graphique centré sur un article MAIS respecter les filtres
+      // Si l'article focus n'est pas dans les articles filtrés, revenir en vue globale
+      if (filteredArticles.length > 0 && !filteredArticles.some(a => a.id === centerArticle.id)) {
+        return generateOverviewGraph(articlesToUse, connections, config)
+      }
       return generateFocusGraph(centerArticle, articles, connections, config)
     }
   }, [centerArticle, articles, filteredArticles, connections, config])
@@ -100,25 +106,10 @@ function generateOverviewGraph(
   const sortedArticles = articles
     .sort((a, b) => (b.centrality_score || 0) - (a.centrality_score || 0))
   
-  // Si beaucoup d'articles, ne garder que les plus centraux
-  let displayedArticles: Article[]
-  if (articles.length > 20) {
-    // Mode "hubs" : seulement les articles très centraux
-    displayedArticles = sortedArticles
-      .filter(article => (article.centrality_score || 0) >= NAVIGATION_CONFIG.MIN_CENTRALITY_FOR_HUB)
-      .slice(0, Math.min(15, config.maxNodes))
-  } else if (articles.length > 10) {
-    // Mode intermédiaire : prioriser les centraux mais inclure d'autres
-    const centralArticles = sortedArticles.filter(article => (article.centrality_score || 0) >= 0.4)
-    const otherArticles = sortedArticles.filter(article => (article.centrality_score || 0) < 0.4)
-    displayedArticles = [
-      ...centralArticles.slice(0, Math.floor(config.maxNodes * 0.7)),
-      ...otherArticles.slice(0, Math.floor(config.maxNodes * 0.3))
-    ].slice(0, config.maxNodes)
-  } else {
-    // Peu d'articles : afficher tous
-    displayedArticles = sortedArticles.slice(0, config.maxNodes)
-  }
+  // Affichage adaptatif selon le nombre d'articles filtrés - Simplifié
+  // Toujours afficher tous les articles filtrés jusqu'à la limite max
+  const displayedArticles = sortedArticles.slice(0, config.maxNodes)
+  
   
   const displayedIds = new Set(displayedArticles.map(a => a.id))
   
@@ -130,7 +121,7 @@ function generateOverviewGraph(
   }))
 
   // FILTRAGE INTELLIGENT pour vue d'ensemble lisible
-  const overviewMinStrength = Math.max(config.minConnectionStrength, 0.7) // Seuil plus élevé
+  const overviewMinStrength = config.minConnectionStrength // Utilise le seuil configuré (0.4)
   const eligibleConnections = connections
     .filter(conn => 
       displayedIds.has(conn.source_id) && 

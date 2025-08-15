@@ -1,16 +1,22 @@
 import React from 'react'
 import { PRIMARY_DOMAINS } from '@/data/schema'
-import { TagBubble, TagChip, TagStats, TagSuggestions } from './TagBubble'
+import { TagBubble, TagChip, TagSuggestions } from './TagBubble'
+import { ComplexityFilter } from './ComplexityFilter'
+import { ConceptFilter } from './ConceptFilter'
 import { findBridgeTags } from '@/utils/tagMatcher'
 
 interface TagCloudProps {
   articles: any[]
   selectedPrimaryTags: string[]
   selectedSecondaryTags: string[]
+  selectedComplexityLevels: string[]
+  selectedConcepts: string[]
   tagWeights: Record<string, number>
   relevantSecondaryTags: any[]
   onPrimaryTagSelect: (tag: string) => void
   onSecondaryTagSelect: (tag: string) => void
+  onComplexityLevelSelect: (level: string) => void
+  onConceptSelect: (conceptId: string) => void
   resetFilters: () => void
   stats: any
   tagSuggestions: string[]
@@ -22,10 +28,14 @@ export const TagCloud: React.FC<TagCloudProps> = ({
   articles,
   selectedPrimaryTags,
   selectedSecondaryTags,
+  selectedComplexityLevels,
+  selectedConcepts,
   tagWeights,
   relevantSecondaryTags,
   onPrimaryTagSelect,
   onSecondaryTagSelect,
+  onComplexityLevelSelect,
+  onConceptSelect,
   resetFilters,
   stats,
   tagSuggestions,
@@ -59,62 +69,88 @@ export const TagCloud: React.FC<TagCloudProps> = ({
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto space-y-6">
-      {/* En-tête avec statistiques */}
-      <div className="text-center">
-        <TagStats
-          totalCount={stats.totalArticles}
-          filteredCount={stats.filteredCount}
-          hasFilters={stats.hasFilters}
-          onReset={resetFilters}
-        />
-      </div>
-
-      {/* Tags primaires - navigation principale */}
-      <div className="space-y-3">
-        <h3 className="text-lg font-medium text-gray-800 text-center">
-          Domaines d'exploration
-        </h3>
-        <div className="flex flex-wrap justify-center gap-3">
-          {PRIMARY_DOMAINS.map(domain => (
-            <TagBubble
-              key={domain}
-              tag={domain}
-              weight={tagWeights[domain] || 0.1}
-              selected={selectedPrimaryTags.includes(domain)}
-              onClick={() => onPrimaryTagSelect(domain)}
-            />
-          ))}
+    <div className="w-full space-y-3">
+      {/* En-tête compact avec statistiques */}
+      <div className="flex flex-col gap-2">
+        <div>
+          <h3 className="text-base font-medium text-gray-800">
+            🏷️ Navigation par filtres
+          </h3>
+          <p className="text-xs text-gray-600">
+            {stats.filteredCount}/{stats.totalArticles} articles affichés
+          </p>
         </div>
+        {stats.hasFilters && (
+          <button
+            onClick={resetFilters}
+            className="px-2 py-1 text-xs text-blue-600 hover:text-blue-800 border border-blue-200 rounded-md hover:bg-blue-50 transition-colors"
+          >
+            🔄 Réinitialiser
+          </button>
+        )}
       </div>
 
-      {/* Tags secondaires - affinement */}
-      {relevantSecondaryTags.length > 0 && (
-        <div className="space-y-3">
-          <h4 className="text-base font-medium text-gray-700 text-center">
-            Affiner par spécialité
-          </h4>
-          <div className="flex flex-wrap justify-center gap-2">
-            {relevantSecondaryTags.map(tag => {
-              // Compter les articles pour ce tag
-              const count = articles.filter(article =>
-                article.secondary_domains.includes(tag) &&
-                (selectedPrimaryTags.length === 0 || selectedPrimaryTags.includes(article.primary_domain))
-              ).length
-
-              return (
-                <TagChip
-                  key={tag}
-                  tag={tag}
-                  selected={selectedSecondaryTags.includes(tag)}
-                  onClick={() => onSecondaryTagSelect(tag)}
-                  count={count}
-                />
-              )
-            })}
+      {/* Filtres compacts pour layout vertical */}
+      <div className="space-y-4">
+        {/* Domaines primaires */}
+        <div>
+          <h4 className="text-xs font-medium text-gray-600 mb-2">Domaines</h4>
+          <div className="flex flex-wrap gap-1">
+            {PRIMARY_DOMAINS.map(domain => (
+              <TagBubble
+                key={domain}
+                tag={domain}
+                weight={tagWeights[domain] || 0.1}
+                selected={selectedPrimaryTags.includes(domain)}
+                onClick={() => onPrimaryTagSelect(domain)}
+              />
+            ))}
           </div>
         </div>
-      )}
+
+        {/* Spécialités */}
+        {relevantSecondaryTags.length > 0 && (
+          <div>
+            <h4 className="text-xs font-medium text-gray-600 mb-2">Spécialités</h4>
+            <div className="flex flex-wrap gap-1">
+                {relevantSecondaryTags.slice(0, 8).map(tag => {
+                  const count = articles.filter(article =>
+                    article.secondary_domains.includes(tag) &&
+                    (selectedPrimaryTags.length === 0 || selectedPrimaryTags.includes(article.primary_domain))
+                  ).length
+
+                  return (
+                    <TagChip
+                      key={tag}
+                      tag={tag}
+                      selected={selectedSecondaryTags.includes(tag)}
+                      onClick={() => onSecondaryTagSelect(tag)}
+                      count={count}
+                    />
+                  )
+                })}
+              </div>
+            </div>
+          )}
+          
+        {/* Niveaux */}
+        <div>
+          <ComplexityFilter
+            articles={articles}
+            selectedComplexityLevels={selectedComplexityLevels}
+            onComplexityLevelSelect={onComplexityLevelSelect}
+          />
+        </div>
+
+        {/* Concepts */}
+        <div>
+          <ConceptFilter
+            articles={articles}
+            selectedConcepts={selectedConcepts}
+            onConceptSelect={onConceptSelect}
+          />
+        </div>
+      </div>
 
       {/* Tags pont technique-éthique */}
       {bridgeTags.length > 0 && (
