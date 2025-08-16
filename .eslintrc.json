@@ -7,7 +7,7 @@
   "extends": [
     "eslint:recommended"
   ],
-  "ignorePatterns": ["dist", ".eslintrc.json", "node_modules", "*.config.js"],
+  "ignorePatterns": ["dist", ".eslintrc.json", "node_modules", "*.config.js", "scripts/old_scripts"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",

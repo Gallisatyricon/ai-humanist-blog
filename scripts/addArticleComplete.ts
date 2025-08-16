@@ -1,397 +1,436 @@
 #!/usr/bin/env tsx
 /**
- * SCRIPT COMPLET D'AJOUT D'ARTICLE
+ * SCRIPT D'AJOUT D'ARTICLE PHASE 11 - SÉCURISÉ AVEC WORKFLOW COMPLET
  * 
- * Combine Smart ID Mapping + Smart Deduplication pour :
- * 1. Détecter et éviter les doublons
- * 2. Mettre à jour les articles existants si nécessaire
- * 3. Résoudre intelligemment les connexions invalides
- * 4. Gérer proprement les IDs séquentiels
+ * Processus sécurisé d'ajout d'article individuel avec Phase 11 intégrée :
+ * 1. Validation Zod stricte
+ * 2. Smart deduplication par URL
+ * 3. Import sécurisé avec writeFileAtomic
+ * 4. Workflow Phase 11 automatique (embeddings + connexions)
+ * 5. Tests de validation finale
  * 
  * Usage: npm run add-complete -- --input article.json
  */
 
 import fs from 'fs/promises'
 import path from 'path'
-import { 
-  Article, 
-  Connection, 
-  ArticleData, 
-  ConnectionData, 
-  NewArticleInput, 
-  SuggestedConnection 
-} from '../src/data/schema.js'
-import { calculateCentrality } from '../src/utils/graphAlgorithms.js'
-import { mapTargetIds, applyIdMapping } from './smartIdMapper.js'
-import { processArticleWithDeduplication } from './smartDeduplication.js'
+import { writeJSONAtomic, readJSONWithLock } from './writeFileAtomic.js'
+import { validateArticleInput, validateArticleData, validateConnectionData } from './zodSchemas.js'
+
+// ==================== INTERFACES ====================
+
+interface NewArticleInput {
+  article: {
+    id?: string
+    title: string
+    url: string
+    source_type: 'arxiv' | 'blog' | 'academic' | 'github' | 'news'
+    date: string
+    summary: string
+    perspective: string
+    primary_domain: string
+    secondary_domains: string[]
+    concepts: Array<{ id: string, name: string, type: string, controversy_level?: number }>
+    tools_mentioned: Array<{ id: string, name: string, type: string }>
+    author?: string
+    reading_time?: number
+    complexity_level: 'beginner' | 'intermediate' | 'advanced'
+    interest_level?: number
+    connected_articles?: string[]
+  }
+  suggested_connections: Array<{
+    target_id: string
+    type: 'builds_on' | 'contradicts' | 'implements' | 'questions' | 'similar_to'
+    strength: number
+    reasoning: string
+    confidence: number
+  }>
+}
+
+// ==================== CONFIGURATION ====================
 
 const ARTICLES_PATH = path.join(process.cwd(), 'public/data/articles.json')
-const CONNECTIONS_PATH = path.join(process.cwd(), 'public/data/connections.json')
+const CONNECTIONS_PATH = path.join(process.cwd(), 'public/data/connections.json') 
+const EMBEDDINGS_PATH = path.join(process.cwd(), 'public/data/embeddings.json')
+const BACKUP_DIR = path.join(process.cwd(), 'backup')
 
-// ==================== CHARGEMENT DONNÉES ====================
+// ==================== BACKUP SÉCURISÉ ====================
 
-async function loadArticles(): Promise<ArticleData> {
+async function createBackup(): Promise<void> {
   try {
-    const data = await fs.readFile(ARTICLES_PATH, 'utf-8')
-    const parsed = JSON.parse(data)
+    console.log('🔄 Création backup des données existantes...')
     
-    if (Array.isArray(parsed.articles)) {
-      return {
-        articles: parsed.articles,
-        last_updated: new Date().toISOString(),
-        total_articles: parsed.articles.length
-      }
+    // Créer dossier backup si inexistant
+    await fs.mkdir(BACKUP_DIR, { recursive: true })
+    
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
+    
+    // Backup articles.json
+    try {
+      const articlesData = await readJSONWithLock(ARTICLES_PATH, { timeout: 5000 })
+      await writeJSONAtomic(
+        path.join(BACKUP_DIR, `articles-${timestamp}.json`),
+        articlesData
+      )
+      console.log(`✅ Backup articles : articles-${timestamp}.json`)
+    } catch (error) {
+      console.warn('⚠️ Pas de fichier articles existant à sauvegarder')
     }
     
-    return parsed as ArticleData
+    // Backup connections.json
+    try {
+      const connectionsData = await readJSONWithLock(CONNECTIONS_PATH, { timeout: 5000 })
+      await writeJSONAtomic(
+        path.join(BACKUP_DIR, `connections-${timestamp}.json`),
+        connectionsData
+      )
+      console.log(`✅ Backup connections : connections-${timestamp}.json`)
+    } catch (error) {
+      console.warn('⚠️ Pas de fichier connections existant à sauvegarder')
+    }
+    
   } catch (error) {
-    return {
-      articles: [],
-      last_updated: new Date().toISOString(),
-      total_articles: 0
-    }
+    throw new Error(`Erreur création backup: ${error instanceof Error ? error.message : error}`)
   }
 }
 
-async function loadConnections(): Promise<ConnectionData> {
-  try {
-    const data = await fs.readFile(CONNECTIONS_PATH, 'utf-8')
-    const parsed = JSON.parse(data)
-    
-    if (Array.isArray(parsed.connections)) {
-      return {
-        connections: parsed.connections,
-        generated_at: parsed.generated_at || new Date().toISOString(),
-        total_connections: parsed.connections.length,
-        connection_index: buildConnectionIndex(parsed.connections),
-        last_processed: {}
-      }
-    }
-    
-    return parsed as ConnectionData
-  } catch (error) {
-    return {
-      connections: [],
-      generated_at: new Date().toISOString(),
-      total_connections: 0,
-      connection_index: {},
-      last_processed: {}
-    }
-  }
-}
+// ==================== SMART DEDUPLICATION ====================
 
-function buildConnectionIndex(connections: Connection[]): Record<string, string[]> {
-  const index: Record<string, string[]> = {}
-  
-  connections.forEach(conn => {
-    if (!index[conn.source_id]) index[conn.source_id] = []
-    if (!index[conn.target_id]) index[conn.target_id] = []
-    
-    if (!index[conn.source_id].includes(conn.target_id)) {
-      index[conn.source_id].push(conn.target_id)
-    }
-    if (!index[conn.target_id].includes(conn.source_id)) {
-      index[conn.target_id].push(conn.source_id)
-    }
-  })
-  
-  return index
-}
-
-// ==================== SAUVEGARDE ====================
-
-async function saveArticles(articleData: ArticleData): Promise<void> {
-  await fs.writeFile(
-    ARTICLES_PATH,
-    JSON.stringify(articleData, null, 2),
-    'utf-8'
-  )
-}
-
-async function saveConnections(connectionData: ConnectionData): Promise<void> {
-  await fs.writeFile(
-    CONNECTIONS_PATH,
-    JSON.stringify(connectionData, null, 2),
-    'utf-8'
-  )
-}
-
-// ==================== GESTION IDS ====================
-
-function generateNextId(existingArticles: Article[]): string {
-  const existingIds = existingArticles.map(a => 
-    parseInt(a.id.replace('art_', ''))
-  ).filter(id => !isNaN(id))
-  
-  const maxId = existingIds.length > 0 ? Math.max(...existingIds) : 0
-  const nextId = maxId + 1
-  
-  return `art_${String(nextId).padStart(3, '0')}`
-}
-
-// ==================== SMART CONNEXIONS ====================
-
-async function resolveSmartConnections(
-  targetConnections: SuggestedConnection[],
-  existingArticles: Article[],
-  newArticles: any[]
-): Promise<{
-  resolvedConnections: SuggestedConnection[]
-  mappingReport: any
+async function checkForDuplicates(newArticle: any): Promise<{
+  isDuplicate: boolean
+  existingArticle?: any
+  action: 'create' | 'update' | 'skip'
+  reasoning: string
 }> {
-  
-  if (targetConnections.length === 0) {
-    return { 
-      resolvedConnections: [], 
-      mappingReport: { total_attempted: 0, successfully_mapped: 0 } 
+  try {
+    // Charger articles existants
+    let existingArticles: any[] = []
+    try {
+      const articleData = await readJSONWithLock(ARTICLES_PATH, { timeout: 5000 })
+      existingArticles = articleData.articles || articleData || []
+    } catch (error) {
+      // Pas de fichier existant - création
+      return {
+        isDuplicate: false,
+        action: 'create',
+        reasoning: 'Nouveau fichier articles.json'
+      }
     }
-  }
-  
-  console.log(`🧠 Résolution de ${targetConnections.length} connexions...`)
-  
-  const mappingResults = await mapTargetIds(targetConnections, existingArticles, newArticles)
-  const resolvedConnections = applyIdMapping(targetConnections, mappingResults, 0.3)
-  
-  return {
-    resolvedConnections,
-    mappingReport: {
-      total_attempted: targetConnections.length,
-      successfully_mapped: resolvedConnections.length,
-      mapping_details: mappingResults
+
+    // Vérifier doublons par URL (priorité)
+    const duplicateByUrl = existingArticles.find(art => art.url === newArticle.url)
+    if (duplicateByUrl) {
+      // Comparer titres pour déterminer si mise à jour nécessaire
+      if (duplicateByUrl.title !== newArticle.title) {
+        return {
+          isDuplicate: true,
+          existingArticle: duplicateByUrl,
+          action: 'update',
+          reasoning: `URL existante mais titre différent: "${duplicateByUrl.title}" vs "${newArticle.title}"`
+        }
+      } else {
+        return {
+          isDuplicate: true,
+          existingArticle: duplicateByUrl,
+          action: 'skip',
+          reasoning: `Article identique déjà présent (même URL et titre)`
+        }
+      }
     }
+
+    // Pas de doublon - création
+    return {
+      isDuplicate: false,
+      action: 'create',
+      reasoning: 'Nouvel article unique'
+    }
+
+  } catch (error) {
+    throw new Error(`Erreur vérification doublons: ${error instanceof Error ? error.message : error}`)
   }
 }
 
-// ==================== UTILITAIRES ====================
+// ==================== IMPORT SÉCURISÉ ====================
 
-function convertToConnections(
-  articleId: string, 
-  suggestedConnections: SuggestedConnection[]
-): Connection[] {
-  return suggestedConnections.map(suggested => ({
-    source_id: articleId,
-    target_id: suggested.target_id,
-    type: suggested.type,
-    strength: suggested.strength,
-    auto_detected: false,
-    reasoning: `LLM (conf: ${suggested.confidence.toFixed(2)}): ${suggested.reasoning}`
-  }))
+async function importArticleSafely(input: NewArticleInput): Promise<{
+  action: 'created' | 'updated' | 'skipped'
+  articleId: string
+  message: string
+}> {
+  try {
+    console.log('📥 Import sécurisé de l\'article...')
+    
+    const newArticle = input.article
+
+    // Vérifier doublons
+    const duplicateCheck = await checkForDuplicates(newArticle)
+    console.log(`🔍 Vérification doublons: ${duplicateCheck.reasoning}`)
+
+    if (duplicateCheck.action === 'skip') {
+      return {
+        action: 'skipped',
+        articleId: duplicateCheck.existingArticle!.id,
+        message: 'Article déjà présent, aucune action nécessaire'
+      }
+    }
+
+    // Charger articles existants
+    let existingArticles: any[] = []
+    try {
+      const articleData = await readJSONWithLock(ARTICLES_PATH, { timeout: 5000 })
+      existingArticles = articleData.articles || articleData || []
+    } catch (error) {
+      console.log('📝 Création nouveau fichier articles.json')
+    }
+
+    let finalArticles: any[]
+    let finalAction: 'created' | 'updated'
+    let finalArticleId: string
+
+    if (duplicateCheck.action === 'update') {
+      // Mise à jour article existant
+      finalArticleId = duplicateCheck.existingArticle!.id
+      const updatedArticle = { ...duplicateCheck.existingArticle, ...newArticle, id: finalArticleId }
+      
+      finalArticles = existingArticles.map(art => 
+        art.id === finalArticleId ? updatedArticle : art
+      )
+      finalAction = 'updated'
+      console.log(`🔄 Article mis à jour : ${newArticle.title} (${finalArticleId})`)
+      
+    } else {
+      // Création nouvel article
+      // Générer ID séquentiel
+      const maxId = existingArticles.reduce((max, art) => {
+        const idNum = parseInt(art.id.replace('art_', ''))
+        return idNum > max ? idNum : max
+      }, 0)
+      finalArticleId = `art_${String(maxId + 1).padStart(3, '0')}`
+      
+      const newArticleWithId = { ...newArticle, id: finalArticleId }
+      finalArticles = [...existingArticles, newArticleWithId]
+      finalAction = 'created'
+      console.log(`✅ Nouvel article créé : ${newArticle.title} (${finalArticleId})`)
+    }
+    
+    // Sauvegarde atomique
+    const articleData = {
+      articles: finalArticles,
+      last_updated: new Date().toISOString(),
+      total_articles: finalArticles.length
+    }
+    
+    // Validation finale avant écriture
+    validateArticleData(articleData.articles)
+    
+    await writeJSONAtomic(ARTICLES_PATH, articleData)
+    
+    console.log(`📊 Import terminé : ${finalAction} article ${finalArticleId}`)
+    
+    return {
+      action: finalAction,
+      articleId: finalArticleId,
+      message: `Article ${finalAction === 'created' ? 'créé' : 'mis à jour'} avec succès`
+    }
+    
+  } catch (error) {
+    throw new Error(`Erreur import article: ${error instanceof Error ? error.message : error}`)
+  }
 }
 
-function updateCentralityScores(articles: Article[], connections: Connection[]): Article[] {
-  const centralityScores = calculateCentrality(articles, connections)
+// ==================== WORKFLOW PHASE 11 ====================
+
+async function runPhase11Workflow(): Promise<void> {
+  console.log('\n🚀 DÉMARRAGE WORKFLOW PHASE 11')
+  console.log('='.repeat(50))
   
-  return articles.map(article => ({
-    ...article,
-    centrality_score: centralityScores[article.id] || 0
-  }))
+  try {
+    // 1. Génération embeddings (avec attente pour éviter surcharge)
+    console.log('\n🧠 Étape 1/4 : Génération embeddings...')
+    const embeddingsResult = await import('./generateEmbeddings.js')
+    await embeddingsResult.generateEmbeddings()
+    
+    // Attente 2s pour éviter surcharge système
+    console.log('⏱️ Attente 2s (éviter surcharge)...')
+    await new Promise(resolve => setTimeout(resolve, 2000))
+    
+    // 2. Enrichissement connexions intelligentes
+    console.log('\n🔗 Étape 2/4 : Enrichissement connexions...')
+    const enrichResult = await import('./enrichConnections.js')
+    await enrichResult.enrichConnections()
+    
+    // Attente 1s
+    console.log('⏱️ Attente 1s...')
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    
+    // 3. Affinement subtilité relationnelle
+    console.log('\n🎨 Étape 3/4 : Affinement subtilité...')
+    const { exec } = await import('child_process')
+    const { promisify } = await import('util')
+    const execAsync = promisify(exec)
+    
+    await execAsync('tsx scripts/fixRelationSubtlety.ts', { cwd: process.cwd() })
+    console.log('✅ Affinement subtilité terminé')
+    
+    // Attente 1s
+    console.log('⏱️ Attente 1s...')
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    
+    // 4. Analyse finale (optionnelle, pour logs)
+    console.log('\n📊 Étape 4/4 : Analyse finale...')
+    try {
+      await execAsync('tsx scripts/analyzeConnectionBias.ts', { cwd: process.cwd() })
+      console.log('✅ Analyse terminée')
+    } catch (error) {
+      console.warn('⚠️ Analyse échouée (non bloquant):', error instanceof Error ? error.message : error)
+    }
+    
+    console.log('\n🎉 WORKFLOW PHASE 11 TERMINÉ AVEC SUCCÈS !')
+    
+  } catch (error) {
+    console.error('❌ Erreur workflow Phase 11:', error instanceof Error ? error.message : error)
+    throw error
+  }
 }
 
-function updateArticleInArray(articles: Article[], updatedArticle: Article): Article[] {
-  return articles.map(article => 
-    article.id === updatedArticle.id ? updatedArticle : article
-  )
+// ==================== TESTS VALIDATION ====================
+
+async function runValidationTests(): Promise<void> {
+  console.log('\n🧪 Tests de validation finale...')
+  
+  try {
+    // Test 1: Validation articles
+    const articleData = await readJSONWithLock(ARTICLES_PATH, { timeout: 5000 })
+    validateArticleData(articleData.articles || articleData)
+    console.log('✅ Test articles : Validation OK')
+    
+    // Test 2: Validation connexions
+    const connectionData = await readJSONWithLock(CONNECTIONS_PATH, { timeout: 5000 })
+    validateConnectionData(connectionData.connections || [])
+    console.log('✅ Test connexions : Validation OK')
+    
+    // Test 3: Vérification embeddings
+    const embeddingsData = await readJSONWithLock(EMBEDDINGS_PATH, { timeout: 5000 })
+    const embeddings = embeddingsData.embeddings || []
+    console.log(`✅ Test embeddings : ${embeddings.length} vecteurs générés`)
+    
+    // Test 4: Cohérence données
+    const articles = articleData.articles || articleData
+    const connections = connectionData.connections || []
+    
+    const articleIds = new Set(articles.map((a: any) => a.id))
+    const invalidConnections = connections.filter((c: any) => 
+      !articleIds.has(c.source_id) || !articleIds.has(c.target_id)
+    )
+    
+    if (invalidConnections.length > 0) {
+      console.warn(`⚠️ ${invalidConnections.length} connexions avec IDs invalides`)
+    } else {
+      console.log('✅ Test cohérence : Tous les IDs sont valides')
+    }
+    
+  } catch (error) {
+    console.error('❌ Erreur tests validation:', error instanceof Error ? error.message : error)
+    throw error
+  }
 }
 
 // ==================== FONCTION PRINCIPALE ====================
 
-export async function addArticleComplete(input: NewArticleInput): Promise<{
+async function addArticleComplete(input: NewArticleInput): Promise<{
   success: boolean
   action: 'created' | 'updated' | 'skipped'
   message: string
   article_id: string
-  connections_added: number
-  changes?: string[]
-  mapping_report?: any
 }> {
+  const startTime = Date.now()
   
   try {
-    console.log(`\n🚀 TRAITEMENT COMPLET: "${input.article.title}"`)
+    console.log('🚀 SCRIPT AJOUT ARTICLE PHASE 11 - WORKFLOW COMPLET')
     console.log('='.repeat(60))
     
-    // 1. Charger les données existantes
-    const [articleData, connectionData] = await Promise.all([
-      loadArticles(),
-      loadConnections()
-    ])
+    // PHASE 1: Validation entrée
+    console.log('🔍 Validation données entrée...')
+    const validatedInput = validateArticleInput(input)
+    console.log('✅ Données entrée valides')
     
-    console.log(`📊 Base actuelle: ${articleData.articles.length} articles, ${connectionData.connections.length} connexions`)
+    // PHASE 2: Backup sécurisé
+    await createBackup()
     
-    // 2. Résoudre les connexions avec Smart Mapping
-    const fakeNewArticles = [{ article: input.article, suggested_connections: input.suggested_connections }]
-    const { resolvedConnections, mappingReport } = await resolveSmartConnections(
-      input.suggested_connections,
-      articleData.articles,
-      fakeNewArticles
-    )
+    // PHASE 3: Import sécurisé avec deduplication
+    const importResult = await importArticleSafely(validatedInput)
     
-    console.log(`🔗 Connexions résolues: ${resolvedConnections.length}/${input.suggested_connections.length}`)
-    
-    // 3. Processus de déduplication et fusion
-    const deduplicationResult = await processArticleWithDeduplication(
-      input.article,
-      resolvedConnections,
-      articleData.articles,
-      connectionData.connections
-    )
-    
-    console.log(`📋 Action recommandée: ${deduplicationResult.action}`)
-    console.log(`📝 Raison: ${deduplicationResult.reasoning}`)
-    
-    // 4. Traitement selon le résultat
-    let finalArticles = articleData.articles
-    let finalConnections = connectionData.connections
-    let finalArticleId = deduplicationResult.articleId
-    
-    if (deduplicationResult.action === 'skipped') {
-      // Aucune action nécessaire
-      console.log(`⭕ Article ignoré - aucune mise à jour nécessaire`)
-      
+    if (importResult.action === 'skipped') {
+      console.log('⚠️ Article ignoré - aucune action nécessaire')
       return {
         success: true,
         action: 'skipped',
-        message: 'Article déjà présent et à jour',
-        article_id: finalArticleId,
-        connections_added: 0,
-        mapping_report: mappingReport
-      }
-      
-    } else if (deduplicationResult.action === 'updated') {
-      // Mise à jour d'un article existant
-      console.log(`🔄 Mise à jour de l'article ${finalArticleId}`)
-      console.log(`📝 Changements: ${deduplicationResult.changes.join(', ')}`)
-      
-      // Mettre à jour l'article dans le tableau
-      finalArticles = updateArticleInArray(finalArticles, deduplicationResult.article)
-      
-      // Ajouter les nouvelles connexions
-      const newConnections = convertToConnections(finalArticleId, deduplicationResult.connectionsToAdd)
-      finalConnections = [...connectionData.connections, ...newConnections]
-      
-    } else {
-      // Création d'un nouvel article
-      console.log(`✨ Création d'un nouvel article`)
-      
-      // Générer un nouvel ID
-      const newId = generateNextId(articleData.articles)
-      finalArticleId = newId
-      
-      const newArticleWithId = {
-        ...deduplicationResult.article,
-        id: newId,
-        centrality_score: 0
-      }
-      
-      console.log(`🆔 ID assigné: ${newId}`)
-      
-      // Ajouter l'article
-      finalArticles = [...articleData.articles, newArticleWithId]
-      
-      // Ajouter les connexions
-      const newConnections = convertToConnections(newId, deduplicationResult.connectionsToAdd)
-      finalConnections = [...connectionData.connections, ...newConnections]
-    }
-    
-    // 5. Recalculer la centralité
-    console.log(`🧮 Recalcul des scores de centralité...`)
-    const articlesWithCentrality = updateCentralityScores(finalArticles, finalConnections)
-    
-    // 6. Reconstruire l'index
-    const updatedConnectionIndex = buildConnectionIndex(finalConnections)
-    
-    // 7. Sauvegarder
-    const newArticleData: ArticleData = {
-      articles: articlesWithCentrality,
-      last_updated: new Date().toISOString(),
-      total_articles: articlesWithCentrality.length
-    }
-    
-    const newConnectionData: ConnectionData = {
-      connections: finalConnections,
-      generated_at: new Date().toISOString(),
-      total_connections: finalConnections.length,
-      connection_index: updatedConnectionIndex,
-      last_processed: {
-        ...connectionData.last_processed,
-        [finalArticleId]: new Date().toISOString()
+        message: importResult.message,
+        article_id: importResult.articleId
       }
     }
     
-    await Promise.all([
-      saveArticles(newArticleData),
-      saveConnections(newConnectionData)
-    ])
+    // PHASE 4: Workflow Phase 11 complet (seulement si article ajouté/modifié)
+    await runPhase11Workflow()
     
-    const connectionsAdded = deduplicationResult.connectionsToAdd.length
+    // PHASE 5: Tests de validation
+    await runValidationTests()
     
-    console.log(`\n✅ TRAITEMENT TERMINÉ`)
-    console.log(`📊 Articles: ${articleData.articles.length} → ${newArticleData.total_articles}`)
-    console.log(`📊 Connexions: ${connectionData.connections.length} → ${newConnectionData.total_connections}`)
-    console.log(`🔗 Connexions ajoutées: ${connectionsAdded}`)
+    const duration = Math.round((Date.now() - startTime) / 1000)
+    console.log(`\n🎉 AJOUT ARTICLE TERMINÉ AVEC SUCCÈS en ${duration}s`)
+    console.log(`🆔 Article ${importResult.action}: ${importResult.articleId}`)
+    console.log('💡 Les connexions intelligentes ont été générées automatiquement')
     
     return {
       success: true,
-      action: deduplicationResult.action,
-      message: `Article ${deduplicationResult.action === 'created' ? 'créé' : 'mis à jour'} avec succès`,
-      article_id: finalArticleId,
-      connections_added: connectionsAdded,
-      changes: deduplicationResult.changes,
-      mapping_report: mappingReport
+      action: importResult.action,
+      message: importResult.message,
+      article_id: importResult.articleId
     }
     
   } catch (error) {
-    console.error('❌ Erreur lors du traitement:', error)
+    console.error('❌ ERREUR CRITIQUE:', error instanceof Error ? error.message : error)
+    console.error('🔄 Restaurez depuis les backups si nécessaire')
     return {
       success: false,
       action: 'skipped',
-      message: `Erreur interne: ${error instanceof Error ? error.message : 'Erreur inconnue'}`,
-      article_id: '',
-      connections_added: 0
+      message: `Erreur: ${error instanceof Error ? error.message : 'Erreur inconnue'}`,
+      article_id: ''
     }
   }
 }
 
 // ==================== CLI ====================
 
-async function main() {
+async function main(): Promise<void> {
   const args = process.argv.slice(2)
-  const inputFlag = args.findIndex(arg => arg === '--input')
+  const inputIndex = args.findIndex(arg => arg === '--input')
   
-  if (inputFlag === -1 || !args[inputFlag + 1]) {
-    console.error(`
-❌ Usage: npm run add-complete -- --input <fichier>
-
-Ce script gère automatiquement :
-✅ Détection et évitement des doublons
-✅ Mise à jour des métadonnées si nécessaire  
-✅ Résolution intelligente des connexions invalides
-✅ Gestion propre des IDs séquentiels
-
-Exemple: npm run add-complete -- --input article.json
-`)
+  if (inputIndex === -1 || !args[inputIndex + 1]) {
+    console.error('❌ Usage: npm run add-complete -- --input <fichier>')
+    console.error('Exemple: npm run add-complete -- --input article.json')
     process.exit(1)
   }
   
-  const inputPath = args[inputFlag + 1]
+  const inputFile = args[inputIndex + 1]
+  console.log(`📄 Fichier d'entrée : ${inputFile}`)
+  
+  // Vérification existence fichier
+  try {
+    await fs.access(inputFile)
+  } catch {
+    console.error(`❌ Fichier introuvable : ${inputFile}`)
+    process.exit(1)
+  }
   
   try {
-    const inputData = JSON.parse(await fs.readFile(inputPath, 'utf-8')) as NewArticleInput
+    const inputData = JSON.parse(await fs.readFile(inputFile, 'utf-8')) as NewArticleInput
     const result = await addArticleComplete(inputData)
     
     if (result.success) {
       console.log(`\n🎉 ${result.message}`)
       console.log(`🆔 ID: ${result.article_id}`)
       console.log(`📊 Action: ${result.action}`)
-      console.log(`🔗 Connexions: +${result.connections_added}`)
-      
-      if (result.changes && result.changes.length > 0) {
-        console.log(`📝 Changements: ${result.changes.join(', ')}`)
-      }
-      
-      if (result.mapping_report) {
-        console.log(`🎯 Mapping: ${result.mapping_report.successfully_mapped}/${result.mapping_report.total_attempted}`)
-      }
-      
       process.exit(0)
     } else {
       console.error(`❌ ${result.message}`)
@@ -403,6 +442,8 @@ Exemple: npm run add-complete -- --input article.json
   }
 }
 
-if (require.main === module) {
+// ES Module check - Fixed for Windows
+const currentFile = process.argv[1]
+if (currentFile && (currentFile.includes('addArticleComplete') || currentFile.endsWith('addArticleComplete.ts'))) {
   main()
 }

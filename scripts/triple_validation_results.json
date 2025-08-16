@@ -1,0 +1,75 @@
+{
+  "hard_connections_coverage": 1,
+  "manual_connections_precision": 1,
+  "semantic_connections_quality": 0.6333191948248087,
+  "type_distribution": {
+    "builds_on": {
+      "total_count": 80,
+      "auto_detected_ratio": 0.0625,
+      "average_strength": 0.8381166912627341,
+      "source_breakdown": {
+        "hard_connection": 38,
+        "manual_validation": 37,
+        "semantic_auto": 5
+      }
+    },
+    "contradicts": {
+      "total_count": 6,
+      "auto_detected_ratio": 0.8333333333333334,
+      "average_strength": 0.7346250547898713,
+      "source_breakdown": {
+        "hard_connection": 0,
+        "manual_validation": 1,
+        "semantic_auto": 5
+      }
+    },
+    "implements": {
+      "total_count": 27,
+      "auto_detected_ratio": 0.1111111111111111,
+      "average_strength": 0.7375933353581464,
+      "source_breakdown": {
+        "hard_connection": 0,
+        "manual_validation": 24,
+        "semantic_auto": 3
+      }
+    },
+    "questions": {
+      "total_count": 50,
+      "auto_detected_ratio": 0.54,
+      "average_strength": 0.6743747614992281,
+      "source_breakdown": {
+        "hard_connection": 0,
+        "manual_validation": 23,
+        "semantic_auto": 27
+      }
+    },
+    "similar_to": {
+      "total_count": 45,
+      "auto_detected_ratio": 0.6888888888888889,
+      "average_strength": 0.6803293127371568,
+      "source_breakdown": {
+        "hard_connection": 0,
+        "manual_validation": 14,
+        "semantic_auto": 31
+      }
+    }
+  },
+  "domain_bridge_coverage": 0.20535714285714285,
+  "controversy_connection_rate": 1,
+  "article_coverage": 1,
+  "quality_metrics": {
+    "average_connections_per_article": 7.428571428571429,
+    "strength_distribution": {
+      "high": 145,
+      "medium": 63,
+      "low": 0
+    },
+    "diversity_score": 0.4075409159509923
+  },
+  "validation_samples": {
+    "total_tested": 20,
+    "precision_estimate": 1,
+    "recall_estimate": 0.7,
+    "f1_score": 0.8235294117647058
+  }
+}

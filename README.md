@@ -1,4 +1,4 @@
-# Blog IA Humaniste - Navigation Graphique
+# Blog IA Humaniste - Navigation Graphique Interactive
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.2+-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.2+-61dafb.svg)](https://reactjs.org/)
@@ -10,7 +10,8 @@
 ## 🎯 Objectif
 
 Créer un blog de veille IA avec navigation exploratoire révélant les ponts interdisciplinaires entre dimension technique et réflexion humaniste.
-exemple : https://blog-ia.lecaveaudelopus.com/
+
+**Demo :** [blog-ia.lecaveaudelopus.com](https://blog-ia.lecaveaudelopus.com/)
 
 ## ✨ Fonctionnalités
 
@@ -19,15 +20,13 @@ exemple : https://blog-ia.lecaveaudelopus.com/
 - 🔍 **Recherche multi-critères** temps réel
 - 📄 **Pagination dynamique** optimisée pour grandes collections
 - 🎨 **Interface responsive** avec animations fluides
-- 🤖 **Détection automatique** des connexions sémantiques
+- 🤖 **Connexions intelligentes** détection automatique des relations sémantiques
 - 📊 **Légende interactive** des types de relations
 - ⚡ **Performance optimisée** avec virtualisation automatique
-- 🧠 **Smart ID Mapping** - Résolution automatique des IDs invalides
-- 🔄 **Smart Deduplication** - Gestion intelligente des doublons
-- 📊 **450+ connexions intelligentes** avec 5 types de relations diversifiés
-- ↔️ **Filtrage bi-directionnel** - Synchronisation parfaite filtres ↔ graphique
+- 🧠 **Architecture triple** - Exploitation maximale des validations humaines
+- 🔄 **Filtrage bi-directionnel** - Synchronisation parfaite filtres ↔ graphique
 - 🎯 **Anti-flicker tooltips** - Interactions fluides avec debouncing optimisé
-- 📐 **Espacement adaptatif** - Lisibilité automatique selon nombre d'articles (5-40)
+- 📐 **Espacement adaptatif** - Lisibilité automatique selon nombre d'articles
 
 ## 🚀 Démarrage Rapide
 
@@ -61,14 +60,17 @@ ai-humanist-blog/
 │   ├── 📁 types/                  # Types TypeScript
 │   ├── 📁 styles/                 # Styles globaux et animations
 │   └── 📁 config/                 # Configuration
-├── 📁 scripts/                    # Scripts Smart Processing + maintenance
-│   ├── 📄 addArticleComplete.ts       # Ajout intelligent avec Smart Processing
-│   ├── 📄 smartIdMapper.ts            # Résolution IDs invalides  
-│   ├── 📄 smartDeduplication.ts       # Gestion doublons
-│   └── 📄 batchImportArticles.ts      # Import batch production
+├── 📁 scripts/                    # Scripts intelligents connexions + maintenance
+│   ├── 📄 analyzeGroundTruth.ts        # Analyse patterns validations manuelles
+│   ├── 📄 enhanceGroundTruth.ts        # Architecture triple connexions
+│   ├── 📄 generateEmbeddings.ts        # Embeddings Transformers.js  
+│   ├── 📄 writeFileAtomic.ts           # Écriture atomique sécurisée
+│   ├── 📄 zodSchemas.ts                # Validation runtime avec Zod
+│   ├── 📄 addArticleComplete.ts        # Ajout intelligent avec processing
+│   └── 📄 batchImportArticles.ts       # Import batch production
 ├── 📁 public/                     # Assets statiques
 ├── 📁 docs/                       # Documentation projet
-└── 📁 tests/                      # Tests (à implémenter)
+└── 📁 input_data/                 # Données validation manuelle
 ```
 
 ## 🎨 Technologies
@@ -76,7 +78,8 @@ ai-humanist-blog/
 - **Frontend**: React 18 + TypeScript + Tailwind CSS
 - **Visualisation**: D3.js force simulation
 - **Build**: Vite + PostCSS  
-- **Données**: JSON statique avec Smart Processing (ID Mapping + Deduplication)
+- **Données**: JSON statique avec validation Zod + écriture atomique
+- **IA**: Embeddings Transformers.js (all-MiniLM-L6-v2) + connexions sémantiques
 - **Import**: Scripts intelligents pour intégration n8n et ajout batch
 
 ## 📊 Types de Connexions
@@ -95,31 +98,36 @@ ai-humanist-blog/
 | `npm run build` | Build production |
 | `npm run preview` | Aperçu build |
 | `npm run lint` | Vérification code |
-| `npm run add-complete -- --input article.json` | Ajout intelligent avec Smart Processing |
-| `npm run batch-import -- --input articles.md` | Import batch depuis fichier n8n |
-| `npx tsx scripts/testSmartMapper.ts` | Test Smart ID Mapping |
-| `npx tsx scripts/testDeduplication.ts` | Test Smart Deduplication |
+| `npm run analyze-ground-truth` | Analyse patterns validations |
+| `npm run enhance-ground-truth` | Architecture triple connexions |
+| `npm run generate-embeddings` | Génération embeddings sémantiques |
+| `npm run validate-triple` | Validation qualité empirique |
 
 ## 📖 Documentation
 
 - [📋 Vue d'Ensemble](./docs/README.md) - Documentation développeur complète
-- [🔧 Spécifications Techniques](./docs/TECHNICAL.md) - Architecture système détaillée
+- [🔧 Spécifications Techniques](./docs/technical.md) - Architecture système détaillée
 - [🚀 Guide de Déploiement](./docs/DEPLOYMENT.md) - Configuration production  
 - [🎨 Templates JSON](./docs/TEMPLATES.md) - Formats pour intégration n8n
-- [📈 Historique Évolutions](./docs/PROGRESS.md) - Journal complet des phases
+- [📈 Historique Évolutions](./docs/progress.md) - Journal complet des phases
 
 ## 🚀 Status Projet
 
-✅ **PRODUCTION-READY** avec **Phase 10 - Filtrage Bi-directionnel Optimisé**
+✅ **PRODUCTION-READY** avec **Phase 1 - Architecture Triple Ground Truth**
 
-- **40 articles** avec données validées
-- **450+ connexions intelligentes** générées automatiquement
-- **Smart ID Mapping** - Résolution automatique des IDs invalides (100% réussite)
-- **Smart Deduplication** - Gestion des doublons avec fusion de métadonnées
-- **Interface graphique optimisée** - Navigation progressive D3.js
-- **Intégration n8n ready** - Workflow automatisé opérationnel
-- **Filtrage bi-directionnel parfait** - Synchronisation filtres ↔ graphique jusqu'à 40 articles
-- **Expérience utilisateur professionnelle** - Anti-flicker tooltips, espacement adaptatif
+### 📊 Accomplissements Phase 1
+- **56 articles** avec données fiabilisées et validées
+- **208 connexions intelligentes** générées via architecture triple
+- **Score qualité 82/100** - Production Ready validé empiriquement
+- **100% exploitation** des validations manuelles disponibles
+- **Validation runtime stricte** - Schémas Zod pour toutes les données
+- **Écriture atomique sécurisée** - Protection contre corruption parallèle
+- **Embeddings locaux** - Similarité sémantique avec all-MiniLM-L6-v2
+- **Interface graphique optimisée** - Navigation progressive D3.js préservée
+- **Scripts consolidés** - Architecture triple + validation automatique
+
+### 🎯 Prochaine étape : Phase 2
+Interface utilisateur recherche vectorielle exploitant les 208 connexions avec dashboard qualité et API complète.
 
 ---
 

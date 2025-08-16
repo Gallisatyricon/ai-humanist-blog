@@ -42,9 +42,24 @@ export const GraphView: React.FC<GraphViewProps> = ({
     const nodeGroup = svg.append('g').attr('class', 'nodes')
     const labelGroup = svg.append('g').attr('class', 'labels')
 
-    // Initialisation avec distribution plus naturelle et aléatoire
+    // Initialisation avec positions pré-calculées ou distribution aléatoire
+    const precomputedLayout = (window as any).precomputedLayout
+    
     nodes.forEach((d, i) => {
-      if (d.x === undefined || d.y === undefined || isNaN(d.x) || isNaN(d.y)) {
+      // Vérifier si des positions pré-calculées sont disponibles
+      const precomputedNode = precomputedLayout?.nodes.find((n: any) => n.id === d.id)
+      
+      if (precomputedNode && typeof precomputedNode.x === 'number' && typeof precomputedNode.y === 'number') {
+        // Utiliser les positions pré-calculées avec adaptation à la taille d'écran
+        const scaleX = (width - 220) / (precomputedLayout.bounds?.width || 800)
+        const scaleY = height / (precomputedLayout.bounds?.height || 600)
+        const scale = Math.min(scaleX, scaleY, 1) // Ne pas agrandir
+        
+        d.x = (precomputedNode.x * scale) + 110 // Décalage pour sidebar
+        d.y = precomputedNode.y * scale
+        
+        console.log(`⚡ Position pré-calculée utilisée pour ${d.id}: (${d.x.toFixed(0)}, ${d.y.toFixed(0)})`)
+      } else if (d.x === undefined || d.y === undefined || isNaN(d.x) || isNaN(d.y)) {
         // Position initiale avec randomisation pour éviter l'alignement
         const angle = (i / nodes.length) * 2 * Math.PI + (Math.random() - 0.5) * 0.8 // Ajout de bruit
         const radius = 60 + Math.random() * 40 // Rayon variable 60-100px
@@ -80,26 +95,48 @@ export const GraphView: React.FC<GraphViewProps> = ({
       (nodeCount > 20 ? 50 : nodeCount > 10 ? 45 : 40) :
       (nodeCount > 30 ? 80 : nodeCount > 20 ? 70 : nodeCount > 10 ? 60 : 50)
     
-    // Simulation D3 avec forces plus organiques
-    const simulation: Simulation<GraphNode, GraphLink> = forceSimulation(nodes)
-      .force('link', forceLink<GraphNode, GraphLink>(links)
-        .id(d => d.id)
-        .strength(d => d.strength * linkStrengthMultiplier)
-        .distance(d => baseDistance + (80 / (d.strength + 0.1)) + Math.random() * 20) // Distance variable
-      )
-      .force('charge', forceManyBody().strength(repulsionStrength))
-      .force('center', forceCenter((width - 220 + 80) / 2, height / 2)) // Centre dans zone utile
-      .force('collision', forceManyBody().strength(-120).distanceMax(collisionDistance))
-      // Ajout d'une force de bruit pour casser les alignements
-      .force('noise', () => {
-        nodes.forEach(d => {
-          if (d.x && d.y) {
-            d.x += (Math.random() - 0.5) * 0.5
-            d.y += (Math.random() - 0.5) * 0.5
-          }
+    // Simulation D3 réduite si positions pré-calculées disponibles
+    let simulation: Simulation<GraphNode, GraphLink>
+    
+    if (precomputedLayout && precomputedLayout.nodes.length > 0) {
+      // Layout pré-calculé : simulation minimale pour ajustements fins seulement
+      console.log('⚡ Utilisation simulation réduite avec positions pré-calculées')
+      
+      simulation = forceSimulation(nodes)
+        .force('link', forceLink<GraphNode, GraphLink>(links)
+          .id(d => d.id)
+          .strength(() => 0.05) // Force très réduite
+          .distance(() => baseDistance)
+        )
+        .force('charge', forceManyBody().strength(repulsionStrength * 0.1)) // Répulsion minimale
+        .force('collision', forceManyBody().strength(-50).distanceMax(collisionDistance * 0.5))
+        .alpha(0.1) // Alpha très faible pour arrêt rapide
+        .alphaDecay(0.1) // Décroissance rapide
+    } else {
+      // Pas de layout pré-calculé : simulation complète
+      console.log('🧮 Simulation D3 complète')
+      
+      simulation = forceSimulation(nodes)
+        .force('link', forceLink<GraphNode, GraphLink>(links)
+          .id(d => d.id)
+          .strength(d => d.strength * linkStrengthMultiplier)
+          .distance(d => baseDistance + (80 / (d.strength + 0.1)) + Math.random() * 20) // Distance variable
+        )
+        .force('charge', forceManyBody().strength(repulsionStrength))
+        .force('center', forceCenter((width - 220 + 80) / 2, height / 2)) // Centre dans zone utile
+        .force('collision', forceManyBody().strength(-120).distanceMax(collisionDistance))
+        // Ajout d'une force de bruit pour casser les alignements
+        .force('noise', () => {
+          nodes.forEach(d => {
+            if (d.x && d.y) {
+              d.x += (Math.random() - 0.5) * 0.5
+              d.y += (Math.random() - 0.5) * 0.5
+            }
+          })
         })
-      })
-      .force('boundary', () => {
+    }
+    
+    simulation.force('boundary', () => {
         // Marges adaptatives mobile/desktop
         const leftMargin = isMobile ? 30 : 80
         const rightMargin = isMobile ? 30 : 220 // Pas de légende sur mobile

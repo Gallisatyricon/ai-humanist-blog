@@ -1,0 +1,157 @@
+{
+  "domain_thresholds": {
+    "technique-technique": 0.45,
+    "ethique-ethique": 0.516,
+    "recherche-recherche": 0.55,
+    "philosophie-philosophie": 0.502,
+    "usage_professionnel-usage_professionnel": 0.45,
+    "frugalite-frugalite": 0.502,
+    "technique-ethique": 0.31999999999999995,
+    "ethique-technique": 0.43699999999999994,
+    "technique-usage_professionnel": 0.35,
+    "usage_professionnel-technique": 0.35,
+    "recherche-technique": 0.488,
+    "technique-recherche": 0.35,
+    "ethique-philosophie": 0.3,
+    "philosophie-ethique": 0.3,
+    "ethique-usage_professionnel": 0.28,
+    "usage_professionnel-ethique": 0.28,
+    "frugalite-technique": 0.32999999999999996,
+    "technique-frugalite": 0.32999999999999996,
+    "frugalite-ethique": 0.3,
+    "ethique-frugalite": 0.3
+  },
+  "strength_adjustments": {
+    "builds_on": {
+      "base_multiplier": 1,
+      "min_threshold": 0.632516129032258,
+      "special_boost": 0.1,
+      "boost_condition": "citation_detected"
+    },
+    "contradicts": {
+      "base_multiplier": 0.9,
+      "min_threshold": 0.63,
+      "special_boost": 0.15,
+      "boost_condition": "controversy_gap"
+    },
+    "implements": {
+      "base_multiplier": 1.1,
+      "min_threshold": 0.606,
+      "special_boost": 0.1,
+      "boost_condition": "domain_bridge"
+    },
+    "questions": {
+      "base_multiplier": 0.8,
+      "min_threshold": 0.5973913043478261,
+      "special_boost": 0.1,
+      "boost_condition": "complexity_gap"
+    },
+    "similar_to": {
+      "base_multiplier": 1,
+      "min_threshold": 0.5876000000000001,
+      "special_boost": -0.05,
+      "boost_condition": "same_domain_penalty"
+    }
+  },
+  "pattern_detectors": {
+    "conflictuality_indicators": [
+      "tension",
+      "fragilise",
+      "limite",
+      "conflictualité",
+      "contredit",
+      "opposition",
+      "challenge",
+      "remets en question",
+      "problématise"
+    ],
+    "citation_indicators": [
+      "s'appuie",
+      "base sur",
+      "référence",
+      "cite",
+      "fondamental",
+      "reprend",
+      "utilise",
+      "applique",
+      "theoretical foundation",
+      "dans",
+      "fournit",
+      "pour",
+      "l'analyse",
+      "principes"
+    ],
+    "bridge_indicators": [
+      "applique",
+      "concrétise",
+      "opérationnalise",
+      "implémente",
+      "traduit",
+      "technique",
+      "théorique",
+      "pratique",
+      "mise en œuvre",
+      "dans",
+      "pour",
+      "fournit",
+      "concrètement",
+      "illustre"
+    ],
+    "questioning_indicators": [
+      "questionne",
+      "interroge",
+      "approfondit",
+      "explore",
+      "examine",
+      "soulève",
+      "discute",
+      "analyse",
+      "considère",
+      "l'approche",
+      "questionne",
+      "l'analyse",
+      "l'optimisme",
+      "limites"
+    ],
+    "similarity_indicators": [
+      "similaire",
+      "proche",
+      "même notion",
+      "comparable",
+      "analogue",
+      "ressemble",
+      "équivalent",
+      "parallèle",
+      "connexe",
+      "partage",
+      "l'approche",
+      "mais",
+      "plutôt",
+      "pour"
+    ]
+  },
+  "calibration_config": {
+    "target_precision": 0.72,
+    "target_recall": 0.65,
+    "max_connections_per_article": 4,
+    "diversity_balance_weights": {
+      "builds_on": 0.31313131313131315,
+      "similar_to": 0.20202020202020202,
+      "implements": 0.24242424242424243,
+      "questions": 0.23232323232323232,
+      "contradicts": 0.010101010101010102
+    }
+  },
+  "validation_metrics": {
+    "tested_pairs": 20,
+    "precision_by_type": {
+      "builds_on": 0.8418709677419356,
+      "contradicts": 0.79,
+      "implements": 0.8485,
+      "questions": 0.8008695652173913,
+      "similar_to": 0.8531
+    },
+    "optimal_threshold_found": false,
+    "ground_truth_coverage": 0.5
+  }
+}

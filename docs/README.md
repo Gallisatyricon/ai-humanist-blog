@@ -1,164 +1,266 @@
-# AI Humanist Blog - Documentation
+# AI Humanist Blog - Documentation Développeur
 
 ## 🎯 Vision du Projet
 
-Blog de veille IA révélant les interconnexions entre technique et éthique via une interface graphique interactive. Navigation exploratoire permettant de découvrir les ponts interdisciplinaires.
+Blog de veille IA révélant les **interconnexions sémantiques** entre technique et éthique via navigation graphique interactive avec **connexions intelligentes basées sur embeddings locaux**. Navigation exploratoire découvrant automatiquement les ponts interdisciplinaires et oppositions subtiles.
 
-## 🏗️ Stack Technique
+## 🏗️ Stack Technique Phase 11
 
 - **Frontend :** React 18 + TypeScript + Tailwind CSS
-- **Visualisation :** D3.js force simulation
+- **Visualisation :** D3.js force simulation optimisée
 - **Build :** Vite + PostCSS  
-- **Data :** JSON statique avec Smart ID Mapping
-- **Scripts :** Node.js + tsx
+- **Data :** JSON statique + validation Zod + écriture atomique
+- **IA/ML :** Transformers.js (all-MiniLM-L6-v2) pour embeddings 384-D
+- **Scripts :** Node.js + tsx avec fiabilisation complète
 
-## 📊 État Actuel
+## 📊 État Actuel Phase 11 P0+P1
 
-✅ **Production Ready** - 40 articles, 450 connexions intelligentes  
-✅ **Smart Mapping** - Résolution automatique des IDs invalides  
-✅ **Smart Deduplication** - Gestion des doublons avec fusion de métadonnées  
-✅ **Navigation hybride** - Tags + Graphique interactif  
+✅ **Production Ready Phase 11** - 56 articles, 208 connexions intelligentes  
+✅ **Fiabilisation P0** - Écriture atomique + validation Zod + tests intégrés  
+✅ **Connexions Intelligentes P1** - Embeddings sémantiques + triple méthodologie  
+✅ **Distribution équilibrée** - 56.7% similar_to, 23.6% contradicts, 19.2% builds_on  
+✅ **Détection automatique** - XAI↔transparency, oppositions performance↔éthique  
 
-## 🚀 Commandes Essentielles
+## 🚀 Commandes Essentielles Phase 11
 
 ```bash
 # Développement
-npm run dev                    # http://localhost:5173
+npm run dev                           # http://localhost:5173
 
-# Scripts d'ajout d'articles
-npm run add-complete -- --input article.json    # Ajout avec Smart Mapping + Deduplication
-npm run batch-import -- --input articles.md     # Import en lot depuis markdown
+# Workflow Phase 11 - Connexions Intelligentes
+npm run generate-embeddings           # Génération vecteurs sémantiques (384-D)
+npm run enrich-connections            # Triple enrichissement (LLM + thématique + sémantique)  
+npm run fix-subtlety                  # Affinement subtilité relationnelle
+npm run analyze-bias                  # Analyse biais méthodologiques
 
-# Production
-npm run build                  # Build optimisé
-npm run lint                   # Vérification code
+# Ajout d'articles (workflow Phase 11)
+# 1. Ajouter manuellement articles dans public/data/articles.json
+# 2. Puis lancer l'enrichissement automatique :
+
+# Qualité code
+npm run lint                          # Vérification (0 erreurs)
+npm run build                         # Compilation production
 ```
 
-## 📁 Structure Projet
+## 📁 Architecture Phase 11
 
 ```
 ai-humanist-blog/
-├── src/
-│   ├── components/           # Composants React
-│   │   ├── navigation/       # TagCloud, GraphView, SearchBar
-│   │   ├── articles/         # ArticleCard, ArticleDetail
-│   │   └── layout/          # MainLayout
-│   ├── hooks/               # Logique métier (useTagNavigation, useGraphData)
-│   ├── utils/               # Algorithmes (graphAlgorithms, Smart Mapping)
-│   └── config/              # Constantes et configuration
-├── scripts/                 # Scripts d'import et maintenance
-│   ├── addArticleComplete.ts      # Ajout intelligent complet
-│   ├── smartIdMapper.ts           # Résolution IDs invalides
-│   ├── smartDeduplication.ts     # Gestion doublons
-│   └── batchImportArticles.ts    # Import batch production
-├── public/data/             # Données JSON
-│   ├── articles.json        # 40 articles validés
-│   └── connections.json     # 450 connexions
-└── docs/                    # Documentation
-    ├── TECHNICAL.md         # Architecture détaillée
-    ├── TEMPLATES.md         # Formats JSON pour n8n
-    ├── DEPLOYMENT.md        # Guide déploiement
-    └── PROGRESS.md          # Historique évolutions
+├── 🎨 src/                           # Interface utilisateur (inchangée)
+│   ├── components/                   # React composants  
+│   ├── hooks/                        # Logique métier
+│   ├── utils/                        # Algorithmes
+│   └── config/                       # Configuration
+├── 🤖 scripts/                       # NOUVEAU - Connexions intelligentes
+│   ├── enrichConnections.ts          # 🆕 Triple enrichissement consolidé
+│   ├── generateEmbeddings.ts         # 🆕 Embeddings Transformers.js
+│   ├── fixRelationSubtlety.ts        # 🆕 Affinement subtilité
+│   ├── analyzeConnectionBias.ts      # 🆕 Analyse biais
+│   ├── writeFileAtomic.ts            # 🆕 Écriture sécurisée 
+│   ├── zodSchemas.ts                 # 🆕 Validation runtime
+│   └── old_scripts/                  # 🗃️ Archive (15 scripts Phase 10)
+├── 💾 public/data/
+│   ├── articles.json                 # 56 articles fiabilisés
+│   ├── connections.json              # 🆕 208 connexions intelligentes  
+│   └── embeddings.json               # 🆕 Vecteurs sémantiques (384-D)
+└── 📚 docs/
+    ├── TECHNICAL.md                  # 🆕 Architecture technique Phase 11
+    ├── PROGRESS.md                   # 🆕 Historique complet projet
+    └── TODO_Phase11.md               # Plan Phase 11 (référence)
 ```
 
-## 🔗 Système de Connexions Intelligent
+## 🧠 Fonctionnalités Phase 11
 
-### Smart ID Mapping
-Résout automatiquement les `target_id` invalides des connexions LLM n8n :
-- **URL/titre exact** (confiance 100%)
-- **Analyse sémantique** par concepts/outils (confiance 60-80%)
-- **Domaine + temporalité** (confiance 40-70%)
+### 🔗 Connexions Intelligentes (P1)
+- **Triple méthodologie :** LLM directes (38) + Ponts thématiques (3) + Sémantiques (167)
+- **Embeddings locaux :** all-MiniLM-L6-v2, 384 dimensions, multilingue
+- **Classification automatique :** 5 types relations avec subtilité contextuelle  
+- **Détection fine :** XAI↔transparency, oppositions performance↔éthique
+- **Performance :** 208 connexions en 37ms, embeddings en 3.6s
 
-### Smart Deduplication  
-Détecte et gère les articles en doublon :
-- **Évite la duplication** des articles identiques
-- **Fusionne les métadonnées** enrichies
-- **Met à jour les connexions** uniques seulement
+### 🛡️ Fiabilisation (P0)
+- **Écriture atomique :** Locks + fichiers temporaires (zéro corruption)
+- **Validation Zod :** Schémas stricts runtime sur tous datasets
+- **Gestion d'erreurs :** Try-catch généralisés avec fallbacks
+- **Tests intégrés :** Validation automatique dans tous scripts
+- **Scripts organisés :** 6 actifs, 15 archivés dans old_scripts/
 
-### Types de Connexions
-- `builds_on` (42.9%) - Ponts interdisciplinaires
-- `questions` (39.3%) - Questionnements critiques
-- `similar_to` (15.1%) - Approches similaires
-- `implements` (2.2%) - Implémentations
-- `contradicts` (0.4%) - Oppositions
+## 📊 Métriques de Qualité
 
-## 🔄 Workflow n8n
-
-### Format d'entrée attendu
+### 🚀 Performance
 ```json
 {
-  "article": { 
-    "id": "art_001", 
-    "title": "...", 
-    /* structure Article complète */ 
-  },
-  "suggested_connections": [
-    {
-      "target_id": "art_003",
-      "type": "builds_on", 
-      "strength": 0.75,
-      "reasoning": "Both discuss...",
-      "confidence": 0.85
-    }
-  ]
+  "generation_embeddings": "3.6s (56 articles)",
+  "enrichissement_connexions": "37ms (208 connexions)", 
+  "affinement_subtilite": "50ms (49 transformations)",
+  "validation_zod": "<10ms par dataset",
+  "ecriture_atomique": "<100ms avec locks",
+  "interface_chargement": "<300ms (préservé)",
+  "navigation_graphique": "temps réel (inchangé)"
 }
 ```
 
-### Traitement automatique
-1. **Smart ID Mapping** résout les `target_id` invalides
-2. **Smart Deduplication** détecte les doublons
-3. **Fusion intelligente** des métadonnées si nécessaire
-4. **Ajout/mise à jour** avec connexions uniques
+### 🎯 Distribution Connexions
+- **similar_to :** 118 (56.7%) - Similarités sémantiques
+- **contradicts :** 49 (23.6%) - Oppositions subtiles détectées
+- **builds_on :** 40 (19.2%) - Constructions/améliorations  
+- **questions :** 1 (0.5%) - Questionnements profonds
+- **implements :** 0 (0%) - Implémentations techniques
 
-## 🎨 Interface Utilisateur
+### 📈 Qualité Sémantique
+- ✅ **Représentativité :** XAI↔transparency, ML↔ethics détectées automatiquement
+- ✅ **Oppositions subtiles :** automation↔humain, performance↔éthique
+- ✅ **Équilibre méthodologique :** 80.3% sémantique + 19.7% LLM directes
+- ✅ **Diversité domaines :** 6 domaines, densité optimale (4-6 conn/article)
 
-### Navigation Progressive
-- **Vue d'ensemble** : 35 connexions les plus importantes
-- **Mode focus** : 8 connexions prioritaires par article sélectionné
-- **Navigation par tags** : 6 domaines + 17 spécialités
-- **Recherche intelligente** : Multi-critères avec scores de pertinence
+## 🔧 Guide Développeur
 
-### Visualisation D3.js
-- **Graphique interactif** avec force simulation
-- **5 types de connexions** colorées et typées
-- **Navigation exploratoire** révélant les ponts technique ↔ éthique
-- **Espacement optimisé** pour lisibilité maximale
-
-## 📈 Performance
-
-- **Chargement initial :** <300ms
-- **Génération connexions :** ~100ms (40 articles)  
-- **Navigation temps réel** : Instantanée
-- **Smart Mapping :** 100% réussite, confiance 76%
-- **Import batch :** ~2s pour 25 articles
-
-## 🧪 Tests de Validation
-
+### 1. Configuration Initiale
 ```bash
-# Test Smart Mapping
-npx tsx scripts/testSmartMapper.ts
-
-# Test Smart Deduplication  
-npx tsx scripts/testDeduplication.ts
-
-# Validation données
-npx tsx scripts/validateData.ts
+git clone <repo>
+cd ai-humanist-blog
+npm install
 ```
 
-## 📖 Documentation Complète
+### 2. Workflow Développement
+```bash
+# 1. Génération embeddings (si nouveaux articles)
+npm run generate-embeddings
 
-- **[TECHNICAL.md](TECHNICAL.md)** - Architecture système détaillée
-- **[TEMPLATES.md](TEMPLATES.md)** - Formats JSON pour intégrations
-- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Guide déploiement production
-- **[PROGRESS.md](progress.md)** - Journal complet des évolutions
+# 2. Enrichissement connexions intelligentes
+npm run enrich-connections  
 
-## 🎯 Prochaines Étapes
+# 3. Affinement subtilité (optionnel)
+npm run fix-subtlety
 
-1. **Intégration nouveaux articles** depuis fichier n8n
-2. **Nettoyage scripts de test** obsolètes
-3. **Optimisations finales** et tests utilisateur
-4. **Déploiement production** avec workflow automatisé
+# 4. Vérification qualité
+npm run analyze-bias
+npm run lint
 
----
+# 5. Test interface
+npm run dev
+```
 
-**🚀 Le système est production-ready avec Smart Mapping et Smart Deduplication opérationnels pour l'intégration n8n !**
+### 3. Ajout Nouveaux Articles (Phase 11)
+```bash
+# 1. Éditer manuellement public/data/articles.json
+#    (ajouter nouvel article à la fin du tableau)
+
+# 2. Régénérer embeddings et connexions
+npm run generate-embeddings           # Si nouveaux articles
+npm run enrich-connections            # Régénération connexions
+npm run fix-subtlety                  # Affinement optionnel
+```
+
+### 4. Validation et Tests
+```bash
+# Vérification lint (doit être 0 erreurs)
+npm run lint
+
+# Compilation production
+npm run build
+
+# Analyse biais connexions
+npm run analyze-bias
+```
+
+## 📋 Format Données
+
+### Article Standard
+```typescript
+interface Article {
+  id: string                           // art_056, art_057...
+  title: string                        // Titre descriptif
+  url: string                          // URL source
+  summary: string                      // Résumé 2-3 phrases
+  primary_domain: PrimaryDomain        // technique|ethique|usage_professionnel|recherche|philosophie|frugalite
+  secondary_domains: SecondaryDomain[] // nlp|computer_vision|bias_fairness|transparency...
+  concepts: Concept[]                  // Concepts avec types + controverse
+  tools_mentioned: Tool[]              // Outils/frameworks mentionnés
+  complexity_level: 'beginner'|'intermediate'|'advanced'
+  interest_level: number               // 1-5
+  // ... autres champs
+}
+```
+
+### Connexion Intelligente
+```typescript
+interface Connection {
+  source_id: string                    // art_056
+  target_id: string                    // art_023  
+  type: ConnectionType                 // builds_on|contradicts|implements|questions|similar_to
+  strength: number                     // 0.35-1.0
+  auto_detected: boolean               // true (sémantique) | false (LLM direct)
+  reasoning: string                    // Explication connexion
+}
+```
+
+## 🎛️ Configuration
+
+### Paramètres Navigation (`src/config/navigation.ts`)
+```typescript
+export const NAVIGATION_CONFIG = {
+  MAX_NODES_DISPLAYED: 40,             # Limite affichage graphique
+  MIN_CONNECTION_STRENGTH: 0.3,        # Seuil connexions (abaissé Phase 11)
+  MAX_FOCUS_CONNECTIONS: 15,           # Mode focus article
+  MAX_OVERVIEW_CONNECTIONS: 30,        # Vue d'ensemble
+  // ...
+}
+```
+
+### Seuils Embeddings (`scripts/enrichConnections.ts`)
+```typescript
+const SEMANTIC_THRESHOLD = 0.35        # Similarité cosinus minimum
+const MAX_SEMANTIC_CONNECTIONS = 4     # Par article sous-connecté
+```
+
+## 🧪 Tests et Validation
+
+### Validation Automatique
+- **Zod schemas :** 100% données validées avant écriture
+- **Écriture atomique :** Tests locks + corruption protection
+- **Embeddings :** 56/56 articles traités avec succès
+- **Connexions :** 208 générées, distribution cohérente
+- **Interface :** Navigation préservée, performance maintenue
+
+### Métriques Attendues
+- **Lint :** 0 erreurs, 0 warnings (excludes old_scripts/)
+- **Build :** Compilation sans erreur TypeScript
+- **Performance :** <300ms chargement initial
+- **Connexions :** Distribution équilibrée 50-60% similar_to
+- **Embeddings :** Génération <5s pour corpus complet
+
+## 🔄 Evolution et Maintenance
+
+### Phase 11 P2 - Prochaines Étapes
+- **Recherche vectorielle :** Migration SQLite + sqlite-vec
+- **Interface recherche :** Sémantique + typo-tolérance  
+- **API endpoints :** Pour intégrations externes
+- **Scaling :** Support >100 articles avec virtualisation
+
+### Maintenance Régulière
+```bash
+# Validation intégrité (mensuel)
+npm run analyze-bias
+
+# Régénération complète (nouveaux articles)
+npm run generate-embeddings
+npm run enrich-connections
+npm run fix-subtlety
+
+# Nettoyage (au besoin)
+git clean -fd
+npm install
+```
+
+## 🎯 Vision Accomplie
+
+**L'AI Humanist Blog Phase 11 P0+P1** révèle automatiquement les interconnexions sémantiques technique ↔ éthique via :
+
+✅ **Intelligence locale :** Embeddings Transformers.js multilingues  
+✅ **Analyse subtile :** Détection oppositions performance↔éthique, automation↔humain  
+✅ **Architecture fiable :** Écriture atomique + validation Zod + tests intégrés  
+✅ **Interface préservée :** Navigation graphique inchangée pour l'utilisateur  
+✅ **Qualité production :** Documentation complète + code organisé + lint 0 erreurs  
+
+**Base solide établie pour Phase 11 P2 (recherche vectorielle performante).**

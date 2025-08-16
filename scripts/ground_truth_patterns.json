@@ -1,0 +1,220 @@
+{
+  "hard_connections": {
+    "total_count": 38,
+    "average_per_article": 0.6785714285714286,
+    "domain_distribution": {
+      "technique": 8,
+      "ethique": 13,
+      "philosophie": 7,
+      "usage_professionnel": 1,
+      "recherche": 4,
+      "frugalite": 5
+    },
+    "articles_with_hard_connections": 38
+  },
+  "manual_validations": {
+    "total_count": 99,
+    "type_distribution": {
+      "builds_on": 31,
+      "contradicts": 1,
+      "implements": 24,
+      "questions": 23,
+      "similar_to": 20
+    },
+    "strength_by_type": {
+      "builds_on": {
+        "min": 0.71,
+        "max": 0.86,
+        "avg": 0.7906451612903224
+      },
+      "contradicts": {
+        "min": 0.84,
+        "max": 0.84,
+        "avg": 0.84
+      },
+      "implements": {
+        "min": 0.66,
+        "max": 0.88,
+        "avg": 0.7575
+      },
+      "questions": {
+        "min": 0.71,
+        "max": 0.91,
+        "avg": 0.7965217391304348
+      },
+      "similar_to": {
+        "min": 0.68,
+        "max": 0.8,
+        "avg": 0.7345000000000002
+      }
+    },
+    "confidence_by_type": {
+      "builds_on": {
+        "min": 0.78,
+        "max": 0.9,
+        "avg": 0.8432258064516128
+      },
+      "contradicts": {
+        "min": 0.89,
+        "max": 0.89,
+        "avg": 0.89
+      },
+      "implements": {
+        "min": 0.73,
+        "max": 0.92,
+        "avg": 0.8145833333333335
+      },
+      "questions": {
+        "min": 0.77,
+        "max": 0.95,
+        "avg": 0.8478260869565216
+      },
+      "similar_to": {
+        "min": 0.74,
+        "max": 0.85,
+        "avg": 0.7929999999999999
+      }
+    },
+    "builds_on_patterns": {
+      "builds_on_patterns": {
+        "common_reasoning_keywords": [
+          "dans",
+          "fournit",
+          "pour",
+          "l'analyse",
+          "principes",
+          "concrètement",
+          "l'investigation",
+          "cadre",
+          "comprendre",
+          "enjeux"
+        ],
+        "strength_range": [
+          0.71,
+          0.86
+        ],
+        "typical_domain_flows": [
+          "recherche→technique",
+          "technique→ethique"
+        ]
+      }
+    },
+    "contradicts_patterns": {
+      "contradicts_patterns": {
+        "common_reasoning_keywords": [],
+        "strength_range": [
+          0.84,
+          0.84
+        ],
+        "controversy_correlation": 0.6
+      }
+    },
+    "implements_patterns": {
+      "implements_patterns": {
+        "common_reasoning_keywords": [
+          "dans",
+          "pour",
+          "fournit",
+          "concrètement",
+          "illustre",
+          "éthiques",
+          "cadre",
+          "d'équité",
+          "empiriques",
+          "principes"
+        ],
+        "strength_range": [
+          0.66,
+          0.88
+        ],
+        "domain_bridges": [
+          "technique→ethique",
+          "ethique→technique"
+        ]
+      }
+    },
+    "questions_patterns": {
+      "questions_patterns": {
+        "common_reasoning_keywords": [
+          "l'approche",
+          "questionne",
+          "l'analyse",
+          "l'optimisme",
+          "limites",
+          "révélant",
+          "remet",
+          "technique",
+          "philosophiques",
+          "l'étude"
+        ],
+        "strength_range": [
+          0.71,
+          0.91
+        ],
+        "complexity_correlation": 0.4
+      }
+    },
+    "similar_to_patterns": {
+      "similar_to_patterns": {
+        "common_reasoning_keywords": [
+          "partage",
+          "l'approche",
+          "mais",
+          "plutôt",
+          "pour",
+          "avec",
+          "connexion",
+          "manuelle",
+          "validée",
+          "(domaine"
+        ],
+        "strength_range": [
+          0.68,
+          0.8
+        ],
+        "same_domain_ratio": 0.7
+      }
+    }
+  },
+  "semantic_calibration": {
+    "domain_pair_thresholds": {
+      "ethique-technique": 0.71,
+      "recherche-technique": 0.81,
+      "ethique-ethique": 0.74,
+      "philosophie-philosophie": 0.74,
+      "recherche-recherche": 0.73,
+      "recherche-usage_professionnel": 0.76,
+      "philosophie-usage_professionnel": 0.71,
+      "frugalite-frugalite": 0.74,
+      "Technique-frugalite": 0.8,
+      "Technique-ethique": 0.8
+    },
+    "type_prediction_rules": [
+      {
+        "condition": "contains_citation_keywords",
+        "predicted_type": "builds_on",
+        "confidence": 0.8
+      },
+      {
+        "condition": "contains_conflict_keywords",
+        "predicted_type": "contradicts",
+        "confidence": 0.75
+      },
+      {
+        "condition": "cross_domain_technical",
+        "predicted_type": "implements",
+        "confidence": 0.7
+      },
+      {
+        "condition": "contains_questioning_keywords",
+        "predicted_type": "questions",
+        "confidence": 0.65
+      }
+    ],
+    "overall_stats": {
+      "articles_analyzed": 94,
+      "hard_vs_manual_ratio": 0.3838383838383838,
+      "average_connections_per_article": 2.4464285714285716
+    }
+  }
+}

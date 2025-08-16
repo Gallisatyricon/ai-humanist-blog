@@ -24,7 +24,7 @@ export function useGraphData(
     maxNodes: options.maxNodes ?? NAVIGATION_CONFIG.MAX_NODES_DISPLAYED
   }
 
-  // Charger les connexions depuis le fichier JSON
+  // Charger les connexions avec layout pré-calculé depuis le fichier JSON
   useEffect(() => {
     if (articles.length > 0) {
       setIsGenerating(true)
@@ -38,6 +38,13 @@ export function useGraphData(
             config.minConnectionStrength
           )
           setConnections(filteredConnections)
+          
+          // Utiliser le layout pré-calculé si disponible
+          if (data.precomputed_layout && data.precomputed_layout.nodes) {
+            console.log(`⚡ Layout pré-calculé chargé: ${data.precomputed_layout.nodes.length} positions`);
+            (window as any).precomputedLayout = data.precomputed_layout
+          }
+          
           setIsGenerating(false)
         })
         .catch(error => {

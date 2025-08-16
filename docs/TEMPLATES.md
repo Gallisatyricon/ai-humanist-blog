@@ -1,8 +1,8 @@
-# Templates JSON - Intégrations et Développement
+# Templates JSON Phase 11 - Workflow N8N et Import Sécurisé
 
 ## 🎯 Vue d'Ensemble
 
-Ce fichier contient les templates JSON exactes pour faciliter l'intégration avec n8n, l'ajout manuel d'articles, et le développement. Tous les formats respectent le schema TypeScript du projet.
+Templates JSON optimisés pour l'écosystème Phase 11 : workflow n8n complet avec sécurisation writeFileAtomic + Zod, batch import intelligent, et ajout d'articles individuels avec génération automatique des connexions intelligentes via embeddings locaux.
 
 ---
 
@@ -675,24 +675,39 @@ Ce fichier contient les templates JSON exactes pour faciliter l'intégration ave
 
 ---
 
-## 🎯 Guide d'Usage
+## 🎯 Guide d'Usage Phase 11
 
-### Pour n8n Workflow
-1. **Utiliser le template "Template n8n - Format d'Entrée"** en tête de fichier
-2. **Adapter les champs** selon l'article spécifique
-3. **Générer 2-5 connexions** avec reasoning détaillé
-4. **Sauvegarder** au format JSON ou markdown avec bloc JSON
+### Pour n8n Workflow Complet
+1. **Créer fichier .md** dans `input_data/` avec blocs JSON
+2. **Utiliser template n8n** pour chaque article  
+3. **Lancer batch import** : `npm run batch-import -- --input input_data/articles.md`
+4. **Workflow automatique** : parsing → validation → backup → import → embeddings → connexions → affinement → tests
 
-### Pour Ajout Manuel  
-1. **Copier un template** selon le domaine primaire de l'article
-2. **Remplir tous les champs obligatoires**
-3. **Utiliser la commande** : `npm run add-complete -- --input article.json`
+### Pour Ajout Article Individuel  
+1. **Créer fichier JSON** avec template selon domaine
+2. **Remplir tous champs obligatoires** 
+3. **Lancer ajout sécurisé** : `npm run add-complete -- --input article.json`
+4. **Workflow automatique** : validation → backup → import → Phase 11 complet
 
-### Pour Tests de Développement
-1. **Utiliser le template "NewArticleInput pour Tests"**
-2. **Modifier les IDs** pour éviter collisions
-3. **Tester avec** : `npx tsx scripts/testSmartMapper.ts`
+### Pour Tests et Développement
+1. **Template test minimal** pour validation rapide
+2. **Utiliser scripts Phase 11** : 
+   - `npm run generate-embeddings` (si nouveaux articles)
+   - `npm run enrich-connections` (génération connexions)
+   - `npm run analyze-bias` (validation qualité)
+
+### Workflow Phase 11 vs Phase 10
+**Phase 11 (Actuel - Sécurisé)** :
+- ✅ **Batch import** : `npm run batch-import -- --input file.md` 
+- ✅ **Ajout individuel** : `npm run add-complete -- --input file.json`
+- ✅ **Sécurisation** : Backup automatique + écriture atomique + validation Zod
+- ✅ **Connexions intelligentes** : Embeddings + triple méthodologie automatique
+
+**Phase 10 (Obsolète)** :
+- ❌ Scripts multiples complexes sans sécurisation
+- ❌ Smart ID Mapping + Smart Deduplication séparés
+- ❌ Pas de backup automatique ni validation runtime
 
 ---
 
-**🎨 Ces templates garantissent la compatibilité avec le Smart ID Mapping et Smart Deduplication pour une intégration n8n parfaite !**
+**🚀 Templates Phase 11 optimisés pour workflow n8n sécurisé avec génération automatique de connexions intelligentes via Transformers.js !**

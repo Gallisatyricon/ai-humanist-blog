@@ -5,8 +5,8 @@ export const NAVIGATION_CONFIG = {
   MAX_GRAPH_DEPTH: 2,
   MAX_NODES_DISPLAYED: 40, // JUSTE MILIEU : lisibilité vs fonctionnalité
   
-  // Seuils de qualité - Équilibrés
-  MIN_CONNECTION_STRENGTH: 0.5, // Équilibre entre trop/peu de connexions
+  // Seuils de qualité - Ajustés pour connexions intelligentes
+  MIN_CONNECTION_STRENGTH: 0.3, // Baissé pour les connexions sémantiques
   MIN_CENTRALITY_FOR_HUB: 0.6,  // Seuil relevé pour prioriser qualité
   
   // Limites pour navigation progressive - Optimisées

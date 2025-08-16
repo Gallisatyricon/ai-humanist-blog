@@ -1,240 +1,380 @@
 #!/usr/bin/env tsx
 /**
- * SCRIPT D'IMPORT EN BATCH DE MULTIPLES ARTICLES
+ * SCRIPT D'IMPORT BATCH PHASE 11 - WORKFLOW N8N COMPLET SÉCURISÉ
  * 
- * Ce script traite un fichier mixte contenant des titres markdown
- * et des blocs JSON d'articles avec connexions suggérées.
+ * Processus complet d'import depuis n8n avec Phase 11 intégrée :
+ * 1. Parse fichier .md depuis input_data/
+ * 2. Validation Zod stricte
+ * 3. Backup des données existantes 
+ * 4. Import sécurisé avec writeFileAtomic
+ * 5. Génération automatique embeddings (avec attente)
+ * 6. Enrichissement connexions intelligentes
+ * 7. Affinement subtilité relationnelle
+ * 8. Tests de validation finale
  * 
- * Usage:
- * npm run batch-import -- --input articles-with-titles.md
+ * Usage: npm run batch-import -- --input input_data/articles.md
  */
 
 import fs from 'fs/promises'
 import path from 'path'
+import { writeJSONAtomic, readJSONWithLock } from './writeFileAtomic.js'
+import { validateArticleInput, validateArticleData, validateConnectionData } from './zodSchemas.js'
 
-// Imports locaux sans .js pour TypeScript
+// ==================== INTERFACES ====================
+
 interface NewArticleInput {
-  article: any
-  suggested_connections: any[]
+  article: {
+    id?: string
+    title: string
+    url: string
+    source_type: 'arxiv' | 'blog' | 'academic' | 'github' | 'news'
+    date: string
+    summary: string
+    perspective: string
+    primary_domain: string
+    secondary_domains: string[]
+    concepts: Array<{ id: string, name: string, type: string, controversy_level?: number }>
+    tools_mentioned: Array<{ id: string, name: string, type: string }>
+    author?: string
+    reading_time?: number
+    complexity_level: 'beginner' | 'intermediate' | 'advanced'
+    interest_level?: number
+    connected_articles?: string[]
+  }
+  suggested_connections: Array<{
+    target_id: string
+    type: 'builds_on' | 'contradicts' | 'implements' | 'questions' | 'similar_to'
+    strength: number
+    reasoning: string
+    confidence: number
+  }>
 }
 
-// ==================== PARSING DU FICHIER MIXTE ====================
+// ==================== CONFIGURATION ====================
+
+const ARTICLES_PATH = path.join(process.cwd(), 'public/data/articles.json')
+const CONNECTIONS_PATH = path.join(process.cwd(), 'public/data/connections.json') 
+const EMBEDDINGS_PATH = path.join(process.cwd(), 'public/data/embeddings.json')
+const BACKUP_DIR = path.join(process.cwd(), 'backup')
+
+// ==================== PARSING SÉCURISÉ ====================
 
 async function parseArticlesFromMixedFile(filePath: string): Promise<NewArticleInput[]> {
   try {
+    console.log(`📄 Lecture du fichier : ${filePath}`)
     const content = await fs.readFile(filePath, 'utf-8')
     const articles: NewArticleInput[] = []
     
     // Regex pour capturer les blocs JSON (entre ```json et ```)
-    const jsonBlockRegex = /```?json\s*\n([\s\S]*?)\n```?/g
+    const jsonBlockRegex = /```json\s*\n([\s\S]*?)\n```/g
     
-    // Alternative: regex pour capturer les objets JSON directement
-    const directJsonRegex = /\{[\s\S]*?"suggested_connections"\s*:\s*\[[\s\S]*?\]\s*\}/g
-    
-    let match
+    let match: RegExpExecArray | null
     let blockCount = 0
     
     console.log('🔍 Recherche des blocs JSON...')
     
-    // Essayer d'abord avec les blocs ```json
     while ((match = jsonBlockRegex.exec(content)) !== null) {
       try {
-        blockCount++
         const jsonText = match[1].trim()
         const parsed = JSON.parse(jsonText)
         
-        // Validation basique
-        if (parsed.article && parsed.article.id && parsed.suggested_connections) {
-          articles.push(parsed)
-          console.log(`✅ Article ${parsed.article.id} extrait`)
-        } else {
-          console.warn(`⚠️  Bloc JSON ${blockCount} invalide (manque article ou suggested_connections)`)
-        }
+        // Validation Zod stricte
+        const validated = validateArticleInput(parsed)
+        articles.push(validated)
+        blockCount++
+        
+        console.log(`✅ Bloc ${blockCount} validé : ${parsed.article?.title || 'Sans titre'}`)
       } catch (error) {
-        console.warn(`⚠️  Erreur parsing bloc JSON ${blockCount}:`, error.message)
+        console.error(`❌ Erreur bloc ${blockCount + 1}:`, error instanceof Error ? error.message : error)
+        // Continue le parsing même en cas d'erreur sur un bloc
       }
     }
     
-    // Si aucun bloc ```json trouvé, essayer la regex directe
-    if (articles.length === 0) {
-      console.log('🔍 Recherche des objets JSON directement...')
-      while ((match = directJsonRegex.exec(content)) !== null) {
-        try {
-          blockCount++
-          const jsonText = match[0].trim()
-          const parsed = JSON.parse(jsonText)
-          
-          if (parsed.article && parsed.article.id && parsed.suggested_connections) {
-            articles.push(parsed)
-            console.log(`✅ Article ${parsed.article.id} extrait`)
-          }
-        } catch (error) {
-          console.warn(`⚠️  Erreur parsing objet JSON ${blockCount}:`, error.message)
-        }
-      }
-    }
-    
-    console.log(`📊 ${articles.length} articles extraits du fichier`)
+    console.log(`📊 ${articles.length} articles valides trouvés sur ${blockCount} blocs`)
     return articles
     
   } catch (error) {
-    console.error('❌ Erreur lecture fichier:', error.message)
-    return []
+    throw new Error(`Erreur lecture fichier: ${error instanceof Error ? error.message : error}`)
   }
 }
 
-// ==================== AJOUT SIMPLIFIÉ DIRECT ====================
+// ==================== BACKUP SÉCURISÉ ====================
 
-async function addArticleToDatabase(articleData: NewArticleInput) {
-  const articlesPath = path.join(process.cwd(), 'public/data/articles.json')
-  // const connectionsPath = path.join(process.cwd(), 'public/data/connections.json')
-  
+async function createBackup(): Promise<void> {
   try {
-    // Charger les articles existants
-    let articlesFile
+    console.log('🔄 Création backup des données existantes...')
+    
+    // Créer dossier backup si inexistant
+    await fs.mkdir(BACKUP_DIR, { recursive: true })
+    
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
+    
+    // Backup articles.json
     try {
-      articlesFile = await fs.readFile(articlesPath, 'utf-8')
-    } catch {
-      articlesFile = JSON.stringify({ articles: [] })
+      const articlesData = await readJSONWithLock(ARTICLES_PATH, { timeout: 5000 })
+      await writeJSONAtomic(
+        path.join(BACKUP_DIR, `articles-${timestamp}.json`),
+        articlesData
+      )
+      console.log(`✅ Backup articles : articles-${timestamp}.json`)
+    } catch (error) {
+      console.warn('⚠️ Pas de fichier articles existant à sauvegarder')
     }
     
-    const data = JSON.parse(articlesFile)
-    const articles = Array.isArray(data) ? data : data.articles || []
-    
-    // Vérifier si l'article existe déjà
-    if (articles.find((a: any) => a.id === articleData.article.id)) {
-      return { success: false, message: `Article ${articleData.article.id} existe déjà` }
+    // Backup connections.json
+    try {
+      const connectionsData = await readJSONWithLock(CONNECTIONS_PATH, { timeout: 5000 })
+      await writeJSONAtomic(
+        path.join(BACKUP_DIR, `connections-${timestamp}.json`),
+        connectionsData
+      )
+      console.log(`✅ Backup connections : connections-${timestamp}.json`)
+    } catch (error) {
+      console.warn('⚠️ Pas de fichier connections existant à sauvegarder')
     }
     
-    // Ajouter le nouvel article
-    articles.push(articleData.article)
-    
-    // Sauvegarder
-    const newData = {
-      articles,
-      last_updated: new Date().toISOString(),
-      total_articles: articles.length
+    // Backup embeddings.json
+    try {
+      const embeddingsData = await readJSONWithLock(EMBEDDINGS_PATH, { timeout: 5000 })
+      await writeJSONAtomic(
+        path.join(BACKUP_DIR, `embeddings-${timestamp}.json`),
+        embeddingsData
+      )
+      console.log(`✅ Backup embeddings : embeddings-${timestamp}.json`)
+    } catch (error) {
+      console.warn('⚠️ Pas de fichier embeddings existant à sauvegarder')
     }
-    
-    await fs.writeFile(articlesPath, JSON.stringify(newData, null, 2))
-    
-    return { success: true, message: `Article ${articleData.article.id} ajouté` }
     
   } catch (error) {
-    return { success: false, message: error.message }
+    throw new Error(`Erreur création backup: ${error instanceof Error ? error.message : error}`)
   }
 }
 
-// ==================== IMPORT EN BATCH ====================
+// ==================== IMPORT SÉCURISÉ ====================
 
-async function batchImportArticles(inputFile: string) {
-  console.log('🚀 Début de l\'import en batch')
-  console.log(`📁 Fichier source: ${inputFile}`)
-  console.log('=' .repeat(50))
-  
+async function importArticlesSafely(newArticles: NewArticleInput[]): Promise<void> {
   try {
-    // 1. Parser le fichier
-    const articles = await parseArticlesFromMixedFile(inputFile)
+    console.log('📥 Import sécurisé des articles...')
     
-    console.log(`📊 ${articles.length} articles trouvés`)
-    
-    if (articles.length === 0) {
-      console.error('❌ Aucun article trouvé dans le fichier')
-      return
+    // Charger articles existants
+    let existingArticles: any[] = []
+    try {
+      const articleData = await readJSONWithLock(ARTICLES_PATH, { timeout: 5000 })
+      existingArticles = articleData.articles || articleData || []
+    } catch (error) {
+      console.log('📝 Création nouveau fichier articles.json')
     }
     
-    // 2. Traiter chaque article
-    const results = {
-      success: 0,
-      errors: 0,
-      details: [] as any[]
-    }
+    // Traitement des nouveaux articles
+    const processedArticles = [...existingArticles]
+    let addedCount = 0
+    let updatedCount = 0
     
-    for (let i = 0; i < articles.length; i++) {
-      const article = articles[i]
-      const progress = `[${i + 1}/${articles.length}]`
+    for (const newArticleInput of newArticles) {
+      const newArticle = newArticleInput.article
       
-      console.log(`${progress} Traitement de ${article.article.id}...`)
+      // Vérifier doublons par URL
+      const existingIndex = processedArticles.findIndex(art => art.url === newArticle.url)
       
-      try {
-        const result = await addArticleToDatabase(article)
+      if (existingIndex >= 0) {
+        // Mise à jour article existant
+        processedArticles[existingIndex] = { ...processedArticles[existingIndex], ...newArticle }
+        updatedCount++
+        console.log(`🔄 Article mis à jour : ${newArticle.title}`)
+      } else {
+        // Générer ID séquentiel
+        const maxId = processedArticles.reduce((max, art) => {
+          const idNum = parseInt(art.id.replace('art_', ''))
+          return idNum > max ? idNum : max
+        }, 0)
+        newArticle.id = `art_${String(maxId + 1).padStart(3, '0')}`
         
-        if (result.success) {
-          results.success++
-          console.log(`✅ ${progress} ${article.article.id} ajouté avec succès`)
-        } else {
-          results.errors++
-          console.error(`❌ ${progress} Erreur: ${result.message}`)
-          results.details.push({
-            article_id: article.article.id,
-            error: result.message
-          })
-        }
-        
-      } catch (error) {
-        results.errors++
-        console.error(`❌ ${progress} Exception:`, error.message)
-        results.details.push({
-          article_id: article.article.id,
-          error: error.message
-        })
+        processedArticles.push(newArticle)
+        addedCount++
+        console.log(`✅ Nouvel article ajouté : ${newArticle.title} (${newArticle.id})`)
       }
     }
     
-    // 3. Rapport final
-    console.log('\n' + '='.repeat(50))
-    console.log('📊 RAPPORT FINAL')
-    console.log('='.repeat(50))
-    console.log(`✅ Succès: ${results.success}`)
-    console.log(`❌ Erreurs: ${results.errors}`)
-    console.log(`📈 Taux de succès: ${Math.round((results.success / articles.length) * 100)}%`)
-    
-    if (results.errors > 0) {
-      console.log('\n🔍 Détails des erreurs:')
-      results.details.forEach(detail => {
-        console.log(`   - ${detail.article_id}: ${detail.error}`)
-      })
+    // Sauvegarde atomique
+    const articleData = {
+      articles: processedArticles,
+      last_updated: new Date().toISOString(),
+      total_articles: processedArticles.length
     }
     
-    console.log('\n🎉 Import terminé!')
-    console.log('\n💡 Recommandation: Générez ensuite les connexions avec npm run generate-connections')
+    // Validation finale avant écriture
+    validateArticleData(articleData.articles)
+    
+    await writeJSONAtomic(ARTICLES_PATH, articleData)
+    
+    console.log(`📊 Import terminé : ${addedCount} ajoutés, ${updatedCount} mis à jour`)
     
   } catch (error) {
-    console.error('❌ Erreur critique:', error.message)
+    throw new Error(`Erreur import articles: ${error instanceof Error ? error.message : error}`)
   }
 }
 
-// ==================== CLI ====================
+// ==================== WORKFLOW PHASE 11 ====================
 
-async function main() {
-  const args = process.argv.slice(2)
-  const inputIndex = args.indexOf('--input')
-  
-  if (inputIndex === -1 || !args[inputIndex + 1]) {
-    console.error(`
-❌ Usage: npm run batch-import -- --input <fichier>
-
-Exemples:
-  npm run batch-import -- --input articles.md
-  npm run batch-import -- --input articles-with-titles.txt
-    `)
-    process.exit(1)
-  }
-  
-  const inputFile = args[inputIndex + 1]
-  const fullPath = path.resolve(inputFile)
+async function runPhase11Workflow(): Promise<void> {
+  console.log('\n🚀 DÉMARRAGE WORKFLOW PHASE 11')
+  console.log('=' .repeat(50))
   
   try {
-    await fs.access(fullPath)
-  } catch {
-    console.error(`❌ Fichier non trouvé: ${fullPath}`)
-    process.exit(1)
+    // 1. Génération embeddings (avec attente pour éviter surcharge)
+    console.log('\n🧠 Étape 1/4 : Génération embeddings...')
+    const embeddingsResult = await import('./generateEmbeddings.js')
+    await embeddingsResult.generateEmbeddings()
+    
+    // Attente 2s pour éviter surcharge système
+    console.log('⏱️ Attente 2s (éviter surcharge)...')
+    await new Promise(resolve => setTimeout(resolve, 2000))
+    
+    // 2. Enrichissement connexions intelligentes
+    console.log('\n🔗 Étape 2/4 : Enrichissement connexions...')
+    const enrichResult = await import('./enrichConnections.js')
+    await enrichResult.enrichConnections()
+    
+    // Attente 1s
+    console.log('⏱️ Attente 1s...')
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    
+    // 3. Affinement subtilité relationnelle
+    console.log('\n🎨 Étape 3/4 : Affinement subtilité...')
+    const { exec } = await import('child_process')
+    const { promisify } = await import('util')
+    const execAsync = promisify(exec)
+    
+    await execAsync('tsx scripts/fixRelationSubtlety.ts', { cwd: process.cwd() })
+    console.log('✅ Affinement subtilité terminé')
+    
+    // Attente 1s
+    console.log('⏱️ Attente 1s...')
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    
+    // 4. Analyse finale (optionnelle, pour logs)
+    console.log('\n📊 Étape 4/4 : Analyse finale...')
+    try {
+      await execAsync('tsx scripts/analyzeConnectionBias.ts', { cwd: process.cwd() })
+      console.log('✅ Analyse terminée')
+    } catch (error) {
+      console.warn('⚠️ Analyse échouée (non bloquant):', error instanceof Error ? error.message : error)
+    }
+    
+    console.log('\n🎉 WORKFLOW PHASE 11 TERMINÉ AVEC SUCCÈS !')
+    
+  } catch (error) {
+    console.error('❌ Erreur workflow Phase 11:', error instanceof Error ? error.message : error)
+    throw error
   }
-  
-  await batchImportArticles(fullPath)
 }
 
-// Exécution CLI directe
-if (process.argv[1]?.includes('batchImportArticles')) {
-  main().catch(console.error)
+// ==================== TESTS VALIDATION ====================
+
+async function runValidationTests(): Promise<void> {
+  console.log('\n🧪 Tests de validation finale...')
+  
+  try {
+    // Test 1: Validation articles
+    const articleData = await readJSONWithLock(ARTICLES_PATH, { timeout: 5000 })
+    validateArticleData(articleData.articles || articleData)
+    console.log('✅ Test articles : Validation OK')
+    
+    // Test 2: Validation connexions
+    const connectionData = await readJSONWithLock(CONNECTIONS_PATH, { timeout: 5000 })
+    validateConnectionData(connectionData.connections || [])
+    console.log('✅ Test connexions : Validation OK')
+    
+    // Test 3: Vérification embeddings
+    const embeddingsData = await readJSONWithLock(EMBEDDINGS_PATH, { timeout: 5000 })
+    const embeddings = embeddingsData.embeddings || []
+    console.log(`✅ Test embeddings : ${embeddings.length} vecteurs générés`)
+    
+    // Test 4: Cohérence données
+    const articles = articleData.articles || articleData
+    const connections = connectionData.connections || []
+    
+    const articleIds = new Set(articles.map((a: any) => a.id))
+    const invalidConnections = connections.filter((c: any) => 
+      !articleIds.has(c.source_id) || !articleIds.has(c.target_id)
+    )
+    
+    if (invalidConnections.length > 0) {
+      console.warn(`⚠️ ${invalidConnections.length} connexions avec IDs invalides`)
+    } else {
+      console.log('✅ Test cohérence : Tous les IDs sont valides')
+    }
+    
+  } catch (error) {
+    console.error('❌ Erreur tests validation:', error instanceof Error ? error.message : error)
+    throw error
+  }
+}
+
+// ==================== FONCTION PRINCIPALE ====================
+
+async function main(): Promise<void> {
+  const startTime = Date.now()
+  
+  try {
+    console.log('🚀 SCRIPT BATCH IMPORT PHASE 11 - WORKFLOW N8N COMPLET')
+    console.log('=' .repeat(60))
+    
+    // Vérification arguments
+    const args = process.argv.slice(2)
+    const inputIndex = args.findIndex(arg => arg === '--input')
+    
+    if (inputIndex === -1 || !args[inputIndex + 1]) {
+      console.error('❌ Usage: npm run batch-import -- --input <fichier>')
+      console.error('Exemple: npm run batch-import -- --input input_data/articles.md')
+      process.exit(1)
+    }
+    
+    const inputFile = args[inputIndex + 1]
+    console.log(`📄 Fichier d'entrée : ${inputFile}`)
+    
+    // Vérification existence fichier
+    try {
+      await fs.access(inputFile)
+    } catch {
+      console.error(`❌ Fichier introuvable : ${inputFile}`)
+      process.exit(1)
+    }
+    
+    // PHASE 1: Backup sécurisé
+    await createBackup()
+    
+    // PHASE 2: Parsing et validation
+    const newArticles = await parseArticlesFromMixedFile(inputFile)
+    
+    if (newArticles.length === 0) {
+      console.log('⚠️ Aucun article valide trouvé. Arrêt du processus.')
+      return
+    }
+    
+    // PHASE 3: Import sécurisé
+    await importArticlesSafely(newArticles)
+    
+    // PHASE 4: Workflow Phase 11 complet
+    await runPhase11Workflow()
+    
+    // PHASE 5: Tests de validation
+    await runValidationTests()
+    
+    const duration = Math.round((Date.now() - startTime) / 1000)
+    console.log(`\n🎉 IMPORT BATCH TERMINÉ AVEC SUCCÈS en ${duration}s`)
+    console.log(`📊 ${newArticles.length} articles traités`)
+    console.log('💡 Les connexions intelligentes ont été générées automatiquement')
+    
+  } catch (error) {
+    console.error('\n❌ ERREUR CRITIQUE:', error instanceof Error ? error.message : error)
+    console.error('🔄 Restaurez depuis les backups si nécessaire')
+    process.exit(1)
+  }
+}
+
+// ES Module check - Fixed for Windows
+const currentFile = process.argv[1]
+if (currentFile && (currentFile.includes('batchImportArticles') || currentFile.endsWith('batchImportArticles.ts'))) {
+  main()
 }
