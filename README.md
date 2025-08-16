@@ -4,6 +4,7 @@
 [![React](https://img.shields.io/badge/React-18.2+-61dafb.svg)](https://reactjs.org/)
 [![D3.js](https://img.shields.io/badge/D3.js-7.0+-ff6b35.svg)](https://d3js.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.2+-646cff.svg)](https://vitejs.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Interface graphique interactive révélant les interconnexions entre technique et éthique en IA
 
