@@ -24,3 +24,10 @@ src/types/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Archived scripts
+scripts/archive_test_scripts/
+scripts/old_scripts/
+
+# Data files
+public/data/

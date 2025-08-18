@@ -1,0 +1,465 @@
+{
+  "version": "1.0.0",
+  "last_calibration": "2025-08-18T22:44:18.645Z",
+  "thresholds": [
+    {
+      "bridge_type": "recherche↔usage_professionnel",
+      "source_domain": "recherche",
+      "target_domain": "usage_professionnel",
+      "threshold": 0.22993424155439682,
+      "confidence": 0.95,
+      "sample_size": 6,
+      "last_updated": "2025-08-18T22:44:18.644Z",
+      "source_connections": [
+        {
+          "id": "art_015→art_029",
+          "similarity": 0.27051087241693744,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_019→art_015",
+          "similarity": 0.5207262324697292,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_029→art_015",
+          "similarity": 0.27051087241693744,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_111→art_106",
+          "similarity": 0.4528496343424886,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_111→art_104",
+          "similarity": 0.43849153218315956,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_111→art_015",
+          "similarity": 0.43680878995078676,
+          "validation_strength": 1
+        }
+      ]
+    },
+    {
+      "bridge_type": "recherche↔technique",
+      "source_domain": "recherche",
+      "target_domain": "technique",
+      "threshold": 0.2952133697166602,
+      "confidence": 0.95,
+      "sample_size": 7,
+      "last_updated": "2025-08-18T22:44:18.644Z",
+      "source_connections": [
+        {
+          "id": "oss_art_001→art_019",
+          "similarity": 0.34730984672548254,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_001→art_029",
+          "similarity": 0.40232788777522105,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_017→art_001",
+          "similarity": 0.3896357452650028,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_029→art_001",
+          "similarity": 0.40232788777522105,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_100→art_029",
+          "similarity": 0.4254809905813645,
+          "validation_strength": 1
+        },
+        {
+          "id": "oss_art_001→art_019",
+          "similarity": 0.34730984672548254,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_112→art_019",
+          "similarity": 0.4973853276830669,
+          "validation_strength": 0.9789541310732268
+        }
+      ]
+    },
+    {
+      "bridge_type": "ethique↔technique",
+      "source_domain": "ethique",
+      "target_domain": "technique",
+      "threshold": 0.15030899335388534,
+      "confidence": 0.95,
+      "sample_size": 13,
+      "last_updated": "2025-08-18T22:44:18.645Z",
+      "source_connections": [
+        {
+          "id": "oss_art_012→art_018",
+          "similarity": 0.24358002357478706,
+          "validation_strength": 1
+        },
+        {
+          "id": "oss_art_023→art_013",
+          "similarity": 0.26991068908467697,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_001→art_002",
+          "similarity": 0.5784825208414404,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_001→art_018",
+          "similarity": 0.5009440444520212,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_002→art_001",
+          "similarity": 0.5784825208414404,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_003→art_005",
+          "similarity": 0.6048876985700609,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_003→art_004",
+          "similarity": 0.1768341098281004,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_003→art_007",
+          "similarity": 0.22945267854575108,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_005→art_003",
+          "similarity": 0.6048876985700609,
+          "validation_strength": 1
+        },
+        {
+          "id": "oss_art_012→art_018",
+          "similarity": 0.24358002357478706,
+          "validation_strength": 1
+        },
+        {
+          "id": "oss_art_023→art_013",
+          "similarity": 0.26991068908467697,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_030→art_001",
+          "similarity": 0.6415492826454545,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_030→art_100",
+          "similarity": 0.5264769384392942,
+          "validation_strength": 1
+        }
+      ]
+    },
+    {
+      "bridge_type": "ethique↔usage_professionnel",
+      "source_domain": "ethique",
+      "target_domain": "usage_professionnel",
+      "threshold": 0.43730319611132784,
+      "confidence": 0.95,
+      "sample_size": 20,
+      "last_updated": "2025-08-18T22:44:18.645Z",
+      "source_connections": [
+        {
+          "id": "art_102→art_015",
+          "similarity": 0.5412731299353168,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_030→art_031",
+          "similarity": 0.7407452010352312,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_031→art_030",
+          "similarity": 0.7407452010352312,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_031→art_002",
+          "similarity": 0.6438031406649529,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_033→art_036",
+          "similarity": 0.7062412822688876,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_036→art_033",
+          "similarity": 0.7062412822688876,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_036→art_023",
+          "similarity": 0.6990282977404295,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_036→art_037",
+          "similarity": 0.6444574818078572,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_036→art_002",
+          "similarity": 0.6323531711368027,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_040→art_036",
+          "similarity": 0.5772167033142841,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_104→art_109",
+          "similarity": 0.6615224182652228,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_104→art_107",
+          "similarity": 0.6055696948040461,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_105→art_104",
+          "similarity": 0.514474348366268,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_107→art_104",
+          "similarity": 0.6055696948040461,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_109→art_104",
+          "similarity": 0.6615224182652228,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_110→art_104",
+          "similarity": 0.3759307594590487,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_108→art_109",
+          "similarity": 0.5453292517698521,
+          "validation_strength": 0.9981317007079409
+        },
+        {
+          "id": "art_106→art_109",
+          "similarity": 0.5291137241663464,
+          "validation_strength": 0.9916454896665386
+        },
+        {
+          "id": "art_106→art_009",
+          "similarity": 0.4709603314725368,
+          "validation_strength": 0.9683841325890148
+        },
+        {
+          "id": "art_108→art_013",
+          "similarity": 0.46288361088856905,
+          "validation_strength": 0.9651534443554277
+        }
+      ]
+    },
+    {
+      "bridge_type": "frugalite↔technique",
+      "source_domain": "frugalite",
+      "target_domain": "technique",
+      "threshold": 0.1,
+      "confidence": 0.9357527573964086,
+      "sample_size": 6,
+      "last_updated": "2025-08-18T22:44:18.645Z",
+      "source_connections": [
+        {
+          "id": "oss_art_008→art_024",
+          "similarity": 0.06694348196000069,
+          "validation_strength": 1
+        },
+        {
+          "id": "oss_art_020→art_024",
+          "similarity": 0.1521217723561624,
+          "validation_strength": 1
+        },
+        {
+          "id": "oss_art_008→art_024",
+          "similarity": 0.06694348196000069,
+          "validation_strength": 1
+        },
+        {
+          "id": "oss_art_020→art_024",
+          "similarity": 0.1521217723561624,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_112→art_024",
+          "similarity": 0.4210749710810098,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_112→art_025",
+          "similarity": 0.413483043749289,
+          "validation_strength": 0.9453932174997157
+        }
+      ]
+    },
+    {
+      "bridge_type": "ethique↔recherche",
+      "source_domain": "ethique",
+      "target_domain": "recherche",
+      "threshold": 0.14525471184075422,
+      "confidence": 0.886621951866615,
+      "sample_size": 5,
+      "last_updated": "2025-08-18T22:44:18.644Z",
+      "source_connections": [
+        {
+          "id": "oss_art_005→art_012",
+          "similarity": 0.17088789628324028,
+          "validation_strength": 1
+        },
+        {
+          "id": "oss_art_005→art_012",
+          "similarity": 0.17088789628324028,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_040→art_017",
+          "similarity": 0.431876912785362,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_110→art_029",
+          "similarity": 0.47369575293684507,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_111→art_109",
+          "similarity": 0.38746565207254385,
+          "validation_strength": 1
+        }
+      ]
+    },
+    {
+      "bridge_type": "philosophie↔usage_professionnel",
+      "source_domain": "philosophie",
+      "target_domain": "usage_professionnel",
+      "threshold": 0.2820837111872893,
+      "confidence": 0.8574747696705391,
+      "sample_size": 2,
+      "last_updated": "2025-08-18T22:44:18.645Z",
+      "source_connections": [
+        {
+          "id": "art_021→art_015",
+          "similarity": 0.3318631896321051,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_022→art_015",
+          "similarity": 0.3881762654557576,
+          "validation_strength": 1
+        }
+      ]
+    },
+    {
+      "bridge_type": "philosophie↔technique",
+      "source_domain": "philosophie",
+      "target_domain": "technique",
+      "threshold": 0.34274140177392554,
+      "confidence": 0.8418309729503808,
+      "sample_size": 2,
+      "last_updated": "2025-08-18T22:44:18.645Z",
+      "source_connections": [
+        {
+          "id": "art_100→art_101",
+          "similarity": 0.49864774618160784,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_112→art_051",
+          "similarity": 0.40322517855755946,
+          "validation_strength": 1
+        }
+      ]
+    },
+    {
+      "bridge_type": "ethique↔frugalite",
+      "source_domain": "ethique",
+      "target_domain": "frugalite",
+      "threshold": 0.2947412679369239,
+      "confidence": 0.8409880238519313,
+      "sample_size": 3,
+      "last_updated": "2025-08-18T22:44:18.645Z",
+      "source_connections": [
+        {
+          "id": "art_109→art_028",
+          "similarity": 0.5615655068843218,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_110→art_027",
+          "similarity": 0.35778835128330366,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_110→art_025",
+          "similarity": 0.34675443286696933,
+          "validation_strength": 1
+        }
+      ]
+    },
+    {
+      "bridge_type": "philosophie↔recherche",
+      "source_domain": "philosophie",
+      "target_domain": "recherche",
+      "threshold": 0.34037847729467485,
+      "confidence": 0.8400000000000001,
+      "sample_size": 1,
+      "last_updated": "2025-08-18T22:44:18.645Z",
+      "source_connections": [
+        {
+          "id": "art_022→art_029",
+          "similarity": 0.40044526740549985,
+          "validation_strength": 1
+        }
+      ]
+    },
+    {
+      "bridge_type": "technique↔usage_professionnel",
+      "source_domain": "technique",
+      "target_domain": "usage_professionnel",
+      "threshold": 0.34787502705019785,
+      "confidence": 0.7994222148006935,
+      "sample_size": 2,
+      "last_updated": "2025-08-18T22:44:18.645Z",
+      "source_connections": [
+        {
+          "id": "oss_art_001→art_031",
+          "similarity": 0.4092647377061151,
+          "validation_strength": 1
+        },
+        {
+          "id": "art_031→art_001",
+          "similarity": 0.6107092007043817,
+          "validation_strength": 1
+        }
+      ]
+    }
+  ],
+  "global_fallback": 0.15,
+  "min_sample_size": 2,
+  "recalibration_trigger": 10
+}

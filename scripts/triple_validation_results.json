@@ -68,8 +68,8 @@
   },
   "validation_samples": {
     "total_tested": 20,
-    "precision_estimate": 1,
+    "precision_estimate": 0.95,
     "recall_estimate": 0.7,
-    "f1_score": 0.8235294117647058
+    "f1_score": 0.806060606060606
   }
 }

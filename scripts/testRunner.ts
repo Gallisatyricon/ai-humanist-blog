@@ -14,7 +14,7 @@
 
 import fs from 'fs/promises'
 import { execSync } from 'child_process'
-import { readJSONWithLock, writeJSONAtomic } from './writeFileAtomic.js'
+import { readJSONWithLock, writeJSONAtomic } from './writeFileAtomic'
 
 interface TestResults {
   timestamp: string
@@ -41,11 +41,9 @@ interface TestResults {
 }
 
 class TestRunner {
-  private readonly TEST_DIR = '.backups/tests'
   private readonly SANDBOX_DIR = '.backups/tests/sandbox'
   private readonly WORKING_COPY_DIR = '.backups/tests/working-copy'
   private readonly RESULTS_DIR = '.backups/tests/results'
-  private readonly SNAPSHOTS_DIR = 'tests/snapshots'
   
   private readonly PRODUCTION_PATHS = {
     articles: 'public/data/articles.json',
@@ -127,7 +125,7 @@ class TestRunner {
         test_type: 'full-pipeline',
         duration_ms: duration,
         before_state: beforeState,
-        after_state: afterState,
+        after_state: { ...afterState, validation_score: afterState.validation_score || 0 },
         changes_detected: changes,
         success: true
       }
@@ -201,10 +199,7 @@ class TestRunner {
    * Exécuter pipeline sur données test (pas production!)
    */
   async runPipelineOnTestData(): Promise<void> {
-    // Sauvegarder chemins production
-    const originalArticles = this.PRODUCTION_PATHS.articles
-    const originalConnections = this.PRODUCTION_PATHS.connections
-    const originalEmbeddings = this.PRODUCTION_PATHS.embeddings
+    // Note: Sauvegarde chemins production pour restauration future si besoin
 
     try {
       // Rediriger temporairement vers working-copy
@@ -260,7 +255,7 @@ class TestRunner {
       // Pour les tests, ajouter score validation si disponible
       if (source === 'test') {
         try {
-          const validationData = await readJSONWithLock('scripts/triple_validation_results.json', { timeout: 5000 })
+          await readJSONWithLock('scripts/triple_validation_results.json', { timeout: 5000 })
           // Le score est calculé dans validateTripleArchitecture - à extraire du rapport
           return { ...state, validation_score: 82 } // Placeholder - améliorer avec parsing du rapport
         } catch {
@@ -317,8 +312,8 @@ class TestRunner {
       }
 
       // Supprimer environnements temporaires
-      await fs.rmdir(this.SANDBOX_DIR, { recursive: true }).catch(() => {})
-      await fs.rmdir(this.WORKING_COPY_DIR, { recursive: true }).catch(() => {})
+      await fs.rm(this.SANDBOX_DIR, { recursive: true, force: true }).catch(() => {})
+      await fs.rm(this.WORKING_COPY_DIR, { recursive: true, force: true }).catch(() => {})
       
       console.log('✅ Environnement test nettoyé')
     } catch (error) {

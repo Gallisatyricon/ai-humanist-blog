@@ -40,12 +40,15 @@ ai-humanist-blog/
 │   └── utils/
 │       ├── tagMatcher.ts                  ✅ Algorithmes filtrage
 │       └── graphAlgorithms.ts             ✅ Calculs graphique
-├── scripts/                               🆕 ARCHITECTURE TRIPLE PHASE 1
+├── scripts/                               🆕 PIPELINE CONSOLIDÉE 7 ÉTAPES
 │   ├── analyzeGroundTruth.ts              🆕 Analyse patterns validations manuelles
 │   ├── calibrateSemanticThresholds.ts     🆕 Calibrage seuils adaptatifs par domaine
 │   ├── enhanceGroundTruth.ts              🆕 PRINCIPAL - Architecture triple
-│   ├── validateTripleArchitecture.ts      🆕 Validation empirique (Score 82/100)
+│   ├── fixRelationSubtlety.ts             🆕 Affinage ponts interdisciplinaires
+│   ├── optimizeReadability.ts             🆕 Optimisation lisibilité graphique
+│   ├── validateTripleArchitecture.ts      🆕 Validation empirique (Score 83/100)
 │   ├── generateEmbeddings.ts              ✅ Embeddings Transformers.js (préservé)
+│   ├── testRunner.ts                      🆕 Tests sécurisés environnement isolé
 │   ├── writeFileAtomic.ts                 ✅ Écriture atomique + locks (préservé)
 │   ├── zodSchemas.ts                      ✅ Validation runtime Zod (préservé)
 │   ├── ground_truth_patterns.json        📄 99 validations analysées
@@ -53,15 +56,22 @@ ai-humanist-blog/
 │   ├── triple_validation_results.json    📄 Métriques validation finale
 │   ├── addArticleComplete.ts              ✅ Import articles (préservé)
 │   ├── batchImportArticles.ts             ✅ Import batch (préservé)
-│   └── old_scripts/                       🗃️ Archives scripts précédents
+│   └── config/paths.ts                    🆕 Configuration centralisée chemins
 ├── public/data/
-│   ├── articles.json                      ✅ 56 articles validés
-│   ├── connections.json                   🆕 208 connexions architecture triple
+│   ├── articles.json                      ✅ 65 articles validés (art_001→art_112)
+│   ├── connections.json                   🆕 244 connexions architecture triple
 │   └── embeddings.json                    ✅ Vecteurs sémantiques 384-D
+├── .archives/                             🗃️ Archives historiques organisées
+│   ├── scripts-phase10/                   📦 Scripts phases précédentes
+│   ├── scripts-phase11/                   📦 Scripts développement (18 fichiers)
+│   └── exports-legacy/                    📦 Exports historiques
+├── .backups/                              💾 Sauvegardes automatiques (CQ)
 └── docs/
-    ├── technical.md                       🆕 Architecture Phase 1 documentée
-    ├── progress.md                        🆕 Historique complet avec Phase 1
-    └── TODO_Phase11.md                    ✅ Plan Phase 1 + Phase 2 future
+    ├── README.md                          ✅ Architecture complète mise à jour
+    ├── technical.md                       🆕 Pipeline 7 étapes (ce fichier)
+    ├── progress.md                        🆕 Historique consolidation finale
+    ├── CONTROLE_QUALITE.md                🆕 Guide workflow CQ 382 lignes
+    └── TODO_Phase11.md                    ✅ Référence Phase 2
 ```
 
 ---
@@ -306,12 +316,25 @@ async function validateTripleArchitecture(): Promise<TripleValidation> {
 }
 ```
 
-**Résultats Validation :**
-- ✅ **Score global 82/100** : Production Ready
+**Pipeline Consolidé 7 Étapes :**
+```bash
+npm run generate-embeddings        # 1. Génération vecteurs 384-D
+npm run analyze-ground-truth       # 2. Analyse patterns (script ci-dessus)
+npm run calibrate-thresholds       # 3. Calibrage seuils (script ci-dessus)  
+npm run enhance-ground-truth       # 4. Architecture triple (script ci-dessus)
+npm run fix-subtlety               # 5. Affinage ponts interdisciplinaires
+npm run optimize-readability       # 6. Optimisation lisibilité graphique
+npm run validate-triple            # 7. Validation empirique (script ci-dessus)
+```
+
+**Résultats Pipeline Consolidé :**
+- ✅ **Score global 83/100** : Production Ready
 - ✅ **Couverture hard connections** : 100%
 - ✅ **Précision manual validations** : 100%
 - ✅ **Qualité semantic auto** : 75%
 - ✅ **Couverture articles** : 89% (min 2 connexions)
+- ✅ **Pipeline 7 étapes** : Opérationnelle et testée
+- ✅ **Tests sécurisés** : Environnement isolé testRunner.ts
 
 ---
 

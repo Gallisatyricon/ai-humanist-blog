@@ -6,6 +6,8 @@
 - **`analyzeGroundTruth.ts`** - ✅ **ANALYSE** : Extraction patterns validations manuelles
 - **`calibrateSemanticThresholds.ts`** - ✅ **CALIBRAGE** : Seuils adaptatifs par domaine  
 - **`enhanceGroundTruth.ts`** - ✅ **PRINCIPAL** : Architecture triple (Hard + Manual + Semantic)
+- **`fixRelationSubtlety.ts`** - ✅ **AFFINAGE** : Subtilité ponts interdisciplinaires
+- **`optimizeReadability.ts`** - ✅ **LISIBILITÉ** : Optimisation graphique densité
 - **`validateTripleArchitecture.ts`** - ✅ **VALIDATION** : Tests empiriques qualité
 
 ### 📥 Import & Gestion Articles
@@ -17,14 +19,15 @@
 
 ### 🧠 Intelligence & Infrastructure
 - **`generateEmbeddings.ts`** - ✅ Génération embeddings Transformers.js (384-D)
+- **`testRunner.ts`** - ✅ Tests sécurisés environnement isolé
 - **`writeFileAtomic.ts`** - ✅ Écriture atomique avec locks anti-corruption  
 - **`zodSchemas.ts`** - ✅ Validation runtime stricte avec Zod
-- **`config/paths.ts`** - 🆕 Configuration centralisée des chemins
+- **`config/paths.ts`** - ✅ Configuration centralisée des chemins
 
-### ❌ Scripts Manquants (Référencés mais Inexistants)
-- **`analyzeConnectionBias.ts`** - ❌ Référencé dans package.json (`analyze-bias`)
-- **`testPhase11Workflow.ts`** - ❌ Référencé dans package.json (`test-phase11`)
-- **`fixRelationSubtlety.ts`** - ❌ Message informatif dans package.json (`fix-subtlety`)
+### 🗃️ Scripts Archivés (.archives/scripts-phase11/)
+- **18 scripts de développement** consolidés et archivés après Phase 11
+- **Tests et expérimentations** : validateContradictions, analyzeConnectionDensity, etc.
+- **Versions itératives** : fixRelationSubtlety (archive), optimizeGraphReadability (archive)
 
 ### 📊 Fichiers de Données Générés
 - **`ground_truth_patterns.json`** - Patterns validations manuelles analysées
@@ -34,13 +37,14 @@
 ## 📋 Workflow Phase 1
 
 ```bash
-# Workflow complet Architecture Triple (ORIGINAL - FONCTIONNEL)
+# Workflow complet Architecture Triple (CONSOLIDÉ - FONCTIONNEL)
 npm run generate-embeddings        # 1. Génération vecteurs sémantiques 
 npm run analyze-ground-truth       # 2. Analyse patterns validations manuelles
 npm run calibrate-thresholds       # 3. Calibrage seuils adaptatifs
 npm run enhance-ground-truth       # 4. Architecture triple (PRINCIPAL)
-npm run fix-subtlety               # 5. Affinement subtilité relationnelle (Optionnel - non implémenté) ⚠️
-npm run validate-triple           # 6. Validation empirique qualité
+npm run fix-subtlety               # 5. Affinage subtilité ponts interdisciplinaires ✅
+npm run optimize-readability       # 6. Optimisation lisibilité graphique ✅
+npm run validate-triple            # 7. Validation empirique qualité
 
 # Workflow simplifié (pour nouveaux imports après setup)
 npm run generate-embeddings        # 1. Génération embeddings nouveaux articles

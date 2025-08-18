@@ -34,11 +34,11 @@
 
 ---
 
-## 🚀 Phase 1 ACCOMPLIE : Architecture Triple Ground Truth + Infrastructure
+## 🚀 Phase 1 ACCOMPLIE : Architecture Triple Ground Truth + Pipeline Consolidée
 
-### **Phase 1 ACCOMPLIE - Architecture Triple + 9 Nouveaux Articles + Infrastructure** ✅ 100% TERMINÉE
-**Durée :** 18 août 2025 (1 journée intensive)
-**Statut :** PRODUCTION READY - Score Qualité 83/100
+### **Phase 1 FINALE - Architecture Triple + Pipeline Consolidée + Infrastructure** ✅ 100% TERMINÉE  
+**Durée :** 18-19 août 2025 (2 journées intensives)
+**Statut :** PRODUCTION READY - Score Qualité 83/100 + Pipeline 7 Étapes Opérationnelle
 
 #### 🏗️ 1. Architecture Triple Ground Truth
 ```typescript
@@ -197,21 +197,38 @@ docs/
 └── CONTROLE_QUALITE.md             📋 Guide workflow CQ (381 lignes)
 ```
 
-**Workflow Consolidé :**
-- Scripts obsolètes supprimés (analyzeConnectionBias.ts, enrichConnections.ts, etc.)
-- Architecture triple centralisée dans enhanceGroundTruth.ts
-- Validation empirique automatisée
-- Documentation complète et mise à jour
+**Pipeline Consolidée 7 Étapes :**
+```bash
+npm run generate-embeddings        # 1. Génération vecteurs 384-D
+npm run analyze-ground-truth       # 2. Analyse patterns validations
+npm run calibrate-thresholds       # 3. Calibrage seuils adaptatifs
+npm run enhance-ground-truth       # 4. Architecture triple (PRINCIPAL)
+npm run fix-subtlety               # 5. Affinage ponts interdisciplinaires
+npm run optimize-readability       # 6. Optimisation lisibilité graphique
+npm run validate-triple            # 7. Validation empirique qualité
+```
 
-### 📚 Documentation Phase 1 ACCOMPLIE Mise à Jour
+**Consolidation Infrastructure :**
+- Scripts test archivés : `.archives/scripts-phase11/` (18 fichiers)
+- Scripts production : `scripts/` (13 fichiers actifs)
+- Tests sécurisés : `testRunner.ts` environnement isolé
+- Documentation mise à jour : README.md, scripts/README.md, docs/
+
+### 📚 Documentation Consolidée Phase 1 FINALE
 ```
 docs/
-├── TECHNICAL.md                 ✅ Architecture Phase 1 ACCOMPLIE complète
-├── PROGRESS.md                  ✅ Historique détaillé avec Phase 1 ACCOMPLIE
-├── TODO_Phase11.md              ✅ Plan Phase 2 basé sur Phase 1 (référence)
-├── CONTROLE_QUALITE.md          🆕 Guide workflow CQ 381 lignes (Phase 1)
-├── TEMPLATES.md                 ✅ Templates JSON intégrations
-└── README.md                    ✅ Vue d'ensemble développeur
+├── README.md                    ✅ Architecture complète + .archives/.backups
+├── CONTROLE_QUALITE.md          ✅ Guide workflow CQ 382 lignes
+├── technical.md                 ✅ Pipeline 7 étapes + testRunner
+├── progress.md                  ✅ Historique + consolidation finale (ce fichier)
+├── TODO_Phase11.md              ✅ Référence Phase 2
+├── TEMPLATES.md                 ✅ Templates JSON intégrations  
+└── DEPLOYMENT.md                ✅ Configuration production
+
+Structure Archives Organisée :
+├── .archives/scripts-phase11/   📦 Scripts développement (18 fichiers)
+├── .backups/                    💾 Sauvegardes automatiques CQ
+└── scripts/                     🔧 Pipeline production (13 fichiers)
 ```
 
 ---

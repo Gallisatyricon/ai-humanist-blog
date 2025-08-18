@@ -1,0 +1,4077 @@
+{
+  "connections": [
+    {
+      "source_id": "art_001",
+      "target_id": "art_100",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_012",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_001",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_005",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_016",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_013",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_002",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_020",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_015",
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_016",
+      "target_id": "art_020",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_017",
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_018",
+      "target_id": "art_013",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_019",
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_020",
+      "target_id": "art_101",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_021",
+      "target_id": "art_022",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_022",
+      "target_id": "art_021",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_023",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_024",
+      "target_id": "art_026",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_025",
+      "target_id": "art_026",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_026",
+      "target_id": "art_024",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_027",
+      "target_id": "art_026",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_028",
+      "target_id": "art_026",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_019",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_100",
+      "target_id": "art_001",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_101",
+      "target_id": "art_020",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_102",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_103",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "oss_art_001",
+      "target_id": "art_019",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "oss_art_005",
+      "target_id": "art_012",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "oss_art_008",
+      "target_id": "art_024",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "oss_art_012",
+      "target_id": "art_018",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "oss_art_020",
+      "target_id": "art_024",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "oss_art_023",
+      "target_id": "art_013",
+      "type": "builds_on",
+      "strength": 0.9,
+      "auto_detected": false,
+      "reasoning": "Connexion directe pré-validée lors de création article",
+      "source": "hard_connection"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_002",
+      "type": "implements",
+      "strength": 0.82,
+      "auto_detected": false,
+      "reasoning": "LATEC fournit les outils d'évaluation concrets pour les exigences de transparence théorisées dans l'article sur l'ingénierie logicielle éthique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.76,
+      "auto_detected": false,
+      "reasoning": "L'évaluation systématique de l'explicabilité questionne certaines illusions de compréhension identifiées par Messeri & Crockett.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_018",
+      "type": "builds_on",
+      "strength": 0.71,
+      "auto_detected": false,
+      "reasoning": "Étend les principes de transparence IEEE par des métriques empiriques d'évaluation de l'explicabilité.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_001",
+      "type": "builds_on",
+      "strength": 0.82,
+      "auto_detected": false,
+      "reasoning": "Fournit le cadre méthodologique d'ingénierie pour implémenter concrètement les évaluations XAI systématisées par LATEC.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_018",
+      "type": "similar_to",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche de traduction des principes éthiques abstraits en exigences techniques opérationnelles.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_023",
+      "type": "implements",
+      "strength": 0.69,
+      "auto_detected": false,
+      "reasoning": "Propose des méthodes concrètes pour intégrer les frameworks éthiques holistiques dans le développement logiciel.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_005",
+      "type": "builds_on",
+      "strength": 0.78,
+      "auto_detected": false,
+      "reasoning": "L'approche fédérée complète la critique de la confidentialité différentielle en proposant des solutions techniques concrètes pour la préservation de la vie privée.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_004",
+      "type": "similar_to",
+      "strength": 0.72,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche d'optimisation sous contraintes, ici de confidentialité plutôt que d'équité, avec des défis mathématiques comparables.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_007",
+      "type": "implements",
+      "strength": 0.66,
+      "auto_detected": false,
+      "reasoning": "Fournit des solutions techniques pour atténuer les discriminations algorithmiques identifiées dans les systèmes de recrutement.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_005",
+      "target_id": "art_003",
+      "type": "questions",
+      "strength": 0.81,
+      "auto_detected": false,
+      "reasoning": "Interroge les fondements mêmes de l'approche fédérée en révélant que la protection technique peut masquer des violations conceptuelles de la confidentialité.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_005",
+      "target_id": "art_012",
+      "type": "builds_on",
+      "strength": 0.73,
+      "auto_detected": false,
+      "reasoning": "Étend la critique de l'équité algorithmique en révélant les illusions de neutralité dans les frameworks de confidentialité différentielle.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_005",
+      "target_id": "art_008",
+      "type": "similar_to",
+      "strength": 0.68,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche critique qui révèle les tensions entre principes techniques et implications éthiques réelles.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.77,
+      "auto_detected": false,
+      "reasoning": "La philosophie de l'esprit questionne l'anthropocentrisme implicite des fondements philosophiques IA, révélant l'étroitesse de certaines conceptions de l'intelligence.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_020",
+      "type": "builds_on",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Fournit les assises conceptuelles nécessaires pour comprendre les enjeux de conscience artificielle explorés dans l'investigation MIT Technology Review.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_101",
+      "type": "implements",
+      "strength": 0.71,
+      "auto_detected": false,
+      "reasoning": "Offre le cadre théorique général que les indicateurs computationnels de conscience tentent d'opérationnaliser.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_008",
+      "type": "builds_on",
+      "strength": 0.83,
+      "auto_detected": false,
+      "reasoning": "L'analyse du recrutement algorithmique illustre concrètement les tensions théoriques entre équité et précision identifiées dans l'analyse des principes éthiques.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_010",
+      "type": "questions",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Les cas pratiques de discrimination questionnent l'efficacité des définitions philosophiques abstraites d'équité proposées par Stanford.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_004",
+      "type": "implements",
+      "strength": 0.72,
+      "auto_detected": false,
+      "reasoning": "Fournit un cas d'usage concret pour les méthodes d'optimisation sous contraintes d'équité développées dans l'article ICML.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_007",
+      "type": "questions",
+      "strength": 0.79,
+      "auto_detected": false,
+      "reasoning": "L'analyse des cas pratiques remet en question l'optimisme des principes éthiques généraux face à la persistance des discriminations systémiques.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.76,
+      "auto_detected": false,
+      "reasoning": "Illustre les défis concrets d'implémentation des principes UNESCO dans des contextes organisationnels spécifiques.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_011",
+      "type": "implements",
+      "strength": 0.73,
+      "auto_detected": false,
+      "reasoning": "Fournit des études de cas empiriques pour les recherches sur les perceptions d'équité algorithmique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_010",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "L'approche UNESCO fournit le cadre institutionnel international que la philosophie Stanford examine d'un point de vue théorique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_013",
+      "type": "implements",
+      "strength": 0.78,
+      "auto_detected": false,
+      "reasoning": "Les mécanismes de responsabilité OCDE implémentent concrètement les principes éthiques établis par UNESCO.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_023",
+      "type": "similar_to",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche d'intégration holistique des principes éthiques, mais à l'échelle internationale plutôt qu'organisationnelle.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_009",
+      "type": "questions",
+      "strength": 0.82,
+      "auto_detected": false,
+      "reasoning": "L'abstraction philosophique de l'équité se heurte aux résistances concrètes révélées par l'analyse UNESCO des inégalités systémiques.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_012",
+      "type": "builds_on",
+      "strength": 0.78,
+      "auto_detected": false,
+      "reasoning": "Fournit les fondements conceptuels que l'analyse juridique tente de traduire en contraintes opérationnelles, révélant la difficulté de cette traduction.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_011",
+      "type": "implements",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Offre le cadre théorique général pour comprendre les perceptions empiriques d'équité étudiées dans la revue systématique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_008",
+      "type": "implements",
+      "strength": 0.8,
+      "auto_detected": false,
+      "reasoning": "Les perceptions empiriques d'équité trouvent leur illustration concrète dans les discriminations analysées dans le recrutement automatisé.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_010",
+      "type": "questions",
+      "strength": 0.76,
+      "auto_detected": false,
+      "reasoning": "L'étude empirique des perceptions remet en question l'universalité supposée des définitions philosophiques d'équité proposées par Stanford.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_013",
+      "type": "builds_on",
+      "strength": 0.73,
+      "auto_detected": false,
+      "reasoning": "Fournit la base empirique nécessaire pour comprendre l'acceptabilité sociale des mécanismes de responsabilité proposés par l'OCDE.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_005",
+      "type": "questions",
+      "strength": 0.84,
+      "auto_detected": false,
+      "reasoning": "L'écart entre formalisme juridique et réalité technique révèle les limites de l'approche critique de la confidentialité différentielle, qui reste trop abstraite pour le droit.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_011",
+      "type": "builds_on",
+      "strength": 0.79,
+      "auto_detected": false,
+      "reasoning": "Les perceptions empiriques d'équité fournissent la base sociologique nécessaire pour comprendre les résistances à la traduction juridique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_013",
+      "type": "implements",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Illustre concrètement les défis d'accountability évoqués dans le cadre OCDE, en montrant la complexité de leur mise en œuvre juridique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.81,
+      "auto_detected": false,
+      "reasoning": "Les mécanismes concrets de responsabilité OCDE opérationnalisent les principes éthiques généraux défendus par UNESCO à l'échelle internationale.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.77,
+      "auto_detected": false,
+      "reasoning": "L'approche institutionnelle questionne l'efficacité des mécanismes juridiques purs face aux perceptions sociales complexes d'équité.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_023",
+      "type": "similar_to",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche systémique d'intégration des principes éthiques, mais au niveau institutionnel plutôt qu'organisationnel.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_006",
+      "type": "questions",
+      "strength": 0.82,
+      "auto_detected": false,
+      "reasoning": "La réflexion accessible sur philosophie de l'esprit révèle les limites de l'analyse encyclopédique Stanford, trop abstraite pour toucher aux enjeux contemporains.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_101",
+      "type": "builds_on",
+      "strength": 0.78,
+      "auto_detected": false,
+      "reasoning": "Fournit le contexte philosophique général nécessaire pour comprendre les enjeux techniques spécifiques de l'évaluation de la conscience artificielle.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_021",
+      "type": "similar_to",
+      "strength": 0.71,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche d'exploration des frontières conceptuelles entre esprit humain et intelligence artificielle, mais avec une accessibilité plus grande.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_016",
+      "target_id": "art_020",
+      "type": "builds_on",
+      "strength": 0.83,
+      "auto_detected": false,
+      "reasoning": "L'investigation journalistique sur la conscience IA fournit le contexte empirique et les enjeux concrets que l'analyse philosophique explore de manière plus abstraite.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_016",
+      "target_id": "art_101",
+      "type": "questions",
+      "strength": 0.76,
+      "auto_detected": false,
+      "reasoning": "Le poids moral de la conscience artificielle questionne l'approche purement technique des indicateurs computationnels, révélant leurs limites éthiques.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_016",
+      "target_id": "art_014",
+      "type": "similar_to",
+      "strength": 0.69,
+      "auto_detected": false,
+      "reasoning": "Partage l'exploration accessible des implications philosophiques de l'IA, mais avec un focus spécifique sur les questions de conscience et de droits.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_017",
+      "target_id": "art_001",
+      "type": "implements",
+      "strength": 0.81,
+      "auto_detected": false,
+      "reasoning": "La recherche sur transparence et reproductibilité fournit les fondements méthodologiques que LATEC opérationnalise dans l'évaluation de l'explicabilité.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_017",
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.78,
+      "auto_detected": false,
+      "reasoning": "Les obstacles à la reproductibilité illustrent concrètement les illusions de compréhension identifiées dans l'analyse épistémologique de Messeri & Crockett.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_017",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.71,
+      "auto_detected": false,
+      "reasoning": "Les défis de reproductibilité questionnent l'optimisme du directeur NSF sur la démocratisation de l'infrastructure de recherche IA.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_018",
+      "target_id": "art_002",
+      "type": "builds_on",
+      "strength": 0.8,
+      "auto_detected": false,
+      "reasoning": "Les cadres éthiques IEEE fournissent les principes que la sauvegarde du bien-être algorithmique tente d'institutionnaliser dans les systèmes décisionnels.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_018",
+      "target_id": "art_013",
+      "type": "implements",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Illustre concrètement l'application des mécanismes de responsabilité OCDE dans la protection du bien-être humain face aux décisions algorithmiques.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_018",
+      "target_id": "art_023",
+      "type": "similar_to",
+      "strength": 0.71,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche d'intégration systémique des principes éthiques, mais avec un focus spécifique sur la préservation du bien-être humain.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_019",
+      "target_id": "art_017",
+      "type": "questions",
+      "strength": 0.82,
+      "auto_detected": false,
+      "reasoning": "La vision institutionnelle NSF est questionnée par les obstacles concrets de reproductibilité qui révèlent les défis de la démocratisation technologique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_019",
+      "target_id": "art_015",
+      "type": "builds_on",
+      "strength": 0.76,
+      "auto_detected": false,
+      "reasoning": "L'écosystème de recherche démocratisé s'appuie sur les principes de collaboration humain-IA développés dans l'analyse Harvard Business Review.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_019",
+      "target_id": "art_029",
+      "type": "implements",
+      "strength": 0.73,
+      "auto_detected": false,
+      "reasoning": "Propose une infrastructure concrète pour atténuer les monocultures scientifiques identifiées dans l'analyse épistémologique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_020",
+      "target_id": "art_016",
+      "type": "questions",
+      "strength": 0.84,
+      "auto_detected": false,
+      "reasoning": "L'investigation approfondie sur la conscience artificielle questionne les implications morales superficiellement abordées dans l'article MIT Technology Review.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_020",
+      "target_id": "art_101",
+      "type": "builds_on",
+      "strength": 0.81,
+      "auto_detected": false,
+      "reasoning": "L'enquête journalistique rend accessible au grand public les enjeux techniques complexes des indicateurs de conscience computationnelle.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_020",
+      "target_id": "art_014",
+      "type": "implements",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Traduit les questions abstraites de philosophie de l'esprit en enjeux concrets et accessibles pour la société contemporaine.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_021",
+      "target_id": "art_022",
+      "type": "builds_on",
+      "strength": 0.79,
+      "auto_detected": false,
+      "reasoning": "La recherche Edinburgh sur l'esprit étendu fournit les fondements théoriques que l'analyse de Clark sur l'IA générative applique aux technologies contemporaines.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_021",
+      "target_id": "art_015",
+      "type": "questions",
+      "strength": 0.72,
+      "auto_detected": false,
+      "reasoning": "L'approche théorique de l'esprit étendu remet en question l'optimisme pratique de la collaboration humain-IA, révélant ses implications cognitives profondes.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_021",
+      "target_id": "art_020",
+      "type": "similar_to",
+      "strength": 0.68,
+      "auto_detected": false,
+      "reasoning": "Partage l'exploration des transformations cognitives induites par l'IA, mais avec un focus académique plutôt qu'investigation journalistique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_022",
+      "target_id": "art_021",
+      "type": "implements",
+      "strength": 0.83,
+      "auto_detected": false,
+      "reasoning": "L'analyse concrète de Clark sur l'IA générative opérationnalise les concepts théoriques d'esprit étendu développés par Edinburgh.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_022",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.76,
+      "auto_detected": false,
+      "reasoning": "L'intégration cognitive humain-IA est questionnée par l'analyse des illusions de compréhension qui révèlent les risques de cette extension.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_022",
+      "target_id": "art_015",
+      "type": "builds_on",
+      "strength": 0.71,
+      "auto_detected": false,
+      "reasoning": "Approfondit les implications cognitives de la collaboration humain-IA au-delà des considérations purement organisationnelles.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_023",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.85,
+      "auto_detected": false,
+      "reasoning": "Le framework d'intégration éthique holistique opérationnalise concrètement les principes UNESCO à l'échelle organisationnelle et technique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_023",
+      "target_id": "art_002",
+      "type": "implements",
+      "strength": 0.78,
+      "auto_detected": false,
+      "reasoning": "Illustre l'application pratique de la traduction des principes éthiques en exigences techniques dans un cadre intégré.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_023",
+      "target_id": "art_018",
+      "type": "similar_to",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche systémique de sauvegarde du bien-être, mais avec un focus sur l'intégration plutôt que sur la protection.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_024",
+      "target_id": "art_026",
+      "type": "questions",
+      "strength": 0.87,
+      "auto_detected": false,
+      "reasoning": "L'analyse critique ACM remet en cause l'optimisme quantitatif de l'étude LSE sur l'IA climatique, révélant les limites de l'approche purement efficaciste.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_024",
+      "target_id": "art_027",
+      "type": "builds_on",
+      "strength": 0.82,
+      "auto_detected": false,
+      "reasoning": "Fournit le cadre critique nécessaire pour interpréter les chiffres d'empreinte énergétique révélés par l'investigation MIT Technology Review.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_024",
+      "target_id": "art_028",
+      "type": "implements",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Traduit les préoccupations institutionnelles UNEP en analyse technique rigoureuse des enjeux de durabilité systémique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_025",
+      "target_id": "art_025",
+      "type": "implements",
+      "strength": 0.81,
+      "auto_detected": false,
+      "reasoning": "L'optimisation énergétique des bâtiments illustre concrètement les principes de durabilité systémique critiqués dans l'analyse ACM.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_025",
+      "target_id": "art_027",
+      "type": "builds_on",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Les gains d'efficacité quantifiés s'inscrivent dans le panorama énergétique global révélé par l'investigation MIT Technology Review.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_025",
+      "target_id": "art_028",
+      "type": "similar_to",
+      "strength": 0.68,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche d'application concrète de l'IA aux défis environnementaux, mais avec un focus sectoriel plutôt qu'institutionnel.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_026",
+      "target_id": "art_024",
+      "type": "questions",
+      "strength": 0.89,
+      "auto_detected": false,
+      "reasoning": "L'ambition quantitative de l'étude LSE est questionnée par l'approche critique ACM qui révèle les limites des approches purement techniques.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_026",
+      "target_id": "art_025",
+      "type": "builds_on",
+      "strength": 0.83,
+      "auto_detected": false,
+      "reasoning": "S'appuie sur l'analyse critique de durabilité pour proposer une vision plus nuancée du rôle de l'IA dans la transition climatique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_026",
+      "target_id": "art_027",
+      "type": "implements",
+      "strength": 0.76,
+      "auto_detected": false,
+      "reasoning": "Fournit les données quantitatives nécessaires pour valider ou invalider l'investigation journalistique sur l'empreinte énergétique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_027",
+      "target_id": "art_024",
+      "type": "builds_on",
+      "strength": 0.86,
+      "auto_detected": false,
+      "reasoning": "L'investigation quantitative MIT s'appuie sur les critiques systémiques ACM pour révéler l'ampleur réelle de l'empreinte énergétique IA.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_027",
+      "target_id": "art_026",
+      "type": "questions",
+      "strength": 0.8,
+      "auto_detected": false,
+      "reasoning": "Les chiffres rigoureux de consommation questionnent l'optimisme de l'étude LSE sur les bénéfices climatiques nets de l'IA.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_027",
+      "target_id": "art_028",
+      "type": "implements",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Fournit les données empiriques nécessaires pour valider les préoccupations institutionnelles UNEP sur l'impact environnemental.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_028",
+      "target_id": "art_026",
+      "type": "builds_on",
+      "strength": 0.79,
+      "auto_detected": false,
+      "reasoning": "Les préoccupations institutionnelles UNEP trouvent leur validation empirique dans les études quantitatives sur l'IA climatique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_028",
+      "target_id": "art_027",
+      "type": "questions",
+      "strength": 0.73,
+      "auto_detected": false,
+      "reasoning": "La gouvernance internationale questionne l'efficacité des mesures purement techniques révélées par l'investigation MIT.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_028",
+      "target_id": "art_024",
+      "type": "similar_to",
+      "strength": 0.7,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche systémique de durabilité, mais au niveau institutionnel mondial plutôt qu'organisationnel.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_001",
+      "type": "questions",
+      "strength": 0.91,
+      "auto_detected": false,
+      "reasoning": "L'analyse épistémologique des illusions de compréhension remet en cause l'optimisme de l'évaluation systématique XAI, révélant ses limites conceptuelles.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_015",
+      "type": "contradicts",
+      "strength": 0.84,
+      "auto_detected": false,
+      "reasoning": "L'identification des monocultures scientifiques contredit directement l'optimisme de l'intelligence collaborative, révélant ses risques épistémiques.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_029",
+      "target_id": "art_017",
+      "type": "builds_on",
+      "strength": 0.78,
+      "auto_detected": false,
+      "reasoning": "Les obstacles à la reproductibilité illustrent concrètement les illusions de compréhension identifiées dans l'analyse théorique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_100",
+      "target_id": "art_029",
+      "type": "builds_on",
+      "strength": 0.82,
+      "auto_detected": false,
+      "reasoning": "La revue systématique neuro-symbolique illustre concrètement les tendances de spécialisation et les lacunes identifiées dans l'analyse épistémologique.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_100",
+      "target_id": "art_001",
+      "type": "implements",
+      "strength": 0.75,
+      "auto_detected": false,
+      "reasoning": "Fournit le contexte méthodologique systématique que l'évaluation LATEC applique spécifiquement au domaine de l'explicabilité.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_100",
+      "target_id": "art_101",
+      "type": "similar_to",
+      "strength": 0.68,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche d'intégration théorique-pratique, mais pour les systèmes neuro-symboliques plutôt que la conscience artificielle.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_101",
+      "target_id": "art_016",
+      "type": "implements",
+      "strength": 0.88,
+      "auto_detected": false,
+      "reasoning": "Fournit les indicateurs computationnels rigoureux pour opérationnaliser les questions morales de conscience artificielle soulevées par MIT Technology Review.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_101",
+      "target_id": "art_020",
+      "type": "builds_on",
+      "strength": 0.83,
+      "auto_detected": false,
+      "reasoning": "Étend l'investigation journalistique par un cadre scientifique rigoureux basé sur les théories neuroscientifiques de la conscience.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_101",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.76,
+      "auto_detected": false,
+      "reasoning": "L'approche technique des indicateurs de conscience questionne la pertinence des analyses philosophiques générales de l'esprit.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_102",
+      "target_id": "art_015",
+      "type": "questions",
+      "strength": 0.86,
+      "auto_detected": false,
+      "reasoning": "L'analyse multidisciplinaire des assistants IA révèle les limites de l'optimisme collaboratif, identifiant des risques de manipulation et d'alignement.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_102",
+      "target_id": "art_009",
+      "type": "builds_on",
+      "strength": 0.79,
+      "auto_detected": false,
+      "reasoning": "Étend les principes éthiques UNESCO aux défis spécifiques posés par les assistants IA avancés dans le déploiement sociétal.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_102",
+      "target_id": "art_023",
+      "type": "implements",
+      "strength": 0.72,
+      "auto_detected": false,
+      "reasoning": "Illustre concrètement les enjeux d'intégration éthique holistique dans le développement d'assistants IA complexes.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_103",
+      "target_id": "art_102",
+      "type": "builds_on",
+      "strength": 0.81,
+      "auto_detected": false,
+      "reasoning": "La cartographie systématique de l'éthique générative fournit le cadre taxonomique nécessaire pour comprendre les enjeux des assistants IA avancés.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_103",
+      "target_id": "art_008",
+      "type": "implements",
+      "strength": 0.74,
+      "auto_detected": false,
+      "reasoning": "Illustre concrètement les tensions théoriques entre principes éthiques abstraits et applications génératives spécifiques.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_103",
+      "target_id": "art_023",
+      "type": "similar_to",
+      "strength": 0.68,
+      "auto_detected": false,
+      "reasoning": "Partage l'approche systématique de cartographie éthique, mais spécifiquement pour les technologies génératives.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "oss_art_001",
+      "target_id": "art_019",
+      "type": "builds_on",
+      "strength": 0.8,
+      "auto_detected": false,
+      "reasoning": "Connexion manuelle validée (domaine commun + sous-thèmes) pour meilleure pertinence.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "oss_art_005",
+      "target_id": "art_012",
+      "type": "builds_on",
+      "strength": 0.8,
+      "auto_detected": false,
+      "reasoning": "Connexion manuelle validée (domaine commun + sous-thèmes) pour meilleure pertinence.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "oss_art_008",
+      "target_id": "art_024",
+      "type": "builds_on",
+      "strength": 0.8,
+      "auto_detected": false,
+      "reasoning": "Connexion manuelle validée (domaine commun + sous-thèmes) pour meilleure pertinence.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "oss_art_012",
+      "target_id": "art_018",
+      "type": "builds_on",
+      "strength": 0.8,
+      "auto_detected": false,
+      "reasoning": "Connexion manuelle validée (domaine commun + sous-thèmes) pour meilleure pertinence.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "oss_art_020",
+      "target_id": "art_024",
+      "type": "builds_on",
+      "strength": 0.8,
+      "auto_detected": false,
+      "reasoning": "Connexion manuelle validée (domaine commun + sous-thèmes) pour meilleure pertinence.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "oss_art_023",
+      "target_id": "art_013",
+      "type": "builds_on",
+      "strength": 0.8,
+      "auto_detected": false,
+      "reasoning": "Connexion manuelle validée (domaine commun + sous-thèmes) pour meilleure pertinence.",
+      "source": "manual_validation"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_031",
+      "type": "contradicts",
+      "strength": 0.8,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.741 (contradicts)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_030",
+      "type": "contradicts",
+      "strength": 0.8,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.741 (contradicts)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_002",
+      "type": "contradicts",
+      "strength": 0.7294228265984577,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.644 (contradicts)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_031",
+      "target_id": "art_001",
+      "type": "contradicts",
+      "strength": 0.6996382806339436,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.611 (contradicts)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_040",
+      "target_id": "art_017",
+      "type": "contradicts",
+      "strength": 0.5386892215068259,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.432 (contradicts)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_111",
+      "target_id": "art_015",
+      "type": "contradicts",
+      "strength": 0.5431279109557081,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.437 (contradicts)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_052",
+      "target_id": "art_101",
+      "type": "similar_to",
+      "strength": 0.9323038282959909,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.982 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_028",
+      "type": "questions",
+      "strength": 0.8724176273581667,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_018",
+      "type": "similar_to",
+      "strength": 0.8398525916869,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.890 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_004",
+      "type": "questions",
+      "strength": 0.8103653492628651,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_009",
+      "type": "questions",
+      "strength": 0.7993644818595513,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_101",
+      "type": "similar_to",
+      "strength": 0.7992018328917274,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.849 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_028",
+      "type": "questions",
+      "strength": 0.7988902321686278,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.7948296963968224,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_053",
+      "target_id": "art_020",
+      "type": "similar_to",
+      "strength": 0.772805952645252,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.823 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_052",
+      "type": "similar_to",
+      "strength": 0.7720556760053623,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.822 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_052",
+      "target_id": "art_051",
+      "type": "similar_to",
+      "strength": 0.7720556760053623,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.822 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_017",
+      "type": "questions",
+      "strength": 0.7656676037072119,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_037",
+      "target_id": "art_023",
+      "type": "questions",
+      "strength": 0.7654517163795432,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.957 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_037",
+      "type": "builds_on",
+      "strength": 0.7611602962542315,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.761 (builds_on)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_037",
+      "target_id": "art_033",
+      "type": "builds_on",
+      "strength": 0.7611602962542315,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.761 (builds_on)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_014",
+      "type": "similar_to",
+      "strength": 0.7611168236811764,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.811 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_053",
+      "target_id": "art_016",
+      "type": "similar_to",
+      "strength": 0.7550706915891449,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.805 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_016",
+      "type": "questions",
+      "strength": 0.7526469011068171,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_006",
+      "type": "questions",
+      "strength": 0.749566301846087,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_008",
+      "type": "questions",
+      "strength": 0.7457559957516873,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_004",
+      "type": "questions",
+      "strength": 0.7296084762813997,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_032",
+      "target_id": "art_038",
+      "type": "builds_on",
+      "strength": 0.720925874488219,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.721 (builds_on)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_038",
+      "target_id": "art_032",
+      "type": "builds_on",
+      "strength": 0.720925874488219,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.721 (builds_on)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_037",
+      "type": "questions",
+      "strength": 0.7203050933228579,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_104",
+      "type": "questions",
+      "strength": 0.7160418854650625,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_109",
+      "type": "questions",
+      "strength": 0.7148006435615117,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.71425627111888,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_016",
+      "type": "questions",
+      "strength": 0.7122882827021699,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_023",
+      "type": "questions",
+      "strength": 0.7109525749468035,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_051",
+      "type": "questions",
+      "strength": 0.7098152419098935,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_100",
+      "type": "questions",
+      "strength": 0.7094534906341023,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔technique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.7093740869580945,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_104",
+      "type": "questions",
+      "strength": 0.7072290223634321,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_001",
+      "type": "implements",
+      "strength": 0.70570421091,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.642 (implements)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.7027472893958677,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_023",
+      "type": "questions",
+      "strength": 0.7026410868777313,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.7004584437764052,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔recherche"
+    },
+    {
+      "source_id": "art_051",
+      "target_id": "art_020",
+      "type": "questions",
+      "strength": 0.6980948556428513,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.873 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_035",
+      "target_id": "art_010",
+      "type": "similar_to",
+      "strength": 0.6957290522441492,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.746 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_054",
+      "target_id": "art_016",
+      "type": "similar_to",
+      "strength": 0.6928145047064306,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.743 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_100",
+      "type": "questions",
+      "strength": 0.6878953435777895,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔technique"
+    },
+    {
+      "source_id": "art_035",
+      "target_id": "art_012",
+      "type": "similar_to",
+      "strength": 0.6871881471372325,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.737 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_054",
+      "target_id": "art_053",
+      "type": "similar_to",
+      "strength": 0.6868494393643524,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.737 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_102",
+      "type": "questions",
+      "strength": 0.6853395450441069,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_053",
+      "type": "questions",
+      "strength": 0.6831762725456237,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_053",
+      "type": "questions",
+      "strength": 0.6831458682124993,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_054",
+      "target_id": "art_020",
+      "type": "similar_to",
+      "strength": 0.6827517226451053,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.733 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.6823378054696678,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_020",
+      "type": "questions",
+      "strength": 0.678200426839028,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_030",
+      "type": "questions",
+      "strength": 0.6748360528233903,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_015",
+      "type": "questions",
+      "strength": 0.6728692471239248,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔usage_professionnel"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_016",
+      "type": "questions",
+      "strength": 0.6716777956926291,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_024",
+      "type": "questions",
+      "strength": 0.6673917866336023,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_051",
+      "type": "questions",
+      "strength": 0.654250978892816,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_103",
+      "type": "questions",
+      "strength": 0.6507871417959106,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_100",
+      "type": "questions",
+      "strength": 0.6494888441238027,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.6491969312764965,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_036",
+      "target_id": "art_023",
+      "type": "similar_to",
+      "strength": 0.6490282977404295,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.699 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_037",
+      "target_id": "art_009",
+      "type": "similar_to",
+      "strength": 0.6487634308066557,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.699 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.6480684211818869,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔recherche"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_037",
+      "type": "questions",
+      "strength": 0.6475522850878173,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.6469392162253846,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔recherche"
+    },
+    {
+      "source_id": "art_034",
+      "target_id": "art_012",
+      "type": "similar_to",
+      "strength": 0.6450487859777065,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.695 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_041",
+      "target_id": "art_010",
+      "type": "similar_to",
+      "strength": 0.6445234241205046,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.695 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_037",
+      "target_id": "art_002",
+      "type": "similar_to",
+      "strength": 0.6444699360002436,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.694 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_051",
+      "type": "questions",
+      "strength": 0.6444253816399947,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_041",
+      "target_id": "art_012",
+      "type": "similar_to",
+      "strength": 0.6444014211030005,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.694 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_052",
+      "target_id": "art_020",
+      "type": "questions",
+      "strength": 0.6440691868361439,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.805 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.6435836659396341,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_023",
+      "type": "questions",
+      "strength": 0.6431021798017889,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_037",
+      "type": "questions",
+      "strength": 0.6416222705188586,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.6400006765697442,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.6399295465881234,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.6387532719845741,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_028",
+      "type": "questions",
+      "strength": 0.6375849682660302,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_053",
+      "type": "questions",
+      "strength": 0.6371801983422274,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_023",
+      "type": "questions",
+      "strength": 0.6371268643844634,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_024",
+      "type": "questions",
+      "strength": 0.6369153422239366,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_024",
+      "type": "questions",
+      "strength": 0.6361445820073612,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_053",
+      "target_id": "art_051",
+      "type": "questions",
+      "strength": 0.6351493830795208,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.794 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_033",
+      "target_id": "art_023",
+      "type": "questions",
+      "strength": 0.6323699514184544,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.790 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_035",
+      "type": "questions",
+      "strength": 0.6323033122236466,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.6319659228567645,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_015",
+      "type": "questions",
+      "strength": 0.6310338027417646,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔usage_professionnel"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_020",
+      "type": "questions",
+      "strength": 0.631002204422733,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_004",
+      "type": "questions",
+      "strength": 0.6305339231601643,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_035",
+      "type": "questions",
+      "strength": 0.6282467986724152,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_102",
+      "type": "questions",
+      "strength": 0.624679607159746,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.6218088824468564,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔usage_professionnel"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.6212901332556133,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔recherche"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_111",
+      "type": "questions",
+      "strength": 0.6209684357635963,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔recherche"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.6205004368964222,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_030",
+      "type": "questions",
+      "strength": 0.6202343050357486,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_053",
+      "target_id": "art_101",
+      "type": "questions",
+      "strength": 0.6183079123800681,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.773 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_018",
+      "type": "questions",
+      "strength": 0.6175859697490879,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_020",
+      "type": "questions",
+      "strength": 0.616674500152048,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_015",
+      "type": "questions",
+      "strength": 0.6161459547572912,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_016",
+      "type": "questions",
+      "strength": 0.6153436483188219,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_052",
+      "target_id": "art_053",
+      "type": "questions",
+      "strength": 0.6151714478273964,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.769 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_103",
+      "type": "questions",
+      "strength": 0.6148367621908293,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_015",
+      "type": "questions",
+      "strength": 0.6147641607068944,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_008",
+      "type": "questions",
+      "strength": 0.614754151542013,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_052",
+      "type": "questions",
+      "strength": 0.6138848690843118,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_009",
+      "type": "questions",
+      "strength": 0.6134646112701779,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_104",
+      "target_id": "art_109",
+      "type": "similar_to",
+      "strength": 0.6115224182652228,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.662 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_109",
+      "target_id": "art_104",
+      "type": "similar_to",
+      "strength": 0.6115224182652228,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.662 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_108",
+      "type": "questions",
+      "strength": 0.6113699178651976,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.6103058040358894,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_006",
+      "type": "questions",
+      "strength": 0.6090306305110387,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔philosophie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_101",
+      "type": "questions",
+      "strength": 0.6076050134181388,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_022",
+      "type": "questions",
+      "strength": 0.607482612074653,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_106",
+      "type": "questions",
+      "strength": 0.6066883155108834,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.6065175912839766,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.6058493477480906,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_015",
+      "type": "questions",
+      "strength": 0.605821007013128,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.6054983671979006,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔usage_professionnel"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_017",
+      "type": "questions",
+      "strength": 0.6053601233815976,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_010",
+      "type": "questions",
+      "strength": 0.6051725862319604,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.6050181603772802,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_101",
+      "type": "questions",
+      "strength": 0.6048422036794701,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_041",
+      "type": "questions",
+      "strength": 0.604552663502086,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_037",
+      "type": "questions",
+      "strength": 0.6035381509788598,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_103",
+      "type": "questions",
+      "strength": 0.5984865896004445,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.5982915183189412,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.5978093331939738,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_112",
+      "type": "questions",
+      "strength": 0.5942496030866996,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔technique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_101",
+      "type": "questions",
+      "strength": 0.5924466464716243,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_035",
+      "type": "questions",
+      "strength": 0.5879248127279619,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_054",
+      "target_id": "art_101",
+      "type": "questions",
+      "strength": 0.5862812083859346,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.733 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_105",
+      "type": "questions",
+      "strength": 0.5842143774254112,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_015",
+      "type": "questions",
+      "strength": 0.583837062004955,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_100",
+      "type": "questions",
+      "strength": 0.5834088212722511,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_040",
+      "type": "questions",
+      "strength": 0.5833467954128102,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_051",
+      "type": "questions",
+      "strength": 0.5832857066954389,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_107",
+      "type": "questions",
+      "strength": 0.5822244212866994,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_028",
+      "type": "questions",
+      "strength": 0.5816122251735367,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔frugalite"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_052",
+      "type": "questions",
+      "strength": 0.581492290039378,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_102",
+      "type": "questions",
+      "strength": 0.5803519939519317,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_017",
+      "type": "questions",
+      "strength": 0.5801344467248455,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_033",
+      "type": "questions",
+      "strength": 0.5796255704173487,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_041",
+      "type": "questions",
+      "strength": 0.5789059027446206,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_053",
+      "type": "questions",
+      "strength": 0.578863176222626,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_028",
+      "type": "questions",
+      "strength": 0.5785151200162134,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔frugalite"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_033",
+      "type": "questions",
+      "strength": 0.5784742513821024,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_052",
+      "type": "questions",
+      "strength": 0.5781889795756044,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.5779550981928214,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_033",
+      "type": "questions",
+      "strength": 0.5778116404095741,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_038",
+      "type": "questions",
+      "strength": 0.5772796970592697,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_025",
+      "type": "questions",
+      "strength": 0.5757582654962121,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔frugalite"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_106",
+      "type": "questions",
+      "strength": 0.5750634607750725,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.5724139017054843,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "oss_art_023",
+      "type": "questions",
+      "strength": 0.5712897275936342,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_104",
+      "type": "questions",
+      "strength": 0.5707169365755989,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_112",
+      "type": "questions",
+      "strength": 0.570481798083774,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_051",
+      "type": "questions",
+      "strength": 0.5695853327913586,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.5693976968971407,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_051",
+      "type": "questions",
+      "strength": 0.5683803714966136,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_011",
+      "type": "questions",
+      "strength": 0.567835103311373,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_018",
+      "type": "questions",
+      "strength": 0.5676020783690607,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.5669468013533878,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔recherche"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_053",
+      "type": "questions",
+      "strength": 0.566654546661482,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_025",
+      "type": "questions",
+      "strength": 0.5657794869448285,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔frugalite"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_106",
+      "type": "questions",
+      "strength": 0.5655393488570608,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_020",
+      "type": "questions",
+      "strength": 0.5654907027922462,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔philosophie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.564932785328192,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_032",
+      "type": "questions",
+      "strength": 0.5647738287029476,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_007",
+      "type": "questions",
+      "strength": 0.5637049977383402,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.5636188207132192,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔philosophie"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_011",
+      "type": "questions",
+      "strength": 0.5632490867983568,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.5614645305891337,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.5593103202720668,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_024",
+      "type": "questions",
+      "strength": 0.558816621705083,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔frugalite"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_016",
+      "type": "questions",
+      "strength": 0.5584291422126295,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_024",
+      "type": "questions",
+      "strength": 0.5580537430920949,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔frugalite"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_101",
+      "type": "questions",
+      "strength": 0.557342079249805,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔philosophie"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_106",
+      "type": "questions",
+      "strength": 0.5571309451267503,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_025",
+      "type": "questions",
+      "strength": 0.5570634751845227,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_033",
+      "type": "questions",
+      "strength": 0.5562836011302792,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_025",
+      "type": "questions",
+      "strength": 0.5551739673659484,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_021",
+      "type": "questions",
+      "strength": 0.5545031323942369,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.5536258304370393,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_036",
+      "type": "questions",
+      "strength": 0.5526449420439026,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_053",
+      "type": "questions",
+      "strength": 0.5518509327798748,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_017",
+      "type": "questions",
+      "strength": 0.5502530501616913,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_038",
+      "type": "questions",
+      "strength": 0.5501109117216194,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_016",
+      "type": "questions",
+      "strength": 0.5492340521267713,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.5486483574185186,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_013",
+      "type": "questions",
+      "strength": 0.5484834827484829,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_028",
+      "type": "questions",
+      "strength": 0.5450079356143864,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_052",
+      "type": "questions",
+      "strength": 0.543383785902775,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_017",
+      "type": "questions",
+      "strength": 0.5433756087186206,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔recherche"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_055",
+      "type": "questions",
+      "strength": 0.5427316345460264,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_010",
+      "type": "questions",
+      "strength": 0.5410582084594715,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_016",
+      "type": "questions",
+      "strength": 0.540786508548108,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_104",
+      "type": "questions",
+      "strength": 0.5395639875582328,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔usage_professionnel"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_107",
+      "type": "questions",
+      "strength": 0.5393177100558125,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_024",
+      "type": "questions",
+      "strength": 0.5392212763490545,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔frugalite"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_055",
+      "type": "questions",
+      "strength": 0.5385090022646737,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_020",
+      "type": "questions",
+      "strength": 0.5384091536551279,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_021",
+      "type": "questions",
+      "strength": 0.537061475226165,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.5348464577991381,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_039",
+      "type": "questions",
+      "strength": 0.5347826405459764,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.5345893356326092,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.5321672393304067,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_038",
+      "type": "questions",
+      "strength": 0.5316872889901492,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.5316118782761619,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_051",
+      "type": "questions",
+      "strength": 0.5306628415895339,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_104",
+      "type": "questions",
+      "strength": 0.5301607702346682,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_109",
+      "type": "questions",
+      "strength": 0.5291472141031546,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.5287503272965512,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_053",
+      "type": "questions",
+      "strength": 0.5277869441130754,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_032",
+      "type": "questions",
+      "strength": 0.5272098246077348,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_110",
+      "type": "questions",
+      "strength": 0.5267582752672095,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "oss_art_001",
+      "type": "questions",
+      "strength": 0.5265894753519474,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_024",
+      "type": "questions",
+      "strength": 0.525327663540559,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_039",
+      "type": "questions",
+      "strength": 0.5248880555569542,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.5244578209529795,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_106",
+      "type": "questions",
+      "strength": 0.5220796923144546,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔usage_professionnel"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_019",
+      "type": "questions",
+      "strength": 0.5216578754262163,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_106",
+      "type": "questions",
+      "strength": 0.5211165863584298,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_110",
+      "target_id": "art_029",
+      "type": "implements",
+      "strength": 0.5210653282305296,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.474 (implements)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_028",
+      "type": "questions",
+      "strength": 0.5204146766667634,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_025",
+      "type": "questions",
+      "strength": 0.5200040207475554,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔frugalite"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_031",
+      "type": "questions",
+      "strength": 0.5199439707971057,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔usage_professionnel"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_100",
+      "type": "questions",
+      "strength": 0.5196295261653097,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_100",
+      "type": "questions",
+      "strength": 0.5193946799135114,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_027",
+      "type": "questions",
+      "strength": 0.5184526295150127,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_111",
+      "type": "questions",
+      "strength": 0.5181819841270896,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_101",
+      "type": "questions",
+      "strength": 0.5181617077070357,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_018",
+      "type": "questions",
+      "strength": 0.517129994473585,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.5156704720674743,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_055",
+      "type": "questions",
+      "strength": 0.5141420176481083,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_008",
+      "type": "questions",
+      "strength": 0.5124419914750445,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_016",
+      "type": "questions",
+      "strength": 0.5109391360720474,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_101",
+      "type": "questions",
+      "strength": 0.509916282198944,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.5081597281821038,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_011",
+      "target_id": "art_052",
+      "type": "questions",
+      "strength": 0.5076980082886228,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_025",
+      "type": "questions",
+      "strength": 0.5072059448666808,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔frugalite"
+    },
+    {
+      "source_id": "art_036",
+      "target_id": "art_002",
+      "type": "questions",
+      "strength": 0.5058825369094422,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.632 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_101",
+      "type": "questions",
+      "strength": 0.5055266434466328,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_112",
+      "type": "questions",
+      "strength": 0.5034073179521512,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_010",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.5022712751949423,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_013",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.5003843342650729,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_022",
+      "type": "questions",
+      "strength": 0.4988264450389955,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_112",
+      "type": "questions",
+      "strength": 0.49423989303448407,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "oss_art_023",
+      "type": "questions",
+      "strength": 0.4935764243287911,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_052",
+      "type": "questions",
+      "strength": 0.49232361607103137,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "art_017",
+      "type": "questions",
+      "strength": 0.49122417502751875,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_111",
+      "type": "questions",
+      "strength": 0.4889938527476778,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_112",
+      "type": "questions",
+      "strength": 0.4887989041898273,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_002",
+      "target_id": "art_003",
+      "type": "questions",
+      "strength": 0.48555077192120805,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_028",
+      "type": "questions",
+      "strength": 0.48426691194157256,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔frugalite"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_020",
+      "type": "questions",
+      "strength": 0.4815727297529424,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_111",
+      "type": "questions",
+      "strength": 0.478597647729005,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔recherche"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_034",
+      "type": "questions",
+      "strength": 0.47805231021054523,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_032",
+      "type": "questions",
+      "strength": 0.4770680699829308,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_039",
+      "type": "questions",
+      "strength": 0.4720028493660749,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_007",
+      "target_id": "art_014",
+      "type": "questions",
+      "strength": 0.47071308407962015,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_111",
+      "type": "questions",
+      "strength": 0.4696551207030732,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_107",
+      "target_id": "art_009",
+      "type": "similar_to",
+      "strength": 0.4689903792271564,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.519 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_030",
+      "target_id": "art_002",
+      "type": "questions",
+      "strength": 0.46846519068634307,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.586 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_040",
+      "type": "questions",
+      "strength": 0.46337765585920254,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_111",
+      "type": "questions",
+      "strength": 0.4616894032243707,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_110",
+      "type": "questions",
+      "strength": 0.4514854132823709,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_027",
+      "type": "questions",
+      "strength": 0.44975851939898337,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔frugalite"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_007",
+      "type": "questions",
+      "strength": 0.44747302801685657,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_013",
+      "type": "questions",
+      "strength": 0.4474629237547624,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_009",
+      "type": "questions",
+      "strength": 0.44712580893895315,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_034",
+      "type": "questions",
+      "strength": 0.4457516924410902,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_003",
+      "target_id": "art_012",
+      "type": "questions",
+      "strength": 0.4440143872969814,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_017",
+      "type": "questions",
+      "strength": 0.4361064006742838,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔recherche"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.4356883717996861,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔recherche"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "oss_art_023",
+      "type": "questions",
+      "strength": 0.42887616899925385,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "oss_art_001",
+      "type": "questions",
+      "strength": 0.4269077649942479,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "oss_art_001",
+      "type": "questions",
+      "strength": 0.42388582301845046,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_006",
+      "target_id": "art_027",
+      "type": "questions",
+      "strength": 0.42325063133805585,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔frugalite"
+    },
+    {
+      "source_id": "art_106",
+      "target_id": "art_009",
+      "type": "similar_to",
+      "strength": 0.4209603314725368,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.471 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_022",
+      "type": "questions",
+      "strength": 0.4193003931585444,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "art_021",
+      "type": "questions",
+      "strength": 0.418753872569115,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "oss_art_001",
+      "type": "questions",
+      "strength": 0.4175768218461131,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_008",
+      "target_id": "oss_art_008",
+      "type": "questions",
+      "strength": 0.4168166005594198,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_001",
+      "target_id": "art_005",
+      "type": "questions",
+      "strength": 0.413442495580935,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire technique↔ethique"
+    },
+    {
+      "source_id": "art_012",
+      "target_id": "art_054",
+      "type": "questions",
+      "strength": 0.41328674906020063,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔philosophie"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_034",
+      "type": "questions",
+      "strength": 0.41298532787035813,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔ethique"
+    },
+    {
+      "source_id": "art_009",
+      "target_id": "oss_art_023",
+      "type": "questions",
+      "strength": 0.4009285245327605,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire ethique↔technique"
+    },
+    {
+      "source_id": "art_014",
+      "target_id": "art_026",
+      "type": "questions",
+      "strength": 0.4008978013646852,
+      "auto_detected": true,
+      "detection_method": "subtlety_bridge",
+      "reasoning": "Pont interdisciplinaire philosophie↔frugalite"
+    }
+  ],
+  "optimization_metadata": {
+    "original_count": 577,
+    "optimized_count": 429,
+    "reduction_percentage": "25.6",
+    "density": "20.6",
+    "avg_connections_per_article": "13.2",
+    "strategy": "adaptive_strength_threshold_by_centrality",
+    "centrality_preservation": "dynamic_thresholds_preserve_intellectual_hierarchy",
+    "timestamp": "2025-08-18T23:04:46.138Z"
+  },
+  "centrality_analysis": [
+    {
+      "article_id": "art_009",
+      "title": "Ethics of Artificial Intelligence...",
+      "domain": "ethique",
+      "original_connections": 54,
+      "final_connections": 52,
+      "preservation_ratio": 0.9629629629629629,
+      "final_rank": 1,
+      "rank_change": 0
+    },
+    {
+      "article_id": "art_001",
+      "title": "Navigating the Maze of Explainable AI: A Systemati...",
+      "domain": "technique",
+      "original_connections": 52,
+      "final_connections": 50,
+      "preservation_ratio": 0.9615384615384616,
+      "final_rank": 2,
+      "rank_change": 0
+    },
+    {
+      "article_id": "art_006",
+      "title": "Artificial Intelligence...",
+      "domain": "philosophie",
+      "original_connections": 48,
+      "final_connections": 47,
+      "preservation_ratio": 0.9791666666666666,
+      "final_rank": 3,
+      "rank_change": 0
+    },
+    {
+      "article_id": "art_014",
+      "title": "Philosophy Of Mind And Artificial Intelligence...",
+      "domain": "philosophie",
+      "original_connections": 42,
+      "final_connections": 41,
+      "preservation_ratio": 0.9761904761904762,
+      "final_rank": 4,
+      "rank_change": 1
+    },
+    {
+      "article_id": "art_002",
+      "title": "Transparency and explainability of AI systems: Fro...",
+      "domain": "ethique",
+      "original_connections": 42,
+      "final_connections": 39,
+      "preservation_ratio": 0.9285714285714286,
+      "final_rank": 5,
+      "rank_change": -1
+    },
+    {
+      "article_id": "art_012",
+      "title": "Fairness in AI: challenges in bridging the gap bet...",
+      "domain": "ethique",
+      "original_connections": 39,
+      "final_connections": 38,
+      "preservation_ratio": 0.9743589743589743,
+      "final_rank": 6,
+      "rank_change": 0
+    },
+    {
+      "article_id": "art_008",
+      "title": "Ethical principles in machine learning and artific...",
+      "domain": "ethique",
+      "original_connections": 37,
+      "final_connections": 36,
+      "preservation_ratio": 0.972972972972973,
+      "final_rank": 7,
+      "rank_change": 0
+    },
+    {
+      "article_id": "art_013",
+      "title": "Advancing accountability in AI...",
+      "domain": "ethique",
+      "original_connections": 36,
+      "final_connections": 24,
+      "preservation_ratio": 0.6666666666666666,
+      "final_rank": 8,
+      "rank_change": 0
+    },
+    {
+      "article_id": "art_029",
+      "title": "Artificial intelligence and illusions of understan...",
+      "domain": "recherche",
+      "original_connections": 24,
+      "final_connections": 23,
+      "preservation_ratio": 0.9583333333333334,
+      "final_rank": 9,
+      "rank_change": 5
+    },
+    {
+      "article_id": "art_020",
+      "title": "Minds of machines: The great AI consciousness conu...",
+      "domain": "philosophie",
+      "original_connections": 24,
+      "final_connections": 21,
+      "preservation_ratio": 0.875,
+      "final_rank": 10,
+      "rank_change": 3
+    },
+    {
+      "article_id": "art_101",
+      "title": "Consciousness in Artificial Intelligence: Insights...",
+      "domain": "philosophie",
+      "original_connections": 24,
+      "final_connections": 21,
+      "preservation_ratio": 0.875,
+      "final_rank": 11,
+      "rank_change": 4
+    },
+    {
+      "article_id": "art_010",
+      "title": "Algorithmic Fairness...",
+      "domain": "ethique",
+      "original_connections": 33,
+      "final_connections": 20,
+      "preservation_ratio": 0.6060606060606061,
+      "final_rank": 12,
+      "rank_change": -2
+    },
+    {
+      "article_id": "art_011",
+      "title": "Fairness perceptions of algorithmic decision-makin...",
+      "domain": "ethique",
+      "original_connections": 33,
+      "final_connections": 20,
+      "preservation_ratio": 0.6060606060606061,
+      "final_rank": 13,
+      "rank_change": -2
+    },
+    {
+      "article_id": "art_019",
+      "title": "Envisioning the future of the AI research ecosyste...",
+      "domain": "recherche",
+      "original_connections": 21,
+      "final_connections": 19,
+      "preservation_ratio": 0.9047619047619048,
+      "final_rank": 14,
+      "rank_change": 2
+    },
+    {
+      "article_id": "art_024",
+      "title": "Efficiency Is Not Enough: A Critical Perspective o...",
+      "domain": "frugalite",
+      "original_connections": 21,
+      "final_connections": 19,
+      "preservation_ratio": 0.9047619047619048,
+      "final_rank": 15,
+      "rank_change": 2
+    },
+    {
+      "article_id": "art_016",
+      "title": "The moral weight of AI consciousness...",
+      "domain": "philosophie",
+      "original_connections": 18,
+      "final_connections": 17,
+      "preservation_ratio": 0.9444444444444444,
+      "final_rank": 16,
+      "rank_change": 3
+    },
+    {
+      "article_id": "art_023",
+      "title": "AI Ethics: Integrating Transparency, Fairness, and...",
+      "domain": "ethique",
+      "original_connections": 17,
+      "final_connections": 17,
+      "preservation_ratio": 1,
+      "final_rank": 17,
+      "rank_change": 4
+    },
+    {
+      "article_id": "art_003",
+      "title": "A federated graph neural network framework for pri...",
+      "domain": "technique",
+      "original_connections": 34,
+      "final_connections": 15,
+      "preservation_ratio": 0.4411764705882353,
+      "final_rank": 18,
+      "rank_change": -9
+    },
+    {
+      "article_id": "art_028",
+      "title": "AI has an environmental problem. Here's what the w...",
+      "domain": "frugalite",
+      "original_connections": 17,
+      "final_connections": 15,
+      "preservation_ratio": 0.8823529411764706,
+      "final_rank": 19,
+      "rank_change": 3
+    },
+    {
+      "article_id": "art_017",
+      "title": "Transparency and reproducibility in artificial int...",
+      "domain": "recherche",
+      "original_connections": 18,
+      "final_connections": 14,
+      "preservation_ratio": 0.7777777777777778,
+      "final_rank": 20,
+      "rank_change": 0
+    }
+  ]
+}

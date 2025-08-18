@@ -59,26 +59,34 @@ ai-humanist-blog/
 │   └── config/                       # Configuration navigation
 ├── 🤖 scripts/                       # Architecture Triple (voir scripts/README.md)
 │   ├── enhanceGroundTruth.ts         # 🎯 Architecture triple principale
+│   ├── fixRelationSubtlety.ts        # Affinage subtilité ponts interdisciplinaires
+│   ├── optimizeReadability.ts        # Optimisation lisibilité graphique
 │   ├── generateEmbeddings.ts         # Embeddings Transformers.js (384-D)
 │   ├── analyzeGroundTruth.ts         # Analyse patterns validations
 │   ├── calibrateSemanticThresholds.ts # Calibrage seuils adaptatifs
 │   ├── validateTripleArchitecture.ts # Validation empirique qualité
 │   ├── batchImportArticles.ts        # Import batch + workflow
 │   ├── addArticleComplete.ts         # Import article individuel
+│   ├── testRunner.ts                 # Tests sécurisés environnement isolé
 │   ├── writeFileAtomic.ts            # Infrastructure écriture atomique
 │   ├── zodSchemas.ts                 # Validation runtime Zod
-│   ├── config/paths.ts               # Configuration centralisée chemins
-│   └── old_scripts/                  # 🗃️ Archive (15 scripts consolidés)
+│   └── config/paths.ts               # Configuration centralisée chemins
 ├── 💾 public/data/
 │   ├── articles.json                 # 65 articles validés (art_001→art_112)
 │   ├── connections.json              # 244 connexions triple architecture  
 │   └── embeddings.json               # Vecteurs sémantiques 384-D
 ├── 📁 input_data/                    # Données validations manuelles
-└── 📚 docs/                          # Documentation complète
-    ├── README.md                     # Documentation développeur (ce fichier)
-    ├── technical.md                  # Architecture technique détaillée
-    ├── progress.md                   # Historique complet évolutions
-    └── TEMPLATES.md                  # Templates JSON intégrations
+├── 📚 docs/                          # Documentation complète
+│   ├── README.md                     # Documentation développeur (ce fichier)
+│   ├── CONTROLE_QUALITE.md           # Guide workflow sécurisé
+│   ├── technical.md                  # Architecture technique détaillée
+│   ├── progress.md                   # Historique complet évolutions
+│   └── TEMPLATES.md                  # Templates JSON intégrations
+├── 🗃️ .archives/                     # Archives historiques projet
+│   ├── scripts-phase10/              # Scripts phases précédentes  
+│   ├── scripts-phase11/              # Scripts développement consolidés
+│   └── exports-legacy/               # Exports historiques
+└── 💾 .backups/                      # Sauvegardes automatiques (voir CONTROLE_QUALITE.md)
 ```
 
 ## 🧠 Fonctionnalités Phase 1
@@ -149,8 +157,9 @@ npm run generate-embeddings           # 1. Génération vecteurs 384-D
 npm run analyze-ground-truth          # 2. Analyse patterns validations  
 npm run calibrate-thresholds          # 3. Calibrage seuils adaptatifs
 npm run enhance-ground-truth          # 4. Architecture triple (PRINCIPAL)
-npm run fix-subtlety                  # 5. Affinement (optionnel - non implémenté)
-npm run validate-triple               # 6. Validation empirique
+npm run fix-subtlety                  # 5. Affinage subtilité ponts interdisciplinaires
+npm run optimize-readability          # 6. Optimisation lisibilité graphique
+npm run validate-triple               # 7. Validation empirique
 
 # Workflow Simplifié (ajout routine articles)
 npm run generate-embeddings           # 1. Embeddings nouveaux articles

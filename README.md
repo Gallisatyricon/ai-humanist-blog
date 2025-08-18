@@ -65,11 +65,13 @@ ai-humanist-blog/
 │   ├── 📄 analyzeGroundTruth.ts        # Analyse patterns validations manuelles
 │   ├── 📄 calibrateSemanticThresholds.ts # Calibrage seuils adaptatifs par domaine
 │   ├── 📄 enhanceGroundTruth.ts        # Architecture triple connexions (Principal)
+│   ├── 📄 fixRelationSubtlety.ts       # Affinage subtilité ponts interdisciplinaires
+│   ├── 📄 optimizeReadability.ts       # Optimisation lisibilité graphique
 │   ├── 📄 validateTripleArchitecture.ts # Validation empirique qualité
 │   ├── 📄 generateEmbeddings.ts        # Embeddings Transformers.js (384-D)
 │   ├── 📄 batchImportArticles.ts       # Import batch + workflow automatique
 │   ├── 📄 addArticleComplete.ts        # Import article individuel enrichi
-│   ├── 📄 formatInputFile.ts           # Utilitaire formatage input batch
+│   ├── 📄 testRunner.ts                # Tests sécurisés environnement isolé
 │   ├── 📄 writeFileAtomic.ts           # Infrastructure écriture atomique
 │   ├── 📄 zodSchemas.ts                # Validation runtime stricte avec Zod
 │   └── 📄 config/paths.ts              # Configuration centralisée chemins
@@ -112,7 +114,8 @@ ai-humanist-blog/
 | `npm run analyze-ground-truth` | Analyse patterns validations manuelles |
 | `npm run calibrate-thresholds` | Calibrage seuils adaptatifs par domaine |
 | `npm run enhance-ground-truth` | 🎯 **Architecture triple principale** |
-| `npm run enrich-connections` | Alias vers enhance-ground-truth |
+| `npm run fix-subtlety` | Affinage subtilité ponts interdisciplinaires |
+| `npm run optimize-readability` | Optimisation lisibilité graphique |
 | `npm run validate-triple` | Validation empirique qualité |
 
 ### 📥 Gestion Articles
@@ -124,10 +127,10 @@ ai-humanist-blog/
 ### 🧪 Tests Sécurisés
 | Script | Description |
 |--------|-------------|
-| `npm run test:safe` | **Test pipeline complet dans environnement isolé** |
-| `npm run test:regression` | Tests non-régression vs baseline |
-| `npm run test:setup` | Préparer environnement test (debug) |
-| `npm run test:cleanup` | Nettoyer environnement test |
+| `tsx scripts/testRunner.ts --full-pipeline` | **Test pipeline complet isolé** |
+| `tsx scripts/testRunner.ts --regression` | Tests non-régression vs baseline |
+| `tsx scripts/testRunner.ts --setup-env` | Préparer environnement test |
+| `tsx scripts/testRunner.ts --cleanup-env` | Nettoyer environnement test |
 
 ## 📖 Documentation
 
@@ -148,12 +151,13 @@ ai-humanist-blog/
 - **244 connexions intelligentes** générées via architecture triple (Hard + Manual + Semantic)
 - **Score qualité 83/100** - Production Ready validé empiriquement
 - **100% exploitation** des 99 validations manuelles disponibles
+- **Pipeline consolidée** - 7 scripts production + affinage subtilité et lisibilité
 - **Validation runtime stricte** - Schémas Zod pour toutes les données
 - **Écriture atomique sécurisée** - Protection contre corruption avec locks
 - **Embeddings locaux** - Similarité sémantique 384-D (all-MiniLM-L6-v2)
-- **Interface graphique optimisée** - Navigation progressive D3.js préservée
-- **Scripts consolidés** - 11 scripts fonctionnels + documentation complète
-- **Calibrage adaptatif** - Seuils par paires de domaines (technique↔éthique: 0.32)
+- **Tests sécurisés** - Environnement isolé avec testRunner.ts
+- **Archives organisées** - Scripts développement dans .archives/scripts-phase11/
+- **Calibrage adaptatif** - Seuils dynamiques ponts interdisciplinaires
 
 ### 🎯 Prochaine étape : Phase 2
 Interface utilisateur recherche vectorielle exploitant les 244 connexions avec dashboard qualité et API complète.
