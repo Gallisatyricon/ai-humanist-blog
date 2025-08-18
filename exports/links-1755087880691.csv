@@ -1,8 +1,0 @@
-source,target,type,strength,auto_detected
-"art_001","art_002","questions",0.8,true
-"art_001","art_003","similar_to",0.4,true
-"art_001","art_005","builds_on",0.9,true
-"art_002","art_005","builds_on",0.9,true
-"art_003","art_005","builds_on",0.9,true
-"art_004","art_005","builds_on",0.9,true
-"art_005","art_006","builds_on",0.9,true

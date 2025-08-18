@@ -6,11 +6,10 @@
  * Focus auto_detected = true avec qualité proche validation humaine
  */
 
-import { readFileSync } from 'fs'
-import { join } from 'path'
 // import { ValidatedArticle } from './zodSchemas.js'
-import { writeFileAtomic } from './writeFileAtomic.js'
+import { writeFileAtomic, readJSONWithLock } from './writeFileAtomic.js'
 import { analyzeGroundTruth, type GroundTruthPatterns } from './analyzeGroundTruth.js'
+import { PATHS } from './config/paths.js'
 
 type ConnectionType = 'builds_on' | 'contradicts' | 'implements' | 'questions' | 'similar_to'
 
@@ -65,8 +64,8 @@ async function calibrateSemanticThresholds(): Promise<SemanticCalibration> {
   // 1. Charger patterns ground truth
   let patterns: GroundTruthPatterns
   try {
-    const patternsPath = join(process.cwd(), 'scripts', 'ground_truth_patterns.json')
-    patterns = JSON.parse(readFileSync(patternsPath, 'utf8'))
+    const patternsPath = PATHS.GROUND_TRUTH_PATTERNS
+    patterns = await readJSONWithLock(patternsPath, { timeout: 5000 })
     console.log('📊 Patterns ground truth chargés')
   } catch {
     console.log('📊 Patterns non trouvés, génération...')
@@ -318,7 +317,7 @@ async function main() {
     const calibration = await calibrateSemanticThresholds()
     
     // Sauvegarder configuration calibrée
-    const outputPath = join(process.cwd(), 'scripts', 'semantic_calibration.json')
+    const outputPath = PATHS.SEMANTIC_CALIBRATION
     await writeFileAtomic(outputPath, JSON.stringify(calibration, null, 2))
     
     console.log('✅ Calibrage terminé')

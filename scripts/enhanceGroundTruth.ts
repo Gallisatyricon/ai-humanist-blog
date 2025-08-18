@@ -8,10 +8,10 @@
  */
 
 import { readFileSync } from 'fs'
-import { join } from 'path'
 import { ValidatedArticle } from './zodSchemas.js'
 import { writeFileAtomic } from './writeFileAtomic.js'
 import { calibrateSemanticThresholds, type SemanticCalibration } from './calibrateSemanticThresholds.js'
+import { PATHS } from './config/paths.js'
 
 type ConnectionType = 'builds_on' | 'contradicts' | 'implements' | 'questions' | 'similar_to'
 
@@ -57,10 +57,11 @@ async function enrichConnectionsTriple(): Promise<ConnectionEnriched[]> {
   console.log('🏗️ Architecture triple: Hard + Manual + Semantic...')
 
   // 1. Charger données
-  const articlesPath = join(process.cwd(), 'public', 'data', 'articles.json')
-  const inputData1Path = join(process.cwd(), 'input_data', '20250815_bibliographie_corrigee_full.json')
-  const inputData2Path = join(process.cwd(), 'input_data', '20250815_new_articles_corrected_FINAL.json')
-  const embeddingsPath = join(process.cwd(), 'public', 'data', 'embeddings.json')
+  // Utiliser chemins centralisés
+  const articlesPath = PATHS.ARTICLES
+  const inputData1Path = PATHS.INPUT_BIBLIO_1
+  const inputData2Path = PATHS.INPUT_BIBLIO_2
+  const embeddingsPath = PATHS.EMBEDDINGS
 
   const existingArticlesRaw = JSON.parse(readFileSync(articlesPath, 'utf8'))
   const articles: ValidatedArticle[] = existingArticlesRaw.articles || []
@@ -80,7 +81,7 @@ async function enrichConnectionsTriple(): Promise<ConnectionEnriched[]> {
   // 2. Charger calibrage sémantique
   let calibration: SemanticCalibration
   try {
-    const calibrationPath = join(process.cwd(), 'scripts', 'semantic_calibration.json')
+    const calibrationPath = PATHS.SEMANTIC_CALIBRATION
     calibration = JSON.parse(readFileSync(calibrationPath, 'utf8'))
   } catch {
     console.log('🎯 Calibration non trouvée, génération...')
@@ -475,7 +476,7 @@ async function main() {
     const connections = await enrichConnectionsTriple()
     
     // Sauvegarder connexions enrichies
-    const outputPath = join(process.cwd(), 'public', 'data', 'connections.json')
+    const outputPath = PATHS.CONNECTIONS
     
     const connectionsData = {
       connections: connections,

@@ -7,10 +7,10 @@
  */
 
 import { readFileSync } from 'fs'
-import { join } from 'path'
 import { ValidatedArticle } from './zodSchemas.js'
 import { writeFileAtomic } from './writeFileAtomic.js'
 import { enrichConnectionsTriple, type ConnectionEnriched } from './enhanceGroundTruth.js'
+import { PATHS } from './config/paths.js'
 
 type ConnectionType = 'builds_on' | 'contradicts' | 'implements' | 'questions' | 'similar_to'
 
@@ -67,9 +67,9 @@ async function validateTripleArchitecture(): Promise<TripleValidation> {
   const connections = await enrichConnectionsTriple()
   
   // 2. Charger données de référence
-  const articlesPath = join(process.cwd(), 'public', 'data', 'articles.json')
-  const inputData1Path = join(process.cwd(), 'input_data', '20250815_bibliographie_corrigee_full.json')
-  const inputData2Path = join(process.cwd(), 'input_data', '20250815_new_articles_corrected_FINAL.json')
+  const articlesPath = PATHS.ARTICLES
+  const inputData1Path = PATHS.INPUT_BIBLIO_1
+  const inputData2Path = PATHS.INPUT_BIBLIO_2
 
   const existingArticlesRaw = JSON.parse(readFileSync(articlesPath, 'utf8'))
   const articles: ValidatedArticle[] = existingArticlesRaw.articles || []
@@ -389,7 +389,7 @@ async function main() {
     const validation = await validateTripleArchitecture()
     
     // Sauvegarder résultats validation
-    const outputPath = join(process.cwd(), 'scripts', 'triple_validation_results.json')
+    const outputPath = 'scripts/triple_validation_results.json'
     await writeFileAtomic(outputPath, JSON.stringify(validation, null, 2))
     
     console.log('✅ Validation terminée')

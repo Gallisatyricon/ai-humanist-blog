@@ -1,8 +1,8 @@
-# Templates JSON Phase 11 - Workflow N8N et Import Sécurisé
+# Templates JSON Phase 1 - Architecture Triple et Import
 
 ## 🎯 Vue d'Ensemble
 
-Templates JSON optimisés pour l'écosystème Phase 11 : workflow n8n complet avec sécurisation writeFileAtomic + Zod, batch import intelligent, et ajout d'articles individuels avec génération automatique des connexions intelligentes via embeddings locaux.
+Templates JSON optimisés pour l'écosystème Phase 1 Architecture Triple : import batch avec workflow automatique complet, validation Zod stricte, écriture atomique sécurisée, et génération intelligente des connexions via ground truth + calibrage adaptatif.
 
 ---
 
@@ -675,39 +675,243 @@ Templates JSON optimisés pour l'écosystème Phase 11 : workflow n8n complet av
 
 ---
 
-## 🎯 Guide d'Usage Phase 11
+## 🚀 Pipeline LLM Optimisé - Basé sur Erreurs Réelles Phase 1 ACCOMPLIE
+
+### 🎯 Leçons Apprises - Problèmes Récurrents Résolus
+**Erreurs Phase 1 ACCOMPLIE identifiées et corrigées :**
+- **IDs dupliqués** : art_056, art_057, art_058 utilisés 2 fois → Solution : Vérification automatique
+- **Input malformé** : JSON cassé dans markdown → Solution : Parser récursif avec brace counting
+- **Domains invalides** : 'education' → 'recherche' → Solution : Mapping automatique
+- **connected_articles pré-remplis** : LLM anticipe connexions → Solution : Laisser vides (rempli par pipeline)
+- **Process.cwd() duplication** : Chemins doublés dans écriture → Solution : Configuration centralisée
+
+### 🧠 Template LLM Robuste - Anti-Erreurs
+```json
+{
+  "article": {
+    "id": "art_XXX",                    // ⚠️ CRITIQUE: Vérifier unicité vs articles existants
+    "title": "Titre Descriptif Précis",
+    "url": "https://source.valide.com",
+    "source_type": "academic",          // UNIQUEMENT: academic|blog|github|arxiv|news
+    "date": "2024-MM-DD",              // ⚠️ FORMAT STRICT: YYYY-MM-DD
+    "summary": "Minimum 50 caractères de résumé contextuel détaillé.",
+    "perspective": "Perspective analytique claire.",
+    "interest_level": 3,               // ⚠️ UNIQUEMENT 1-5 entier
+    "primary_domain": "technique",     // ⚠️ MAPPING OBLIGATOIRE (voir ci-dessous)
+    "secondary_domains": ["nlp"],      // Array strings, domains autorisés
+    "concepts": [                      // ⚠️ ARRAY REQUIS même si vide
+      {
+        "id": "concept_id_unique",     // Snake_case obligatoire
+        "name": "Nom Concept",
+        "type": "technical",           // technical|philosophical|methodological
+        "controversy_level": 1         // 0-3 entier uniquement
+      }
+    ],
+    "tools_mentioned": [               // ⚠️ ARRAY REQUIS même si vide
+      {
+        "id": "tool_id_unique",
+        "name": "Nom Tool",
+        "type": "framework",           // framework|library|platform|model
+        "maturity": "stable"           // experimental|beta|stable
+      }
+    ],
+    "author": "Auteur Complet",
+    "reading_time": 15,                // Minutes entier
+    "complexity_level": "intermediate", // beginner|intermediate|advanced
+    "connected_articles": [],          // ⚠️ TOUJOURS VIDE - Pipeline remplit automatiquement
+    "centrality_score": 0              // ⚠️ TOUJOURS 0 - Pipeline calcule automatiquement
+  },
+  "suggested_connections": [           // ⚠️ OPTIONNEL mais recommandé pour qualité
+    {
+      "target_id": "art_XXX",          // ⚠️ VÉRIFIER existence article cible
+      "type": "builds_on",             // builds_on|contradicts|implements|questions|similar_to
+      "strength": 0.75,                // ⚠️ 0.25-1.0 float uniquement
+      "reasoning": "Explication détaillée de la connexion conceptuelle entre les articles.",
+      "confidence": 0.85               // ⚠️ 0.0-1.0 float uniquement
+    }
+  ]
+}
+```
+
+### 🗂️ Mapping Domaines - Anti-Erreurs
+```typescript
+// Mapping automatique corrigeant erreurs courantes
+const DOMAIN_MAPPING_AUTO = {
+  // Erreurs fréquentes → Corrections
+  'education': 'recherche',           // ❌ education n'existe pas
+  'society': 'ethique',               // ❌ society n'existe pas  
+  'industry_4_0': 'usage_professionnel', // ❌ industry_4_0 n'existe pas
+  'green_ai': 'frugalite',            // ❌ green_ai n'existe pas
+  'deep_learning': 'technique',       // ❌ deep_learning n'existe pas
+  'regulation': 'ethique',            // ❌ regulation n'existe pas
+  
+  // Domaines valides (Phase 1 ACCOMPLIE)
+  'technique': 'technique',           // ✅ Valide
+  'ethique': 'ethique',              // ✅ Valide
+  'usage_professionnel': 'usage_professionnel', // ✅ Valide
+  'recherche': 'recherche',          // ✅ Valide
+  'philosophie': 'philosophie',      // ✅ Valide
+  'frugalite': 'frugalite'          // ✅ Valide
+}
+```
+
+### 🛡️ Validation Zod Intégrée - Templates Robustes
+```typescript
+// Schéma validation automatique (intégré dans tous templates)
+const ArticleSchema = z.object({
+  id: z.string().regex(/^art_\d{3}$/),           // art_001, art_002, etc.
+  title: z.string().min(10),                     // Minimum 10 caractères
+  url: z.string().url(),                         // URL valide obligatoire
+  primary_domain: z.enum(['technique', 'ethique', 'usage_professionnel', 'recherche', 'philosophie', 'frugalite']),
+  interest_level: z.number().int().min(1).max(5), // 1-5 entier strict
+  connected_articles: z.array(z.string()).length(0), // ⚠️ TOUJOURS VIDE
+  centrality_score: z.literal(0),                // ⚠️ TOUJOURS 0
+  // ... autres validations strictes
+});
+
+// Validation connexions suggérées
+const SuggestedConnectionSchema = z.object({
+  target_id: z.string().regex(/^art_\d{3}$/),
+  type: z.enum(['builds_on', 'contradicts', 'implements', 'questions', 'similar_to']),
+  strength: z.number().min(0.25).max(1.0),      // Range strict 0.25-1.0
+  confidence: z.number().min(0.0).max(1.0),     // Range strict 0.0-1.0
+});
+```
+
+## 🎯 Guide d'Usage Phase 1 ACCOMPLIE
 
 ### Pour n8n Workflow Complet
-1. **Créer fichier .md** dans `input_data/` avec blocs JSON
-2. **Utiliser template n8n** pour chaque article  
+1. **Créer fichier .md** dans `input_data/` avec blocs JSON validés
+2. **Utiliser template LLM robuste** ci-dessus pour chaque article  
 3. **Lancer batch import** : `npm run batch-import -- --input input_data/articles.md`
-4. **Workflow automatique** : parsing → validation → backup → import → embeddings → connexions → affinement → tests
+4. **Workflow automatique** : parsing récursif → validation Zod → backup → import → embeddings → connexions → validation
 
 ### Pour Ajout Article Individuel  
-1. **Créer fichier JSON** avec template selon domaine
-2. **Remplir tous champs obligatoires** 
+1. **Créer fichier JSON** avec template anti-erreurs selon domaine
+2. **Remplir tous champs obligatoires** avec validation
 3. **Lancer ajout sécurisé** : `npm run add-complete -- --input article.json`
-4. **Workflow automatique** : validation → backup → import → Phase 11 complet
+4. **Workflow automatique** : validation → backup → import → Phase 1 ACCOMPLIE complet
 
 ### Pour Tests et Développement
-1. **Template test minimal** pour validation rapide
-2. **Utiliser scripts Phase 11** : 
+1. **Template test minimal** avec validation Zod
+2. **Utiliser scripts Phase 1 ACCOMPLIE** : 
    - `npm run generate-embeddings` (si nouveaux articles)
-   - `npm run enrich-connections` (génération connexions)
-   - `npm run analyze-bias` (validation qualité)
+   - `npm run enrich-connections` (architecture triple)
+   - `npm run validate-triple` (validation empirique)
 
-### Workflow Phase 11 vs Phase 10
-**Phase 11 (Actuel - Sécurisé)** :
-- ✅ **Batch import** : `npm run batch-import -- --input file.md` 
-- ✅ **Ajout individuel** : `npm run add-complete -- --input file.json`
-- ✅ **Sécurisation** : Backup automatique + écriture atomique + validation Zod
-- ✅ **Connexions intelligentes** : Embeddings + triple méthodologie automatique
+### Workflow Phase 1 ACCOMPLIE vs Versions Précédentes
+**Phase 1 ACCOMPLIE (Actuel - Robuste)** :
+- ✅ **Parser récursif** : JSON malformé → Correction automatique brace counting
+- ✅ **Mapping domaines** : Correction automatique erreurs fréquentes
+- ✅ **Validation Zod** : Runtime strict avec messages erreurs clairs
+- ✅ **Configuration centralisée** : scripts/config/paths.ts évite duplication
+- ✅ **Tests sécurisés** : TestRunner environnement isolé
+- ✅ **Workflow CQ** : Guide 381 lignes pour modifications majeures
 
-**Phase 10 (Obsolète)** :
-- ❌ Scripts multiples complexes sans sécurisation
-- ❌ Smart ID Mapping + Smart Deduplication séparés
-- ❌ Pas de backup automatique ni validation runtime
+**Versions Précédentes (Obsolètes)** :
+- ❌ Input malformé cassait le pipeline
+- ❌ IDs dupliqués non détectés
+- ❌ Domaines invalides acceptés
+- ❌ Process.cwd() duplication corruption
+- ❌ Pas de tests sécurisés
 
 ---
 
-**🚀 Templates Phase 11 optimisés pour workflow n8n sécurisé avec génération automatique de connexions intelligentes via Transformers.js !**
+---
+
+## 📝 Template Liens Annotés → JSON Robuste
+
+### 🔗 De Liens Simples vers Articles Structurés
+```markdown
+// INPUT : Liste liens annotés (format humain)
+- https://arxiv.org/abs/2024.12345 - "Efficient Attention Mechanisms" - TECHNIQUE - Optimisation algorithmes attention, réduction O(n²) → O(n log n)
+- https://link.springer.com/article/bias-2024 - "Algorithmic Bias in Hiring" - ETHIQUE - Discrimination automatisée recrutement, régulation EU AI Act
+- https://hbr.org/2024/supply-chain-ai - "Supply Chain AI Cases" - USAGE_PROFESSIONNEL - Cas usage Boeing/Toyota, ROI 15-25%
+
+// OUTPUT : JSON structuré complet (automatique)
+```
+
+### 🤖 Template Transformation Automatique
+```json
+{
+  "article": {
+    "id": "art_XXX",                    // ⚠️ Auto-incrémenté par pipeline
+    "title": "{{ EXTRACT_FROM_ANNOTATION }}", // "Efficient Attention Mechanisms"
+    "url": "{{ URL }}",                 // https://arxiv.org/abs/2024.12345
+    "source_type": "{{ AUTO_DETECT }}",// academic (arxiv) | blog (hbr) | academic (springer)
+    "date": "{{ FETCH_OR_CURRENT }}",  // Extraction automatique si possible
+    "summary": "{{ LLM_GENERATE_FROM_ANNOTATION }}", // Expansion annotation → résumé
+    "perspective": "{{ LLM_ANALYZE_CONTEXT }}", // Perspective analytique déduite
+    "interest_level": "{{ AUTO_CALCULATE }}", // Basé sur source + annotation
+    "primary_domain": "{{ ANNOTATION_DOMAIN }}", // TECHNIQUE → technique
+    "secondary_domains": ["{{ LLM_DEDUCE }}"], // Déduit du contenu/annotation
+    "concepts": [{{ LLM_EXTRACT_CONCEPTS }}], // Extraction automatique concepts
+    "tools_mentioned": [{{ LLM_EXTRACT_TOOLS }}], // Si outils détectés
+    "author": "{{ FETCH_OR_UNKNOWN }}",
+    "reading_time": "{{ ESTIMATE }}",   // Estimation basée type source
+    "complexity_level": "{{ AUTO_DEDUCE }}", // arxiv → advanced, hbr → beginner
+    "connected_articles": [],           // ⚠️ TOUJOURS VIDE
+    "centrality_score": 0               // ⚠️ TOUJOURS 0
+  },
+  "suggested_connections": [            // ⚠️ Connexions intelligentes basées articles existants
+    {
+      "target_id": "{{ SEMANTIC_SEARCH }}", // Recherche similarité dans base
+      "type": "{{ DEDUCE_RELATION_TYPE }}", // Analyse contextuelle
+      "strength": "{{ CALCULATE_SEMANTIC }}", // Similarité embeddings
+      "reasoning": "{{ LLM_EXPLAIN_CONNECTION }}", // Explication automatique
+      "confidence": "{{ CONFIDENCE_SCORE }}" // Score confiance prédiction
+    }
+  ]
+}
+```
+
+### 🎯 Exemple Concret - Liens → JSON
+```markdown
+INPUT:
+- https://arxiv.org/abs/2024.08123 - "Sparse Attention for LLMs" - TECHNIQUE - Réduction complexité attention O(n²)→O(n log n), économie énergie 40%
+```
+
+```json
+OUTPUT:
+{
+  "article": {
+    "id": "art_113",
+    "title": "Sparse Attention for Large Language Models",
+    "url": "https://arxiv.org/abs/2024.08123",
+    "source_type": "academic",
+    "date": "2024-08-15",
+    "summary": "Novel sparse attention mechanism reducing computational complexity from O(n²) to O(n log n) while maintaining model performance. Demonstrates 40% energy reduction in large-scale language model training.",
+    "perspective": "Technical breakthrough enabling more sustainable and accessible large language model training through computational efficiency.",
+    "interest_level": 4,
+    "primary_domain": "technique",
+    "secondary_domains": ["frugalite", "nlp"],
+    "concepts": [
+      {
+        "id": "sparse_attention_llm",
+        "name": "Sparse Attention for LLMs",
+        "type": "technical",
+        "controversy_level": 0
+      }
+    ],
+    "tools_mentioned": [],
+    "author": "Research Team",
+    "reading_time": 12,
+    "complexity_level": "advanced",
+    "connected_articles": [],
+    "centrality_score": 0
+  },
+  "suggested_connections": [
+    {
+      "target_id": "art_050",
+      "type": "similar_to", 
+      "strength": 0.85,
+      "reasoning": "Both papers focus on attention mechanism optimization in large language models, with complementary approaches to computational efficiency.",
+      "confidence": 0.90
+    }
+  ]
+}
+```
+
+---
+
+**🚀 Templates Phase 1 ACCOMPLIE optimisés pour workflow n8n sécurisé avec génération automatique de connexions intelligentes via Transformers.js !**

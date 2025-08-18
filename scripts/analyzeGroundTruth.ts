@@ -10,6 +10,7 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import { ValidatedArticle } from './zodSchemas.js'
 import { writeFileAtomic } from './writeFileAtomic.js'
+import { PATHS } from './config/paths.js'
 
 type ConnectionType = 'builds_on' | 'contradicts' | 'implements' | 'questions' | 'similar_to'
 
@@ -489,7 +490,7 @@ async function main() {
     const patterns = await analyzeGroundTruth()
     
     // Sauvegarder résultats  
-    const outputPath = join(process.cwd(), 'scripts', 'ground_truth_patterns.json')
+    const outputPath = PATHS.GROUND_TRUTH_PATTERNS
     await writeFileAtomic(outputPath, JSON.stringify(patterns, null, 2))
     
     console.log('✅ Analyse terminée')

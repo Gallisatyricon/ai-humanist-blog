@@ -1,0 +1,46 @@
+{
+  "description": "État de référence Phase 1 Production Ready - 18 août 2025",
+  "timestamp": "2025-08-18T22:56:00Z",
+  "version": "Phase1-ProductionReady",
+  "baseline_metrics": {
+    "articles_count": 65,
+    "articles_range": "art_001 → art_112",
+    "connections_count": 244,
+    "connections_breakdown": {
+      "hard_connections": 38,
+      "manual_validations": 99, 
+      "semantic_auto": 107
+    },
+    "embeddings_count": 65,
+    "embedding_dimensions": 384,
+    "validation_score": 82
+  },
+  "quality_metrics": {
+    "architecture_triple_score": "82/100",
+    "precision_estimate": "70%",
+    "f1_score": "65%", 
+    "article_coverage": "89%",
+    "domain_bridge_coverage": "22%"
+  },
+  "type_distribution": {
+    "builds_on": 80,
+    "contradicts": 7,
+    "implements": 32,
+    "questions": 60,
+    "similar_to": 65
+  },
+  "performance_benchmarks": {
+    "lint_status": "0 errors",
+    "build_time_ms": 3760,
+    "embeddings_generation_time": "<5s",
+    "pipeline_execution_time": "<2min"
+  },
+  "regression_thresholds": {
+    "min_articles": 65,
+    "min_connections": 200,
+    "min_validation_score": 70,
+    "max_lint_errors": 0,
+    "max_build_time_ms": 10000
+  },
+  "usage_notes": "Utilisé pour tests de non-régression. Tout écart significatif nécessite investigation."
+}

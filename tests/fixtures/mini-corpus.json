@@ -1,0 +1,96 @@
+{
+  "description": "Mini-corpus pour tests rapides - 3 articles représentatifs",
+  "articles": [
+    {
+      "id": "test_001",
+      "title": "Ethics in AI Systems",
+      "url": "https://example.com/ethics-ai",
+      "summary": "Exploration of ethical frameworks for AI development and deployment.",
+      "primary_domain": "ethique",
+      "secondary_domains": ["bias_fairness", "transparency"],
+      "concepts": [
+        {
+          "name": "Algorithmic Bias",
+          "type": "problem",
+          "controversy_level": 2
+        },
+        {
+          "name": "Fairness",
+          "type": "principle",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": ["TensorFlow", "PyTorch"],
+      "complexity_level": "intermediate",
+      "interest_level": 4,
+      "connected_articles": [],
+      "date": "2024-01-15"
+    },
+    {
+      "id": "test_002", 
+      "title": "Technical Implementation of Neural Networks",
+      "url": "https://example.com/neural-networks",
+      "summary": "Deep dive into technical aspects of neural network architecture.",
+      "primary_domain": "technique",
+      "secondary_domains": ["deep_learning", "computer_vision"],
+      "concepts": [
+        {
+          "name": "Backpropagation",
+          "type": "method",
+          "controversy_level": 0
+        },
+        {
+          "name": "Gradient Descent",
+          "type": "algorithm",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": ["TensorFlow", "Keras"],
+      "complexity_level": "advanced",
+      "interest_level": 3,
+      "connected_articles": [],
+      "date": "2024-02-10"
+    },
+    {
+      "id": "test_003",
+      "title": "AI in Professional Usage",
+      "url": "https://example.com/ai-professional",
+      "summary": "Practical applications of AI in business and professional contexts.",
+      "primary_domain": "usage_professionnel",
+      "secondary_domains": ["automation", "productivity"],
+      "concepts": [
+        {
+          "name": "Process Automation",
+          "type": "application",
+          "controversy_level": 1
+        },
+        {
+          "name": "Human-AI Collaboration",
+          "type": "paradigm",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": ["GPT-4", "Claude"],
+      "complexity_level": "beginner",
+      "interest_level": 5,
+      "connected_articles": [],
+      "date": "2024-03-05"
+    }
+  ],
+  "expected_connections": [
+    {
+      "source_id": "test_001",
+      "target_id": "test_003",
+      "type": "relates_to",
+      "strength": 0.7,
+      "reasoning": "Ethics and professional usage are interconnected in AI deployment"
+    }
+  ],
+  "test_metadata": {
+    "total_articles": 3,
+    "domains_covered": ["ethique", "technique", "usage_professionnel"],
+    "complexity_levels": ["beginner", "intermediate", "advanced"],
+    "expected_embeddings": 3,
+    "expected_min_connections": 2
+  }
+}

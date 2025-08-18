@@ -4,7 +4,7 @@
 
 Blog de veille IA avec **architecture triple ground truth** exploitant maximalement les validations humaines pour générer des connexions intelligentes révélant les interconnexions technique-éthique via navigation graphique interactive.
 
-**État actuel :** Production Ready Phase 1 - 56 articles - 208 connexions - Score qualité 82/100
+**État actuel :** Production Ready Phase 1 - 65 articles (art_001→art_112) - 244 connexions - Score qualité 83/100
 
 ---
 

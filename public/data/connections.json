@@ -1871,10 +1871,334 @@
       "auto_detected": true,
       "reasoning": "Similarité sémantique 0.694 (similar_to)",
       "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_104",
+      "target_id": "art_109",
+      "type": "similar_to",
+      "strength": 0.6115224182652228,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.662 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_104",
+      "target_id": "art_107",
+      "type": "similar_to",
+      "strength": 0.555569694804046,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.606 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_104",
+      "target_id": "art_106",
+      "type": "similar_to",
+      "strength": 0.5126410321464377,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.563 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_104",
+      "target_id": "art_108",
+      "type": "similar_to",
+      "strength": 0.48169972504414177,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.532 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_105",
+      "target_id": "art_107",
+      "type": "questions",
+      "strength": 0.49843087468922986,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.623 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_105",
+      "target_id": "art_109",
+      "type": "questions",
+      "strength": 0.4920181715578335,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.615 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_105",
+      "target_id": "art_034",
+      "type": "similar_to",
+      "strength": 0.5115197018012575,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.562 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_105",
+      "target_id": "art_104",
+      "type": "questions",
+      "strength": 0.4115794786930145,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.514 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_106",
+      "target_id": "art_108",
+      "type": "similar_to",
+      "strength": 0.5761884177314238,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.626 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_106",
+      "target_id": "art_104",
+      "type": "similar_to",
+      "strength": 0.5126410321464377,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.563 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_106",
+      "target_id": "art_109",
+      "type": "similar_to",
+      "strength": 0.4791137241663464,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.529 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_106",
+      "target_id": "art_009",
+      "type": "similar_to",
+      "strength": 0.4209603314725368,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.471 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_107",
+      "target_id": "art_105",
+      "type": "questions",
+      "strength": 0.49843087468922986,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.623 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_107",
+      "target_id": "art_109",
+      "type": "similar_to",
+      "strength": 0.5719795648781228,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.622 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_107",
+      "target_id": "art_104",
+      "type": "similar_to",
+      "strength": 0.555569694804046,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.606 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_107",
+      "target_id": "art_009",
+      "type": "similar_to",
+      "strength": 0.4689903792271564,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.519 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_108",
+      "target_id": "art_106",
+      "type": "similar_to",
+      "strength": 0.5761884177314238,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.626 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_108",
+      "target_id": "art_109",
+      "type": "similar_to",
+      "strength": 0.49532925176985215,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.545 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_108",
+      "target_id": "art_104",
+      "type": "similar_to",
+      "strength": 0.48169972504414177,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.532 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_108",
+      "target_id": "art_013",
+      "type": "similar_to",
+      "strength": 0.41288361088856906,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.463 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_109",
+      "target_id": "art_104",
+      "type": "similar_to",
+      "strength": 0.6115224182652228,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.662 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_109",
+      "target_id": "art_107",
+      "type": "similar_to",
+      "strength": 0.5719795648781228,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.622 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_109",
+      "target_id": "art_105",
+      "type": "questions",
+      "strength": 0.4920181715578335,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.615 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_109",
+      "target_id": "art_028",
+      "type": "questions",
+      "strength": 0.4492524055074575,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.562 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_110",
+      "target_id": "art_029",
+      "type": "implements",
+      "strength": 0.5210653282305296,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.474 (implements)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_110",
+      "target_id": "art_104",
+      "type": "questions",
+      "strength": 0.300744607567239,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.376 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_110",
+      "target_id": "art_027",
+      "type": "questions",
+      "strength": 0.28623068102664295,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.358 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_110",
+      "target_id": "art_025",
+      "type": "questions",
+      "strength": 0.2774035462935755,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.347 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_111",
+      "target_id": "art_106",
+      "type": "implements",
+      "strength": 0.4981345977767375,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.453 (implements)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_111",
+      "target_id": "art_104",
+      "type": "implements",
+      "strength": 0.48234068540147557,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.438 (implements)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_111",
+      "target_id": "art_015",
+      "type": "contradicts",
+      "strength": 0.5431279109557081,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.437 (contradicts)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_111",
+      "target_id": "art_109",
+      "type": "implements",
+      "strength": 0.4262122172797983,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.387 (implements)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_112",
+      "target_id": "art_019",
+      "type": "similar_to",
+      "strength": 0.44738532768306694,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.497 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_112",
+      "target_id": "art_024",
+      "type": "questions",
+      "strength": 0.33685997686480784,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.421 (questions)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_112",
+      "target_id": "art_025",
+      "type": "similar_to",
+      "strength": 0.363483043749289,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.413 (similar_to)",
+      "source": "semantic_auto"
+    },
+    {
+      "source_id": "art_112",
+      "target_id": "art_051",
+      "type": "implements",
+      "strength": 0.44354769641331543,
+      "auto_detected": true,
+      "reasoning": "Similarité sémantique 0.403 (implements)",
+      "source": "semantic_auto"
     }
   ],
-  "generated_at": "2025-08-16T18:31:58.287Z",
-  "total_connections": 208,
+  "generated_at": "2025-08-18T21:05:55.424Z",
+  "total_connections": 244,
   "connection_index": {
     "art_001": [
       "art_100",
@@ -1961,7 +2285,9 @@
       "art_013",
       "art_023",
       "art_102",
-      "art_037"
+      "art_037",
+      "art_106",
+      "art_107"
     ],
     "art_006": [
       "art_016",
@@ -2012,7 +2338,8 @@
       "art_012",
       "art_023",
       "art_018",
-      "oss_art_023"
+      "oss_art_023",
+      "art_108"
     ],
     "art_010": [
       "art_009",
@@ -2069,7 +2396,8 @@
       "art_021",
       "art_022",
       "art_029",
-      "art_102"
+      "art_102",
+      "art_111"
     ],
     "art_029": [
       "art_015",
@@ -2083,7 +2411,8 @@
       "art_001",
       "art_015",
       "art_017",
-      "art_100"
+      "art_100",
+      "art_110"
     ],
     "art_017": [
       "art_029",
@@ -2115,7 +2444,8 @@
       "art_017",
       "art_015",
       "art_029",
-      "oss_art_001"
+      "oss_art_001",
+      "art_112"
     ],
     "art_101": [
       "art_020",
@@ -2178,7 +2508,8 @@
       "art_027",
       "art_028",
       "oss_art_008",
-      "oss_art_020"
+      "oss_art_020",
+      "art_112"
     ],
     "art_026": [
       "art_024",
@@ -2199,7 +2530,9 @@
       "art_025",
       "art_027",
       "art_028",
-      "art_026"
+      "art_026",
+      "art_110",
+      "art_112"
     ],
     "art_027": [
       "art_026",
@@ -2209,7 +2542,8 @@
       "art_024",
       "art_026",
       "art_028",
-      "art_028"
+      "art_028",
+      "art_110"
     ],
     "art_028": [
       "art_026",
@@ -2218,7 +2552,8 @@
       "art_027",
       "art_026",
       "art_027",
-      "art_024"
+      "art_024",
+      "art_109"
     ],
     "art_102": [
       "art_009",
@@ -2279,7 +2614,8 @@
       "art_052",
       "art_014",
       "art_052",
-      "art_053"
+      "art_053",
+      "art_112"
     ],
     "art_052": [
       "art_051",
@@ -2396,13 +2732,91 @@
       "art_012",
       "art_041",
       "art_039",
-      "art_035"
+      "art_035",
+      "art_105"
     ],
     "art_040": [
       "art_036",
       "art_018",
       "art_011",
       "art_017"
+    ],
+    "art_104": [
+      "art_109",
+      "art_107",
+      "art_106",
+      "art_108",
+      "art_105",
+      "art_106",
+      "art_107",
+      "art_108",
+      "art_109",
+      "art_110",
+      "art_111"
+    ],
+    "art_109": [
+      "art_104",
+      "art_105",
+      "art_106",
+      "art_107",
+      "art_108",
+      "art_104",
+      "art_107",
+      "art_105",
+      "art_028",
+      "art_111"
+    ],
+    "art_107": [
+      "art_104",
+      "art_105",
+      "art_105",
+      "art_109",
+      "art_104",
+      "art_009",
+      "art_109"
+    ],
+    "art_106": [
+      "art_104",
+      "art_108",
+      "art_104",
+      "art_109",
+      "art_009",
+      "art_108",
+      "art_111"
+    ],
+    "art_108": [
+      "art_104",
+      "art_106",
+      "art_106",
+      "art_109",
+      "art_104",
+      "art_013"
+    ],
+    "art_105": [
+      "art_107",
+      "art_109",
+      "art_034",
+      "art_104",
+      "art_107",
+      "art_109"
+    ],
+    "art_110": [
+      "art_029",
+      "art_104",
+      "art_027",
+      "art_025"
+    ],
+    "art_111": [
+      "art_106",
+      "art_104",
+      "art_015",
+      "art_109"
+    ],
+    "art_112": [
+      "art_019",
+      "art_024",
+      "art_025",
+      "art_051"
     ]
   },
   "metadata": {
@@ -2410,14 +2824,14 @@
     "sources": {
       "hard_connections": 38,
       "manual_validations": 99,
-      "semantic_auto": 71
+      "semantic_auto": 107
     },
     "type_distribution": {
       "builds_on": 80,
-      "contradicts": 6,
-      "implements": 27,
-      "questions": 50,
-      "similar_to": 45
+      "contradicts": 7,
+      "implements": 32,
+      "questions": 60,
+      "similar_to": 65
     }
   }
 }

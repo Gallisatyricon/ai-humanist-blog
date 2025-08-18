@@ -2391,8 +2391,798 @@
       "reading_time": 8,
       "complexity_level": "beginner",
       "connected_articles": []
+    },
+    {
+      "id": "art_104",
+      "title": "IA et enseignement supérieur : formation, structuration et appropriation par la société",
+      "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-07/rapport-intelligence-artificielle-et-enseignement-sup-rieur-formation-structuration-et-appropriation-par-la-soci-t--37540.pdf",
+      "source_type": "academic",
+      "date": "2025-07-10T00:00:00Z",
+      "summary": "Rapport gouvernemental français analysant l'adoption de l'IA dans l'enseignement supérieur. Basé sur une enquête auprès de 30 000 acteurs universitaires, il révèle des usages hétérogènes et individuels, proposant 26 recommandations pour une transformation structurée : mutualisation des ressources, formation massive, développement d'infrastructures souveraines et création d'un institut national 'IA, éducation et société'.",
+      "perspective": "Vision institutionnelle française pour une appropriation démocratique et souveraine de l'IA dans l'enseignement supérieur, face aux risques de fracture numérique et de dépendance technologique.",
+      "interest_level": 4,
+      "primary_domain": "usage_professionnel",
+      "secondary_domains": [
+        "society",
+        "regulation",
+        "green_ai",
+        "education"
+      ],
+      "concepts": [
+        {
+          "id": "societe_apprenante_ia",
+          "name": "Société Apprenante à l'ère de l'IA",
+          "type": "philosophical",
+          "controversy_level": 1
+        },
+        {
+          "id": "sovereignty_numerique_educative",
+          "name": "Souveraineté Numérique Éducative",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "justice_cognitive",
+          "name": "Justice Cognitive",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "transformation_civilisationnelle_ia",
+          "name": "Transformation Civilisationnelle par l'IA",
+          "type": "philosophical",
+          "controversy_level": 3
+        },
+        {
+          "id": "democratie_universitaire_ia",
+          "name": "Démocratie Universitaire et IA",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "shadow_ai_education",
+          "name": "Shadow AI en Éducation",
+          "type": "technical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "chatgpt_education",
+          "name": "ChatGPT",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "mistral_le_chat",
+          "name": "Mistral : Le Chat",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "microsoft_copilot_edu",
+          "name": "Microsoft Copilot",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "gemini_education",
+          "name": "Gemini",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "plateforme_mutualisation_ia",
+          "name": "Plateforme de Mutualisation IA",
+          "type": "platform",
+          "maturity": "experimental"
+        },
+        {
+          "id": "data_centers_souverains",
+          "name": "Data Centers Souverains",
+          "type": "platform",
+          "maturity": "experimental"
+        }
+      ],
+      "author": "François Taddei, Frédéric Pascal, Marc de Falco, Emilie-Pauline Gallié",
+      "reading_time": 45,
+      "complexity_level": "intermediate",
+      "connected_articles": [],
+      "centrality_score": 0
+    },
+    {
+      "id": "art_105",
+      "title": "La légitimité du droit sui generis du producteur de bases de données",
+      "url": "https://droit.cairn.info/revue-legipresse-2019-HS2-page-115?lang=fr",
+      "source_type": "academic",
+      "date": "2019-12-01T00:00:00Z",
+      "summary": "Analyse critique de la directive européenne 96/9/CE créant un droit sui generis pour les producteurs de bases de données. L'auteur questionne la légitimité de cette protection basée sur l'investissement plutôt que la création, révélant son échec relatif : jurisprudence restrictive, concurrence par d'autres protections (contrat, droit d'auteur), et inadéquation face à l'économie numérique contemporaine et l'open data.",
+      "perspective": "Critique juridique de l'évolution de la propriété intellectuelle vers la protection des investissements, interrogeant l'efficacité et la pertinence du droit sui generis face aux transformations technologiques.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "regulation",
+        "deep_learning",
+        "industry_4_0"
+      ],
+      "concepts": [
+        {
+          "id": "droit_sui_generis",
+          "name": "Droit Sui Generis",
+          "type": "technical",
+          "controversy_level": 2
+        },
+        {
+          "id": "legitimite_juridique",
+          "name": "Légitimité Juridique",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "protection_investissement",
+          "name": "Protection de l'Investissement",
+          "type": "methodological",
+          "controversy_level": 3
+        },
+        {
+          "id": "propriete_intellectuelle_evolutive",
+          "name": "Propriété Intellectuelle Évolutive",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "concurrence_normative",
+          "name": "Concurrence Normative",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "paradoxe_open_data",
+          "name": "Paradoxe Open Data",
+          "type": "philosophical",
+          "controversy_level": 3
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "directive_96_9_ce",
+          "name": "Directive 96/9/CE",
+          "type": "framework",
+          "maturity": "stable"
+        },
+        {
+          "id": "cjue_interpretation",
+          "name": "Jurisprudence CJUE",
+          "type": "framework",
+          "maturity": "stable"
+        },
+        {
+          "id": "droit_auteur_logiciel",
+          "name": "Droit d'Auteur Logiciel",
+          "type": "framework",
+          "maturity": "stable"
+        },
+        {
+          "id": "concurrence_deloyale",
+          "name": "Concurrence Déloyale",
+          "type": "framework",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Sylvain Chatry",
+      "reading_time": 25,
+      "complexity_level": "advanced",
+      "connected_articles": [],
+      "centrality_score": 0
+    },
+    {
+      "id": "art_106",
+      "title": "Communs démocratiques : l'IA éthique au service des débats citoyens",
+      "url": "https://www.isir.upmc.fr/actualites/communs-democratiques-lia-ethique-au-service-des-debats-citoyens/",
+      "source_type": "blog",
+      "date": "2024-06-05T00:00:00Z",
+      "summary": "Présentation du projet 'Communs Démocratiques' porté par Make.org, Sciences Po, Sorbonne Université et le CNRS, visant à développer des solutions d'IA générative open-source pour renforcer les débats participatifs en ligne. Le projet, financé par France 2030, réunit 50 chercheurs autour de trois axes : modération automatique, assistance à l'expression citoyenne et traduction multilingue.",
+      "perspective": "Vision techno-progressiste d'une démocratisation de l'IA au service de la participation citoyenne, interrogeant les biais algorithmiques dans les processus démocratiques numériques.",
+      "interest_level": 4,
+      "primary_domain": "usage_professionnel",
+      "secondary_domains": [
+        "society",
+        "education",
+        "green_ai"
+      ],
+      "concepts": [
+        {
+          "id": "communs_democratiques",
+          "name": "Communs Démocratiques",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "moderation_automatique",
+          "name": "Modération Automatique",
+          "type": "technical",
+          "controversy_level": 2
+        },
+        {
+          "id": "participation_citoyenne_ia",
+          "name": "Participation Citoyenne Augmentée par IA",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "biais_democratiques",
+          "name": "Biais Démocratiques Algorithmiques",
+          "type": "methodological",
+          "controversy_level": 3
+        },
+        {
+          "id": "open_source_civique",
+          "name": "Open Source Civique",
+          "type": "philosophical",
+          "controversy_level": 1
+        },
+        {
+          "id": "multidisciplinarite_ia",
+          "name": "Multidisciplinarité en IA",
+          "type": "methodological",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "make_org_platform",
+          "name": "Plateforme Make.org",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "hugging_face_community",
+          "name": "Hugging Face",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "mozilla_ai",
+          "name": "Mozilla.ai",
+          "type": "platform",
+          "maturity": "beta"
+        },
+        {
+          "id": "genci_computing",
+          "name": "GENCI",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "modeles_langage_democratique",
+          "name": "Modèles de Langage Démocratiques",
+          "type": "model",
+          "maturity": "experimental"
+        }
+      ],
+      "author": "François Yvon (ISIR/CNRS)",
+      "reading_time": 8,
+      "complexity_level": "intermediate",
+      "connected_articles": [],
+      "centrality_score": 0
+    },
+    {
+      "id": "art_107",
+      "title": "Vérificateur de conformité à l'Acte de l'IA de l'UE",
+      "url": "https://artificialintelligenceact.eu/fr/evaluation/verificateur-de-conformite-a-l-acte-de-l-ai-de-l-ue/",
+      "source_type": "blog",
+      "date": "2025-07-03T00:00:00Z",
+      "summary": "Outil interactif développé par le Future of Life Institute pour évaluer la conformité des systèmes d'IA à la réglementation européenne. L'outil guide les utilisateurs à travers les obligations légales selon quatre catégories de risque (inacceptable, élevé, limité, minimal) et propose une mise en œuvre pratique du cadre réglementaire de l'AI Act, avec des mises à jour régulières reflétant l'évolution législative.",
+      "perspective": "Approche pragmatique de la mise en conformité réglementaire, illustrant la complexité pratique de l'application du droit européen de l'IA dans un contexte technologique en constante évolution.",
+      "interest_level": 3,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "society",
+        "industry_4_0",
+        "deep_learning"
+      ],
+      "concepts": [
+        {
+          "id": "conformite_reglementaire_ia",
+          "name": "Conformité Réglementaire IA",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "categorisation_risques_ia",
+          "name": "Catégorisation des Risques IA",
+          "type": "technical",
+          "controversy_level": 2
+        },
+        {
+          "id": "obligations_fournisseurs_ia",
+          "name": "Obligations des Fournisseurs IA",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "transparence_algorithmique",
+          "name": "Transparence Algorithmique",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "mise_en_oeuvre_ai_act",
+          "name": "Mise en Œuvre AI Act",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "sanctions_reglementaires_ia",
+          "name": "Sanctions Réglementaires IA",
+          "type": "technical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "ai_act_explorer",
+          "name": "AI Act Explorer",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "verificateur_conformite",
+          "name": "Vérificateur de Conformité",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "future_of_life_institute",
+          "name": "Future of Life Institute",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "ai_act_ue_2024",
+          "name": "AI Act UE 2024/1689",
+          "type": "framework",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Future of Life Institute",
+      "reading_time": 6,
+      "complexity_level": "intermediate",
+      "connected_articles": [],
+      "centrality_score": 0
+    },
+    {
+      "id": "art_108",
+      "title": "Guide des outils numériques pour la participation citoyenne dans les collectivités territoriales",
+      "url": "https://www.banquedesterritoires.fr/sites/default/files/2019-02/Guide%20des%20outils%20num%C3%A9riques%20pour%20la%20participation%20citoyenne%20dans%20les%20collectivit%C3%A9s%20territoriales.pdf",
+      "source_type": "academic",
+      "date": "2019-02-01T00:00:00Z",
+      "summary": "Guide pratique de la Banque des Territoires recensant 74 outils numériques de participation citoyenne pour les collectivités. Analyse comparative des Civic Tech par objectifs (consultation, concertation, budget participatif, signalement, financement participatif, open data) avec retours d'expérience de 157 collectivités utilisatrices. Propose méthodologies, facteurs clés de réussite et grilles d'évaluation pour choisir l'outil adapté.",
+      "perspective": "Vision pragmatique de la modernisation démocratique locale par le numérique, équilibrant opportunités d'inclusion citoyenne et vigilance sur la fracture numérique et l'éthique des données.",
+      "interest_level": 3,
+      "primary_domain": "usage_professionnel",
+      "secondary_domains": [
+        "society",
+        "green_ai"
+      ],
+      "concepts": [
+        {
+          "id": "civic_tech_territoriale",
+          "name": "Civic Tech Territoriale",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "democratie_locale_numerique",
+          "name": "Démocratie Locale Numérique",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "inclusion_numerique_citoyenne",
+          "name": "Inclusion Numérique Citoyenne",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "mediation_numerique_publique",
+          "name": "Médiation Numérique Publique",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "gouvernance_donnees_citoyennes",
+          "name": "Gouvernance des Données Citoyennes",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "budget_participatif_numerique",
+          "name": "Budget Participatif Numérique",
+          "type": "technical",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "cap_collectif",
+          "name": "Cap Collectif",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "carticipe_debatomap",
+          "name": "Carticipe-Debatomap",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "tell_my_city",
+          "name": "Tell My City",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "collecticity",
+          "name": "Collecticity",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "opendatasoft",
+          "name": "OpenDataSoft",
+          "type": "platform",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Caisse des Dépôts - Banque des Territoires, OpenCitiz",
+      "reading_time": 30,
+      "complexity_level": "intermediate",
+      "connected_articles": [],
+      "centrality_score": 0
+    },
+    {
+      "id": "art_109",
+      "title": "Donner un sens à l'intelligence artificielle : pour une stratégie nationale et européenne",
+      "url": "https://www.vie-publique.fr/files/rapport/pdf/184000159.pdf",
+      "source_type": "academic",
+      "date": "2018-03-08T00:00:00Z",
+      "summary": "Rapport de mission parlementaire dirigée par Cédric Villani proposant une stratégie française et européenne en intelligence artificielle. Document fondateur articulé autour de 6 axes : politique économique centrée sur la donnée, recherche agile, impacts sur l'emploi, IA écologique, éthique et inclusion. Définit 4 secteurs prioritaires (santé, transport, environnement, défense) et pose les bases conceptuelles d'une 'IA à la française'.",
+      "perspective": "Vision politique et stratégique française pour un développement souverain et éthique de l'IA, articulant compétitivité économique et valeurs humanistes. Approche systémique refusant le déterminisme technologique anglo-saxon.",
+      "interest_level": 5,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "industry_4_0",
+        "education",
+        "green_ai",
+        "society"
+      ],
+      "concepts": [
+        {
+          "id": "souverainete_numerique",
+          "name": "Souveraineté Numérique",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "communs_donnees",
+          "name": "Communs de la Donnée",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "ia_explicable",
+          "name": "IA Explicable",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "complementarite_humain_ia",
+          "name": "Complémentarité Humain-IA",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "ethique_by_design",
+          "name": "Éthique by Design",
+          "type": "methodological",
+          "controversy_level": 1
+        },
+        {
+          "id": "ia_frugale",
+          "name": "IA Frugale et Écologique",
+          "type": "technical",
+          "controversy_level": 0
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "plateformes_sectorielles",
+          "name": "Plateformes Sectorielles de Mutualisation",
+          "type": "platform",
+          "maturity": "experimental"
+        },
+        {
+          "id": "instituts_3ia",
+          "name": "Instituts Interdisciplinaires d'Intelligence Artificielle (3IA)",
+          "type": "framework",
+          "maturity": "stable"
+        },
+        {
+          "id": "rgpd",
+          "name": "Règlement Général sur la Protection des Données",
+          "type": "framework",
+          "maturity": "stable"
+        },
+        {
+          "id": "supercalculateur_ia",
+          "name": "Supercalculateur dédié à l'IA",
+          "type": "platform",
+          "maturity": "experimental"
+        }
+      ],
+      "author": "Cédric Villani et équipe mission parlementaire",
+      "reading_time": 120,
+      "complexity_level": "intermediate",
+      "connected_articles": [],
+      "centrality_score": 0
+    },
+    {
+      "id": "art_110",
+      "title": "The Reality of AI and Biorisk",
+      "url": "https://arxiv.org/pdf/2412.01946v2",
+      "source_type": "academic",
+      "date": "2024-12-04T00:00:00Z",
+      "summary": "Méta-analyse critique des recherches existantes sur les biorisques liés à l'IA. Examine deux modèles de menace principaux : l'accès à l'information via les LLM et la synthèse d'artefacts biologiques nocifs. Conclut que les preuves scientifiques actuelles ne soutiennent pas les préoccupations populaires sur les biorisques IA, révélant des lacunes méthodologiques importantes dans la littérature existante.",
+      "perspective": "Évaluation scientifique rigoureuse qui démystifie le battage médiatique autour des biorisques IA, appelant à des approches empiriques plus robustes et des modèles de menace mieux définis.",
+      "interest_level": 4,
+      "primary_domain": "ethique",
+      "secondary_domains": [
+        "education",
+        "deep_learning",
+        "industry_4_0"
+      ],
+      "concepts": [
+        {
+          "id": "biorisk_threat_model",
+          "name": "Modèles de Menace Biorisque",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "marginal_risk_ia",
+          "name": "Risque Marginal IA",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "whole_chain_analysis",
+          "name": "Analyse de Chaîne Complète",
+          "type": "methodological",
+          "controversy_level": 0
+        },
+        {
+          "id": "red_teaming_methodology",
+          "name": "Méthodologie Red Team",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "dual_use_research",
+          "name": "Recherche à Double Usage",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "empirical_ai_safety",
+          "name": "Sécurité IA Empirique",
+          "type": "methodological",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "biological_tools_bt",
+          "name": "Outils Biologiques IA (BT)",
+          "type": "framework",
+          "maturity": "experimental"
+        },
+        {
+          "id": "alphafold",
+          "name": "AlphaFold",
+          "type": "model",
+          "maturity": "stable"
+        },
+        {
+          "id": "gryphon_scientific",
+          "name": "Gryphon Scientific",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "ai_safety_institutes",
+          "name": "Instituts de Sécurité IA (US/UK)",
+          "type": "framework",
+          "maturity": "experimental"
+        }
+      ],
+      "author": "Aidan Peppin, Anka Reuel, Stephen Casper et al.",
+      "reading_time": 25,
+      "complexity_level": "advanced",
+      "connected_articles": [],
+      "centrality_score": 0
+    },
+    {
+      "id": "art_111",
+      "title": "The Leaderboard Illusion",
+      "url": "https://arxiv.org/pdf/2504.20879",
+      "source_type": "academic",
+      "date": "2025-05-13T00:00:00Z",
+      "summary": "Enquête systématique révélant les distorsions fondamentales de Chatbot Arena, le classement de référence pour évaluer les LLM. Documente les pratiques de tests privés non déclarées, les asymétries massives d'accès aux données entre acteurs propriétaires et open-source, et les phénomènes de suroptimisation. Démontre expérimentalement comment ces biais faussent les classements et propose des réformes pour restaurer l'intégrité scientifique.",
+      "perspective": "Critique méthodologique rigoureuse qui démystifie l'apparente objectivité des classements IA, révélant comment les asymétries de pouvoir façonnent subrepticement les métriques de performance.",
+      "interest_level": 5,
+      "primary_domain": "recherche",
+      "secondary_domains": [
+        "society",
+        "deep_learning",
+        "industry_4_0"
+      ],
+      "concepts": [
+        {
+          "id": "leaderboard_gaming",
+          "name": "Optimisation de Classements",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "bradley_terry_violations",
+          "name": "Violations du Modèle Bradley-Terry",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "data_access_asymmetries",
+          "name": "Asymétries d'Accès aux Données",
+          "type": "methodological",
+          "controversy_level": 3
+        },
+        {
+          "id": "selective_disclosure",
+          "name": "Divulgation Sélective",
+          "type": "philosophical",
+          "controversy_level": 3
+        },
+        {
+          "id": "arena_overfitting",
+          "name": "Suroptimisation Arena",
+          "type": "technical",
+          "controversy_level": 2
+        },
+        {
+          "id": "evaluation_fairness",
+          "name": "Équité d'Évaluation",
+          "type": "philosophical",
+          "controversy_level": 2
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "chatbot_arena",
+          "name": "Chatbot Arena",
+          "type": "platform",
+          "maturity": "stable"
+        },
+        {
+          "id": "arenahard",
+          "name": "ArenaHard",
+          "type": "framework",
+          "maturity": "stable"
+        },
+        {
+          "id": "fastchat",
+          "name": "FastChat",
+          "type": "framework",
+          "maturity": "stable"
+        },
+        {
+          "id": "bradley_terry_model",
+          "name": "Modèle Bradley-Terry",
+          "type": "framework",
+          "maturity": "stable"
+        }
+      ],
+      "author": "Shivalika Singh, Yiyang Nan, Alex Wang et al.",
+      "reading_time": 35,
+      "complexity_level": "advanced",
+      "connected_articles": [],
+      "centrality_score": 0
+    },
+    {
+      "id": "art_112",
+      "title": "Scaling Laws for AI: A Chat with MIT's Neil Thompson",
+      "url": "https://cohere.com/blog/scaling-laws-of-ai",
+      "source_type": "blog",
+      "date": "2023-12-14T00:00:00Z",
+      "summary": "Interview avec Neil Thompson, directeur du MIT FutureTech Lab, explorant les enjeux de scalabilité de l'IA générative. Discussion des défis techniques et économiques du passage à l'échelle, des limites des lois de Moore pour l'IA, et de l'importance d'éviter le piège de la spécialisation excessive. Analyse des implications multidisciplinaires des lois d'échelle pour l'innovation en IA, questionnant la soutenabilité des tendances actuelles.",
+      "perspective": "Vision économique et technique nuancée du scaling en IA, mettant en garde contre l'optimisme technologique et prônant une approche interdisciplinaire des défis de performance et d'efficacité.",
+      "interest_level": 4,
+      "primary_domain": "technique",
+      "secondary_domains": [
+        "education",
+        "green_ai",
+        "industry_4_0"
+      ],
+      "concepts": [
+        {
+          "id": "scaling_laws_ai",
+          "name": "Lois d'Échelle IA",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "compute_efficiency_limits",
+          "name": "Limites d'Efficacité Computationnelle",
+          "type": "technical",
+          "controversy_level": 1
+        },
+        {
+          "id": "innovation_specialization_trap",
+          "name": "Piège de la Spécialisation Innovation",
+          "type": "methodological",
+          "controversy_level": 2
+        },
+        {
+          "id": "multidisciplinary_ai_research",
+          "name": "Recherche IA Multidisciplinaire",
+          "type": "methodological",
+          "controversy_level": 0
+        },
+        {
+          "id": "sustainable_ai_scaling",
+          "name": "Scaling IA Soutenable",
+          "type": "philosophical",
+          "controversy_level": 2
+        },
+        {
+          "id": "economic_foundations_computing",
+          "name": "Fondements Économiques du Computing",
+          "type": "methodological",
+          "controversy_level": 1
+        }
+      ],
+      "tools_mentioned": [
+        {
+          "id": "mit_futuretech_lab",
+          "name": "MIT FutureTech Lab",
+          "type": "framework",
+          "maturity": "stable"
+        },
+        {
+          "id": "robot_foundation_models",
+          "name": "Robot Foundation Models",
+          "type": "model",
+          "maturity": "experimental"
+        },
+        {
+          "id": "quantum_computing_ai",
+          "name": "Quantum Computing for AI",
+          "type": "platform",
+          "maturity": "experimental"
+        },
+        {
+          "id": "neural_scaling_metrics",
+          "name": "Neural Scaling Metrics",
+          "type": "framework",
+          "maturity": "beta"
+        }
+      ],
+      "author": "Sara Hooker, Astrid Sandoval (interviewing Neil Thompson)",
+      "reading_time": 12,
+      "complexity_level": "intermediate",
+      "connected_articles": [],
+      "centrality_score": 0
     }
   ],
-  "last_updated": "2025-08-15T14:35:42.389Z",
-  "total_articles": 56
+  "last_updated": "2025-08-18T17:42:56.987Z",
+  "total_articles": 65
 }

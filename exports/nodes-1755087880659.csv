@@ -1,7 +1,0 @@
-id,label,domain,centrality,connections,importance
-"art_001","Efficient Attention Mechanisms in Transformers","technique",0.75,3,4
-"art_002","Bias in Facial Recognition: A European Perspective","ethique",0.85,2,5
-"art_003","Green AI: Reducing Carbon Footprint in Machine Learning","frugalite",0.6,2,4
-"art_004","Explainable AI in Healthcare: Beyond Black Boxes","usage_professionnel",0.7,1,4
-"art_005","The Philosophy of AI Consciousness: Questioning Machine Sentience","philosophie",0.55,5,3
-"art_006","Large Language Models in Academic Research: Productivity vs Integrity","recherche",0.8,1,5

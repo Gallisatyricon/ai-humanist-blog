@@ -12,9 +12,9 @@
 import path from 'path'
 import { pipeline } from '@xenova/transformers'
 import { readJSONWithLock, writeJSONAtomic } from './writeFileAtomic.js'
+import { PATHS } from './config/paths.js'
 
-const ARTICLES_PATH = path.join(process.cwd(), 'public/data/articles.json')
-const EMBEDDINGS_PATH = path.join(process.cwd(), 'public/data/embeddings.json')
+// Chemins centralisés depuis config/paths.ts
 
 // ==================== TYPES ====================
 
@@ -232,7 +232,7 @@ async function computeEmbeddingsBatch(
 
 async function loadExistingEmbeddings(): Promise<EmbeddingData | null> {
   try {
-    const data = await readJSONWithLock(EMBEDDINGS_PATH, { timeout: 5000 })
+    const data = await readJSONWithLock(PATHS.EMBEDDINGS, { timeout: 5000 })
     
     if (data.embeddings && Array.isArray(data.embeddings)) {
       console.log(`📂 Embeddings existants chargés: ${data.embeddings.length}`)
@@ -247,7 +247,7 @@ async function loadExistingEmbeddings(): Promise<EmbeddingData | null> {
 }
 
 async function saveEmbeddings(embeddingData: EmbeddingData): Promise<void> {
-  await writeJSONAtomic(EMBEDDINGS_PATH, embeddingData, { lockTimeout: 20000 })
+  await writeJSONAtomic(PATHS.EMBEDDINGS, embeddingData, { lockTimeout: 20000 })
   console.log(`✅ Embeddings sauvés: ${embeddingData.embeddings.length} vecteurs`)
 }
 
@@ -273,7 +273,7 @@ export async function generateEmbeddings(options: {
     
     // 1. Charger articles
     console.log('📊 Chargement articles...')
-    const articleData = await readJSONWithLock(ARTICLES_PATH, { timeout: 5000 })
+    const articleData = await readJSONWithLock(PATHS.ARTICLES, { timeout: 5000 })
     
     // Structure flexible pour compatibilité
     let articles: any[] = []

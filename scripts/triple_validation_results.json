@@ -1,7 +1,7 @@
 {
   "hard_connections_coverage": 1,
   "manual_connections_precision": 1,
-  "semantic_connections_quality": 0.6333191948248087,
+  "semantic_connections_quality": 0.580765674145446,
   "type_distribution": {
     "builds_on": {
       "total_count": 80,
@@ -14,57 +14,57 @@
       }
     },
     "contradicts": {
-      "total_count": 6,
-      "auto_detected_ratio": 0.8333333333333334,
-      "average_strength": 0.7346250547898713,
+      "total_count": 7,
+      "auto_detected_ratio": 0.8571428571428571,
+      "average_strength": 0.7072683199564195,
       "source_breakdown": {
         "hard_connection": 0,
         "manual_validation": 1,
-        "semantic_auto": 5
+        "semantic_auto": 6
       }
     },
     "implements": {
-      "total_count": 27,
-      "auto_detected_ratio": 0.1111111111111111,
-      "average_strength": 0.7375933353581464,
+      "total_count": 32,
+      "auto_detected_ratio": 0.25,
+      "average_strength": 0.696447518117869,
       "source_breakdown": {
         "hard_connection": 0,
         "manual_validation": 24,
-        "semantic_auto": 3
+        "semantic_auto": 8
       }
     },
     "questions": {
-      "total_count": 50,
-      "auto_detected_ratio": 0.54,
-      "average_strength": 0.6743747614992281,
+      "total_count": 60,
+      "auto_detected_ratio": 0.6166666666666667,
+      "average_strength": 0.6293617810568044,
       "source_breakdown": {
         "hard_connection": 0,
         "manual_validation": 23,
-        "semantic_auto": 27
+        "semantic_auto": 37
       }
     },
     "similar_to": {
-      "total_count": 45,
-      "auto_detected_ratio": 0.6888888888888889,
-      "average_strength": 0.6803293127371568,
+      "total_count": 65,
+      "auto_detected_ratio": 0.7846153846153846,
+      "average_strength": 0.6282105561487528,
       "source_breakdown": {
         "hard_connection": 0,
         "manual_validation": 14,
-        "semantic_auto": 31
+        "semantic_auto": 51
       }
     }
   },
-  "domain_bridge_coverage": 0.20535714285714285,
+  "domain_bridge_coverage": 0.2230769230769231,
   "controversy_connection_rate": 1,
   "article_coverage": 1,
   "quality_metrics": {
-    "average_connections_per_article": 7.428571428571429,
+    "average_connections_per_article": 7.507692307692308,
     "strength_distribution": {
       "high": 145,
-      "medium": 63,
-      "low": 0
+      "medium": 94,
+      "low": 5
     },
-    "diversity_score": 0.4075409159509923
+    "diversity_score": 0.46636259563865623
   },
   "validation_samples": {
     "total_tested": 20,

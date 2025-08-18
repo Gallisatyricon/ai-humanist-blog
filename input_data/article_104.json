@@ -1,0 +1,139 @@
+{
+  "article": {
+    "id": "art_104",
+    "title": "IA et enseignement supérieur : formation, structuration et appropriation par la société",
+    "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-07/rapport-intelligence-artificielle-et-enseignement-sup-rieur-formation-structuration-et-appropriation-par-la-soci-t--37540.pdf",
+    "source_type": "academic",
+    "date": "2025-07-10T00:00:00Z",
+    "summary": "Rapport gouvernemental français analysant l'adoption de l'IA dans l'enseignement supérieur. Basé sur une enquête auprès de 30 000 acteurs universitaires, il révèle des usages hétérogènes et individuels, proposant 26 recommandations pour une transformation structurée : mutualisation des ressources, formation massive, développement d'infrastructures souveraines et création d'un institut national 'IA, éducation et société'.",
+    "perspective": "Vision institutionnelle française pour une appropriation démocratique et souveraine de l'IA dans l'enseignement supérieur, face aux risques de fracture numérique et de dépendance technologique.",
+    "interest_level": 4,
+    "primary_domain": "usage_professionnel",
+    "secondary_domains": ["education", "regulation", "green_ai", "society"],
+    "concepts": [
+      {
+        "id": "societe_apprenante_ia",
+        "name": "Société Apprenante à l'ère de l'IA",
+        "type": "philosophical",
+        "controversy_level": 1
+      },
+      {
+        "id": "sovereignty_numerique_educative",
+        "name": "Souveraineté Numérique Éducative",
+        "type": "methodological",
+        "controversy_level": 2
+      },
+      {
+        "id": "justice_cognitive",
+        "name": "Justice Cognitive",
+        "type": "philosophical",
+        "controversy_level": 2
+      },
+      {
+        "id": "transformation_civilisationnelle_ia",
+        "name": "Transformation Civilisationnelle par l'IA",
+        "type": "philosophical",
+        "controversy_level": 3
+      },
+      {
+        "id": "democratie_universitaire_ia",
+        "name": "Démocratie Universitaire et IA",
+        "type": "methodological",
+        "controversy_level": 1
+      },
+      {
+        "id": "shadow_ai_education",
+        "name": "Shadow AI en Éducation",
+        "type": "technical",
+        "controversy_level": 2
+      }
+    ],
+    "tools_mentioned": [
+      {
+        "id": "chatgpt_education",
+        "name": "ChatGPT",
+        "type": "model",
+        "maturity": "stable"
+      },
+      {
+        "id": "mistral_le_chat",
+        "name": "Mistral : Le Chat",
+        "type": "model",
+        "maturity": "stable"
+      },
+      {
+        "id": "microsoft_copilot_edu",
+        "name": "Microsoft Copilot",
+        "type": "platform",
+        "maturity": "stable"
+      },
+      {
+        "id": "gemini_education",
+        "name": "Gemini",
+        "type": "model",
+        "maturity": "stable"
+      },
+      {
+        "id": "plateforme_mutualisation_ia",
+        "name": "Plateforme de Mutualisation IA",
+        "type": "platform",
+        "maturity": "experimental"
+      },
+      {
+        "id": "data_centers_souverains",
+        "name": "Data Centers Souverains",
+        "type": "platform",
+        "maturity": "experimental"
+      }
+    ],
+    "author": "François Taddei, Frédéric Pascal, Marc de Falco, Emilie-Pauline Gallié",
+    "reading_time": 45,
+    "complexity_level": "intermediate",
+    "connected_articles": [],
+    "centrality_score": 0
+  },
+  "suggested_connections": [
+    {
+      "target_id": "art_009",
+      "type": "implements",
+      "strength": 0.84,
+      "reasoning": "Ce rapport opérationnalise concrètement les principes éthiques UNESCO à l'échelle nationale française, proposant une architecture institutionnelle pour leur mise en œuvre dans l'enseignement supérieur.",
+      "confidence": 0.90
+    },
+    {
+      "target_id": "art_018",
+      "type": "builds_on",
+      "strength": 0.78,
+      "reasoning": "Étend les préoccupations de sauvegarde du bien-être algorithmique en proposant un cadre systémique de protection à l'échelle du système éducatif français.",
+      "confidence": 0.85
+    },
+    {
+      "target_id": "art_013",
+      "type": "implements",
+      "strength": 0.75,
+      "reasoning": "Illustre concrètement la mise en application des mécanismes de responsabilité OCDE à travers la création d'un institut national et de structures de gouvernance dédiées.",
+      "confidence": 0.81
+    },
+    {
+      "target_id": "art_029",
+      "type": "questions",
+      "strength": 0.72,
+      "reasoning": "La vision optimiste de transformation par l'IA est questionnée par l'analyse des illusions de compréhension, révélant les risques de 'Shadow AI' et de dépendance technologique.",
+      "confidence": 0.78
+    },
+    {
+      "target_id": "art_102",
+      "type": "similar_to",
+      "strength": 0.69,
+      "reasoning": "Partage l'approche multidisciplinaire d'analyse des enjeux sociétaux de l'IA, mais avec un focus institutionnel français plutôt qu'une perspective académique internationale.",
+      "confidence": 0.75
+    },
+    {
+      "target_id": "art_024",
+      "type": "builds_on",
+      "strength": 0.66,
+      "reasoning": "S'appuie sur les critiques de durabilité environnementale pour proposer des solutions 'frugales' et souveraines, intégrant les enjeux écologiques dans la stratégie nationale.",
+      "confidence": 0.73
+    }
+  ]
+}

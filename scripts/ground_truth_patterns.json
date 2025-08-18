@@ -1,7 +1,7 @@
 {
   "hard_connections": {
     "total_count": 38,
-    "average_per_article": 0.6785714285714286,
+    "average_per_article": 0.5846153846153846,
     "domain_distribution": {
       "technique": 8,
       "ethique": 13,
@@ -76,104 +76,94 @@
       }
     },
     "builds_on_patterns": {
-      "builds_on_patterns": {
-        "common_reasoning_keywords": [
-          "dans",
-          "fournit",
-          "pour",
-          "l'analyse",
-          "principes",
-          "concrètement",
-          "l'investigation",
-          "cadre",
-          "comprendre",
-          "enjeux"
-        ],
-        "strength_range": [
-          0.71,
-          0.86
-        ],
-        "typical_domain_flows": [
-          "recherche→technique",
-          "technique→ethique"
-        ]
-      }
+      "common_reasoning_keywords": [
+        "dans",
+        "fournit",
+        "pour",
+        "l'analyse",
+        "principes",
+        "concrètement",
+        "l'investigation",
+        "cadre",
+        "comprendre",
+        "enjeux"
+      ],
+      "strength_range": [
+        0.71,
+        0.86
+      ],
+      "typical_domain_flows": [
+        "recherche→technique",
+        "technique→ethique"
+      ]
     },
     "contradicts_patterns": {
-      "contradicts_patterns": {
-        "common_reasoning_keywords": [],
-        "strength_range": [
-          0.84,
-          0.84
-        ],
-        "controversy_correlation": 0.6
-      }
+      "common_reasoning_keywords": [],
+      "strength_range": [
+        0.84,
+        0.84
+      ],
+      "controversy_correlation": 0.6
     },
     "implements_patterns": {
-      "implements_patterns": {
-        "common_reasoning_keywords": [
-          "dans",
-          "pour",
-          "fournit",
-          "concrètement",
-          "illustre",
-          "éthiques",
-          "cadre",
-          "d'équité",
-          "empiriques",
-          "principes"
-        ],
-        "strength_range": [
-          0.66,
-          0.88
-        ],
-        "domain_bridges": [
-          "technique→ethique",
-          "ethique→technique"
-        ]
-      }
+      "common_reasoning_keywords": [
+        "dans",
+        "pour",
+        "fournit",
+        "concrètement",
+        "illustre",
+        "éthiques",
+        "cadre",
+        "d'équité",
+        "empiriques",
+        "principes"
+      ],
+      "strength_range": [
+        0.66,
+        0.88
+      ],
+      "domain_bridges": [
+        "technique→ethique",
+        "ethique→technique"
+      ]
     },
     "questions_patterns": {
-      "questions_patterns": {
-        "common_reasoning_keywords": [
-          "l'approche",
-          "questionne",
-          "l'analyse",
-          "l'optimisme",
-          "limites",
-          "révélant",
-          "remet",
-          "technique",
-          "philosophiques",
-          "l'étude"
-        ],
-        "strength_range": [
-          0.71,
-          0.91
-        ],
-        "complexity_correlation": 0.4
-      }
+      "common_reasoning_keywords": [
+        "l'approche",
+        "questionne",
+        "l'analyse",
+        "l'optimisme",
+        "limites",
+        "révélant",
+        "remet",
+        "technique",
+        "philosophiques",
+        "l'étude"
+      ],
+      "strength_range": [
+        0.71,
+        0.91
+      ],
+      "complexity_correlation": 0.4
     },
     "similar_to_patterns": {
-      "similar_to_patterns": {
-        "common_reasoning_keywords": [
-          "partage",
-          "l'approche",
-          "mais",
-          "plutôt",
-          "pour",
-          "avec",
-          "connexion",
-          "manuelle",
-          "validée",
-          "(domaine"
-        ],
-        "strength_range": [
-          0.68,
-          0.8
-        ],
-        "same_domain_ratio": 0.7
-      }
+      "common_reasoning_keywords": [
+        "partage",
+        "l'approche",
+        "mais",
+        "plutôt",
+        "pour",
+        "avec",
+        "connexion",
+        "manuelle",
+        "validée",
+        "(domaine"
+      ],
+      "strength_range": [
+        0.68,
+        0.8
+      ],
+      "same_domain_ratio": 0.7
     }
   },
   "semantic_calibration": {
@@ -212,9 +202,9 @@
       }
     ],
     "overall_stats": {
-      "articles_analyzed": 94,
+      "articles_analyzed": 103,
       "hard_vs_manual_ratio": 0.3838383838383838,
-      "average_connections_per_article": 2.4464285714285716
+      "average_connections_per_article": 2.1076923076923078
     }
   }
 }
