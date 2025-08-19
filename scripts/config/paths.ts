@@ -21,11 +21,13 @@ export const PATHS = {
   GROUND_TRUTH_PATTERNS: 'scripts/ground_truth_patterns.json',
   SEMANTIC_CALIBRATION: 'scripts/semantic_calibration.json',
   
-  // Backup
-  BACKUP_DIR: 'backup/',
-  
-  // Sécurité données
-  DATA_SECURITY_BACKUP: 'public/data/data_security_backup/'
+  // Backups organisés (structure projet existante)
+  BACKUP_DIR: '.backups/',
+  BACKUP_CURRENT: '.backups/current/',
+  BACKUP_DAILY: '.backups/daily/',
+  BACKUP_MILESTONES: '.backups/milestones/',
+  BACKUP_TESTS: '.backups/tests/',
+  BACKUP_SECURITY: '.backups/current/data_security_backup/'
 } as const
 
 /**
@@ -38,7 +40,28 @@ export function buildPath(base: keyof typeof PATHS, ...parts: string[]): string 
 /**
  * Chemins avec timestamp pour backup
  */
-export function getBackupPath(filename: string): string {
+export function getBackupPath(filename: string, type: 'current' | 'daily' | 'milestone' = 'current'): string {
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
-  return `${PATHS.BACKUP_DIR}${filename}-${timestamp}.json`
+  const baseName = filename.replace('.json', '')
+  
+  switch (type) {
+    case 'current':
+      return `${PATHS.BACKUP_CURRENT}${filename}`
+    case 'daily': {
+      const date = new Date().toISOString().split('T')[0]
+      return `${PATHS.BACKUP_DAILY}${date}/${baseName}-${timestamp}.json`
+    }
+    case 'milestone':
+      return `${PATHS.BACKUP_MILESTONES}${baseName}-${timestamp}.json`
+    default:
+      return `${PATHS.BACKUP_DIR}${baseName}-${timestamp}.json`
+  }
+}
+
+/**
+ * Backup sécurité pipeline (horodaté)
+ */
+export function getPipelineBackupPath(filename: string): string {
+  const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
+  return `${PATHS.BACKUP_SECURITY}${filename}.${timestamp}.pipeline-backup`
 }

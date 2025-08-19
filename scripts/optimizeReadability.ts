@@ -22,14 +22,16 @@
  * 4. Objectif: ~270 connexions, 11% densité, 7 conn/article
  */
 
-import { readFileSync, writeFileSync } from 'fs'
+import { readFileSync } from 'fs'
+import { writeFileAtomic } from './writeFileAtomic.js'
+import { PATHS } from './config/paths.js'
 
 console.log('🎨 OPTIMIZE READABILITY - Filtrage Lisibilité Finale')
 console.log('   Étape 6/7 - Préservation centralité + navigation fluide')
 
 try {
-  const articlesData = JSON.parse(readFileSync('public/data/articles.json', 'utf-8'))
-  const connectionsData = JSON.parse(readFileSync('public/data/connections.json', 'utf-8'))
+  const articlesData = JSON.parse(readFileSync(PATHS.ARTICLES, 'utf-8'))
+  const connectionsData = JSON.parse(readFileSync(PATHS.CONNECTIONS, 'utf-8'))
   
   const articles = articlesData.articles || articlesData
   const allConnections = connectionsData.connections || connectionsData
@@ -215,8 +217,8 @@ try {
     }
   }
   
-  // Sauvegarde atomique
-  writeFileSync('public/data/connections.json', JSON.stringify(updatedConnectionsData, null, 2))
+  // Sauvegarde atomique sécurisée
+  await writeFileAtomic(PATHS.CONNECTIONS, JSON.stringify(updatedConnectionsData, null, 2))
   
   console.log(`\\n💾 OPTIMISATION LISIBILITÉ TERMINÉE`)
   console.log(`   ✅ Connexions sauvées: public/data/connections.json`)
@@ -228,3 +230,5 @@ try {
   console.error('❌ Erreur optimize-readability:', error)
   process.exit(1)
 }
+
+export {}

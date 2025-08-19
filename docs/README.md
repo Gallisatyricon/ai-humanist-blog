@@ -104,12 +104,14 @@ ai-humanist-blog/
 - **Performance :** Embeddings 65 articles en <5s, connexions en temps réel
 - **Équilibrage types :** Distribution diverse auto_detected vs validations manuelles
 
-### 🛡️ Infrastructure Robuste
+### 🛡️ Infrastructure Sécurité Renforcée
+- **Backup automatique :** Protection avant chaque réécriture critique
 - **Écriture atomique :** Locks proper-lockfile + protection corruption
+- **Structure backups :** `.backups/current/data_security_backup/` (conforme CQ)
 - **Validation Zod :** Schémas stricts runtime sur tous datasets
-- **Configuration centralisée :** Évite duplication chemins process.cwd()
-- **Scripts consolidés :** 11 fonctionnels + documentation complète
-- **Workflows documentés :** Complet (6 étapes) vs Simplifié (2 étapes)
+- **Configuration centralisée :** PATHS.ts unifié + chemins organisés
+- **Scripts consolidés :** 13 fonctionnels + infrastructure sécurisée
+- **Workflows documentés :** Pipeline 7 étapes avec backups horodatés
 
 ## 📊 Métriques de Qualité
 
@@ -195,6 +197,30 @@ npm run lint && npm run build
 
 # Tests manuels interface
 npm run dev                           # Vérifier navigation graphique
+```
+
+### 5. 🔒 Sécurité & Backup Pipeline
+**Infrastructure Backup Automatique** - Protection avant chaque modification critique :
+
+```bash
+# Les étapes 5-6 créent automatiquement des backups
+npm run fix-subtlety               # 🔒 Backup → .backups/current/data_security_backup/
+npm run optimize-readability       # 🔒 Backup → .backups/current/data_security_backup/
+
+# Structure backups organisée
+.backups/
+├── current/                       # Restauration rapide (CQ)
+│   └── data_security_backup/      # 🔒 Backups pipeline horodatés
+├── daily/                         # Backups quotidiens
+├── milestones/                    # Jalons importants
+└── tests/                         # testRunner.ts isolé
+```
+
+**Rollback d'urgence :**
+```bash
+# En cas de problème, restaurer depuis backup le plus récent
+ls .backups/current/data_security_backup/connections.json.*
+cp .backups/current/data_security_backup/connections.json.TIMESTAMP.pipeline-backup public/data/connections.json
 ```
 
 ## 📋 Format Données

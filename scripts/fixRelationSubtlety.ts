@@ -26,7 +26,9 @@
  * - contradictions: 0.25-0.65 similarité + indicateurs linguistiques
  */
 
-import { readFileSync, writeFileSync } from 'fs'
+import { readFileSync } from 'fs'
+import { writeFileAtomic } from './writeFileAtomic.js'
+import { PATHS } from './config/paths.js'
 
 // Fonction similarité cosinus
 function calculateSimilarity(vec1: number[], vec2: number[]): number {
@@ -88,9 +90,9 @@ console.log('🔧 FIX RELATION SUBTLETY - Affinage Pipeline')
 console.log('   Étape 5/6 - Amélioration subtilité relationnelle')
 
 try {
-  const articlesData = JSON.parse(readFileSync('public/data/articles.json', 'utf-8'))
-  const connectionsData = JSON.parse(readFileSync('public/data/connections.json', 'utf-8'))
-  const embeddingsData = JSON.parse(readFileSync('public/data/embeddings.json', 'utf-8'))
+  const articlesData = JSON.parse(readFileSync(PATHS.ARTICLES, 'utf-8'))
+  const connectionsData = JSON.parse(readFileSync(PATHS.CONNECTIONS, 'utf-8'))
+  const embeddingsData = JSON.parse(readFileSync(PATHS.EMBEDDINGS, 'utf-8'))
   
   const articles = articlesData.articles || articlesData
   const existingConnections = connectionsData.connections || connectionsData
@@ -250,8 +252,8 @@ try {
       connections: updatedConnections
     }
     
-    // Sauvegarde atomique
-    writeFileSync('public/data/connections.json', JSON.stringify(updatedConnectionsData, null, 2))
+    // Sauvegarde atomique sécurisée
+    await writeFileAtomic(PATHS.CONNECTIONS, JSON.stringify(updatedConnectionsData, null, 2))
     
     console.log(`✅ ${newConnections.length} connexions ajoutées`)
     console.log(`   Total connexions: ${existingConnections.length} → ${updatedConnections.length}`)
@@ -277,7 +279,7 @@ try {
     }
   }
   
-  writeFileSync('public/data/subtlety_report.json', JSON.stringify(improvementReport, null, 2))
+  await writeFileAtomic('public/data/subtlety_report.json', JSON.stringify(improvementReport, null, 2))
   
   console.log(`\\n🎯 AFFINAGE SUBTILITÉ TERMINÉ`)
   console.log(`   Rapport sauvé: subtlety_report.json`)
@@ -288,3 +290,5 @@ try {
   console.error('❌ Erreur fix-subtlety:', error)
   process.exit(1)
 }
+
+export {}

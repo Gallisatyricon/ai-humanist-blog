@@ -89,10 +89,16 @@ npm run build                     # Compilation production
 "test-phase11": "tsx scripts/testPhase11Workflow.ts"      # ❌ Fichier absent
 ```
 
-### 🛠️ Utilitaires Créés Durant Session
+### 🛡️ Infrastructure Sécurité Renforcée
+- **`writeFileAtomic.ts`** - 🔒 **Backup automatique** + écriture atomique sécurisée
+- **`config/paths.ts`** - Configuration centralisée chemins + structure backups organisée
+- **`fixRelationSubtlety.ts`** - ✅ Utilise infrastructure sécurisée (PATHS + writeFileAtomic)
+- **`optimizeReadability.ts`** - ✅ Utilise infrastructure sécurisée (PATHS + writeFileAtomic)
+- **`testRunner.ts`** - Tests sécurisés environnement isolé
+
+### 🛠️ Utilitaires Session
 - **`formatInputFile.ts`** - Parser JSON avec comptage accolades récursif
 - **`cleanupDataForValidation.ts`** - Migration données pour Zod validation
-- **`config/paths.ts`** - Configuration centralisée chemins (évite duplication process.cwd)
 
 ## 📊 Récapitulatif Complet
 

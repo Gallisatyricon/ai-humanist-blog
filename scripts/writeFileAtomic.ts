@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs'
 import { join, dirname } from 'path'
 import * as lockfile from 'proper-lockfile'
+import { PATHS, getPipelineBackupPath } from './config/paths.js'
 
 /**
  * Écriture atomique de fichiers avec système de lock
@@ -11,6 +12,7 @@ export interface WriteOptions {
   lockTimeout?: number // ms, défaut: 10000
   retryInterval?: number // ms, défaut: 100
   encoding?: 'utf8' | 'ascii' | 'utf16le' | 'base64' | 'latin1' | 'binary' | 'hex' // défaut: 'utf8'
+  createBackup?: boolean // défaut: true pour fichiers critiques
 }
 
 /**
@@ -27,7 +29,8 @@ export async function writeFileAtomic(
   const {
     lockTimeout = 10000,
     retryInterval = 100,
-    encoding = 'utf8'
+    encoding = 'utf8',
+    createBackup = true
   } = options
 
   const absolutePath = join(process.cwd(), filePath)
@@ -40,7 +43,12 @@ export async function writeFileAtomic(
     // 1. Créer le répertoire parent si nécessaire
     await fs.mkdir(dirname(absolutePath), { recursive: true })
     
-    // 2. Acquérir le lock (skip si fichier n'existe pas)
+    // 2. Backup automatique si fichier existe et createBackup activé
+    if (createBackup && await fileExists(absolutePath)) {
+      await createSafetyBackup(absolutePath)
+    }
+    
+    // 3. Acquérir le lock (skip si fichier n'existe pas)
     const lockOptions = {
       lockfilePath: lockPath,
       retries: Math.floor(lockTimeout / retryInterval),
@@ -59,7 +67,7 @@ export async function writeFileAtomic(
       }
     }
 
-    // 3. Écrire vers fichier temporaire
+    // 4. Écrire vers fichier temporaire
     if (typeof data === 'string') {
       await fs.writeFile(tempPath, data, { encoding })
     } else {
@@ -191,5 +199,42 @@ export async function isFileLocked(filePath: string): Promise<boolean> {
     return true
   } catch {
     return false
+  }
+}
+
+/**
+ * Vérifier si fichier existe
+ */
+async function fileExists(filePath: string): Promise<boolean> {
+  try {
+    await fs.access(filePath)
+    return true
+  } catch {
+    return false
+  }
+}
+
+/**
+ * Créer backup de sécurité dans structure organisée
+ */
+async function createSafetyBackup(filePath: string): Promise<string> {
+  const fileName = filePath.split(/[/\\]/).pop()
+  if (!fileName) throw new Error('Nom de fichier invalide')
+  
+  const backupPath = join(process.cwd(), getPipelineBackupPath(fileName))
+  
+  try {
+    // Créer dossier backup sécurité
+    await fs.mkdir(dirname(backupPath), { recursive: true })
+    
+    // Copier fichier existant
+    await fs.copyFile(filePath, backupPath)
+    
+    console.log(`🔒 Backup pipeline: ${fileName} → ${PATHS.BACKUP_SECURITY}`)
+    return backupPath
+    
+  } catch (error) {
+    console.warn(`⚠️ Impossible de créer backup pour ${fileName}:`, error)
+    throw error
   }
 }

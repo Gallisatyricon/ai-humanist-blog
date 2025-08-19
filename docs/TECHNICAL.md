@@ -338,9 +338,33 @@ npm run validate-triple            # 7. Validation empirique (script ci-dessus)
 
 ---
 
-## 🛡️ Fiabilisation & Infrastructure Phase 1
+## 🛡️ Fiabilisation & Infrastructure Sécurité
 
-### 1. Écriture Atomique Sécurisée - writeFileAtomic.ts (Préservée)
+### 1. Infrastructure Backup Automatique - writeFileAtomic.ts
+**🔒 Sécurité Renforcée** : Backup automatique avant chaque réécriture critique
+
+```typescript
+// Structure backups organisée (respecte protocole CQ)
+BACKUP_CURRENT: '.backups/current/',              // Restauration rapide CQ
+BACKUP_DAILY: '.backups/daily/',                  // Backups quotidiens
+BACKUP_MILESTONES: '.backups/milestones/',        // Jalons importants  
+BACKUP_SECURITY: '.backups/current/data_security_backup/' // Pipeline
+```
+
+**Fonctionnement Pipeline Sécurisée :**
+```bash
+npm run fix-subtlety
+# 🔒 Backup pipeline: connections.json → .backups/current/data_security_backup/
+# Fichier: connections.json.2025-08-19T02-15-30-456Z.pipeline-backup
+# ✅ Écriture atomique sécurisée avec locks
+
+npm run optimize-readability  
+# 🔒 Backup pipeline: connections.json → .backups/current/data_security_backup/
+# Fichier: connections.json.2025-08-19T02-20-45-789Z.pipeline-backup
+# ✅ Filtrage avec préservation centralité
+```
+
+### 2. Écriture Atomique Sécurisée - writeFileAtomic.ts
 ```typescript
 export async function writeFileAtomic(filePath: string, data: string | Buffer, options: WriteOptions = {}): Promise<void> {
   const absolutePath = join(process.cwd(), filePath)
@@ -351,19 +375,30 @@ export async function writeFileAtomic(filePath: string, data: string | Buffer, o
     // 1. Créer répertoire parent si nécessaire
     await fs.mkdir(dirname(absolutePath), { recursive: true })
     
-    // 2. Acquérir lock exclusif
+    // 2. Backup automatique si fichier critique existe
+    if (createBackup && await fileExists(absolutePath)) {
+      await createSafetyBackup(absolutePath) // → .backups/current/data_security_backup/
+    }
+    
+    // 3. Acquérir lock exclusif
     release = await lockfile.lock(absolutePath, lockOptions)
     
-    // 3. Écriture atomique via fichier temporaire
+    // 4. Écriture atomique via fichier temporaire
     await fs.writeFile(tempPath, data, { encoding })
     await fs.rename(tempPath, absolutePath)  // Opération atomique OS
     
   } finally {
-    // 4. Libération lock garantie
+    // 5. Libération lock garantie
     if (release) await release()
   }
 }
 ```
+
+**🔑 Points Clés Sécurité :**
+- ✅ **Backup automatique** avant chaque modification critique
+- ✅ **Structure organisée** conforme au protocole CQ 
+- ✅ **Rollback facile** depuis `.backups/current/data_security_backup/`
+- ✅ **Horodatage précis** pour traçabilité complète
 
 ### 2. Validation Runtime Stricte - zodSchemas.ts (Préservée)
 ```typescript
